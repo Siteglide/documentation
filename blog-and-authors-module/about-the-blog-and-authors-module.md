@@ -3,7 +3,7 @@ cover: ../.gitbook/assets/Screenshot 2024-06-07 at 16-46-01 Blog Demo.png
 coverY: 0
 ---
 
-# 💡 About the Blog & Authors Module
+# 💡 About the Blog & Authors Module EDIT
 
 The Blog Module makes it easy for your client to post regular updates to their site whether that be an informal blog, a company press release or a more journalistic set of articles. \
 \
