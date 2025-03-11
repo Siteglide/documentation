@@ -56,6 +56,7 @@ See a more complete Cart & Checkout Folder Structure here:
 [cart-and-checkout-folder-structure.md](../../../cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
+
 ### Creating a new set of Product Layouts
 
 To create a new set of Product layouts- create your folder at the level of "name\_of\_my\_layout". Inside that, the folders and files should be created as shown above.

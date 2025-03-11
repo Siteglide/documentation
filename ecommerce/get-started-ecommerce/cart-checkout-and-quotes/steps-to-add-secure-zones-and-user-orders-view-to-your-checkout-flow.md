@@ -74,6 +74,7 @@ As Orders List Layouts are for showing secure information about Users, they are 
 [cart-and-checkout-folder-structure.md](../cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
+
 Create a new file in the user\_orders folder and give it a name of your choice. Make a note of the name you gave it.
 
 {% hint style="success" %}

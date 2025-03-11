@@ -78,6 +78,7 @@ This liquid include tag will add the "Add to Cart" Button:
 
 This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product. To add a custom Cart Add layout, see the [Folder Structure](../../../ecommerce/get-started-ecommerce/cart-and-checkout-folder-structure.md) for the correct directory and use the `component_layout` parameter to reference it:
 
+
 \`
 
 \`
