@@ -21,6 +21,10 @@ Once a customer uses the button in the Layout to successfully add a Discount Cod
 
 When a customer completes a Payment Form, the Server-side checks will apply the code and reduce the amount they are charged. This means your Site will be secure and safe against malicious users choosing their own discounts.
 
+{% hint style="success" %}
+For setting up Discount Codes, including how to make only certain Products and Categories of Products eligible for a discount, see here:  [Discount Codes](../../managing-products/discounts.md)
+{% endhint %}
+
 ## Step 1 - Including the Layout inside the Cart, Checkout, Basic Payment Form or Subscription Form Layout
 
 The screenshot below shows how the Discount Code Layout can be nested inside the Cart. However, step 1 also applies in all kinds of Layout.
