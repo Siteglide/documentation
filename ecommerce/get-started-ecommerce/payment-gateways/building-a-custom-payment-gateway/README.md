@@ -44,4 +44,4 @@ Use GraphQL to create a record in this table using the filelds above.
 
 Now your Payment Gateway exists, it's time to give it some functionality. You can add support for one or more of the following:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><a data-mention href="steps-to-support-checkout-with-your-custom-payment-gateway.md">steps-to-support-checkout-with-your-custom-payment-gateway.md</a></td><td></td></tr><tr><td></td><td></td><td><a data-mention href="steps-to-support-basic-payment-forms-with-your-custom-payment-gateway.md">steps-to-support-basic-payment-forms-with-your-custom-payment-gateway.md</a></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><a data-mention href="broken-reference">Broken link</a></td><td></td></tr><tr><td></td><td></td><td><a data-mention href="broken-reference">Broken link</a></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>

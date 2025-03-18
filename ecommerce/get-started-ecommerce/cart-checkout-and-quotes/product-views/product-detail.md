@@ -114,6 +114,7 @@ item.liquid -- detail view example
       {% include 'ecommerce/cart_add' -%}
 {% endraw %}
 
+
     </div>
     <div class="col-12 col-md-6">
       <a class="btn btn-primary" href="/cart">View my Cart</a>
