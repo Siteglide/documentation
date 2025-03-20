@@ -1,5 +1,11 @@
 # 🛳️ Module - eCommerce - Changelog
 
+### 1.15.2 - 20th March 2024
+
+* Further fix for to item breakdown issue for PayPal (from 1.14.5)
+
+***
+
 ### 1.15.1 - 28th January 2024
 
 * Fix for Inventory where it was failing to update correctly
