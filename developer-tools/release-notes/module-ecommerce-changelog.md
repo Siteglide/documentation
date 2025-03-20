@@ -1,18 +1,18 @@
 # 🛳️ Module - eCommerce - Changelog
 
-### 1.15.2 - 20th March 2024
+### 1.15.2 - 20th March 2025
 
 * Further fix for to item breakdown issue for PayPal (from 1.14.5)
 
 ***
 
-### 1.15.1 - 28th January 2024
+### 1.15.1 - 28th January 2025
 
 * Fix for Inventory where it was failing to update correctly
 
 ***
 
-### 1.15.0 - 22nd January 2024
+### 1.15.0 - 22nd January 2025
 
 * Allow Discounts to apply to specific Products and Categories - [Roadmap](https://feedback.siteglide.com/p/apply-discount-codes-to-specific-products)
 * Added a flag to turn off the success alert box on Discounts - [Roadmap](https://feedback.siteglide.com/p/ecommerce-module-discount-code-added-alert)
