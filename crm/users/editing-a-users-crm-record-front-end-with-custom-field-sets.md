@@ -10,7 +10,7 @@ This includes:
 
 * Name
 * Any Custom Field Sets attached to the Form. Use these to store information that you want to keep up to date.
-* [Learn more about editing email and password here](how-users-edit-their-email-and-password-front-end.md).
+* [Learn more about editing email and password here](/crm/users/how-users-edit-their-email-and-password-front-end.md).
 
 Standard Form Fields are stored against the Case only and are not stored against the CRM record.
 
@@ -34,12 +34,12 @@ The most important points to draw from this are:
   * CRM Custom Fields
   * The user's "name" field
   * The email field (on first submission only) - this is used as a unique identifier in the CRM.
-  * The "edit email" and "edit password" fields [learn more about editing email and password here.](how-users-edit-their-email-and-password-front-end.md)
+  * The "edit email" and "edit password" fields [learn more about editing email and password here.](crm/users/how-users-edit-their-email-and-password-front-end.md)
 * When using Custom Field Sets and CRM custom fields to update the CRM, it doesn't matter whether or not the User already exists in the CRM, or whether or not the User is already logged in.
 
 ## Adding Custom Field Set Fields to a Form
 
-See here for a more detailed explanation of [Adding Custom Field Set Fields to a Form](../../cms/forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
+See here for a more detailed explanation of [Adding Custom Field Set Fields to a Form](cms/forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
 
 In summary, to add Custom Field Set fields to a Form, you'll need to:
 
@@ -124,7 +124,7 @@ To achieve this, you can combine two Siteglide Features by nesting a Siteglide F
 
 ```liquid
 {% raw %}
-{% include 'user_details', layout: 'user_details_edit_form_container' %}
+{% include 'user_details', layout: 'user_details_edit_form_container' %}
 {% endraw %}
 
 ```

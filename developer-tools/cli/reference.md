@@ -70,9 +70,19 @@ Flags: `-f` : Filter log types `-q` : Quiet mode
 
 `siteglide-cli -v`
 
-Check the current version of Siteglide CLI you are running. See the [Siteglide CLI changelog](https://developers.siteglide.com/cli-changelog) to find the latest version number. If you need to update, see the "Installing & Updating" command section above.
+Check the current version of Siteglide CLI you are running. See the [Siteglide CLI changelog](https://www.npmjs.com/package/@siteglide/siteglide-cli) to find the latest version number. If you need to update, run:
 
-***
+```bash
+npm i @siteglide/siteglide-cli -g
+```
+
+in a terminal window. Or use:
+
+```bash
+npm i @siteglide/siteglide-cli@1.9.8 -g
+```
+
+to target a specific version e.g. in this example 1.9.8
 
 ### Help
 

@@ -4,6 +4,6 @@ Content Sections are reusable snippets of code (Liquid Partials). They're useful
 
 <figure><img src="../.gitbook/assets/Siteglide-CMS-Content-Section-Example.png" alt=""><figcaption></figcaption></figure>
 
-You can then easily insert the Content Section into any page using CLI or via Toolbox ([code-view-and-toolbox.md](pages/code-view-and-toolbox.md "mention")):
+You can then easily insert the Content Section into any page using CLI or via Toolbox ([code-view-and-toolbox.md](/cms/pages/code-view-and-toolbox.md "mention")):
 
 <figure><img src="../.gitbook/assets/Siteglide-CMS-Content-Section-Insert.png" alt=""><figcaption></figcaption></figure>

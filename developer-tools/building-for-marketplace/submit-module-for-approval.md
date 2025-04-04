@@ -6,12 +6,12 @@ Before submitting your Module for approval, you should check that your GitHub Re
 
 See the following checklist to confirm it is ready for submission:
 
-* [ ] You’ve got all your files (assets, logic, layouts etc.) in the correct folders (private, or public)
+* [ ] you've got all your files (assets, logic, layouts etc.) in the correct folders (private, or public)
 * [ ] Your module folder is named in the correct format of `<module_name>`
 * [ ] You have not included a `marketplace_builder` folder
-* [ ] You’ve prepared your `setup.json` file if a model is required for this Module and the Module ID in `setup.json` matches the Vanity ID in Siteglide Admin
-* [ ] You’ve prepared your `ignore-on-update.json` file
-* [ ] You’ve prepared your `install-process.json` file if this is required for your module
+* [ ] you've prepared your `setup.json` file if a model is required for this Module and the Module ID in `setup.json` matches the Vanity ID in Siteglide Admin
+* [ ] you've prepared your `ignore-on-update.json` file
+* [ ] you've prepared your `install-process.json` file if this is required for your module
 * [ ] Your Module is in a branch named `master` in your GitHub Repository. This is the only branch Siteglide will read from. Note that Github may name your branch `main` by default. If that happens you can change that [here](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/renaming-a-branch)
 
 ![](../../assets/ESJa5xqr3TYHZYlOEta\_\_\_custom-module-renamegit-branch-1.png)
@@ -37,7 +37,7 @@ Once you have clicked "Save" with the above fields populated, your module will b
 
 ## After Submitting your Module
 
-Once you’ve submitted your Module for approval you’ll need to give us access to see the Module. This is needed for the initial approval, but also for ongoing access to be able to install the latest version of the Module.
+Once you've submitted your Module for approval you'll need to give us access to see the Module. This is needed for the initial approval, but also for ongoing access to be able to install the latest version of the Module.
 
 To provide us with access you need to invite Siteglide API ([api@siteglide.com](mailto:api@siteglide.com)) as a collaborator for the GitHub Repository. You can do this in your [repository settings](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
 

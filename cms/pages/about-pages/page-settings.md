@@ -2,7 +2,7 @@
 
 ### Details <a href="#id-2-details" id="id-2-details"></a>
 
-When you first click to create or edit a Page, you’ll begin within the ‘Details’ tab.
+When you first click to create or edit a Page, you'll begin within the ‘Details’ tab.
 
 Using the 'Details' tab you can manage and edit key details about the current Page, such as:
 
