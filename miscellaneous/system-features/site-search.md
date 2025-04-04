@@ -63,10 +63,25 @@ Then add an ID to the button that submits your input, please match this to the I
 * `per_page` - default is 20 - defines the number of items outputted on the page
 * `layout` - default is default - defines the layout file used to display the results
 * `{{_all_results | size}}` can be used in the wrapper layout, and this will return the number of total results.
+* `types` - default is 'page,module,webapp' (see below) 
 
 ## More Parameters - Search by Type
 
 When selecting "Site Search Results" from the toolbox, you have the option of selecting which type of content will be contained within the results. Here you can mix and match whether you would like to display results from Pages, WebApp Detail Pages or Module Detail Pages. For example if you only want to search for Pages on the website then you could have the results exclude any data from WebApps and Modules.
+
+```liquid
+{% raw %}
+  {%- include 'site_search_results', types: 'webapp,page,module' -%}
+{% endraw %}
+```
+
+*Excluding modules and webapps*
+
+```liquid
+{% raw %}
+  {%- include 'site_search_results', types: 'page' -%}
+{% endraw %}
+```
 
 To get results from WebApps or Modules, you must turn on Detail Pages in their configuration in Admin.
 
