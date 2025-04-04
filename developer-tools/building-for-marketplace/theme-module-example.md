@@ -40,7 +40,7 @@ Open the `Module_Siteglide_ThemeDemo` project folder you downloaded earlier and 
 
 Next we’re going to add in various core elements such as Pages, a Page Template, Header & Footer.
 
-First, within your `modules/<module_name>/public` folder, create a new folder called `views`. Inside the views folder, we’ll be creating several new folder structures to house the various files we’d like to include. Below I’ll list each of these directories and give an explanation as to what they will be used for:
+First, within your `modules/<module_name>/public` folder, create a new folder called `views`. Inside the views folder, we'll be creating several new folder structures to house the various files we’d like to include. Below I’ll list each of these directories and give an explanation as to what they will be used for:
 
 * `layouts/templates` - A Page Template file used to wrap all of our theme pages.
 * `pages` - Several Pages we would like to include in our module and display on the site.
@@ -55,7 +55,7 @@ Open the `Module_Siteglide_ThemeDemo` project folder you downloaded earlier and 
 
 ### Correcting Your Files
 
-As we’ve been copying files from the Theme Demo Module, we’ll need to update the module name in some paths written in the files. Open up your IDE and bulk find/replace `module_76` with your `<module_name>`.
+As we’ve been copying files from the Theme Demo Module, we'll need to update the module name in some paths written in the files. Open up your IDE and bulk find/replace `module_76` with your `<module_name>`.
 
 ## Module Setup Files
 
@@ -65,7 +65,7 @@ Create a file called install-process.json on the root folder of your Module Proj
 
 Add the following Code Snippet to your newly created Install Process file:
 
-```none
+```json
 {
   "1.0.0": "set_homepage"
 }
@@ -85,7 +85,7 @@ Open your staging site to view your work both front-end and back end.
 
 Your site should now look and behave like this front-end: [Module Siteglide Theme Demo](https://module-siteglide-theme-demo.staging.oregon.platform-os.com/).
 
-If you’re happy everything looks as it should, continue to the final step. If not, check back along the steps above to make sure you’ve not missed anything.
+If you’re happy everything looks as it should, continue to the final step. If not, check back along the steps above to make sure you've not missed anything.
 
 ## Submit Module For Approval
 
@@ -95,10 +95,10 @@ First, delete the `marketplace_builder` folder from your project folder on your 
 
 Follow the checklist to confirm your Theme Module is ready for submission:
 
-* [ ] You’ve got all your files (assets, logic, layouts etc.) in the correct folders (private, or public)
+* [ ] you've got all your files (assets, logic, layouts etc.) in the correct folders (private, or public)
 * [ ] Your module folder is named in the correct format of `<module_name>`
 * [ ] You have not included a `marketplace_builder` folder
-* [ ] You’ve prepared your setup.json file if a model is required for this Module and the Module ID in setup.json matches the Vanity ID in Siteglide Admin
+* [ ] you've prepared your setup.json file if a model is required for this Module and the Module ID in setup.json matches the Vanity ID in Siteglide Admin
 
 Here is what your project folder should now look like:
 

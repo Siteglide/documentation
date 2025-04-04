@@ -14,7 +14,7 @@ These fields are the same across all WebApps and include the following:
 
 * **ID / External ID** - Unique identifiers for each item, these appear when you have created and saved a new item and they cannot be edited.
 * **Name** - Name of the WebApp item displayed in Admin and front-end
-* **Item Slug** - (if you’ve enabled detail view within the WebApp structure) - URL for this item
+* **Item Slug** - (if you've enabled detail view within the WebApp structure) - URL for this item
 * **Weighting** - Create a sort order of your choice
 * **Release Date** - (in your timezone, outputs in UTC) - Choose a date for this item to be released
 * **Expiry Date** - (in your timezone, outputs in UTC) - Choose a date for this item to expire
