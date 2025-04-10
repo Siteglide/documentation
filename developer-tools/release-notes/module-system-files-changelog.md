@@ -1,5 +1,11 @@
 # 🛳️ Module - System Files - Changelog
 
+### 2.8.4.0 - 10th April 2025
+
+* Added support for Categories in Sitemap output - [Roadmap](https://feedback.siteglide.com/p/add-categories-to-auto-sitemap-include)
+
+***
+
 ### 2.8.3.1 - 26th February 2025
 
 * Patch to fix Front-End Rollout Automations
