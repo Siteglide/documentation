@@ -22,7 +22,7 @@ The following markup example would work well in the `wrapper.liquid` file of a w
 {% raw %}
 {% comment %}Generate the public key as above and pass it to the main element of the HTML code as a data-attribite. Another data-attribute, data-sg-live-update-section, may optionally be used to supply a unique ID to the HTML section which will be referenced in the initialised Object.{% endcomment %}
 {% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
-  <script async src="{{'modules/module_86/js/v1-2/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
+  <script async src="{{'modules/module_86/js/v1-6/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
   {% assign live_update_JS_loaded = true %}
   {% export live_update_JS_loaded, namespace: sitebuilder %}
 {% endif %}

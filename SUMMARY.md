@@ -392,7 +392,6 @@
     * [📋 Step-by-step Basic Payment Confirmations](ecommerce/get-started-ecommerce/basic-payment-forms/payment-confirmation.md)
     * [👀 Basic Payment Forms Reference](ecommerce/get-started-ecommerce/basic-payment-forms/ecommerce-basic-payment.md)
     * [ℹ️ ecommerce/basic\_payment](ecommerce/get-started-ecommerce/basic-payment-forms/ecommerce-basic_payment.md)
-    * [Discount Codes](https://app.gitbook.com/o/4DsXpZUJmkzzwFMKxvx9/s/t7n2OYNNUr9PgpkBD2eX/~/changes/414/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes)
   * [📂 Payment Gateways](ecommerce/get-started-ecommerce/payment-gateways/README.md)
     * [💻 Building a Custom Payment Gateway](ecommerce/get-started-ecommerce/payment-gateways/building-a-custom-payment-gateway/README.md)
       * [📋 Steps to Support Basic Payment Forms with your Custom Payment Gateway](ecommerce/get-started-ecommerce/payment-gateways/building-a-custom-payment-gateway/steps-to-support-basic-payment-forms-with-your-custom-payment-gateway.md)

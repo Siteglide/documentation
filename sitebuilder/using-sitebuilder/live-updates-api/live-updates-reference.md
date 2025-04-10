@@ -1,5 +1,17 @@
 # 👀 Live Updates Reference
 
+### Including JS <a href="#html-dataattribute-markup" id="html-dataattribute-markup"></a>
+
+```liquid
+{% raw %}
+{% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
+  <script async src="{{'modules/module_86/js/v1-6/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
+  {% assign live_update_JS_loaded = true %}
+  {% export live_update_JS_loaded, namespace: sitebuilder %}
+{% endif %}
+{% endraw %}
+```
+
 ### HTML data-attribute markup <a href="#html-dataattribute-markup" id="html-dataattribute-markup"></a>
 
 HTML data-attributes are a convenient way to configure the Live Update API JavaScript. We recommend using these in most use-cases. Unlike some JavaScript Libraries, it is possible to use data-attributes along with JavaScript methods without any known conflicts.
