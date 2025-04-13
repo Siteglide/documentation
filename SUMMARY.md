@@ -26,6 +26,7 @@
     * [📋 Add an External Domain](portal/sites/domains/add-an-external-domain.md)
     * [Fully Delegated vs External DNS](portal/sites/domains/fully-delegated-vs-external-dns.md)
     * [📋 How to setup a multi domain start page](portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
+  * [☁️ Site Backups and Disaster Recovery](portal/sites/site-backups-and-disaster-recovery.md)
 * [Users](portal/users-and-user-roles/README.md)
   * [📋 User Roles](portal/users-and-user-roles/user-roles.md)
   * [📋 Invite & Manage Users](portal/users-and-user-roles/invite-and-manage-users.md)
