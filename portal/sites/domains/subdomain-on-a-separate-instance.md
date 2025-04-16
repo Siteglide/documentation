@@ -7,7 +7,10 @@ This example is only applicable where your top level domain is fully delegated t
 You might want to have www.example.com on one Siteglide instance and app.example.com (or any other subdomain) on another Siteglide instance.
 
 1. First add your subdomain to the second instance as a new domain:
-2. Then go to the DNS records of your fully delegated domain and create a CNAME as follows:
+
+<figure><img src="../../../.gitbook/assets/Siteglide-Domains-Add-Subdomain.png" alt=""><figcaption></figcaption></figure>
+
+1. Then go to the DNS records of your fully delegated domain and create a CNAME as follows:
 
 | Name | Type  | Value       |
 | ---- | ----- | ----------- |

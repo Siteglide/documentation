@@ -10,7 +10,7 @@ This includes:
 
 * Name
 * Any Custom Field Sets attached to the Form. Use these to store information that you want to keep up to date.
-* [Learn more about editing email and password here](/crm/users/how-users-edit-their-email-and-password-front-end.md).
+* [Learn more about editing email and password here](how-users-edit-their-email-and-password-front-end.md).
 
 Standard Form Fields are stored against the Case only and are not stored against the CRM record.
 
@@ -126,6 +126,7 @@ To achieve this, you can combine two Siteglide Features by nesting a Siteglide F
 {% raw %}
 {% include 'user_details', layout: 'user_details_edit_form_container' %}
 {% endraw %}
+
 
 ```
 
