@@ -477,3 +477,4 @@
   * [Cookies on Siteglide Sites](miscellaneous/system-features/cookies-on-siteglide-sites.md)
 * [Front-End Performance](miscellaneous/front-end-performance/README.md)
   * [Video Embeds](miscellaneous/front-end-performance/video-embeds.md)
+  * [Forms Above the Fold](miscellaneous/front-end-performance/forms-above-the-fold.md)
