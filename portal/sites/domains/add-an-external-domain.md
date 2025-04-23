@@ -6,7 +6,7 @@ We strongly recommend Fully Delegating your domain for best results or ensuring 
 
 If you have a domain that is managed in GoDaddy or another registrar and would like to point it to a Siteglide website you can use our External Domain feature. This means that you can continue to manage your DNS through GoDaddy/other registrar.
 
-## <mark style="color:blue;">Note:</mark> If using OCI (Oracle+Cloudflare)
+## <mark style="background-color:orange;">Note:</mark> If using OCI (Oracle+Cloudflare)
 
 If your site is on one of our new OCI (Oracle+Cloudflare) stacks the UI will look slightly different, you will be able to add both CNAMEs at the same time. The records are as follows (replace www.yourdomain.com with the actual domain ensuring www is included unless you're adding a subdomain):
 
