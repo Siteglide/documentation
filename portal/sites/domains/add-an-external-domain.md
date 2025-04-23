@@ -1,10 +1,18 @@
 # 📋 Add an External Domain
 
 {% hint style="warning" %}
-We strongly recommend Fully Delegating your domain for best results and to avoid additional steps redirecting the non-www to www.
+We strongly recommend Fully Delegating your domain for best results or ensuring you use a domain control panel that allows CNAME records on the root/@ or ANAME records such as [Cloudflare](https://www.cloudflare.com/).
 {% endhint %}
 
 If you have a domain that is managed in GoDaddy or another registrar and would like to point it to a Siteglide website you can use our External Domain feature. This means that you can continue to manage your DNS through GoDaddy/other registrar.
+
+## Note: If using OCI (Oracle+Cloudflare) please read
+
+If your site is on one of our new OCI (Oracle+Cloudflare) stacks the UI will look slightly different, you will be able to add both CNAMEs at the same time. The records are as follows (replace www.yourdomain.com with the actual domain ensuring www is included unless you're adding a subdomain):
+
+<table><thead><tr><th width="204.2734375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.yourdomain.com]</td><td>CNAME</td><td>[www.yourdomain.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>www</td><td>CNAME</td><td>_fallback.uk-siteglide.com[www.yourdomain.com]</td></tr></tbody></table>
+
+If using AWS please follow the steps below, contact us if you're unsure which stack you are on.
 
 ## Step 1: Add a Domain
 
@@ -38,7 +46,7 @@ Add the generated CNAME record to in your DNS control panel to verify ownership,
 
 ### GoDaddy example:
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/fc70b36dfbcfe3696b886456b64583f8b636d658356a1fc1bc8c65040f4c4e7135e9327e-5fa5-4d74-b88d-fc9d49\_12o0sfv.jpeg)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/fc70b36dfbcfe3696b886456b64583f8b636d658356a1fc1bc8c65040f4c4e7135e9327e-5fa5-4d74-b88d-fc9d49_12o0sfv.jpeg)
 
 Once you have saved the record in your registrar, allow some time for propagation, check back and refresh the page.
 
@@ -52,7 +60,7 @@ Once the verification CNAME record has propagated the WWW CNAME Record needs to 
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domain-External-WWW-CNAME.png" alt=""><figcaption></figcaption></figure>
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/675766690a2105effba6c541fa9042718196bc0aca64a984869352884ea916b720f847b9-5e47-4982-aaea-e44bff\_w8y6cl.jpeg)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/675766690a2105effba6c541fa9042718196bc0aca64a984869352884ea916b720f847b9-5e47-4982-aaea-e44bff_w8y6cl.jpeg)
 
 The site will now be live via WWW (https://www.domain.com) but not via the root domain (https://domain.com). Complete Step 5 to fully setup the domain correctly. The domain should show as 'Live' under the Status column in Siteglide:
 
@@ -71,18 +79,6 @@ Just follow these steps to redirect your **non-www** to the **www** variant. The
 5. The required DNS change pops up. Go to your domain registrar to make this DNS change for the **A** record. This record may already exists '@'. Press 'edit' to edit it to the required DNS setting for redirect.pizza. For more info, see [What are these DNS changes?](https://redirect.pizza/support/what-are-these-dns-changes)
 6. The DNS change is made! It may take up to 24 hours before the DNS is fully propagated.
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domains-External-Redirect-Pizza-Verified.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domains-External-Redirect-Pizza-Checking.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domains-External-Redirect-Pizza-Create.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domains-External-Redirect-Pizza-Verified.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domains-External-Redirect-Pizza-Checking.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domains-External-Redirect-Pizza-Create.png" alt=""><figcaption></figcaption></figure></div>
 
 These Steps can also be found here: [https://redirect.pizza/support/redirecting-non-www-to-www](https://redirect.pizza/support/redirecting-non-www-to-www)
