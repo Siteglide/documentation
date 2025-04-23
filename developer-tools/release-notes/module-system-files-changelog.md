@@ -1,5 +1,11 @@
 # 🛳️ Module - System Files - Changelog
 
+### 2.8.5.0 - 23rd April 2025
+
+* Added support for custom Meta Robots values on Pages - [Roadmap](https://feedback.siteglide.com/p/meta-namerobots)
+
+***
+
 ### 2.8.4.0 - 10th April 2025
 
 * Added support for Categories in Sitemap output - [Roadmap](https://feedback.siteglide.com/p/add-categories-to-auto-sitemap-include)
