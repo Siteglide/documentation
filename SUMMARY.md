@@ -189,6 +189,7 @@
   * [ℹ️ Code View & Toolbox](cms/pages/code-view-and-toolbox.md)
   * [ℹ️ About Pages](cms/pages/about-pages/README.md)
     * [ℹ️ Page Settings](cms/pages/about-pages/page-settings.md)
+    * [ℹ️ Custom Fields in Pages](cms/pages/about-pages/custom-fields.md)
     * [ℹ️ Pages with Siteglide CLI](cms/pages/about-pages/pages-with-siteglide-cli.md)
   * [ℹ️ About Page Templates](cms/pages/page-templates/README.md)
     * [ℹ️ Page Templates with Siteglide CLI](cms/pages/page-templates/page-templates-with-cli.md)
