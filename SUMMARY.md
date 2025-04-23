@@ -475,3 +475,5 @@
   * [About Site Search](miscellaneous/system-features/site-search.md)
   * [AI Tools for the Rich Text Editor](miscellaneous/system-features/ai-tools-for-the-rich-text-editor.md)
   * [Cookies on Siteglide Sites](miscellaneous/system-features/cookies-on-siteglide-sites.md)
+* [Front-End Performance](miscellaneous/front-end-performance/README.md)
+  * [Video Embeds](miscellaneous/front-end-performance/video-embeds.md)
