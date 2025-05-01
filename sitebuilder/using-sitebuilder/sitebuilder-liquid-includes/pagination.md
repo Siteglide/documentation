@@ -18,7 +18,7 @@ _Important_ The include will only output pagination if the main Liquid tag has t
   <!-- Use the below Liquid tag to choose where your pagination will be outputted -->
   
 {% raw %}
-{% include "modules\module_86\private\views\partials\front_end\includes\v1\pagination", live_updates: 'false', lock_per_page: 'true' %}
+{% include "modules/module_86/front_end/includes/v1/pagination", live_updates: 'false', lock_per_page: 'true' %}
 {% endraw %}
 
 </section>
@@ -30,7 +30,7 @@ _Important_ The include will only output pagination if the main Liquid tag has t
 | Parameter       | Type                      | Required                    | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | --------------- | ------------------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `live_updates`  | Boolean 'true' or 'false' | optional                    | This is to be used alongside the [live\_updates](../live-updates-api/) feature. Setting to true will add data-attributes needed to wrap the layout in elements which have both the data-sg-live-update-controls and data-sg-live-update-component attributes. It will also include a hidden field to set `per_page` as a default parameter to that inherited from the main tag, as well as hidden fields for defaults for `show_pagination` and `pagination_layout`. |
-| `lock_per_page` | Boolean 'true' or 'false' | optional, default is 'true' | This is to be used alongside the [live\_updates](../live-updates-api/) feature and the `live_updates` parameter above. Set this to 'false' if you have another control to set `per_page`, else, set to 'false' to automatically set per\_page to the same value inherited from the module tag.                                                                                                                                                                       |
+| `lock_per_page` | Boolean 'true' or 'false' | optional, default is 'true' | This is to be used alongside the [live\_updates](../live-updates-api/) feature and the `live_updates` parameter above. Set this to 'false' if you have another control to set `per_page`, else, set to 'true' to automatically set per\_page to the same value inherited from the module tag.                                                                                                                                                                        |
 
 ### Versions <a href="#versions" id="versions"></a>
 
