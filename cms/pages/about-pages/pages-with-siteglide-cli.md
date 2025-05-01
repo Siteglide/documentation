@@ -44,7 +44,6 @@ metadata:
   og_type: article  
   twitter_type: app
   enabled: true
-physical_file_path: views/pages/a-site-page.liquid
 redirect_to: '/'
 redirect_code: 301
 searchable: true
@@ -55,6 +54,10 @@ searchable: true
 <!-- Page Content Here -->
 
 ```
+
+### Physical File Path
+
+You may see reference in the yaml to physical\_file\_path on older sites. This needs to match the file location and shouldn't be changed. It is used to determine the correct directory of the file on pull, and is deliberately hidden afterwards now, since the file's location should be the source of truth.
 
 ### Parameters
 
