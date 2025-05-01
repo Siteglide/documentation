@@ -44,7 +44,7 @@ metadata:
   og_type: article  
   twitter_type: app
   enabled: true
-redirect_to: '/'
+redirect_to: ''
 redirect_code: 301
 searchable: true
 ---
@@ -54,10 +54,6 @@ searchable: true
 <!-- Page Content Here -->
 
 ```
-
-### Physical File Path
-
-You may see reference in the yaml to physical\_file\_path on older sites. This needs to match the file location and shouldn't be changed. It is used to determine the correct directory of the file on pull, and is deliberately hidden afterwards now, since the file's location should be the source of truth.
 
 ### Parameters
 
@@ -76,8 +72,8 @@ You may see reference in the yaml to physical\_file\_path on older sites. This n
     * `twitter_type` - Defines page content type for twitter sharing link
     * `enabled` - If the page is visible on the front-end
     * `use_siteglide_js` - Set as 'false' to supress the siteglide.js file from being included in your page. Note: This will stop forms from submitting, only turn this off on pages that do not include forms. Currently this does not work for the homepage of your site
-* `physical_file_path` - Files should be stored in a location relative to their slug. If your slug is /services/cleaning, then the physical\_file\_path would be views/pages/services/cleaning.liquid - **note changing this line can have unexpected results.** If you want to move a file, you can just move the file and delete this line. Re-syncing or deploying should change the physical file path automatically.
-* `redirect_to` - The slug to redirect to, if it needs it. If it's homepage, you need to redirect to '/'
+* `physical_file_path` - You may see reference in the yaml to physical\_file\_path on older sites. This needs to match the file location and shouldn't be changed. It is used to determine the correct directory of the file on pull, and is deliberately hidden afterwards now, since the file's location should be the source of truth.
+* `redirect_to` - The slug to redirect to, if it needs it. If it's homepage, you need to redirect to '/'. Leave as empty string if you want the page to be usable.
 * `redirect_code` - Set as '301' if there's a redirect
 * `searchable` - Set as 'true' so it shows in search results
 * `layout` - Adds the [Page Template](../../../site-manager2/templates.md) e.g. set to 'templates/1' for the template with an ID of 1. Or to leave blank for API Endpoints, set to empty string ''.
