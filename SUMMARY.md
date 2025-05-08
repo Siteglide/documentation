@@ -328,6 +328,10 @@
   * [📋 Front End Update Forms](webapps/go-further-webapps/webapp-front-end-submit-forms-update.md)
   * [📋 Front End Delete](webapps/go-further-webapps/webapp-front-end-submit-forms-delete.md)
 
+***
+
+* [WebApp Troubleshooting](webapp-troubleshooting.md)
+
 ## eCommerce
 
 * [🚀 Quickstart: eCommerce](ecommerce/quickstart-ecommerce.md)
