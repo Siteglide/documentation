@@ -185,7 +185,7 @@
 * [Dashboard](cms/dashboard.md)
 * [Pages](cms/pages/README.md)
   * [🚀 Quickstart: Pages](cms/pages/quickstart-pages.md)
-  * [Studio Alpha](cms/pages/studio-alpha.md)
+  * [🎨 Studio Alpha Release](cms/pages/studio-alpha-release.md)
   * [ℹ️ Studio](cms/pages/studio.md)
   * [ℹ️ Code View & Toolbox](cms/pages/code-view-and-toolbox.md)
   * [ℹ️ About Pages](cms/pages/about-pages/README.md)
