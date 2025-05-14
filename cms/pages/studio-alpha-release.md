@@ -23,7 +23,7 @@ Follow our interactive guide:
 
 {% embed url="https://demo.arcade.software/cFeQoJJbg8PR7SoV4Cf5?embed=&embed_desktop=inline&embed_mobile=tab&show_copy_link=true&squared=true" %}
 
-## Option 2: Install the Studio Module
+## Option 2: Create New Site and Install Studio Module
 
 {% hint style="warning" %}
 While Studio is in Alpha we do not recommend using it on production/live websites
