@@ -1,6 +1,10 @@
-# ℹ️ Studio
+# ℹ️ Editor (Legacy Studio)
 
-Studio is our no-code editor that also allows you build out pages if you have Layouts installed (e.g. [Broken link](broken-reference "mention"))
+{% hint style="info" %}
+The Editor is currently called Studio but the Studio name will be reserved for the new page building experience: [studio-alpha-release](studio-alpha-release/ "mention")
+{% endhint %}
+
+The Editor tab is our no-code editor that also allows you build out pages if you have Layouts installed (e.g. [Broken link](broken-reference "mention"))
 
 You can easily edit existing content by clicking text and using the Rich Text Editor tools as well as the 'Style' tab on the right hand side. The Structure tab on the left helps you move sections around if needed:
 
