@@ -1,5 +1,11 @@
 # 🛳️ Module - eCommerce - Changelog
 
+### 1.15.3 - 3rd June 2025
+
+* Patch to improve security of eCommerce Order detail views (front-end)
+
+***
+
 ### 1.15.2 - 20th March 2025
 
 * Further fix for to item breakdown issue for PayPal (from 1.14.5)
