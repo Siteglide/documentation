@@ -27,6 +27,11 @@ This allows you to include a JS file only when it becomes relevant to a particul
 
 ```
 
+In addition to adding scripts here, you also need to make sure that the selected Page Template contains the following code:
+
+<pre class="language-liquid"><code class="lang-liquid"><strong>{% include 'modules/siteglide_system/siteglide_head' -%}
+</strong></code></pre>
+
 #### Footer Scripts
 
 `siteglide_footer_scripts` moves the contained assets to the bottom of the body tag on your page when it renders. You must include `,,` on the end of each line within this liquid tag.
@@ -37,6 +42,11 @@ This allows you to include a JS file only when it becomes relevant to a particul
 {% endraw %}
 
 ```
+
+In addition to adding scripts here, you also need to make sure that the selected Page Template contains the following code:
+
+<pre class="language-liquid"><code class="lang-liquid"><strong>{% include 'modules/siteglide_system/siteglide_foot' -%}
+</strong></code></pre>
 
 #### Troubleshooting
 
