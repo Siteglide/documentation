@@ -1,5 +1,12 @@
 # 🛳️ Module - System Files - Changelog
 
+### 2.8.5.1 - 9th June 2025
+
+* Fixed an issue where site search wasn't respecting the option to hide secure WebApp/Module items
+* Fixed an issue on very large sites where site search couldn't handle the amount of WebApp/Module fields (>1000 fields)
+
+***
+
 ### 2.8.5.0 - 23rd April 2025
 
 * Added support for custom Meta Robots values on Pages - [Roadmap](https://feedback.siteglide.com/p/meta-namerobots)
