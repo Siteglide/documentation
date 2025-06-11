@@ -1,5 +1,11 @@
 # 🛳️ Module - Menu - Changelog
 
+### 1.1.4 - 11th June 2025
+
+* Fix a type warning in GraphQL logs
+
+***
+
 ### 1.1.3 - 20th June 2024
 
 * Fix for menus that run using External ID (eid)
