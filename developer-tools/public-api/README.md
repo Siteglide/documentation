@@ -1,6 +1,5 @@
 ---
 description: Docs to use the Siteglide API
-hidden: true
 ---
 
 # Public API
