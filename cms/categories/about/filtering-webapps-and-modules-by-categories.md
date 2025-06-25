@@ -62,7 +62,7 @@ This parameter works whether you're filtering WebApps or Modules!
 #### Module
 
 ```liquid
-{% include 'mdoule'
+{% include 'module'
    id: '3'
    layout: 'default'
    per_page: '20'
@@ -80,7 +80,7 @@ This parameter works whether you're filtering WebApps or Modules!
 {%- include 'ecommerce/products'
     layout: "my_layout"
     category_ids: '1,2'
-    type: 'list' 
+    type: 'list'
 -%}
 ```
 
