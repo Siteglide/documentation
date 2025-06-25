@@ -5,7 +5,7 @@ createdAt: 2021-02-18T16:04:43.000Z
 updatedAt: 2024-01-30T12:41:48.974Z
 ---
 
-# 🔹 Cart Layouts
+# Cart Layouts
 
 How to customise the Shopping Cart Layout
 
@@ -43,14 +43,12 @@ See the full Cart & Checkout folder structure here:
 The wrapper.liquid file should contain the code for the main section of code that wraps around the loop of Products in the Cart. It should include the following liquid to insert the loop of Products:
 
 ```liquid
-{% raw %}
 {% assign cart_parsed = context.session.cart | parse_json %}
 {% if cart_parsed.size > 0 %}
   {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products' item_layout: 'item' -%}
 {% else %}
   Sorry, your cart is empty.
 {% endif %}
-{% endraw %}
 
 
 ```
@@ -167,9 +165,7 @@ Note that, after updating this input field, the User will also have to click the
 #### Outputting the Attributes the User chose for this item:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/cart_product_attributes' %}
-{% endraw %}
 
 
 ```

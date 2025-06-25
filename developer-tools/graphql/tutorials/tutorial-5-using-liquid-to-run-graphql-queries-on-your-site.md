@@ -87,9 +87,7 @@ Notes:
 You can output all of your results on the Page, using Liquid output syntax `{{ }}` to output the variable we defined earlier.
 
 ```liquid
-{% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
-{% endraw %}
 {{my_results}}
 
 ```
@@ -145,9 +143,7 @@ The structure of the results here matches the results we see in the GraphQL play
 The dot notation to reach the results is:
 
 ```liquid
-{% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
-{% endraw %}
 {{my_results.records.results}}
 
 ```
@@ -157,11 +153,9 @@ Alternatively, you can always run your query in the GraphiQL Playground and work
 ### Step 3) Implement a Liquid For Loop to loop over the results
 
 ```liquid
-{% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
 {% for this in my_results.records.results %}
 {% endfor %}
-{% endraw %}
 
 ```
 
@@ -178,14 +172,12 @@ In this example, we'll output:
 We can now also bring in other Front End languages. I'll add some common HTML tags.
 
 ```liquid
-{% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
 {% for this in my_results.records.results %}
   <h1>{{this.table}}</h1>
   <h2>{{this.properties.name}}</h2>
   <p>{{this.properties.webapp_field_1_2}}</p>
 {% endfor %}
-{% endraw %}
 ```
 
 This gets me the following Results on the Page:

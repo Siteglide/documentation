@@ -5,14 +5,13 @@ createdAt: 2021-02-16T15:01:30.000Z
 updatedAt: 2023-04-11T10:07:59.000Z
 ---
 
-# 💻 Reference
+# Reference
 
-This Module lets you add [Testimonials](/modules/core-modules/testimonials/quickstart-testimonials.md) to your Site dynamically, so you can keep them updated in the Admin.
+This Module lets you add [Testimonials](quickstart-testimonials.md) to your Site dynamically, so you can keep them updated in the Admin.
 
 ### Syntax
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '8'
     layout: 'design_system/10'
@@ -20,7 +19,6 @@ This Module lets you add [Testimonials](/modules/core-modules/testimonials/quick
     sort_type: 'properties.name'
     sort_order: 'asc' 
 -%}
-{% endraw %}
 ```
 
 ### Parameters

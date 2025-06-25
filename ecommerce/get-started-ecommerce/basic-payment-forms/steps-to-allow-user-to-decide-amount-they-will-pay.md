@@ -1,4 +1,4 @@
-# 📋 Steps to Allow User to Decide Amount they Will Pay
+# Steps to Allow User to Decide Amount they Will Pay
 
 ## Pre-Requisites
 
@@ -22,36 +22,28 @@ Both use-cases will require you to write a JavaScript function which will update
 You may find the following Liquid tags helpful while developing:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/basic_payment_currency' %}
-{% endraw %}
 
 ```
 
 The currency for the Form defined in Admin e.g. `gdp`.
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/basic_payment_currency', format: 'symbol' %}
-{% endraw %}
 
 ```
 
 The symbol for the currency for the Form defined in Admin e.g. `£`.
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/basic_payment_min_amount' %}
-{% endraw %}
 
 ```
 
 The minimum payment value defined in Admin, in the lowest denomination of that currency e.g. for £1, `100`.
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/basic_payment_min_amount', format: 'decimal' %}
-{% endraw %}
 
 ```
 

@@ -1,4 +1,4 @@
-# 📂 Discount Selection
+# Discount Selection
 
 ## 📂 Discount Selection
 

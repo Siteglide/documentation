@@ -1,4 +1,4 @@
-# 🛳️ Module - eCommerce - Changelog
+# Module - eCommerce - Changelog
 
 ### 1.15.3 - 3rd June 2025
 
@@ -67,7 +67,7 @@
 
 ### 1.13.4 - 6th February 2024
 
-* Add custom callback support for [s\_e\_cart\_update](https://roadmap.siteglide.com/core-platform/p/add-callback-function-to-secartupdate) and [s\_e\_cart\_remove](https://roadmap.siteglide.com/core-platform/p/add-callback-parameter-to-secartremove) - [Docs](https://docs.siteglide.com/en/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart#the-s\_e\_cart\_update\_quantity-function)
+* Add custom callback support for [s\_e\_cart\_update](https://roadmap.siteglide.com/core-platform/p/add-callback-function-to-secartupdate) and [s\_e\_cart\_remove](https://roadmap.siteglide.com/core-platform/p/add-callback-parameter-to-secartremove) - [Docs](https://docs.siteglide.com/en/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart#the-s_e_cart_update_quantity-function)
 
 ***
 
@@ -99,7 +99,7 @@
 ### 1.12.8 - 17th October 2023
 
 * Stripe - Improve payment flow to accommodate for recent updates to Stripe payment handling and 3D Secure
-* Basic Payments - Allow setting of Payment Gateway using include parameters - [Docs](../../ecommerce/get-started-ecommerce/basic-payment-forms/ecommerce-basic\_payment.md)
+* Basic Payments - Allow setting of Payment Gateway using include parameters - [Docs](../../ecommerce/get-started-ecommerce/basic-payment-forms/ecommerce-basic_payment.md)
 
 ***
 
@@ -263,11 +263,11 @@ Patch to fix checkout timeouts on sites with large amount of Product Attributes
 
 Added support for output of more tax breakdowns:
 
-* Final Item Price - price_total_item\_cost - The total of all Products in the Cart, with any applicable Tax added
-* Final Total Tax Amount - price_total_tax\_amount - The total Tax amount applied to any Products or Shipping Option
-* Final Total Price Before Tax - price_total_before\_tax - The total price of Products and the selected Shipping Option, before any Tax has been applied
+* Final Item Price - price\_total\_item\_cost - The total of all Products in the Cart, with any applicable Tax added
+* Final Total Tax Amount - price\_total\_tax\_amount - The total Tax amount applied to any Products or Shipping Option
+* Final Total Price Before Tax - price\_total\_before\_tax - The total price of Products and the selected Shipping Option, before any Tax has been applied
 
-Find the full list [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
+Find the full list [here](../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
 
 ***
 
@@ -344,7 +344,7 @@ Patch to support inventory checking against Attributes on Cart.
 
 ### 1.5.0 - 16th March 2021
 
-* Tax Code system - [Docs](/eCommerce/get-started-ecommerce/introduction-2/about-tax-codes.md)
+* Tax Code system - [Docs](../../eCommerce/get-started-ecommerce/introduction-2/about-tax-codes.md)
 
 ***
 
@@ -362,7 +362,7 @@ Patch to support inventory checking against Attributes on Cart.
 
 ### 1.4.0 - 16th February 2021
 
-* Volume Pricing - You can now set prices to change depending on how many items are purchased by the user. For example, you might say "buy 1 for $10, or 3 for $8 each" - [Docs](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/volume-pricing.md)
+* Volume Pricing - You can now set prices to change depending on how many items are purchased by the user. For example, you might say "buy 1 for $10, or 3 for $8 each" - [Docs](../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/volume-pricing.md)
 * Discount Codes on Subscriptions - You can now set up Discount Codes to be used with Subscriptions. For example, you can say "50% off for 3 months" or even use it as a free-trial type code of "100% off for 1 month"
 * XML Product Feed - A new System Page that outputs Product data in XML format for RSS feeds
 * Sorting and Filtering by Price
@@ -484,7 +484,7 @@ Any custom extensions of the existing database structure will require you to cha
 
 ### 1.0.5 - 23rd September 2020
 
-* Added support for the s_e_update\_price() function on Product List View Pages.\
+* Added support for the s\_e\_update\_price() function on Product List View Pages.\
   Roadmap: [https://roadmap.siteglide.com/bugs/p/ecommerce-selecting-attributes-on-a-product-in-the-list-view](https://roadmap.siteglide.com/bugs/p/ecommerce-selecting-attributes-on-a-product-in-the-list-view)
 * Stripe Basic Payment Form Submissions now display the associated Stripe Charge ID next to the Payment Intent ID in the Admin.
 * Fixed a bug where the Add to Cart button would sometimes add extra items to the Cart that were previously added and removed.
@@ -513,7 +513,7 @@ Any custom extensions of the existing database structure will require you to cha
 
 *   With the addition of Subscriptions, we complete the first release of Siteglide eCommerce.
 
-    You can learn more about the new features and how to implement Subscriptions on your sites here: [Subscriptions Overview](/eCommerce/get-started-ecommerce/subscriptions/README.md)
+    You can learn more about the new features and how to implement Subscriptions on your sites here: [Subscriptions Overview](../../eCommerce/get-started-ecommerce/subscriptions/)
 
 **Upgrading from 0.14.1 for Sites which use Subscriptions**
 
@@ -606,4 +606,4 @@ You should also make sure that your Secure Zones Module is up to date.
 
 * Quotes
 
-\
+\\

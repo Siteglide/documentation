@@ -1,4 +1,4 @@
-# ℹ️ About
+# About
 
 Company Information is a simple feature that stores the most used business information so it can easily be used across the site dynamically.
 

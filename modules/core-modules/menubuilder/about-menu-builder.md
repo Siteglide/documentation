@@ -5,16 +5,15 @@ createdAt: 2021-02-16T14:17:17.000Z
 updatedAt: 2023-04-11T09:58:24.000Z
 ---
 
-# ℹ️ About
+# About
 
 Create a nested Menu Structure using the Pages you've built and customise its layout
 
-[Menu Builder](/modules/core-modules/menubuilder/get-started-menu-builder.md) automatically displays existing pages on the left-hand side for you to add to the menu, which is on the right hand side. To add menu items that link to WebApp items, or to external links; add an existing page and click on the link icon to edit the fields. You can fully customise all fields from here.
+[Menu Builder](get-started-menu-builder.md) automatically displays existing pages on the left-hand side for you to add to the menu, which is on the right hand side. To add menu items that link to WebApp items, or to external links; add an existing page and click on the link icon to edit the fields. You can fully customise all fields from here.
 
 ### Syntax
 
 ```liquid
-{% raw %}
 {%- include 'menu'
     id:'6560'
     layout: 'default'
@@ -22,7 +21,7 @@ Create a nested Menu Structure using the Pages you've built and customise its la
 -%}
 
 
-{% endraw %}
+
 ```
 
 ### Parameters
@@ -54,14 +53,13 @@ Within this module folder you will find the following layout folders:
 The wrapper file is used to wrap the menu item output and should contain the liquid for outputting the menu items. You can wrap your menu with any content you'd like, such as a plain \<ul> tag, or a section wrapper with a title.
 
 ```liquid
-{% raw %}
 <ul>
 	{% include 'modules/siteglide_menu/get/get_items'
 		item_layout: 'item' 
 	-%}
 </ul>
 
-{% endraw %}
+
 ```
 
 #### Example - item.liquid
@@ -69,7 +67,6 @@ The wrapper file is used to wrap the menu item output and should contain the liq
 The item file is the chosen output for our items. In this example we've got two cases being used.
 
 ```liquid
-{% raw %}
 {% if this['is_parent'] -%}
   <li>
     <a href="{{this['link_url']}}">{{this['link_name']}}</a>
@@ -89,7 +86,6 @@ The item file is the chosen output for our items. In this example we've got two 
     <a href="{{this['link_url']}}">{{this['link_name']}}</a>
   </li>
 {% endif -%}
-{% endraw %}
 
 
 ```

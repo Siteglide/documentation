@@ -90,11 +90,9 @@ In this step then, we make sure we are giving the User the opportunity to re-ent
 The Form Default Layout already includes this Field- however it is hidden from Users who are logged in. The simplest way to complete the step is to remove the logic:
 
 ```liquid
-{% raw %}
 {% unless context.exports.is_logged_in.data -%}
   
 {% endif %}
-{% endraw %}
 ```
 
 _Things to Check_

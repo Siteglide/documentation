@@ -56,11 +56,9 @@ Meanwhile you can use the following Liquid to fetch the same message. This is us
 
 ```liquid
 <p data-s-e-cart-has-removed-products>
-{% raw %}
 {% if context.session.cart_has_removed_products == true %}
         Sorry, some Products in your Cart have been removed because they are no longer for sale.
     {% endif %}
-{% endraw %}
 </p>
 
 ```

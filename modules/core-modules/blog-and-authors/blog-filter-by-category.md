@@ -1,4 +1,4 @@
-# 🔹 Blog Filter by Category
+# Blog Filter by Category
 
 This Navigation Option can be used in combination with other Navigation Options.
 
@@ -54,9 +54,7 @@ The `category_layout_type` is the sub-folder where the wrapper and item files ar
   <div class="col-12">
     <h2>Categories</h2>
     <ul>
-      {% raw %}
-{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
-{% endraw %}
+      {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
     </ul>
   </div>
 </div>
@@ -81,9 +79,7 @@ The link should be the slug of your Blog List view followed by `?category={{this
 You may wish to give the User some feedback about the current filter/ search terms that are applied on the Blog list page. For Categories, you can use \<code>context.exports\</code> object to get the name of the category you are filtering by:
 
 ```liquid
-{% raw %}
 {% if context.params.category %}
   Posts about {{context.exports.categories.data[context.params.category].name}}
 {% endif %}
-{% endraw %}
 ```

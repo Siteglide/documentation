@@ -1,4 +1,4 @@
-# ℹ️ Creating SiteBuilder Themes
+# Create SiteBuilder Themes
 
 ## Creating a New Theme for SiteBuilder <a href="#creating-a-new-theme-for-sitebuilder" id="creating-a-new-theme-for-sitebuilder"></a>
 
@@ -35,14 +35,13 @@ Thirdly, make a note of your "vanity ID". We'll refer to this as \<module\_vanit
 Most of the files in your module will be in the private folder so SiteBuilder won't know they're there unless it knows where to look. You'll next need to create the following file at the public path: `modules/module_<module_vanity_id>/public/views/partials/sitebuilder/module_registry.liquid` to make your module available to SiteBuilder.
 
 ```liquid
-{% raw %}
 ---
 metadata:
   enabled: true
   module_id: module_<module_vanity_id>
   type: theme
 ---
-{% endraw %}
+
 ```
 
 The placeholder \<module\_vanity\_id> should be replaced by the vanity ID that Siteglide gave you earlier.
@@ -64,7 +63,6 @@ You'll need to add a theme\_config file at the following path: `modules/module_<
 For the content, add the following, adapting it to your module where suitable:
 
 ```liquid
-{% raw %}
 {% comment %}Something{% endcomment %}
 {
   "theme_<module_vanity_id>": {
@@ -110,7 +108,6 @@ For the content, add the following, adapting it to your module where suitable:
           }
         ],
         "description": "Creates Sass files on your site which you can use via Siteglide CLI. Note this will work with scss compilation tools which support the @import rule https://sass-lang.com/documentation/at-rules/import ." {% comment %}String. Required. Use this description to explain the benefits and limitations of this build method, as well as wany other instructions they'll need to use it.{% endcomment %}
-{% endraw %}
       },
       "min_css": {
         "title": "Minified CSS",
@@ -197,8 +194,7 @@ metadata:
 4. Below this add the body of the file. e.g. the actual CSS/SCSS code.
 5. When a user selects this option while building a template, all the files will be created on their site- but not all will have HTML `<link>` tags added to the template. - Remember to add the `link_in_template: true` property in the theme\_config for each option where this is needed- e.g. for `.min.css` files but not for `.scss` files.
 
-If you don't need the CSS preferences feature, leave the "css\_preference\_options" property as an empty object `{}` in the theme\_config.\
-
+If you don't need the CSS preferences feature, leave the "css\_preference\_options" property as an empty object `{}` in the theme\_config.\\
 
 ### Step 6 - JavaScript <a href="#step-6-javascript" id="step-6-javascript"></a>
 

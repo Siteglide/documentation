@@ -2,7 +2,7 @@
 description: How to Go Live with a Site on Siteglide
 ---
 
-# 💳 Go Live
+# Go Live
 
 Great news! You're ready to Go Live? Just follow these steps or contact us if you get stuck.
 

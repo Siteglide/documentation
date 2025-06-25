@@ -4,7 +4,7 @@ description: >-
   can now insert a dynamic message using fields from the Form.
 ---
 
-# 📋 Steps to Adding Form Confirmation Pages
+# Steps to Adding Form Confirmation Pages
 
 After a User submits a Form and you redirect them to a Confirmation Page, you can now insert a dynamic message using fields from the Form.
 
@@ -37,9 +37,7 @@ Step 3) Fill in the \`\`Redirect To\`\` field with the URL of your Confirmation 
 In the Siteglide Admin under `CMS > Pages` in the Code tab, add the Form Confirmation with this Liquid tag:
 
 ```liquid
-{% raw %}
 {% include 'form_confirmation', layout: 'default' %}
-{% endraw %}
 
 
 ```
@@ -99,7 +97,6 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
   <table>
     <tbody>
       
-{% raw %}
 {% for field in this %}
         {% comment %}Use the following unless condition to List fields you'd like to leave out of the message.{% endcomment %}
         {% unless field[0] == "properties" or field[0] == "user_id" or field[1] == blank %}
@@ -109,7 +106,6 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
           </tr>
         {% endunless %} 
       {% endfor %}
-{% endraw %}
 
     </tbody>
   </table>
@@ -126,13 +122,11 @@ You output Details about any eCommerce Order that was made using the Form Submis
 We've included an `{% if form.properties.order_id %}` statement in the example, because this will only work properly if a `form.properties.order_id` field is available on the Page. Otherwise it may be that the Form was submitted without the User making an Order.
 
 ```liquid
-{% raw %}
 {% if form.properties.order_id %} 
   {% include "ecommerce/order_details", layout "siteglide_example" %} 
 {% else %}
   <p>Looks like you've not ordered anything with us this time. We hope to see you again soon!</p>
 {% endif %}
-{% endraw %}
 
 
 
@@ -150,8 +144,6 @@ We store two values "form\_id" and "form\_fc" within `{{context.session}}`, whic
 If we wipe these values the first time "Form Confirmation" is included then the Layout won't be included again, this code should be added to your Form Confirmation Layout:
 
 ```liquid
-{% raw %}
 {% session form_id = null %}
 {% session form_fc = null %}
-{% endraw %}
 ```

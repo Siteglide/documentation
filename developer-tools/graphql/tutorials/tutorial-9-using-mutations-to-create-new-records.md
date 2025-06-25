@@ -273,10 +273,8 @@ mutation createBlogItem($title: String!, $description: String!, $categories: [St
 ```
 
 ```liquid
-{% raw %}
 {% assign description = "Lorem Ipsum" %}
 {% graphql createBlogItem = "create_blog_item", title: "The newest Blog Post", description: description %}
-{% endraw %}
 
 ```
 
@@ -298,7 +296,6 @@ mutation createBlogItem($properties: [PropertyInputType!]!) {
 ```
 
 ```liquid
-{% raw %}
 {% parse_json properties %}
 [
   {
@@ -316,7 +313,6 @@ mutation createBlogItem($properties: [PropertyInputType!]!) {
 ] 
 {% endparse_json %}
 {% graphql createBlogItem = "create_blog_item", properties: properties %}
-{% endraw %}
 ```
 
 Note, the structure of the JSON we are passing in the previous example is similar to the structure of properties in the mutation, but it is necessary in JSON to use double quotes around the keys like `name`:, while the GraphQL syntax needs no quotes.

@@ -5,7 +5,7 @@ createdAt: 2021-01-29T11:23:35.000Z
 updatedAt: 2023-04-11T10:09:44.000Z
 ---
 
-# 📋 Front End Create Forms
+# Front End Create Forms
 
 ## WebApp - Front End Submit Forms - Create
 
@@ -16,9 +16,7 @@ When you make a new WebApp, a front-end form file is automatically generated wit
 Output your WebApp form on a page:
 
 ```
-{% raw %}
 {%- include 'webapp_form', id: 'custom_webapp_1' -%}
-{% endraw %}
 
 
 ```

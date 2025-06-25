@@ -1,4 +1,4 @@
-# 🛳️ Module - Menu - Changelog
+# Module - Menu - Changelog
 
 ### 1.1.4 - 11th June 2025
 
@@ -40,4 +40,4 @@
 
 * Support for Siteglide Studio
 
-\
+\\

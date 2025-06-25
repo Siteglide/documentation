@@ -5,7 +5,7 @@ createdAt: 2021-02-18T11:01:15.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# ℹ️ Page Templates with Siteglide CLI
+# Page Templates with Siteglide CLI
 
 Templates must be stored within the following file path of your project: `marketplace_builder/views/layouts/templates/` and must be `.liquid` file type.
 
@@ -29,9 +29,7 @@ metadata:
   physical_file_path: views/layouts/templates/1.liquid
 ---
 
-{% raw %}
 {% include 'modules/siteglide_system/siteglide_head' -%}
-{% endraw %}
 <!-- TEMPLATE UPPER CONTENT HERE-->
 {{ content_for_layout }}
 <!--TEMPLATE LOWER CONTENT HERE-->
@@ -59,7 +57,5 @@ This Liquid is not displayed as editable code in the Siteglide Admin and is auto
 Constants makes certain variables available in the Page and passes others up to the Page Template e.g. SEO. It should sit at the very top of most Page Templates.
 
 ```liquid
-{% raw %}
 {% include 'modules/siteglide_system/constants' -%}
-{% endraw %}
 ```

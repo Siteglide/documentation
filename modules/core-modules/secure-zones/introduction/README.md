@@ -5,7 +5,7 @@ createdAt: 2021-02-16T14:30:04.000Z
 updatedAt: 2023-12-14T15:18:54.409Z
 ---
 
-# ℹ️ About
+# About
 
 We provide the Liquid for Sign Up, Login and Password Reset Forms and for checking if the current User is signed in
 
@@ -18,18 +18,14 @@ In this Article we'll provide the Liquid which can be used to manage access to [
 ### Log In
 
 ```liquid
-{% raw %}
 {%- include 'login_form', layout: 'default', redirect: '/' -%}
-{% endraw %}
 
 ```
 
 ### Log In / Sign Up
 
 ```liquid
-{% raw %}
 {%- include 'form', id: '1', layout: 'default' -%}
-{% endraw %}
 
 ```
 
@@ -40,9 +36,7 @@ Once you have created a Form, you can select the Form from Toolbox and it will d
 ### Log Out
 
 ```liquid
-{% raw %}
 {%- include 'logout_button', layout: 'default' -%}
-{% endraw %}
 
 ```
 

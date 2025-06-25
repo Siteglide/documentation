@@ -4,7 +4,7 @@ description: >-
   checklist for how to migrate Forms
 ---
 
-# ℹ️ Migrating Forms
+# Migrating Forms
 
 ## Pre-Requisites
 
@@ -40,9 +40,7 @@ Add all the fields you need:
 Next, find the Liquid file where your old Form is outputted; this is most likely a [Page](../../pages/about-pages/), but could also be a [Page Template](../../pages/page-templates/) or a [Liquid Include](../../../site-manager/code-snippets-includes/). You may want to keep your old Form code there temporarily for reference, but now is the time to add the Siteglide Liquid code to output a Form there:
 
 ```
-{% raw %}
 {% include 'form', id: '1', layout: 'default' %}
-{% endraw %}
 
 
 ```

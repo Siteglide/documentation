@@ -18,7 +18,6 @@ We can use Liquid to format our "raw" date integer to a formatted date. However,
 First, we will need to create an object of Months converted from English to whichever language you'd like:
 
 ```liquid
-{% raw %}
 {% parse_json month_map %}  { 
 
   "fre": {
@@ -57,7 +56,6 @@ First, we will need to create an object of Months converted from English to whic
 
 
 }  {% endparse_json %}
-{% endraw %}
 
 
 
@@ -80,7 +78,6 @@ We'll use "%B", as this will store the Month as a String.
 Now specify which language in "month\_map" you're using, I've chosen French:
 
 ```liquid
-{% raw %}
 {% parse_json month_map %}  { 
 
   "fre": {
@@ -119,16 +116,13 @@ Now specify which language in "month\_map" you're using, I've chosen French:
 
 
 }  {% endparse_json %}
-{% endraw %}
 
 ```
 
 Next, we'll use these two variables to search the "month\_map" and return the translated Month:
 
 ```liquid
-{% raw %}
 {% assign translated_month = month_map[language][current_month] %}
-{% endraw %}
 
 ```
 
@@ -137,12 +131,10 @@ Next, we'll use these two variables to search the "month\_map" and return the tr
 Now we've found the translated Month we'll need to format it into a complete date, and then store this so it can be outputted:
 
 ```liquid
-{% raw %}
 {% assign date = this['release_date'] | date: "%d" %}
 {% assign year = this['release_date'] | date: "%y" %}
 {% assign date_complete = date | append: " " | append: translated_month  %}
-{% assign date_complete = date_complete | append: " " | append: year %}
-{% endraw %}   
+{% assign date_complete = date_complete | append: " " | append: year %}   
 ```
 
 We assign the Date and Year, formatting them into integer dates using the "date" filter, then we append the finished date to the variable "date\_complete", you can output this like so: `{{date_complete}}`

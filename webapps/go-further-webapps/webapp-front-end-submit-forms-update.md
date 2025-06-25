@@ -5,7 +5,7 @@ createdAt: 2021-01-29T11:28:56.000Z
 updatedAt: 2023-03-03T08:09:28.000Z
 ---
 
-# 📋 Front End Update Forms
+# Front End Update Forms
 
 ## WebApp - Front End Submit Forms - Update
 
@@ -38,9 +38,7 @@ However, any WebApps created Front-End by a logged in User will store their crea
 In this example we create a variable by hard-coding a specific User ID.
 
 ```liquid
-{% raw %}
 {% assign user_id = '8' %}
-{% endraw %}
 {% include 'webapp'
    id: '1'
    layout: 'default'
@@ -90,9 +88,7 @@ Unlike the "Add" Form, the Front End WebApp Edit Form must be linked to the spec
 To include the Edit Form inside a WebApp Layout, add the Liquid tag:
 
 ```liquid
-{% raw %}
 {% include 'webapp_form_edit', layout: 'default' %}
-{% endraw %}
 
 ```
 

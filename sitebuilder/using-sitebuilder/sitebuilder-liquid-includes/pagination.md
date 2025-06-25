@@ -1,4 +1,4 @@
-# ℹ️ Pagination
+# Pagination
 
 ### The Pagination Include <a href="#the-pagination-include" id="the-pagination-include"></a>
 
@@ -17,9 +17,7 @@ _Important_ The include will only output pagination if the main Liquid tag has t
   <!-- Main Layout here -->
   <!-- Use the below Liquid tag to choose where your pagination will be outputted -->
   
-{% raw %}
 {% include "modules/module_86/front_end/includes/v1/pagination", live_updates: 'false', lock_per_page: 'true' %}
-{% endraw %}
 
 </section>
 
@@ -39,7 +37,6 @@ _Important_ The include will only output pagination if the main Liquid tag has t
 The original logic inside the function is as follows. You can use this to make a copy and modify if you wish in your own layouts.
 
 ```liquid
-{% raw %}
 {% if live_updates == 'true' %}
   <div data-sg-live-update-component="pagination">
     <div data-sg-live-update-controls="pagination">
@@ -56,5 +53,4 @@ The original logic inside the function is as follows. You can use this to make a
     {%- include 'modules/siteglide_system/get/get_pagination', pagination_layout: _pagination_layout -%}
   {%- endif -%}
 {% endif %}
-{% endraw %}
 ```

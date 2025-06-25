@@ -1,2 +1,2 @@
-# 📂 Cart, Checkout and Quotes
+# Cart, Checkout and Quotes
 

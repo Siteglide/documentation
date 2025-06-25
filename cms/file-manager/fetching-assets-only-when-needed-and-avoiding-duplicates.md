@@ -4,7 +4,7 @@ description: >-
   siteglide_footer_scripts or using context.exports to avoid duplicates
 ---
 
-# 🔹 Siteglide Scripts Explained
+# Siteglide Scripts Explained
 
 ### Introduction
 
@@ -21,9 +21,7 @@ This allows you to include a JS file only when it becomes relevant to a particul
 `siteglide_head_scripts` moves the contained assets into the `<head>` of your page when it renders. You must include `,,` on the end of each line within this liquid tag.
 
 ```liquid
-{% raw %}
 {% content_for 'siteglide_head_scripts' %} <link rel="stylesheet" href="{{'css/modules/module_3/design_system/1/sidebar.min.css' | asset_url}}" />,,{% endcontent_for %}
-{% endraw %}
 
 ```
 
@@ -37,9 +35,7 @@ In addition to adding scripts here, you also need to make sure that the selected
 `siteglide_footer_scripts` moves the contained assets to the bottom of the body tag on your page when it renders. You must include `,,` on the end of each line within this liquid tag.
 
 ```liquid
-{% raw %}
 {%- content_for 'siteglide_footer_scripts' %} <link rel="stylesheet" href="{{ 'css/modules/module_9/custom.css' | asset_url}}" />,,{%- endcontent_for %}
-{% endraw %}
 
 ```
 
@@ -88,13 +84,11 @@ If using this, we'd recommend again that you check for any duplicate resources, 
 Another way of avoiding duplicate entries of assets in your code, only pulling them in when the page needs them is to use the context.exports variable to keep track of them. This is the method most often used by SiteBuilder.
 
 ```liquid
-{% raw %}
 {% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
   <script async src="{{'modules/module_86/js/v1-5/sitegurus_live_update_javascript_api.min.js' | asset_url }}"></script>
   {% assign live_update_JS_loaded = true %}
   {% export live_update_JS_loaded, namespace: sitebuilder %}
 {% endif %}
-{% endraw %}
 ```
 
 The if statement checks if the \<script> has already been outputted; the next line outputs the \<script>, if not.

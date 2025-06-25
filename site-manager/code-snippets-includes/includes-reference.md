@@ -1,4 +1,4 @@
-# 🔧 Tags for Includes
+# Tags for Includes
 
 ## The Include Tag and Custom Paths
 
@@ -19,12 +19,10 @@ Sometimes it will link to a hidden Siteglide Module file, which may in turn incl
 To include one of Site's common include types, use these below and pass in the ID of the include (or the filename without the extension which will be the same). Name is a completely optional parameter.
 
 ```liquid
-{% raw %}
 {% include 'header', id: '1', name: 'optional to help code readability' %}
 {% include 'footer', id: '1', name: 'optional to help code readability' %}
 {% include 'content_section', id: '1', name: 'optional to help code readability' %}
 {% include 'code_snippet', id: '1', name: 'optional to help code readability' %}
-{% endraw %}
 
 
 ```
@@ -36,11 +34,9 @@ The include tag will always pass down all variables initiated above it to the fi
 These can be either implicit or explicitly passed:
 
 ```liquid
-{% raw %}
 {% assign implicit_variable = 'a' %}
 {% include 'my_file', explicit_variable: 'b' %}
 {% assign varible_with_no_scope = 'c' %}
-{% endraw %}
 
 
 ```

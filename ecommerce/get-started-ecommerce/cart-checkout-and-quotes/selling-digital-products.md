@@ -45,13 +45,11 @@ Within this layout we'll have access to the \`orders\` object, containing all of
 We can output the Products data like so
 
 ```liquid
-{% raw %}
 {%- for this in orders -%}
 
   {{this.order_products[0].product.properties}}
 
 {%- endfor -%}
-{% endraw %}
 
 
 
@@ -62,13 +60,11 @@ We can output the Products data like so
 However, we just need the Media Download Item ID which can be outputted like so, if you have other Custom Fields you'll need to replace 'product\_1' with the field name
 
 ```liquid
-{% raw %}
 {%- for this in orders -%}
 
 {%- assign media_download_id = this.order_products[0].product.properties['module_field_custom_14/product_1'] -%}
 
 {%- endfor -%}
-{% endraw %}
 
 
 
@@ -79,7 +75,6 @@ However, we just need the Media Download Item ID which can be outputted like so,
 If there are multiple Products in one Order, we'll need to create an array of the Media Download Item IDs for each Product, we'll nest another loop within the loop above over \{{orders\}} - here's how this would look:
 
 ```liquid
-{% raw %}
 {%- assign media_download_id = '[]' | parse_json -%}
 
 {%- for this in orders -%} 
@@ -93,7 +88,6 @@ If there are multiple Products in one Order, we'll need to create an array of th
   {%- assign media_download_id = media_download_id | join: ',' -%}
 
 {%- endfor -%}
-{% endraw %}
 
 
 ```

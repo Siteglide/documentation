@@ -5,7 +5,7 @@ createdAt: 2021-02-19T09:29:06.000Z
 updatedAt: 2023-04-06T15:14:13.000Z
 ---
 
-# 🔹 Product List Layout
+# Product List Layout
 
 Similar to WebApp List Layouts, a Product List Layout can allow users to browse Products. It can be filtered and sorted too!
 
@@ -211,7 +211,6 @@ _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which s
     <p>{{this.price.currency_symbol}}{{this.price.price_charge_formatted}}</p>
   </div>
   
-{% raw %}
 {% include 'ecommerce/cart_add' -%}
   <label for="quantity">Quantity</label>
   <input type="number" min="1" value="1" data-quantity-control id="quantity" />
@@ -228,7 +227,6 @@ _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which s
           <i class="fas fa-tag"></i>{{context.exports.categories.items[category].name}}
         </a>
       {% endfor %}
-{% endraw %}
     </p>
   </div>
 </div>  

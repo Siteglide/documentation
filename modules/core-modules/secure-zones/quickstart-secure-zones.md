@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Secure Zones
+# Quickstart: Secure Zones
 
 ## Step 1: Create or Edit a Secure Zone
 

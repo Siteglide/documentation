@@ -2,7 +2,7 @@
 description: Add your own branding to the Siteglide Admin
 ---
 
-# 👩‍💻 Agency Whitelabelling
+# Agency Whitelabelling
 
 ​Whitelabelling enables your Agency to re-brand the Siteglide portal by replacing our logo with your own. Re-branding the platform in this way means you are able to provide a more consistent, branded and streamlined service to your clients and maintain a single point of contact with them.
 
@@ -23,14 +23,12 @@ You'll need the code below as a minimum. You can then add your own HTML/CSS/JS d
 ### HTML
 
 ```liquid
-{% raw %}
 <script src="{{ 'js/s_login.js' | asset_url }}"></script>
 <form onsubmit="s_login(this)">
 	Email <input type="text" name="email" />
 	Password <input type="password" name="password" />
 	<input type="submit" value="Login" />
 </form>
-{% endraw %}
 ```
 
 ### JavaScript
@@ -59,5 +57,3 @@ function s_login(el){
 	xReq.send(JSON.stringify(data));
 }
 ```
-
-

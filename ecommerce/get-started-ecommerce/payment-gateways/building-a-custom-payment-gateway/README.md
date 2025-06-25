@@ -5,7 +5,7 @@ createdAt: 2021-01-07T15:48:52.000Z
 updatedAt: 2023-03-03T08:08:57.000Z
 ---
 
-# 💻 Building a Custom Payment Gateway
+# Building a Custom Payment Gateway
 
 ## Prerequisites
 

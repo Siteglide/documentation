@@ -1,4 +1,4 @@
-# 💳 Invoices
+# Invoices
 
 You can view your previous and upcoming invoices on the Invoices page:
 

@@ -1,4 +1,4 @@
-# ℹ️ Filter By Host (Author)
+# Filter By Host (Author)
 
 This Option Lets you filter Events by Host
 
@@ -58,9 +58,7 @@ The `author_field` will be `module_field_12_4` if you are using Siteglide's Auth
   <div class="col-12">
     <h2>Authors</h2>
     <ul>
-      {% raw %}
-{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
-{% endraw %}
+      {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
     </ul>
   </div>
 </div>
@@ -75,11 +73,9 @@ The `author_field` will be `module_field_12_4` if you are using Siteglide's Auth
   class="authorAnchorSidebar" 
   href="{{context.location.pathname}}?module_field_12_4={{this.id}}&author_name={{this.name | url_encode}}"
 >
-{% raw %}
 {% if this['Image'] -%}
     <img src="{% if this['Image'] contains 'http' -%}{{this['Image']}}{% else -%}{{this['Image'] | asset_url}}{% endif -%}" alt="{{this['Image Alt']}}">
   {% endif -%}
-{% endraw %}
   <li>{{this['name']}}</li>
 </a>
 
@@ -101,9 +97,7 @@ To make it easier to give feedback to the User, you can optionally include the H
 On the List view, you can then include the following liquid to read the URL and decode the Author name you are currently filtering by:
 
 ```liquid
-{% raw %}
 {% if context.params.module_field_12_4 %}
   Events hosted by {{context.params.host_name | url_decode}}
 {% endif %}
-{% endraw %}
 ```

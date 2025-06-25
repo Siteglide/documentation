@@ -1,4 +1,4 @@
-# ℹ️ SiteBuilder Liquid Includes
+# SiteBuilder Liquid Includes
 
 {% content-ref url="pagination.md" %}
 [pagination.md](pagination.md)

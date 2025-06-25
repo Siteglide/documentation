@@ -1,4 +1,4 @@
-# 📋 Steps to Optimise Images on the Fly with Cloudinary
+# Steps to Optimise Images on the Fly with Cloudinary
 
 ## Introduction
 
@@ -16,7 +16,7 @@ Go to [https://cloudinary.com/](https://cloudinary.com/) and follow the steps to
 
 This will be an essential part of the URLs.
 
-[https://cloudinary.com/documentation/finding_your_credentials_tutorial](https://cloudinary.com/documentation/finding_your_credentials_tutorial)
+[https://cloudinary.com/documentation/finding\_your\_credentials\_tutorial](https://cloudinary.com/documentation/finding_your_credentials_tutorial)
 
 ## Step 3 - Generate your first URL inside your code
 
@@ -34,8 +34,8 @@ Next optionally add transformations to automatically transform to next-gen image
 
 then use Liquid to get the path to the original image on Siteglide's CDN. See
 
-{% content-ref url="/cms/file-manager/linking-to-assets-front-end.md" %}
-[linking-to-assets-front-end.md](/cms/file-manager/linking-to-assets-front-end.md)
+{% content-ref url="linking-to-assets-front-end.md" %}
+[linking-to-assets-front-end.md](linking-to-assets-front-end.md)
 {% endcontent-ref %}
 
 For example:
@@ -45,24 +45,21 @@ For example:
 Putting it all together:
 
 ```liquid
-{% raw %}
 https://res.cloudinary.com/demo/image/fetch/h_200,w_200/f_auto/{{'images/example.jpg' | asset_url}}
-{% endraw %}
+
 ```
 
 ## Step 4 - Add HTML to deliver the Appropriate URL to several Screen Resolutions - Optional
 
-[Source: MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia\_and\_embedding/Responsive\_images)
+[Source: MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 
 ```liquid
-{% raw %}
 <img
   srcset="https://res.cloudinary.com/demo/image/fetch/w_480/f_auto/{{'images/example.jpg' | asset_url}} 480w, https://res.cloudinary.com/demo/image/fetch/w_800/f_auto/{{'images/example.jpg' | asset_url}} 800w"
   sizes="(max-width: 600px) 480px,
          800px"
   src="https://res.cloudinary.com/demo/image/fetch/w_800/f_auto/{{'images/example.jpg' | asset_url}}"
   alt="Example of serving different sized images on different screen widths" />
-{% endraw %}
 ```
 
 Learn more about the
@@ -71,10 +68,10 @@ Learn more about the
 
 There are many more options available. Read more here:
 
-[https://cloudinary.com/documentation/image\_transformations](https://cloudinary.com/documentation/image\_transformations)\
+[https://cloudinary.com/documentation/image\_transformations](https://cloudinary.com/documentation/image_transformations)\
 \
 In these examples, you may need to replace 'upload' with 'fetch' in the URL to support remote images from the Siteglide file manager.
 
 Also check out using client hints on some browsers to further fine-tune image requests:
 
-[https://cloudinary.com/documentation/responsive\_server\_side\_client\_hints](https://cloudinary.com/documentation/responsive\_server\_side\_client\_hints)
+[https://cloudinary.com/documentation/responsive\_server\_side\_client\_hints](https://cloudinary.com/documentation/responsive_server_side_client_hints)

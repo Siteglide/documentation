@@ -1,2 +1,2 @@
-# 🌳 Basic Payment Forms Folder Structure
+# Basic Payment Forms Folder Structure
 

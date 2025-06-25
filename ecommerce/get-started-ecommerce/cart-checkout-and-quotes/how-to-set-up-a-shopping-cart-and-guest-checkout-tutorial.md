@@ -1,4 +1,4 @@
-# 📋 How to Set Up a Shopping Cart and Guest Checkout - Tutorial
+# How to Set Up a Shopping Cart and Guest Checkout - Tutorial
 
 ### Prerequisites
 
@@ -35,9 +35,7 @@ Learn more about Product Detail pages [here](product-views/product-detail.md).
 This liquid include tag will add the "Add to Cart" Button:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/cart_add' -%}
-{% endraw %}
 
 ```
 
@@ -52,9 +50,7 @@ Create a new Page for your Cart and use liquid to include the Cart.
 Use this liquid to include the Cart layout in your page.
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/cart', layout: 'cart', remove_default_css: 'false' -%}
-{% endraw %}
 
 ```
 
@@ -88,9 +84,7 @@ Learn more about pages [here](../../../cms/pages/quickstart-pages.md)
 Include the Checkout Layout in your page:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/checkout', form_id: '2', layout: 'default' -%}
-{% endraw %}
 ```
 
 The form\_id parameter should be the id of your Checkout Form. If you use the Toolbox to add this code, you can lookup your form by name.

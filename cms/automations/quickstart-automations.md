@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Automations
+# Quickstart: Automations
 
 ## Step 1: Where to Add the Automation
 

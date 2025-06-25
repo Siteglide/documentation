@@ -1,4 +1,4 @@
-# ℹ️ Calendar List View
+# Calendar List View
 
 ## Prerequisites
 
@@ -16,9 +16,7 @@ The Events Module Calendar Layout is an example of a List Layout. Like all List 
 To output the Calendar, output the List Layout as normal, and choose a Calendar Layout in the layout parameter.
 
 ```liquid
-{% raw %}
 {%- include 'module', id: '12', layout: 'design_system/1/calendar', per_page: '5000', show_pagination: 'false' -%}
-{% endraw %}
 ```
 
 There are a few parameters which work particularly well on the Calendar Layout, because we will want to disable Pagination and show all enabled and released Events at once:

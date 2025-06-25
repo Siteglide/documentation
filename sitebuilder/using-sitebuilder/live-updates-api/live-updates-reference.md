@@ -1,15 +1,13 @@
-# 👀 Live Updates Reference
+# Live Updates Reference
 
 ### Including JS <a href="#html-dataattribute-markup" id="html-dataattribute-markup"></a>
 
 ```liquid
-{% raw %}
 {% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
   <script async src="{{'modules/module_86/js/v1-6/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
   {% assign live_update_JS_loaded = true %}
   {% export live_update_JS_loaded, namespace: sitebuilder %}
 {% endif %}
-{% endraw %}
 ```
 
 ### HTML data-attribute markup <a href="#html-dataattribute-markup" id="html-dataattribute-markup"></a>
@@ -40,9 +38,7 @@ In order to make the process of dynamically modifying the output simpler, we are
 \*\*While in Siteglide some parameters must be set via Liquid e.g. `item_ids`:
 
 ```liquid
-{% raw %}
 {% include 'webapp', id: '1', layout: 'default', item_ids: '1,2' %}
-{% endraw %}
 
 
 
@@ -54,9 +50,7 @@ In order to make the process of dynamically modifying the output simpler, we are
 
 ```liquid
 <!-- URL: /webapp_1?page=2 -->
-{% raw %}
 {% include 'webapp', id: '1', layout: 'default' %}
-{% endraw %}
 
 ```
 

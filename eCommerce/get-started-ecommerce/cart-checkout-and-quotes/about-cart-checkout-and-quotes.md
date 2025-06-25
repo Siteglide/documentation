@@ -1,4 +1,4 @@
-# 💡 About Cart, Checkout and Quotes
+# About Cart, Checkout and Quotes
 
 ## When to Use?
 

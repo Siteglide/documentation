@@ -1,4 +1,4 @@
-# 📋 Alternatives to Storing and Executing Liquid from Database Items
+# Alternatives to Storing and Executing Liquid from Database Items
 
 This Article will show how to use custom fields to fetch dynamic content in a WebApp Layout.
 
@@ -36,11 +36,9 @@ Here we can output the Form using the fields that have just been set- wrap the w
 
 ```javascript
 <p>{{this['Rich Text Field Example']}}</p>
-{% raw %}
 {% if this['Show Form'] == "true" %} 
     {%- include 'form', id: this['Form ID'], layout: this['Form Layout'] -%}
 {% endif %}
-{% endraw %}
 
 
 ```
@@ -58,11 +56,9 @@ The Client would have control over whether or not to show a Form, but the Form t
 \*Expanding the Logic \*You could use Liquid Logic in the Layout to only allow certain Form / Content Section IDs to be displayed and forbid others. In this example, Form 2 will never be displayed, even if it is selected:
 
 ```javascript
-{% raw %}
 {% if this['Show Form'] == "true" and this['Form ID'] != "2" %}
     {%- include 'form', id: this['Form ID'], layout: this['Form Layout'] -%}
 {% endif %}
-{% endraw %}
 
 
 ```

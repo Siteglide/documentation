@@ -1,4 +1,4 @@
-# ℹ️ SiteBuilder JavaScript
+# SiteBuilder JavaScript
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 

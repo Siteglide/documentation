@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Create a Site
+# Quickstart: Create a Site
 
 This guide will walk you through the process of creating a new site using Siteglide's admin area.
 
@@ -16,11 +16,7 @@ Once you're account is approved you should see the Create a Website button:
 
 If you already have 1 or more site you'll see options to create a site, manage existing sites, or manage your company:
 
-<div align="left">
-
-<figure><img src="https://p186.p2.n0.cdn.zight.com/items/4gu8gZWZ/71d169a7-5af8-40ac-b517-c858baff1ef6.png?source=viewer&#x26;v=%22207c8f085ac90c7ed93c8c177f3f3872%22" alt=""><figcaption><p>Click 'Create New Site'</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="https://p186.p2.n0.cdn.zight.com/items/4gu8gZWZ/71d169a7-5af8-40ac-b517-c858baff1ef6.png?source=viewer&#x26;v=%22207c8f085ac90c7ed93c8c177f3f3872%22" alt=""><figcaption><p>Click 'Create New Site'</p></figcaption></figure></div>
 
 ## Step 2: Choose Site Creation Method
 

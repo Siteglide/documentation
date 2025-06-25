@@ -13,9 +13,7 @@ This is slightly different from a Subscriptions List view, as this lists all ava
 The following Liquid can be outputted on any Page protected by a Secure Zone:
 
 ```liquid
-{% raw %}
 {%- include 'user_subscriptions', layout: 'default' -%}
-{% endraw %}
 
 ```
 
@@ -36,11 +34,9 @@ You can find these Layouts at the path: `layouts/modules/module_5/user_subscript
 To loop over available Subscription Orders, you can use the following Liquid:
 
 ```liquid
-{% raw %}
 {% for this in subscription_orders %}
 
-{% endfor %}
-{% endraw %} 
+{% endfor %} 
 
 ```
 
@@ -51,13 +47,11 @@ Inside the loop, you can use the available fields shown below under the `this` n
 You can use the following Liquid to include a button to either cancel a Subscription or stop a pending cancellation. Read more here.
 
 ```liquid
-{% raw %}
 {%- if and this.cancel_at_period_end != 'true' -%}         
   {%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
 {% elsif this.cancel_at_period_end == 'true' %}
   {%- include 'ecommerce/subscription_reactivate_cancelled', orderID: this.id -%}
 {%- endif -%}
-{% endraw %}
 
 ```
 
@@ -97,9 +91,7 @@ _Subscription_
 ```liquid
 {{context.exports.currency_map.data[this.subscription.price.properties
 ['module_field_14/price_2']]}}
-{% raw %}
 {% include 'modules/siteglide_ecommerce/ecommerce/price_formatter' price_data: this.subscription.price.properties['module_field_14/price_3'] %}
-{% endraw %}
 
 ```
 
@@ -121,13 +113,11 @@ The other Price and Interval fields stored against the Subscription, could be us
 _Tip: Working with the Interval Fields_ As you can see below, there are multiple fields involved in storing the Interval of charges, which you can use to display the Interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:
 
 ```liquid
-{% raw %}
 {% if this['Interval Count'] == "1" %}
 per {{this['Interval'] | pluralize: 1}}
 {% else %}
 (every {{this['Interval Count']}} {{this['Interval']}})
 {% endif %}
-{% endraw %}
 ```
 
 If the Interval Count is 1, it will use formatting like "per day".

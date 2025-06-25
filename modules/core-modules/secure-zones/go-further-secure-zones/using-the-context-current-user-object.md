@@ -5,7 +5,7 @@ createdAt: 2021-02-17T12:51:44.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# ℹ️ Using the context.current\_user object
+# Using the context.current\_user object
 
 This article for developers helps you get more out of Secure Zones, as you can output basic information about the Current User dynamically.
 
@@ -24,9 +24,7 @@ Outputting the following liquid on the page shows the full range of fields avail
 You could also use an if statement to run logic using this. E.g. If I want to say hello to all users with a siteglide email address:
 
 ```liquid
-{% raw %}
 {% if context.current_user.email contains "@siteglide.com" %}
   <p>Hello Siteglider!</p>
 {% endif %}
-{% endraw %}
 ```

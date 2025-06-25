@@ -1,4 +1,4 @@
-# ℹ️ Front-end Submit Modules
+# Front-end Submit Modules
 
 When you install a Module, a front-end form file is automatically generated within your Module, in a folder called `form`. It automatically contains all fields from the Module. You can view this folder using Code Editor, it is next to the `detail` and `list` folders for your Module.
 
@@ -9,9 +9,7 @@ When you install a Module, a front-end form file is automatically generated with
 Output your Module form on a page to create new items:
 
 ```
-{% raw %}
 {%- include 'module_form', id: '3', layout: layout, enabled: 'true'-%}
-{% endraw %}
 
 
 ```
@@ -23,9 +21,7 @@ Edit forms should be outputted inside a standard Module layout's item.liquid fil
 #### item.liquid file
 
 ```
-{% raw %}
 {%- include 'module_form_edit', id: '3', layout: layout, enabled: 'true'-%}
-{% endraw %}
 
 ```
 
@@ -85,9 +81,7 @@ Some fields are required for the form to be able to set up the Module items corr
 All forms should be wrapped in a Liquid form tag:
 
 ```liquid
-{% raw %}
 {% form -%}{% endform -%}
-{% endraw %}
 ```
 
 ## Category Field (optional)

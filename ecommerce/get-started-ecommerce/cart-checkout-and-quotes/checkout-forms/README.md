@@ -1,2 +1,2 @@
-# 📂 Checkout Forms
+# Checkout Forms
 

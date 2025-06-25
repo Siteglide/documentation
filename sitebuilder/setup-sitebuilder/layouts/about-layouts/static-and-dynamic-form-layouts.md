@@ -1,4 +1,4 @@
-# 🏗️ Static and Dynamic Form Layouts
+# Static and Dynamic Form Layouts
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -126,9 +126,7 @@ This file structure will be exactly the same whether you opt for a static or dyn
 A static wrapper contains
 
 ```liquid
-{% raw %}
 {% include %}
-{% endraw %}
 
 
 ```
@@ -142,9 +140,7 @@ Alternatively, after making changes to the form configuration, you can always us
 A dynamic wrapper does not include components directly; instead it includes this include tag which runs the dynamic SiteBuilder script for fetching the latest configuration of the form:
 
 ```liquid
-{% raw %}
 {% include "modules/module_86/form_layout_fields", collection: 'true' %}
-{% endraw %}
 
 ```
 
@@ -155,9 +151,7 @@ This tag can be passed parameters to modify its behaviour. Any of the parameters
 Setting `collection: 'false'` means the fields will be outputted in the HTML exactly in the place of the
 
 ```liquid
-{% raw %}
 {% include 'form_layout_fields' %}
-{% endraw %}
 
 
 ```
@@ -195,7 +189,6 @@ This contains hidden fields needed to run the form:
 This is an array which contains all CRM addresses added to the form, if any are present:
 
 ```liquid
-{% raw %}
 {% assign form_addresses = context.exports.sitegurus_ui.form_addresses | parse_json %}
 {% for address in form_addresses %}
   <h3 class="h4 mb-5">{{address[0]}}</h3>
@@ -203,7 +196,6 @@ This is an array which contains all CRM addresses added to the form, if any are 
     {{address[1].html | html_safe: raw_text: true}}
   </div>
 {% endfor %}
-{% endraw %}
 
 
 ```
@@ -269,9 +261,7 @@ These parameters exist primarily for the use-case of implementing a form with mu
 For both parameters, the default is `'false'` and turning on the feature is `'true'`.
 
 ```liquid
-{% raw %}
 {% include "modules/module_86/form_layout_fields", collection: 'true', hide_name_while_logged_in: 'false', hide_email_while_logged_in: 'true' %}
-{% endraw %}
 
 
 ```
@@ -282,9 +272,7 @@ Important note: this functionality relies on the `name_field` and `email` compon
 
 ```liquid
 <div class="
-{% raw %}
 {% if context.current_user.id != blank and hide_email_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
-{% endraw %}
 
 " >
   <!-- Add rest of email component here. -->
@@ -294,9 +282,7 @@ Important note: this functionality relies on the `name_field` and `email` compon
 
 ```liquid
 <div class="
-{% raw %}
 {% if context.current_user.id != blank and hide_name_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
-{% endraw %}
 
 
 
@@ -345,9 +331,7 @@ This is a quick way to override the form\_redirect path that's set in the Sitegl
 Prior to v. 4.6.3 this was already possible in hidden fields, so this parameter just adds the convenience of setting this at a higher level in the code. It relies on the new versions of the form layout's hidden
 
 ```liquid
-{% raw %}
 {% include 'form_layout_fields', custom_form_redirect: context.location.href %}
-{% endraw %}
 
 ```
 

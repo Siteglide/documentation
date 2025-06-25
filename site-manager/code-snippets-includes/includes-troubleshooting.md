@@ -1,4 +1,4 @@
-# 🔧 Includes Troubleshooting
+# Includes Troubleshooting
 
 Common things to check when experiencing problems with includes:
 
@@ -10,9 +10,7 @@ Common things to check when experiencing problems with includes:
 * [ ] If you assign a variable inside a partial with the same name as the partial's filename it can cause a problem. E.g. if you are inside a file called `marketplace_builder/views/partials/order.liquid` and you write the code:
 
 ```liquid
-{% raw %}
 {% assign order = "example" %}
-{% endraw %}
 ```
 
 ...this can cause a bug.

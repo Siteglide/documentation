@@ -5,7 +5,7 @@ createdAt: 2021-02-19T11:33:08.000Z
 updatedAt: 2023-04-06T15:08:02.000Z
 ---
 
-# 📋 Steps to Datasource and Display Related Products
+# Steps to Datasource and Display Related Products
 
 How to use Module Custom Fields to output similar, related products
 
@@ -72,9 +72,7 @@ In Step 5, we'll need to nest a new List Layout of Products inside the Detail La
 We can change the type by assigning a new variable:
 
 ```
-{% raw %}
 {% assign related_products_str = this['Related products'] | join: ',' %}
-{% endraw %}
 
 
 
@@ -129,7 +127,6 @@ Select the name of a Product List Layout you'll use to style how the dynamic Rel
 Optionally, you can add Liquid logic to only display the subtitle and Related Products content when the field is not empty. As the field contains an array, a safe way to check if it holds a value is to check its size (Liquid for the length of the array).
 
 ```liquid
-{% raw %}
 {% if this['Related Products'].size > 0  %}
   <h2>Related Products</h2>
   {% assign related_products = this['Related Products'] | join: "," %}
@@ -143,7 +140,6 @@ Optionally, you can add Liquid logic to only display the subtitle and Related Pr
       item_ids: related_products 
   -%} 
 {% endif %}
-{% endraw %}
 ```
 
 ### Step 7) Optional - Develop a Custom Layout for the Related Products

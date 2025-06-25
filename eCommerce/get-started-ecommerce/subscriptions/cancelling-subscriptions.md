@@ -15,20 +15,16 @@ Subscription Orders marked for cancellation will have the field "cancel\_at\_per
 The following Liquid can be added within a `user_subscriptions` List Layout:
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
-{% endraw %}
 
 ```
 
 You may wish to use logic to only show the button when it can be used.
 
 ```liquid
-{% raw %}
 {%- if this.cancel_at_period_end != 'true' -%}
   {%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
 {%- endif -%}
-{% endraw %}
 
 ```
 
@@ -39,11 +35,9 @@ Until that time, we'll allow Users to change their mind and choose not to cancel
 You may wish to use logic to only show the button when it can be used.
 
 ```liquid
-{% raw %}
 {% if this.cancel_at_period_end == 'true' %}
   {%- include 'ecommerce/subscription_reactivate_cancelled', orderID: this.id -%}
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -53,13 +47,11 @@ You may wish to use logic to only show the button when it can be used.
 Both buttons could be combined in the logic as follows:
 
 ```liquid
-{% raw %}
 {%- if this.cancel_at_period_end != 'true' -%}
   {%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
 {% elsif this.cancel_at_period_end == 'true' %}
   {%- include 'ecommerce/subscription_reactivate_cancelled', orderID: this.id -%}
 {%- endif -%}
-{% endraw %}
 ```
 
 ## Cancelling Immediately

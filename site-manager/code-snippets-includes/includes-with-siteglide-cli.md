@@ -5,9 +5,7 @@ createdAt: 2021-02-18T10:50:50.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# 💻 Includes with Siteglide CLI
-
-
+# Includes with Siteglide CLI
 
 Includes are all of the following: Code Snippet, Content Section, Header, Footer.
 

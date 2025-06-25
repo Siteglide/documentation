@@ -66,9 +66,7 @@ Again, setting a reasonable Minimum Spend is the preferable solution to this iss
 This code can be used inside your Discount Code Layout:
 
 ```liquid
-{% raw %}
 {%- if discount_saving_maximum_reached == true -%}<!-- Message here --><p>Minimum total price reached. Unfortunately we cannot accept payments below this price. To make the most of your discount, try adding another item to your cart.{%- endif -%}
-{% endraw %}
 ```
 
 ## Subscriptions

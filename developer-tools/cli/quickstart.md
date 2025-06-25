@@ -2,7 +2,7 @@
 description: Get started with our CLI
 ---
 
-# 🚀 Quickstart: CLI
+# Quickstart: CLI
 
 {% hint style="info" %}
 If unsure please read more about CLI first:

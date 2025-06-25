@@ -5,7 +5,7 @@ createdAt: 2021-02-18T10:52:51.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# ℹ️ Pages with Siteglide CLI
+# Pages with Siteglide CLI
 
 When the Admin builds a Page, it adds important metadata using the YAML language.
 
@@ -48,9 +48,7 @@ redirect_to: ''
 redirect_code: 301
 searchable: true
 ---
-{% raw %}
 {% include 'modules/siteglide_system/constants' -%}
-{% endraw %}
 <!-- Page Content Here -->
 
 ```
@@ -89,9 +87,7 @@ Constants makes certain variables available in the Page and passes others up to 
 If you are confident a Page doesn't need it e.g. an API Endpoint, you can skip it to improve performance.
 
 ```liquid
-{% raw %}
 {% include 'modules/siteglide_system/constants' -%}
-{% endraw %}
 
 
 ```
@@ -101,14 +97,12 @@ If you are confident a Page doesn't need it e.g. an API Endpoint, you can skip i
 You can use your own Liquid to implement logic based off the logged in User's Secure Zones, but to copy the pattern Admin creates for consistency you can do this:
 
 ```liquid
-{% raw %}
 {% include 'secure_zones', secure_zones_string: '1' -%}
 {% if context.exports.access_allowed.value == true -%}
   {% comment %}Your Page Code here!{% endcomment %}
 {% else -%}
   {% include '401' -%}
 {% endif -%}
-{% endraw %}
 ```
 
 Replace the "secure\_zones\_string" with the ID of your relevant Secure Zone from Admin.

@@ -78,13 +78,11 @@ The other Price and Interval fields stored against the Subscription, could be us
 _Tip: Working with the Interval Fields_ As you can see below, there are multiple fields involved in storing the Interval of charges, which you can use to display the Interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:
 
 ```liquid
-{% raw %}
 {% if this['Interval Count'] == "1" %}
 per {{this['Interval'] | pluralize: 1}}
 {% else %}
 (every {{this['Interval Count']}} {{this['Interval']}})
 {% endif %}
-{% endraw %}
 
 ```
 

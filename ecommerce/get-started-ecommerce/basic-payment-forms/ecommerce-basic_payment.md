@@ -1,4 +1,4 @@
-# ℹ️ ecommerce/basic\_payment
+# ecommerce/basic\_payment
 
 ### What is it?
 

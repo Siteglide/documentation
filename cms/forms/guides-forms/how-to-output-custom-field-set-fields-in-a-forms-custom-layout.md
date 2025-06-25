@@ -1,4 +1,4 @@
-# 📋 Steps to Using Custom Field Set fields in a Form's Custom Layout
+# Steps to Using Custom Field Set fields in a Form's Custom Layout
 
 Custom Field Sets are a great time-saving feature, as they allow you to create a reusable group of fields that can be added to any:
 

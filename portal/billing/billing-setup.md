@@ -1,4 +1,4 @@
-# 💳 Billing Setup
+# Billing Setup
 
 Simply fill in the form to add your card details to the Account. Please note this card will be used for ALL payments unless otherwise stated on the Go Live tab.
 

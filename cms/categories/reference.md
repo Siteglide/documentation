@@ -1,4 +1,4 @@
-# 💻 Reference
+# Reference
 
 ## Global List of Categories
 
@@ -41,13 +41,11 @@ Other available fields are:
 If you wish to display all the Categories on the Site, you can loop over them all. Inside the For Loop you can display any HTML or Category fields you like.
 
 ```liquid
-{% raw %}
 {% for category in context.exports.categories.data %}
   {{category[0]}} <!-- Category ID -->
   {{category[1]}} <!-- Current Category JSON Object -->
   {{category[1].name}} <!-- Accessing current Category's field e.g. name -->
 {% endfor %}
-{% endraw %}
 
 
 ```
@@ -56,14 +54,12 @@ If you want to skip any Categories, you can use Liquid if statements and the `co
 
 ```liquid
 
-{% raw %}
 {% for category in context.exports.categories.data %}
   {% if category[1].name == "name_of_category_I_want_to_skip" %}
     {% continue %}
   {% endif %}
   {{category[1].name}} <!-- Accessing current Category's field e.g. name -->
 {% endfor %}
-{% endraw %}
 
 
 ```
@@ -116,9 +112,7 @@ Category Detail Pages give you additional features including Breadcrumbs, Parent
 Output breadcrumb of Categories to the current Category page using the defined layout:
 
 ```liquid
-{% raw %}
 {%- include 'category_breadcrumbs', layout: 'breadcrumb' -%}
-{% endraw %}
 
 ```
 
@@ -136,9 +130,7 @@ Output parent Categories using the defined layout:
 Output child Categories using the defined layout:
 
 ```liquid
-{% raw %}
 {%- include 'category_children', layout: 'children' -%}
-{% endraw %}
 
 
 ```
@@ -148,9 +140,7 @@ Output child Categories using the defined layout:
 Output all items categorised to the current Category Page using the defined layout:
 
 ```liquid
-{% raw %}
 {%- include 'category_items', layout: 'items' -%}
-{% endraw %}
 
 
 ```

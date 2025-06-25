@@ -1,20 +1,16 @@
 ---
-description: Docs to use the Siteglide API
+description: Docs to use the Siteglide Site API
 ---
 
-# Public API
+# Site API
 
-Welcome to the Siteglide Public API Docs!
+Welcome to the Siteglide Site API Docs!
 
 Siteglide is designed to give you total access to your data and to platform capabilities.&#x20;
 
 If you don't see an endpoint you need you can create your own or contact us if you think it should be platform wide.
 
 Each Siteglide feature has it's own page with the various endpoints:
-
-{% content-ref url="sessions.md" %}
-[sessions.md](sessions.md)
-{% endcontent-ref %}
 
 {% content-ref url="forms.md" %}
 [forms.md](forms.md)
@@ -40,6 +36,4 @@ Each Siteglide feature has it's own page with the various endpoints:
 [ecommerce.md](ecommerce.md)
 {% endcontent-ref %}
 
-{% content-ref url="portal-reseller-data.md" %}
-[portal-reseller-data.md](portal-reseller-data.md)
-{% endcontent-ref %}
+To find documentation for Siteglide Portal API, please follow this link - [Portal API docs](https://api.siteglide.co.uk/docs/)\

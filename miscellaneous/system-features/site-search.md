@@ -80,18 +80,14 @@ Then add an ID to the button that submits your input, please match this to the I
 When selecting "Site Search Results" from the toolbox, you have the option of selecting which type of content will be contained within the results. Here you can mix and match whether you would like to display results from Pages, WebApp Detail Pages or Module Detail Pages. For example if you only want to search for Pages on the website then you could have the results exclude any data from WebApps and Modules.
 
 ```liquid
-  {% raw %}
-{%- include 'site_search_results', types: 'webapp,page,module' -%}
-{% endraw %}
+  {%- include 'site_search_results', types: 'webapp,page,module' -%}
 
 ```
 
 _Excluding modules and webapps_
 
 ```liquid
-  {% raw %}
-{%- include 'site_search_results', types: 'page' -%}
-{% endraw %}
+  {%- include 'site_search_results', types: 'page' -%}
 
 ```
 
@@ -191,13 +187,11 @@ If your search covers more than one type, you may wish to only use output fields
 For example, if you have a Search Results Layout and you want to display the SEO Meta Title for Pages and WebApps, you can use logic to show whichever one is actually available:
 
 ```liquid
-{% raw %}
 {% if this.metadata.title %}
   <p>{{this.metadata.title}}</p>
 {% elsif this.properties.meta_title %}
   <p>{{this.properties.meta_title}}</p>
 {% endif %}
-{% endraw %}
 
 
 ```
@@ -271,9 +265,7 @@ This will depend on the Module. [Use Liquid Dot Notation](../../developer-tools/
 To display the default pagination layout on the results page, add the following line of code to your custom results layout:
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_system/get/get_site_search_result_pagination' -%}
-{% endraw %}
 ```
 
 This specific include is required for site search pagination to function correctly.

@@ -5,7 +5,7 @@ createdAt: 2021-02-19T09:17:21.000Z
 updatedAt: 2023-04-06T15:15:58.000Z
 ---
 
-# 🔹 Product Detail Layout
+# Product Detail Layout
 
 Customise the way Products look on their automatically generated Detail Pages and add functionality for adding the Product to the Cart.
 
@@ -106,13 +106,11 @@ item.liquid -- detail view example
   </div>
   <hr class="mt-4 mb-4">
   
-{% raw %}
 {% if this['Description'] %} <h4>Product Description</h4> {{this['Description']}} {% endif %}
   <hr class="mt-4 mb-4">
   <div class="row product-detail-buttons">
     <div class="col-12 col-md-6">
       {% include 'ecommerce/cart_add' -%}
-{% endraw %}
 
 
     </div>
@@ -131,9 +129,7 @@ Unlike the List View, the code in the item.liquid file in the Detail folder will
 To create a button to add the current Product to the Cart use the following Liquid code
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/cart_add', component_layout: 'name_of_my_layout' -%}
-{% endraw %}
 
 
 ```

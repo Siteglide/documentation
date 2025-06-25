@@ -1,4 +1,4 @@
-# 🛳️ Module - Events - Changelog
+# Module - Events - Changelog
 
 ### 1.1.0 - 3rd October 2022
 

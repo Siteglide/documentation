@@ -1,4 +1,4 @@
-# ℹ️ Email Templates
+# Email Templates
 
 Email Templates work very similarly to Page Templates, see:
 

@@ -1,2 +1,2 @@
-# 📂 Basic Payment Forms
+# Basic Payment Forms
 

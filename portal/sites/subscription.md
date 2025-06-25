@@ -2,7 +2,7 @@
 description: Your Siteglide Subscription
 ---
 
-# 💳 Subscription
+# Subscription
 
 The Subscription tab will show your Site Usage and what plan you're on or which plan we recommend if the site is not yet Live:
 

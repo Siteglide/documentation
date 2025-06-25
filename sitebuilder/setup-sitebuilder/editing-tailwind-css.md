@@ -1,4 +1,4 @@
-# 🏗️ Editing Tailwind CSS
+# Editing Tailwind CSS using the recommended CLI method
 
 ## Before you Start
 

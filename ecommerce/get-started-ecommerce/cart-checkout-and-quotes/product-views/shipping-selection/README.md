@@ -1,2 +1,2 @@
-# 📂 Shipping Selection
+# Shipping Selection
 

@@ -1,13 +1,11 @@
-# 👀 Basic Payment Forms Reference
+# Basic Payment Forms Reference
 
 ## Including on a Page
 
 To include a Basic Payment Form on the Page, use the same syntax as a [standard form](../../../cms/forms/forms-reference.md):
 
 ```liquid
-{% raw %}
 {%- include 'form', id: '10', layout: 'default' -%}
-{% endraw %}
 
 
 ```
@@ -39,13 +37,13 @@ You should include this _inside_ a basic payment form layout.
 #### How to use?
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/basic_payment'
   amount: '500'
   currency: 'usd'
   id: '10'
 -%}
-{% endraw %}
+
+
 ```
 
 | Parameter | Type    | Notes                                                                                                                                                        |
@@ -66,7 +64,7 @@ This HTML input field with the ID s\_e\_amount can be used to modify the amount 
 [steps-to-allow-user-to-decide-amount-they-will-pay.md](steps-to-allow-user-to-decide-amount-they-will-pay.md)
 {% endcontent-ref %}
 
-[#a-note-on-security](/eCommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md#a-note-on-security "mention")
+[#a-note-on-security](../../../eCommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md#a-note-on-security "mention")
 
 ## Payment Confirmation Layouts
 
@@ -75,7 +73,5 @@ This HTML input field with the ID s\_e\_amount can be used to modify the amount 
 {% endcontent-ref %}
 
 ```
-{% raw %}
 {% include 'ecommerce/payment_details', layout: 'default' %}
-{% endraw %}
 ```

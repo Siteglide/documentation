@@ -1,4 +1,4 @@
-# ℹ️ Data & UI Module Example
+# Data & UI Module Example
 
 In this example we’re going walk through, step by step, how to create a Module with a Custom UI that could either be used as a private module for your agency or shared publicly in the marketplace to deliver turnkey site solutions to your clients and more.
 
@@ -41,9 +41,7 @@ The `response_headers` YML allows Siteglide Admin to view the content of the fil
 As well as the YAML, any links within your Custom UI has to include a Liquid tag to apply the authencation string on the link. For example if you are linking from your Custom UI's index page to the add new item page, your link would be as follows:
 
 ```liquid
-<a href="/add?{% raw %}
-{% include "modules/siteglide_system/modules/auth" -%}
-{% endraw %}">Add new item</a>
+<a href="/add?{% include "modules/siteglide_system/modules/auth" -%}">Add new item</a>
 
 ">Add new item</a>
 
@@ -54,12 +52,10 @@ This include will create a hash onto the end of the URL that is then used in the
 You can also control access to certain areas of a page with the `module_is_in_admin` function:
 
 ```liquid
-{% raw %}
 {%- function access_allowed = 'module_is_in_admin' -%}
 {%- if access_allowed -%}
     <p>Content to show if loaded via Admin</p>
 {%- endif -%}
-{% endraw %}
 ```
 
 ### Module Details

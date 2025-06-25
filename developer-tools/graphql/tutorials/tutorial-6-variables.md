@@ -184,10 +184,8 @@ If you require any other conversions, please request them on Intercom and we'll 
 \*String to Int \*Apply an integer filter:
 
 ```liquid
-{% raw %}
 {% assign original_string = "123" %}
 {% assign new_int = original_string | plus: 0 %}
-{% endraw %}
 
 
 
@@ -198,10 +196,8 @@ If you require any other conversions, please request them on Intercom and we'll 
 _String to Float_
 
 ```liquid
-{% raw %}
 {% assign original_string = "123" %}
 {% assign new_float = original_string | plus: 0.00 %}
-{% endraw %}
 
 
 
@@ -212,10 +208,8 @@ _String to Float_
 _String to \[String]_
 
 ```liquid
-{% raw %}
 {% assign original_string = "123,456" %}
 {% assign new_array = original_string | split: "," %}
-{% endraw %}
 
 
 
@@ -226,14 +220,12 @@ _String to \[String]_
 _String to Boolean_
 
 ```liquid
-{% raw %}
 {% assign original_string = "true" %}
 {% if original_string == "true" %}
   {% assign new_boolean == true %}
 {% elsif original_string  == "false" %}
   {% assign new_boolean == false %}
 {% endif %}
-{% endraw %}
 
 
 
@@ -244,10 +236,8 @@ _String to Boolean_
 _Boolean to String_
 
 ```liquid
-{% raw %}
 {% assign original_boolean = true %}
 {% assign new_string = original_boolean | downcase %}
-{% endraw %}
 
 
 
@@ -259,34 +249,28 @@ _Boolean to String_
 _Int to String_
 
 ```liquid
-{% raw %}
 {% assign original_int = 123 %}
 {% assign new_string = original_int | downcase %}
-{% endraw %}
 
 ```
 
 _Float to String_
 
 ```liquid
-{% raw %}
 {% assign original_float = 123 %}
 {% assign new_string = original_float | downcase %}
-{% endraw %}
 
 ```
 
 _Literal JSON object to HASH object_ (Needed for advanced variables only- like passing an array of properties objects into a filter). You can also use the parse\_json tag to create any of the above types; if you can write the variable in a type that's supported by JSON, the tag will convert that to a variable in the hash format that can be passed into Graph as a variable value.
 
 ```liquid
-{% raw %}
 {% parse_json properties_object %}
   [
     { "name": "properties.webapp_field_1_1", exists: true },
     { "name": "properties.webapp_field_1_2", exists: true }
   ]
 {% endparse_json %}
-{% endraw %}
 
 
 
@@ -367,11 +351,9 @@ Or, you can use a Liquid variable which you defined earlier:
 
 ```liquid
 <!-- Create an empty array -->
-{% raw %}
 {% assign current_category_array = "" | split: "," %}
 <!-- Add Strings to the Array -->
 {% assign current_category_array = current_category_array | add_to_array: "98486" | add_to_array: "98487" %}
-{% endraw %}
 
 <!-- Feed the Liquid Array into the query by its variable name. No quotes are needed around a variable name when you set it as a parameter- it's dynamic data. -->
 

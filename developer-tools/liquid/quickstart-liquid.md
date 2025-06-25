@@ -2,5 +2,5 @@
 hidden: true
 ---
 
-# 🚀 Quickstart: Liquid
+# Quickstart: Liquid
 

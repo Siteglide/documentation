@@ -1,4 +1,4 @@
-# ℹ️ Code View & Toolbox
+# Code View & Toolbox
 
 The Code View is an easy way to quickly edit the page via code. You can switch between Studio and Code view without needing to save changes.
 

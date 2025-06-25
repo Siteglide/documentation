@@ -1,17 +1,17 @@
-# 📋 Searching - Advanced Filtering
+# Searching - Advanced Filtering
 
 How to use the `use_adv_search` parameter in the WebApp include tag, along with a URL parameters, to search for within specific fields of an item.
 
 ### Prerequisites
 
-* You have [created a WebApp](/webapps/quickstart-webapps.md)
-* You have [added a WebApp List View to a Page](/webapps/layouts/webapp-list-layout.md)
+* You have [created a WebApp](../quickstart-webapps.md)
+* You have [added a WebApp List View to a Page](webapp-list-layout.md)
 
 ### Introduction
 
 Advanced search allows you to use AND or OR logic to filter WebApp items by specific fields.
 
-If you are looking to search for WebApp items which match any of your search terms in any of their fields using OR logic, see [Searching - Keyword](/webapps/layouts/searching-by-keyword.md).
+If you are looking to search for WebApp items which match any of your search terms in any of their fields using OR logic, see [Searching - Keyword](searching-by-keyword.md).
 
 #### Steps
 
@@ -26,7 +26,7 @@ If you are looking to search for WebApp items which match any of your search ter
 
 In the database, each field has an ID that is different from their user-friendly name. In order to use the advanced search, you will need to know the ID of the field.
 
-You can learn more about why we use Custom Field IDs and how to find the one you need for a WebApp or Module here: [Custom Field IDs](/developer-tools/configuration/custom_fields.md)
+You can learn more about why we use Custom Field IDs and how to find the one you need for a WebApp or Module here: [Custom Field IDs](../../developer-tools/configuration/custom_fields.md)
 
 Once you've checked that Article and found the ID of the Custom Field you need, you can move on to Step 2.
 
@@ -49,7 +49,7 @@ Let's work with a field ID of `webapp_field_1_1`. You have 2 options for setting
 * OR - The search will return results where there is a match on any of the search terms it receives. These terms are comma separated.
   * For example, if we have `webapp_field_1_1=content 1,content 2&webapp_field_1_1_match_type=OR` then we will be looking for items where `webapp_field_1_1` is either equal to 'content 1' OR 'content 2'.
 
-You can find what type your fields are [here](/developer-tools/configuration/field-types.md).
+You can find what type your fields are [here](../../developer-tools/configuration/field-types.md).
 
 ### Step 4 - Setting the match type for Array fields
 
@@ -60,7 +60,7 @@ Let's work with a field ID of `webapp_field_1_2`. You have 2 options for setting
 * OR - The search will return results where there is a match on any of the search values it receives. These terms are comma separated.
   * For example, if we have `webapp_field_1_2=option1,option2&webapp_field_1_2_match_type=OR` then we will be looking for items where `webapp_field_1_2` contains either 'option1' OR 'option2'.
 
-You can find what type your fields are [here](/developer-tools/configuration/field-types.md).
+You can find what type your fields are [here](../../developer-tools/configuration/field-types.md).
 
 ### Step 5 - Test by adding a URL query parameter
 

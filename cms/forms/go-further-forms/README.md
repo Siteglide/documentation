@@ -1,2 +1,2 @@
-# 🧙‍♂️ Go Further: Forms
+# Go Further: Forms
 

@@ -1,4 +1,4 @@
-# 🗓️ CRM Sync Changelog
+# CRM Sync Changelog
 
 ### Notes on versioning <a href="#notes-on-versioning" id="notes-on-versioning"></a>
 

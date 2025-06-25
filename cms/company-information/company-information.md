@@ -1,4 +1,4 @@
-# 💻 Reference
+# Reference
 
 Company Information can be used to store key contact and branding information for your client while making it easy for them to manage. You can then use the liquid tags below to output this globally stored information anywhere on the site.
 
@@ -25,7 +25,6 @@ When your client needs to update some key information about their company, they 
 Social Field Example:
 
 ```liquid
-{% raw %}
 {% if context.exports.company_information.properties.twitter_account == blank -%}
   <a 
     title="Twitter"
@@ -36,5 +35,4 @@ Social Field Example:
     <i class="fab fa-2x fa-twitter"></i>
   </a>
 {% endif -%}
-{% endraw %}
 ```

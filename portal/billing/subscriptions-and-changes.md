@@ -1,4 +1,4 @@
-# 💳 Subscriptions and Changes
+# Subscriptions and Changes
 
 ## Usage-based Billing
 

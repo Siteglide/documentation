@@ -1,4 +1,4 @@
-# ℹ️ Explained - Show Clearly When a User is Already Logged in When Submitting a Form
+# Explained - Show Clearly When a User is Already Logged in When Submitting a Form
 
 This problem was initially reported here -> [https://roadmap.siteglide.com/bugs/p/forms-overwriting-crm-records](https://roadmap.siteglide.com/core-platform/p/forms-overwriting-crm-records)
 
@@ -13,11 +13,9 @@ Our default form layout for new or updated forms will set both 'email' and 'name
 You can also add your own message on page like this:
 
 ```liquid
-{% raw %}
 {%- if context.exports.is_logged_in.data == true -%}
   <p>Hi {{ session.current_user.name }}! <a href="/logout">(not you?)</a></p>
 {%- endif -%}
-{% endraw %}
 
 
 ```
@@ -27,11 +25,9 @@ You can also add your own message on page like this:
 If you look at the email and name fields in your new default layout, you'll see this:
 
 ```liquid
-{% raw %}
 {% if context.exports.is_logged_in.data -%}
     readonly value="{{ session.current_user.name }}"
 {% endif %}
-{% endraw %}
 ```
 
 Either remove 'readonly' to allow editing, or remove the entire IF statement if you also don't want it pre-populated.

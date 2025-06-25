@@ -1,4 +1,4 @@
-# 🔹 Blog Archive & Date Filtering
+# Blog Archive & Date Filtering
 
 Browse by Month and/or Search Blog Posts Between Two Dates
 
@@ -79,12 +79,10 @@ The following examples will take you through the different options:
 ```liquid
 <h2>Archive</h2>
 <ul>
-{% raw %}
 {% for month in blog_archive_months %}
     <li><a href="{{context.location.pathname}}?range_gt={{month.start}}&range_lte={{month.end}}&range_type=month">
       {{month.start | date: "%b-%y" }}</a></li>
   {% endfor %}
-{% endraw %}
 </ul>
 
 ```
@@ -102,7 +100,6 @@ This Layout does not just organise the Months available under the relevant Year 
 <h2>Archive by Years</h2>
 <ul>
   
-{% raw %}
 {% for year in blog_archive_years %}
     <li>{{year.start | date: "%Y"}}</li>
     <ul>
@@ -113,7 +110,6 @@ This Layout does not just organise the Months available under the relevant Year 
       {% endfor %}
     </ul>
   {% endfor %}
-{% endraw %}
 
 </ul>
 
@@ -146,11 +142,9 @@ It also adds a Form for directly manipulating the URL parameters to find the exa
     <input value="Search" class="btn btn-primary" type="submit" onclick="s_blog_date_search(s_blog_date_search_error)">
   </div>
 </form>
-{% raw %}
 {% comment %}
 Add your custom error message here - it can be renamed by changing its name in the argument for the s_blog_date_search function and in the definition below.
 {% endcomment %}
-{% endraw %}
 
 <script>
   function s_blog_date_search_error() {
@@ -174,12 +168,10 @@ Any Layouts included with the above Liquid will get access to the `blog_archive_
 _**blog\_archive\_years**_
 
 ```liquid
-{% raw %}
 {% for year in blog_archive_years %}
   {{year.start}} <!-- Outputs Epoch time at start of Year -->
   {{year.end}} <!-- Outputs Epoch time at end of Year -->
 {% endfor %}
-{% endraw %}
 
 
 
@@ -188,13 +180,11 @@ _**blog\_archive\_years**_
 _**blog\_archive\_months**_
 
 ```liquid
-{% raw %}
 {% for month in blog_archive_months %}
   {{month.start}} <!-- Outputs Epoch time at start of Month -->
   {{month.end}} <!-- Outputs Epoch time at end of Month -->
   {{month.year}} <!-- Outputs Epoch time for the beginning of the Year in which this month falls. -->
 {% endfor %}
-{% endraw %}
 
 
 
@@ -222,7 +212,6 @@ The pOS documentation website has some useful tips on how to use liquid to conve
 In the examples, you may notice another URL parameter is used: `range_type`. The `s_blog_date_search` Siteglide function for filtering blog posts by user-inputted dates adds the parameter `range_type="between"`. This would allow the following liquid on the List Layout to identify that this search is between two dates:
 
 ```liquid
-{% raw %}
 {% if context.params.range_type == "between" %}
   Posts between {{context.params.range_gt | date: "%d-%b-%y"}}
   {{context.params.range_gte | date: "%d-%b-%y"}} 
@@ -230,7 +219,6 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
   {{context.params.range_lt | date: "%d-%b-%y"}}
   {{context.params.range_lte | date: "%d-%b-%y"}}
 {% endif %}
-{% endraw %}
 
 
 
@@ -239,12 +227,10 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
 Whereas, you could use another `range_type` to indicate that different feedback should be given to the User. e.g. the parameter `month` in this example changes the sentence structure from "posts between" to "posts from" to communicate the different kind of filtering that is now taking place.
 
 ```liquid
-{% raw %}
 {% if context.params.range_type == "month" %}
   Posts from {{context.params.range_gt | date: "%b-%y"}}
   {{context.params.range_gte | date: "%b-%y"}}
 {% endif %}
-{% endraw %}
 ```
 
 Note - in both of these examples- the `gte` and `gt` dates are both outputted- this is because only one is expected to be available. The Layout is designed to accept either.

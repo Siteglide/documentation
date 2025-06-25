@@ -1,4 +1,4 @@
-# ℹ️ About CRM Sync Module
+# About CRM Sync Module
 
 The Sendgrid CRM Sync Module aims to integrate the Siteglide CRM with an Email Marketing Platform, starting with Sendgrid.
 

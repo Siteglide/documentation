@@ -1,4 +1,4 @@
-# ❔ Troubleshooting
+# Troubleshooting
 
 ## Is your website project folder inside a Cloud Virtual Drive?
 

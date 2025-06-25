@@ -1,4 +1,4 @@
-# ℹ️ Siteglide Support Policy
+# Siteglide Support Policy
 
 Our Agency Success team here at Siteglide are dedicated to providing exceptional support and assistance to Digital Agencies and Siteglide Experts which ensures they are able to deliver the best solutions for their customers.
 

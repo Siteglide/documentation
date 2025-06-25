@@ -33,9 +33,7 @@ The Options are designed to be included in an HTML Select box in the Cart.
 You'll need to add the following Liquid where in your Cart you want to include your Shipping sub-layout:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/shipping_option', layout: "siteglide_example" %}
-{% endraw %}
 
 ```
 
@@ -63,14 +61,12 @@ Here's an example:
 	<select onchange="s_e_cart_shipping(this);">
 		<option value="">--Please select--</option>
 		
-{% raw %}
 {%- for this in shipping_options -%}
 			{% assign currency = this.price.properties["module_field_14/price_2"] %}
 			<option {% if this.id == current_cart_shipping_id %}selected{% endif %} 
 					value="{{this.id}}">{{this.name}} {{this.currency_symbol}}{{this.price}} 
 					</option>
 		{%- endfor -%}
-{% endraw %}
 	</select>
 </div>
 ```

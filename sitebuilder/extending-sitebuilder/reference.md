@@ -1,4 +1,4 @@
-# 💻 Reference
+# Reference
 
 This page is intended to document the themes and modules that are built into SiteBuilder, to help you reference those IDs in your own modules and build onto that content.
 

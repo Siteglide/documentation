@@ -1,4 +1,4 @@
-# ℹ️ System Pages
+# System Pages
 
 System Pages work similar to other pages- but they are stored under Site Manager as they are most likely to be looked at by a Developer.
 
@@ -11,7 +11,7 @@ You can currently edit the content of the following system pages:
 * **Recover Password** - This page contains a button which will send the User a recover-password email.
 * **Reset Password** - If the User clicks a link in a recover-password email, they will be sent to this page with a token included in the request. If the token is valid, they will be allowed to choose a new password, otherwise, an error message will show.
 * **Robots** - This allows you to create a "robots.txt" file which can be used to give recommendations to search engines about which pages they should avoid crawling. This is a special kind of liquid page which will render to .txt format before the server sends it to the browser.
-* [XML Sitemap](/site-manager2/system-pages/automatic-sitemap-generation.md) - This allows you to give search engines a helpful map which helps them find all the pages you would like to be indexed. This is a special kind of liquid page which will render to .xml format before the server sends it to the browser.
+* [XML Sitemap](../../site-manager2/system-pages/automatic-sitemap-generation.md) - This allows you to give search engines a helpful map which helps them find all the pages you would like to be indexed. This is a special kind of liquid page which will render to .xml format before the server sends it to the browser.
 
 You can create additional system pages via the CLI.
 

@@ -1,4 +1,4 @@
-# 🚀 CRM Sync
+# CRM Sync
 
 ## What is the CRM Sync Module?
 

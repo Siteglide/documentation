@@ -1,6 +1,6 @@
-# 📋 Steps to Use Live Updates Methods
+# Steps to Use Live Updates Methods
 
-This guide will show you how to use methods after data-attributes initialisation. If you want to use the object constructor, look [here](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md#using-the-javascript-initialisation).
+This guide will show you how to use methods after data-attributes initialisation. If you want to use the object constructor, look [here](live-updates-reference.md#using-the-javascript-initialisation).
 
 ### What are Methods? <a href="#what-are-methods" id="what-are-methods"></a>
 
@@ -10,7 +10,7 @@ The Live Updates API builds an object we call an instance for each of the sectio
 
 ### Available Methods <a href="#available-methods" id="available-methods"></a>
 
-You can see the full list of available methods in the [API Reference](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md)
+You can see the full list of available methods in the [API Reference](live-updates-reference.md)
 
 ***
 
@@ -49,7 +49,6 @@ Each instance is stored within the object against a key which is derived from th
 You can access a specific instance via this key, or loop over them all and run your method on the instance. In the example, replace methodName with the method name from this documentation.
 
 ```liquid
-{% raw %}
 <script>
   if(window.sgLiveUpdateInitiated === true) {
     ready();
@@ -65,13 +64,12 @@ You can access a specific instance via this key, or loop over them all and run y
     }
   }
 </script>
-{% endraw %}
+
 ```
 
 #### 4) Call the method on the instance <a href="#id-4-call-the-method-on-the-instance" id="id-4-call-the-method-on-the-instance"></a>
 
 ```liquid
-{% raw %}
 <script>
   if(window.sgLiveUpdateInitiated === true) {
     ready();
@@ -85,7 +83,6 @@ You can access a specific instance via this key, or loop over them all and run y
     instance.setSuspenseHTML('<div>loading</div>');
   }
 </script>
-{% endraw %}
 ```
 
-More methods can be found in the [API Reference](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md)
+More methods can be found in the [API Reference](live-updates-reference.md)

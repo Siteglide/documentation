@@ -1,4 +1,4 @@
-# 🛳️ Module - Secure Zones - Changelog
+# Module - Secure Zones - Changelog
 
 ### 1.3.3 - 11th December 2024
 

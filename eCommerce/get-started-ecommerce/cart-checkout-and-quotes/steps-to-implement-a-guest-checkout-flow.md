@@ -1,4 +1,4 @@
-# 📋 Steps to Implement a Guest Checkout Flow
+# Steps to Implement a Guest Checkout Flow
 
 ## Pre-Requisites
 
@@ -31,9 +31,7 @@ Check the "Pricing" tab to add a price.
 Users will need to see your products in order to access their Product Detail Pages, or add to their Carts directly. You can use the following code to add a Product List view with the default layout:
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/products', layout: 'default', per_page: '20', show_pagination: 'true' -%}
-{% endraw %}
 
 
 ```
@@ -66,9 +64,9 @@ Select the Detail Page Template and Layout:
 
 Make sure your Product Detail pages have an add to Cart Button in their layout’s item.liquid file.
 
-Learn more about Product Detail pages [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-detail.md).
+Learn more about Product Detail pages [here](../../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-detail.md).
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/09bec6936a6d6b6df748b7b4d793a9bd3e35619c1a44369f1508ff70eabc0bd679bbc6c1-f720-4782-a09c-c66699\_dv7ljb.png)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/09bec6936a6d6b6df748b7b4d793a9bd3e35619c1a44369f1508ff70eabc0bd679bbc6c1-f720-4782-a09c-c66699_dv7ljb.png)
 
 This liquid include tag will add the "Add to Cart" Button:
 
@@ -77,7 +75,6 @@ This liquid include tag will add the "Add to Cart" Button:
 \`
 
 This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product. To add a custom Cart Add layout, see the [Folder Structure](../../../ecommerce/get-started-ecommerce/cart-and-checkout-folder-structure.md) for the correct directory and use the `component_layout` parameter to reference it:
-
 
 \`
 
@@ -103,7 +100,7 @@ If you are using SiteBuilder, or have already added your own CSS for the Cart, w
 
 Use the `layout` parameter to select the folder which contains the wrapper.liquid and the item.liquid file you would like to use for your layout. For now, you can use the "cart" layout which is included in the eCommerce Module.
 
-Learn more about Cart Layouts [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
+Learn more about Cart Layouts [here](../../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
 
 {% hint style="success" %}
 [SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder.md) has an out-of-the-box Cart design ready for you in a Bootstrap 5 or Tailwind version.\
@@ -114,7 +111,7 @@ Learn more about Cart Layouts [here](/ecommerce/get-started-ecommerce/cart-check
 
 This will store a paying User against the CRM and submit their payment details securely via your chosen Payment Gateway.
 
-You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](/cms/forms/about-forms.md).
+You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](../../../cms/forms/about-forms.md).
 
 You will need to add the following information when creating your form:
 
@@ -123,7 +120,7 @@ You will need to add the following information when creating your form:
 * In the payments tab, toggle "Use as a payment form?" on
 * Payment Form Type will appear under the payments tab. Select "Standard Checkout".
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/a17fbd69d63e44fcee58b5dbeb3afacab3e6c8abe0c2470fa2066850e3ee5a72c5a45c5f-3246-4bc0-b8b0-d50706\_7erjvv.png)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/a17fbd69d63e44fcee58b5dbeb3afacab3e6c8abe0c2470fa2066850e3ee5a72c5a45c5f-3246-4bc0-b8b0-d50706_7erjvv.png)
 
 Save your changes.
 

@@ -1,4 +1,4 @@
-# ℹ️ External Resources
+# External Resources
 
 ### Introduction
 

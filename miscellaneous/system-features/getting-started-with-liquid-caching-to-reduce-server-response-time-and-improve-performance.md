@@ -32,11 +32,9 @@ You can include dynamic content in your cache key- a really useful thing to do i
 You can use the Cache tag to wrap the block of Liquid code that is slowing your Page down. You can wrap languages like JavaScript too, but it will have no effect on performance, as they will run on the Browser - long after the Cache has loaded.
 
 ```liquid
-{% raw %}
 {% cache category_cache_key, expire: 60 %}
    <!-- code here -->
 {% endcache %}
-{% endraw %}
 
 ```
 
@@ -68,9 +66,7 @@ To do this, you want to change the Cache key.
 Let's say the Cache key is just the URL of the Site:
 
 ```liquid
-{% raw %}
 {% capture category_cache_key %}{{context.headers.PATH_INFO}}{% endcapture %}
-{% endraw %}
 
 ```
 
@@ -80,9 +76,7 @@ To bust the Cache manually, you can either:
 * Change the Cache key e.g. add a number at the end.
 
 ```liquid
-{% raw %}
 {% capture category_cache_key %}{{context.headers.PATH_INFO}}-1{% endcapture %}
-{% endraw %}
 ```
 
 To change the Cache Key dynamically, add dynamic Liquid to the Cache Key, e.g. from a custom GraphQL query, a WebApp or a Module.

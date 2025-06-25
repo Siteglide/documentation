@@ -1,4 +1,4 @@
-# ℹ️ Integration Automations
+# Integration Automations
 
 {% hint style="info" %}
 While this is now available for all users it is still in Beta and we value any feedback or reports of issues as at 14th October 2024. It's currently free to use but will soon be billed as a usage metric (we expect to merge it with API Calls). We will provide information and warning prior to making it billable.

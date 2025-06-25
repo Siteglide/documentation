@@ -27,9 +27,7 @@ Within the email, you can also access any fields that were submitted along with 
 Add the following Liquid tag to include the details of the customer's most recent Order:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/order_details', layout: 'email' %}
-{% endraw %}
 
 ```
 
@@ -73,11 +71,9 @@ _Looping over Products_\
 This loop will find any Products in the Order and loop over them.
 
 ```liquid
-{% raw %}
 {%- for product in this.order_products -%}
     <!-- Output {{product}} -->
 {% endfor %}
-{% endraw %}
 
 ```
 
@@ -93,14 +89,12 @@ Within a Product Loop, you can access the fields associated with that Product.
 _Looping over Products, then looping over Attributes_
 
 ```liquid
-{% raw %}
 {%- for product in this.order_products -%}
     <!-- Output {{product}} -->
     {% for attribute in product.order_product_attributes -%}
          <!-- Output {{attribute }} -->
     {% endfor %}
 {% endfor %}
-{% endraw %}
 
 ```
 
@@ -115,14 +109,12 @@ The following fields are available relating to the Shipping Method:
 Example of only including Shipping Information if it was set:
 
 ```liquid
-{% raw %}
 {% if this['Shipping Method Name'] != blank %}
      {{this['Shipping Method Name']}}
      {{ this['Currency Symbol'] }}
      {%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter'   
                  price_data: this['Shipping Method Price'] -%}
 {% endif %}
-{% endraw %}
 
 ```
 

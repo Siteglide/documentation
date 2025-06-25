@@ -1,4 +1,4 @@
-# 👀 constants\_json
+# constants\_json
 
 ## Introduction
 
@@ -13,7 +13,6 @@ Instead, we've provided a similar alternative constants\_json which you can use 
 ### Example
 
 ```liquid
-{% raw %}
 {% function constants = "constants_json" %}
 
 <!-- company_information -->
@@ -27,7 +26,6 @@ Instead, we've provided a similar alternative constants\_json which you can use 
 <!-- currency_map -->
 
 {{constants.currency_map}}
-{% endraw %}
 ```
 
 Not Currently Supported

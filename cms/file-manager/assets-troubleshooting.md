@@ -1,4 +1,4 @@
-# 🔧 Assets Troubleshooting
+# Assets Troubleshooting
 
 ## Diagnosing issues
 
@@ -9,10 +9,9 @@ If you cannot see the asset on your page then you can check the following common
 e.g. these will **fail** because the "/" or "assets/" beginning of the path will end up being added twice.
 
 ```liquid
-{% raw %}
 {{'assets/images/SG-Logo-White.svg' | asset_url }}
 {{'/images/SG-Logo-White.svg' | asset_url }}
-{% endraw %}
+
 ```
 
 * Check the file manager or code editor shows the correct path for your asset, including any folders.
@@ -30,17 +29,15 @@ e.g. here a string was forgotten and validation on Admin or Siteglide CLI should
 
 ### Special Characters and Spaces
 
-Ideally, try not to upload files which contain special characters or spaces. However, if this is unavoidable, there are ways to fix the "access denied" errors you may see when you follow a link to an image like this.&#x20;
+Ideally, try not to upload files which contain special characters or spaces. However, if this is unavoidable, there are ways to fix the "access denied" errors you may see when you follow a link to an image like this.
 
-Dashes '-' and forward slashes '/' are not counted as special characters for this purpose.  \
+Dashes '-' and forward slashes '/' are not counted as special characters for this purpose.\
 \
 When uploaded to AWS, any special characters or spaces will be URL encoded automatically. But to access the file, you will need to encode the path and then replace the % signs in the encoded string with the encoded version of the % sign "%25".
 
 ```liquid
-{% raw %}
 {{'images/example image with spaces!.jpg' | url_encode | replace: "%", "%25" | asset_url }}
-{% endraw %}
 ```
 
 \
-If you're experiencing this issue and need further guidance, contact support.&#x20;
+If you're experiencing this issue and need further guidance, contact support.

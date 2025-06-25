@@ -1,11 +1,9 @@
-# ℹ️ Field Mapping
+# Field Mapping
 
 ### Example <a href="#example" id="example"></a>
 
 ```
-{% raw %}
 {%- function field_map = "modules/module_86/front_end/functions/v1/field_mapping", field_headings: field_headings, this: this -%}
-{% endraw %}
 
 
 ```
@@ -25,13 +23,11 @@ However, if you wish, you can also modify the existing headings in the JSON obje
 Starting with this Object...
 
 ```
-{% raw %}
 {% parse_json field_headings %}
 {
 "Title": "name"
 }
 {% endparse_json %}
-{% endraw %}
 
 
 ```
@@ -39,13 +35,11 @@ Starting with this Object...
 You could change it so that existing `{{field_map['Title']}}` outputs would output values from a different field like so:
 
 ```
-{% raw %}
 {% parse_json field_headings %}
 {
 "Title": "webapp_field_1_1"
 }
 {% endparse_json %}
-{% endraw %}
 
 
 ```
@@ -53,14 +47,12 @@ You could change it so that existing `{{field_map['Title']}}` outputs would outp
 Or you can add a brand new slot to the WebApp `{{field_map['Extra Slot']}}` and populate it with a new field's data:
 
 ```
-{% raw %}
 {% parse_json field_headings %}
 {
 "Title": "name"
 "Extra Slot": "webapp_field_1_2"
 }
 {% endparse_json %}
-{% endraw %}
 ```
 
 As the field\_headings are passed into the function, the function will return an object where the required data values are stored against the correct keys.

@@ -123,9 +123,7 @@ To achieve this, you can combine two Siteglide Features by nesting a Siteglide F
 **Step 1) User Details Contain the existing CFS Data** To fetch the existing CFS and CRM data for the Current User, you'll need a [User Details](user-details.md) Layout.
 
 ```liquid
-{% raw %}
 {% include 'user_details', layout: 'user_details_edit_form_container' %}
-{% endraw %}
 
 
 ```
@@ -139,9 +137,7 @@ Parameters:
 Output your Form by writing the code for the Form inside this `user_details` Layout instead of directly in the Page e.g.
 
 ```liquid
-{% raw %}
 {% include 'form', id: '10', layout: 'custom' %}
-{% endraw %}
 
 ```
 

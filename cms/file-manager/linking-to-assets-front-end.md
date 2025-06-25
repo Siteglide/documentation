@@ -5,11 +5,11 @@ createdAt: 2021-02-17T16:38:54.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# 🔹 Linking to Assets Explained
+# Linking to Assets Explained
 
 Find out how to use the asset\_url filter to generate a path to your assets and understand the benefits of hosting assets on our CDN.
 
-You can see more examples in the [Assets Reference](/cms/file-manager/assets-reference.md)
+You can see more examples in the [Assets Reference](assets-reference.md)
 
 ## Introduction
 
@@ -30,9 +30,9 @@ You will see that the asset will render on the page with a similar path to this:
 This also works if you add an image path to a file in File manager as a string, and use the same `asset_url` filter:
 
 ```liquid
-{% raw %}
 <div class="bg-image" style="background-image: url('{{"images/example.jpg" | asset_url}}')"></div>
-{% endraw %}
+
+
 ```
 
 Which renders to:
@@ -59,11 +59,11 @@ Using ../ automatically appends the URL to your asset within CSS files:
 
 `../` is relative to the location of your stylesheet which will already be inside the CDN. This is especially useful for background images. You can look up CSS relative paths online for more information.
 
-Note that this can have drawbacks with assets which are regularly updated, as you may pull in a cached version of the image. Using `asset_url` instead prevents this as it always appends the URL with a timestamp, busting the cache and getting the most recent version.&#x20;
+Note that this can have drawbacks with assets which are regularly updated, as you may pull in a cached version of the image. Using `asset_url` instead prevents this as it always appends the URL with a timestamp, busting the cache and getting the most recent version.
 
 ## Vanity Asset URLs - Slower Performance, but sometimes a Client Requirement
 
-In some cases* you may wish to hide the AWS CDN `(https://uploads.prod01.oregon.platform-os.com)` and only refer to the vanity domain of the site (https://www.mydomain.com). To dynamically achieve this, you can use the liquid parameter `asset_path` rather than `asset_url` when calling an asset to a page. Any of the above examples are also applicable with this method.
+In some cases\* you may wish to hide the AWS CDN `(https://uploads.prod01.oregon.platform-os.com)` and only refer to the vanity domain of the site (https://www.mydomain.com). To dynamically achieve this, you can use the liquid parameter `asset_path` rather than `asset_url` when calling an asset to a page. Any of the above examples are also applicable with this method.
 
 {% hint style="info" %}
 This might be a client requirement for example, if an end user is downloading an PDF, and wants to see your site's domain in the download URL. However, it is still not considered best practice, since it is slower.

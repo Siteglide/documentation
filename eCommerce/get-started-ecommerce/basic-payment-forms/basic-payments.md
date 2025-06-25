@@ -5,15 +5,15 @@ createdAt: 2021-02-19T09:57:47.000Z
 updatedAt: 2023-04-06T15:53:56.000Z
 ---
 
-# 💡 About Basic Payment Forms
+# About Basic Payment Forms
 
 Basic Payments are a way to take a payment when a form is submitted. They may be useful for allowing Users to pay invoices etc.
 
 ## Prerequisites
 
 * You have installed the eCommerce Module in Site Settings
-* You have set up a [Payment Gateway](/eCommerce/get-started-ecommerce/payment-gateways/README.md)
-* Using PayPal as a Payment Gateway? There are additional setup instructions [here](/eCommerce/get-started-ecommerce/payment-gateways/paypal-custom-params.md).
+* You have set up a [Payment Gateway](../payment-gateways/)
+* Using PayPal as a Payment Gateway? There are additional setup instructions [here](../payment-gateways/paypal-custom-params.md).
 
 ## Introduction
 

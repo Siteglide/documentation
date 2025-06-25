@@ -2,7 +2,7 @@
 description: Working with Tailwind via our CLI
 ---
 
-# 🏗️ Set Up Tailwind CSS
+# Set Up Tailwind CSS with the recommended CLI method
 
 ## Before You Start <a href="#before-you-start" id="before-you-start"></a>
 

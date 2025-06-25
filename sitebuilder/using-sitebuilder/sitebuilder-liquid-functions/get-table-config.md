@@ -1,11 +1,9 @@
-# ℹ️ Get Table Config
+# Get Table Config
 
 ### Example <a href="#example" id="example"></a>
 
 ```liquid
-{% raw %}
 {% function table_config = "modules/module_86/front_end/functions/v1/get_table_config", model: _model, id: id, field_headings: field_headings %}
-{% endraw %}
 ```
 
 ### Purpose <a href="#purpose" id="purpose"></a>

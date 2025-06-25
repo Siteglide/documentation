@@ -1,4 +1,4 @@
-# 📋 Steps to Add Secure Zones and User Orders View to your Checkout Flow
+# Steps to Add Secure Zones and User Orders View to your Checkout Flow
 
 ## Pre-Requisites
 
@@ -86,9 +86,7 @@ Create a new file in the user\_orders folder and give it a name of your choice. 
 Add the following liquid to your Orders page to output a list of the current logged-in User’s Orders:
 
 ```
-{% raw %}
 {%- include 'user_orders', layout: 'name_of_my_layout', sort_type: 'id', sort_order: 'asc', show_pagination: 'false' %}
-{% endraw %}
 
 
 
@@ -102,11 +100,9 @@ The layout parameter should take the name of the list layout you created.
 Your layout will have access to the "orders" object. You can loop over each order in the "Order" object with the following liquid (the "order" variable can be renamed to anything you like). For example:
 
 ```
-{% raw %}
 {% for order in orders %}
   <!-- {{order.id}} etc. -->
 {% endfor %}
-{% endraw %}
 
 
 ```

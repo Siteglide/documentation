@@ -1,4 +1,4 @@
-# 🌳 Assets File Structure
+# Assets File Structure
 
 ```
 marketplace_builder/
@@ -8,4 +8,4 @@ marketplace_builder/
     └── js/
 ```
 
-Any folders inside the assets folder are optional. We've included a few common default folders as an example.&#x20;
+Any folders inside the assets folder are optional. We've included a few common default folders as an example.

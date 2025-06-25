@@ -1,4 +1,4 @@
-# ℹ️ A Custom Liquid Action Example
+# A Custom Liquid Action Example
 
 Once you've read how our [introduction to Automations](../), you're ready to start creating your own. Below is an example of a custom action in Automations.\
 \

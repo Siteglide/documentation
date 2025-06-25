@@ -1,4 +1,4 @@
-# ℹ️ Custom Field IDs
+# Custom Field IDs
 
 Each WebApp and Module has specific custom fields. Each field has a human-readable name and a database ID.
 

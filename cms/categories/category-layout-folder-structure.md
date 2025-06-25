@@ -1,4 +1,4 @@
-# 🌳 Category Layout Folder Structure
+# File Structure
 
 ```bash
 └───marketplace_builder

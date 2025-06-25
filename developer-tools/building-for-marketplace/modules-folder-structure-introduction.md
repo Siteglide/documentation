@@ -1,4 +1,4 @@
-# 🌳 Modules Folder Structure Introduction
+# File Structure
 
 In general there are two main types of folder structure for Modules, though within that, there will be variation on the types of file available, so check each individual module.
 
@@ -50,7 +50,7 @@ modules/
 ```
 
 {% hint style="info" %}
-The private folder will exist, but will not be possible to pull using CLI or view in the Code Editor UI. It is for storing functional code which will be used by the Module behind the scenes.&#x20;
+The private folder will exist, but will not be possible to pull using CLI or view in the Code Editor UI. It is for storing functional code which will be used by the Module behind the scenes.
 {% endhint %}
 
 Read more about Module Directory Structure on platformOS: [https://documentation.platformos.com/developer-guide/platformos-workflow/directory-structure#modules](https://documentation.platformos.com/developer-guide/platformos-workflow/directory-structure#modules)

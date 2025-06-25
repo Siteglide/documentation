@@ -1,4 +1,4 @@
-# 🚀 Quickstart: eCommerce
+# Quickstart: eCommerce
 
 {% hint style="info" %}
 This Quickstart guide covers the basics of setting up an eCommerce store using SiteBuilder. To build your layouts from scratch (not using SiteBuilder) you would just create your own Layouts either in Code Editor or via CLI.

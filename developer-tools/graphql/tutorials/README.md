@@ -1,4 +1,4 @@
-# 📋 Tutorials
+# Tutorials
 
 This is a brief overview of the GraphQL tutorials we currently provide and the topics we plan to cover in future.
 

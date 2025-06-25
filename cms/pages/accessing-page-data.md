@@ -2,7 +2,7 @@
 description: Page and Page Templates
 ---
 
-# 💻 Reference
+# Reference
 
 {% hint style="info" %}
 **Not a Developer?** We recommend using [studio.md](studio.md "mention"), our no-code editor.
@@ -13,9 +13,9 @@ description: Page and Page Templates
 Determines where in the Page Template the dynamic content of the Page itself will sit:
 
 ```liquid
-{% raw %}
 {{content_for_layout}}
-{% endraw %}
+
+
 ```
 
 Note though that the Page is actually rendered by the server before the Page Template, this allows Liquid to pass data from the Page to the Page Template either using Page Metadata or the `content_for` and `yield` tags.
@@ -73,7 +73,6 @@ For the full documentation on the platformOS `context` variable, see here: [http
 This takes the URL path of the page, splits it based on / and titleizes the items.
 
 ```liquid
-{% raw %}
 {% assign slugSplit = context.location.pathname | remove_first: '/' | split: '/' %}
 <ul>
     <li>
@@ -92,6 +91,5 @@ This takes the URL path of the page, splits it based on / and titleizes the item
             </li>
         {% endif %}
     {% endfor %}
-{% endraw %}
 </ul>
 ```

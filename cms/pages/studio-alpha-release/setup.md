@@ -1,4 +1,4 @@
-# 🎨 Studio Alpha Release
+# Setup
 
 {% hint style="info" %}
 To use the Alpha version of Studio you will have to use a new URL version of Admin:

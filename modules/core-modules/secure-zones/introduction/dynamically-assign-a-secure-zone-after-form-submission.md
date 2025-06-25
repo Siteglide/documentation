@@ -7,7 +7,7 @@ createdAt: 2021-02-16T14:35:55.000Z
 updatedAt: 2023-03-03T08:09:51.000Z
 ---
 
-# 📋 Dynamically Assign a Secure Zone during Form Submission
+# Dynamically Assign a Secure Zone during Form Submission
 
 This will show you how and help you decide if using a dynamic single Form or multiple Forms is right for your Use Case.
 
@@ -55,8 +55,6 @@ In the configuration for the "Public Sign Up Form" in the Siteglide Admin, we ca
 
 By default, the Form will assign Users to both these Secure Zones, but we'll change that later.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/260749877/3fd79df2e2edc237e78eb489/image.png) -->
-
 ### A Note on Security
 
 The important thing at this stage is that we have **not** added "Private Employees Only" to the Allow List.
@@ -71,26 +69,19 @@ It is the responsibility of Partner and Client to make sure that if a User has a
 
 In this example, we'll use a Form Field to provide User Input which will change the active Secure Zone dynamically. This is optional, as you may have other reasons for assigning a particular Secure Zone.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/260753908/3a71c01de3d8a11f231bf0f9/image.png) -->
-
 ## Step 3) Creating a Custom Form Layout
 
 In order to dynamically assign Users to the correct public Secure Zone, we'll need to create a custom Form layout.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/260752059/b500b2ef82a11d495ebeb876/image.png) -->
-
 A quick tip for setting up the Custom Layout quickly is to start by copying and pasting the content of the default Layout.
 
 ## Step 4) Add the Form to a Page
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/260769080/abe61451d48841f3548bae61/image.png) -->
 
 ## Step 5) Adding JavaScript to the Custom Form Layout
 
 In the code from the default Layout that we've copied, we can see the dropdown field that my Users will use to select their location (and thanks to the code we will write now, their Secure Zone).
 
 ```liquid
-{% raw %}
 <div class="row mt-4 select">	
     <div class="col">
     		<label for="form_field_12_1">Location</label>
@@ -102,7 +93,6 @@ In the code from the default Layout that we've copied, we can see the dropdown f
     		</select>
 	</div>
 </div>
-{% endraw %}
 ```
 
 We can also see the hidden field that we must change the value of in order to change the active Secure Zone: `<input id="s_sz_id" value="743,744" type="hidden">` Note- this includes the IDs of the Secure Zones, not their names, so Admin should be referenced so that you know which is which.

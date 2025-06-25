@@ -21,9 +21,7 @@ If nothing appears, you might have this problem. \
 An example of a Liquid tag with invalid parameters is this one, can you spot the issue?
 
 ```
-{% raw %}
 {% include 'webapp', id: '1', item_ids: '1', per_page: '1', sort_type: 'item_ids', layout: 'widget-test' -%}
-{% endraw %}
 ```
 
 Answer: `item_ids` is a valid parameter name, but not a valid parameter value for  the parameter `sort_type`. To \*sort\* by the item's id, the correct value would be `sort_type: "id"` , since id is a core field shared by all webapps and modules. Other core fields include "created\_at", "updated\_at", "external\_id". Most other fields e.g. `expiry_date` , `name` or custom fields are Siteglide fields and should be prefixed by `properties` e.g. `sort_type: "properties.name"` .

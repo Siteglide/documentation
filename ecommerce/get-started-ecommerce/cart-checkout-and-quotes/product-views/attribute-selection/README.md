@@ -1,2 +1,2 @@
-# 📂 Attribute Selection
+# Attribute Selection
 

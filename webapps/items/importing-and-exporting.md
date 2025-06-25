@@ -1,4 +1,4 @@
-# 📋 Importing and Exporting
+# Importing and Exporting
 
 ## Import
 
@@ -34,6 +34,6 @@ From your list of items, you can “Export” to download a CSV of all of your e
 
 Success or fail, you can head to Site Manager > Export Logs to download this CSV or learn more about this failure.
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/27c96a1ba7377ec3f14e16333201256243e43e6ccdef639dac96d9827306ff4db67ed3e6-5f0a-44d6-86f4-2c9389\_15ot6rs.gif)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/27c96a1ba7377ec3f14e16333201256243e43e6ccdef639dac96d9827306ff4db67ed3e6-5f0a-44d6-86f4-2c9389_15ot6rs.gif)
 
 aa

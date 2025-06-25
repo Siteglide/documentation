@@ -1,4 +1,4 @@
-# ℹ️ WebApp List Layout
+# WebApp List Layout
 
 ## Syntax
 

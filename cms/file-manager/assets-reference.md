@@ -1,4 +1,4 @@
-# 👀 Assets Reference
+# Tags for Assets
 
 ### Linking to Assets
 
@@ -6,7 +6,7 @@
 
 `<link rel="stylesheet" type="text/css" href="{{ 'css/styles.css' | asset_url }}" />`
 
- =>
+\=>
 
 `https://cdn.staging.oregon.platform-os.com/instances/xxxxxx/assets/css/styles.css?updated=1733383736255`
 
@@ -14,7 +14,7 @@
 
 `<script src="{{ 'js/myfile.js' | asset_url }}"></script>`
 
- =>
+\=>
 
 `https://cdn.staging.oregon.platform-os.com/instances/xxxxxx/assets/js/myfile.js?updated=1733383736255`
 
@@ -22,7 +22,7 @@
 
 `{{ 'images/SG-Logo-White.svg' | asset_url }}`
 
- =>
+\=>
 
 `https://cdn.staging.oregon.platform-os.com/instances/xxxxxx/assets/images/SG-Logo-White.svg?updated=1733383736255`
 
@@ -31,11 +31,12 @@
 After uploading an image to a WebApp file/image field using the Siteglide Admin's file manager, or using a front-end form, the actual value stored in the database will be something like the format: `images/hero/hero01.jpg` which will point to a file at the location: `marketplace_builder/assets/images/hero/hero01.jpg`.
 
 ```liquid
-{% raw %}
 {{ this['my_field'] | asset_url }}
-{% endraw %}
+
+
 ```
- =>
+
+\=>
 
 `https://cdn.staging.oregon.platform-os.com/instances/xxxxxx/assets/images/hero/hero01.jpg?updated=1733383736255`
 
@@ -51,12 +52,10 @@ Siteglide's CDN uses the "updated" parameter to prioritise fast caching of the i
 
 The easiest way to add CSS background images reliably is actually with an inline style attribute in HTML. This is because it allows you to use the `asset_url` Liquid filter:
 
-##### Liquid
+**Liquid**
 
 ```liquid
-{% raw %}
 <div class="bg-image" style="background-image: url('{{"images/example.jpg" | asset_url}}')"></div>
-{% endraw %}
 ```
 
 Which renders to:
@@ -65,7 +64,7 @@ Which renders to:
 <div class="bg-image" style="background-image: url('https://cdn.staging.oregon.platform-os.com/instances/xxxxxx/assets/js/myfile.js?updated=1733383736255')"></div>
 ```
 
-##### CSS
+**CSS**
 
 Other background property rules can be added as normal in CSS.
 
@@ -84,3 +83,4 @@ Or
 
 `/assets/images/SG-Logo-White.svg`
 
+```

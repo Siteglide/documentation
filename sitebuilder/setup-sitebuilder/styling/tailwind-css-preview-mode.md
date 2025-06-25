@@ -1,4 +1,4 @@
-# 🏗️ Tailwind CSS - Preview Mode
+# Tailwind CSS - Preview Mode
 
 {% hint style="info" %}
 Preview Mode is not recommended for Live Sites. We recommend only using CLI to compile Tailwind which will load the minimum CSS possible and maximise performance.
@@ -26,18 +26,14 @@ Or, by editing the Page Template code:
 
 ```liquid
 
-{% raw %}
 {% include 'modules/module_86/tailwind/head', template_build_method: 'preview', optional_path_to_cli_css: 'css/tailwind.min.css' %}
-{% endraw %}
 
 ```
 
 ### CLI build only
 
 ```liquid
-{% raw %}
 {% include 'modules/module_86/tailwind/head', optional_path_to_cli_css: 'css/tailwind.min.css' %}
-{% endraw %}
 
 
 ```
@@ -77,12 +73,10 @@ However, you can support them by running a CLI Tailwind build as well, either:
 2. When the Client finishes a Page or set of Pages and are ready to put them live and they let you know they are ready to "publish". You run a Tailwind CLI build and switch the Page Template to one with preview mode turned off, giving site visitors a faster experience. Note that by default preview mode templates are **still visible to site visitors.** If using this workflow, you may wish to add Liquid logic to the Page Template which either requires a visitor to be viewing in the Studio tab or to enter a \`?preview=true\` at the end of the URL in the browser:
 
 ```liquid
-{% raw %}
 {% if context.headers.HTTP_USER_AGENT contains "node-fetch" or context.params.preview == true %}
     {{content_for_layout}}
 {% else %}
     {% response_status 404 %}
     {% redirect_to '/404' %}
 {% endif %}
-{% endraw %}
 ```

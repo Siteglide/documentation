@@ -1,4 +1,4 @@
-# 🛳️ Module - FAQ - Changelog
+# Module - FAQ - Changelog
 
 ### 1.1.0 - 3rd October 2022
 

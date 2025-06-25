@@ -2,7 +2,7 @@
 description: Backup your sites and data
 ---
 
-# ☁️ Site Backups and Disaster Recovery
+# Site Backups and Disaster Recovery
 
 {% hint style="info" %}
 We recommend using the Sitegurus Protect Backup Tool: [https://www.sitegurus.io/protect](https://www.sitegurus.io/protect)

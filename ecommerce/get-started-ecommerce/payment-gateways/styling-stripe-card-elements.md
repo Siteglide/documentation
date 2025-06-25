@@ -7,7 +7,7 @@ createdAt: 2021-02-18T14:33:39.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# 🔹 Styling Stripe Card Elements
+# Styling Stripe Card Elements
 
 The Stripe Payment Gateway provides its own iframe to accept Card Details securely so direct styling isn't possible. Instead use JavaScript.
 
@@ -64,4 +64,4 @@ var stripe_classes = {
 
 Any styles you set in the `stripe_styles` object to base will still apply after changing the class, unless you specifically override them.
 
-You can see a full reference for the available properties for this object in the Stripe documentation here: [https://stripe.com/docs/js/elements\_object/create\_element?type=card#elements\_create-options-classes](https://stripe.com/docs/js/elements\_object/create\_element?type=card#elements\_create-options-classes)
+You can see a full reference for the available properties for this object in the Stripe documentation here: [https://stripe.com/docs/js/elements\_object/create\_element?type=card#elements\_create-options-classes](https://stripe.com/docs/js/elements_object/create_element?type=card#elements_create-options-classes)

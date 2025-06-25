@@ -1,4 +1,4 @@
-# 📋 Install & Manage Modules
+# Install & Manage Modules
 
 Go to a specific site in Portal and click the Modules tab. This will show all Modules in the Marketplace but it will not show Marketplace Templates because they cannot be installed onto an existing site).
 

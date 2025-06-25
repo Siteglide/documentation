@@ -1,4 +1,4 @@
-# 📋 Invite & Manage Users
+# Invite & Manage Users
 
 This is where you manage Account users, they would get access to all sites in your Portal
 

@@ -1,4 +1,4 @@
-# 🌳 Pages and Page Templates File Structure
+# File Structure
 
 All Liquid files live somewhere inside the views folder.
 

@@ -5,14 +5,14 @@ createdAt: 2021-02-19T10:42:21.000Z
 updatedAt: 2023-04-11T07:25:02.000Z
 ---
 
-# 🔹 Attributes - Changing Product Price after Change
+# Attributes - Changing Product Price after Change
 
 This Article will look in detail at the JavaScript function which updates the Product price as the customer selects Attributes.
 
 ## Prerequisites
 
-* Your [eCommerce Module](/ecommerce/quickstart-ecommerce.md) should be updated to version 1.0.5 to get the latest version of this feature described by this Article. Earlier versions of the Module will have limited support for this feature on Product List views.
-* You have [created Attributes](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md) on some of your Products and [included an Attributes sub-Layout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md) nested inside your Product Layout.
+* Your [eCommerce Module](../../../../quickstart-ecommerce.md) should be updated to version 1.0.5 to get the latest version of this feature described by this Article. Earlier versions of the Module will have limited support for this feature on Product List views.
+* You have [created Attributes](../../managing-products/managing-attributes.md) on some of your Products and [included an Attributes sub-Layout](attribute-layouts.md) nested inside your Product Layout.
 
 ## Introduction
 
@@ -58,12 +58,11 @@ To display the initial price of a Products on the Product List, or Detail View, 
 </script>
 ```
 
-#### To Update the Price on Attribute Select&#x20;
+#### To Update the Price on Attribute Select
 
 To watch an Attribute for change, add the listener: `onchange="s_e_update_price()"`to the `<select>` element in your chosen Attributes Layout:
 
 ```liquid
-{% raw %}
 <label for="{{attribute_name | slugify}}">{{name}}</label>
 <select name="attr1" 
         class="form-control" 
@@ -77,7 +76,7 @@ To watch an Attribute for change, add the listener: `onchange="s_e_update_price(
 {% endfor -%}
 </select>
 
-{% endraw %}
+
 ```
 
 ## Usage Notes
@@ -96,12 +95,10 @@ To mark an element within the `item.liquid` file as being the element which will
 The value of these Attributes should be set using Liquid to the Product's initial price and currency:
 
 ```liquid
-{% raw %}
 <p class="product-price" 
    data-price-control="{{this.price.price_charge}}" 
    data-currency-control="{{this.price.currency_symbol}}">
    {{this.price.currency_symbol}}{{this.price.price_charge_formatted}}</p>
-{% endraw %}
 ```
 
 In this example above- we also add the initial Price to the text content of the element using Liquid on Page Load. Instead, you can run the function on Page Load to display the initial price, should you choose.

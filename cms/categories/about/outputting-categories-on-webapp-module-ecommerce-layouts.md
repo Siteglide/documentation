@@ -4,7 +4,7 @@ description: >-
   of the Categories assigned to a WebApp or Module Item
 ---
 
-# ℹ️ Outputting Categories on WebApp / Module / eCommerce Layouts
+# Outputting Categories on WebApp / Module / eCommerce Layouts
 
 ## Introduction
 
@@ -35,11 +35,9 @@ This will output the IDs of Categories which are assigned to the current Item in
 To loop over all these Category IDs you can use a Liquid For Loop:
 
 ```liquid
-{% raw %}
 {% for category in this.category_array %}
   {{category}} <!-- outputs the ID of the Category -->
 {% endfor %}
-{% endraw %}
 
 
 ```
@@ -47,12 +45,10 @@ To loop over all these Category IDs you can use a Liquid For Loop:
 Once you have the Category ID, you can use the Categories data object to access any other Category fields, e.g. the name:
 
 ```liquid
-{% raw %}
 {% for category in this.category_array %}
   {{context.exports.categories.data[category]}} <!-- outputs this Category JSON Object -->
   {{context.exports.categories.data[category].name}} <!-- outputs this Category name -->
 {% endfor %}
-{% endraw %}
 
 
 ```
@@ -75,9 +71,7 @@ You can use the following to only output the name of a specifc category assigned
 
 ```liquid
 <!-- Fetch second Category name -->
-{% raw %}
 {% assign categoryID == this.category_array[1] %}
-{% endraw %}
 {{context.exports.categories.data[categoryID].name}}
 
 ```
@@ -88,11 +82,9 @@ If you want to make sure the category item in the array you are calling exists f
 
 ```liquid
 
-{% raw %}
 {% if this.category_array[0] != blank %}
     {{context.exports.categories.data[this.category_array[0]].name}}
 {% endif %}
-{% endraw %}
 
 
 
@@ -106,9 +98,7 @@ Second category in the array (and so on):
 
 ```liquid
 
-{% raw %}
 {% if this.category_array[1] != blank %}
     {{context.exports.categories.data[this.category_array[1]].name}}
 {% endif %}
-{% endraw %}
 ```

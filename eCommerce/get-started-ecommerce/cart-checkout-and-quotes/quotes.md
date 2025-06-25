@@ -46,9 +46,7 @@ Next, in the Page Builder tab, use Toolbox on the right-hand side to enter the F
 The code should look something like this:
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/quote', form_id: '17', layout: 'default' -%}
-{% endraw %}
 
 ```
 
@@ -79,9 +77,7 @@ With customisation, you can make further changes to the Layouts including hiding
 For the default Layout, the following Liquid will be taken care of for you, but when building a custom Layout you must make sure it is still included on the line before the submit button:
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/quote_only' -%}
-{% endraw %}
 ```
 
 In the Examples above we started with a Starter Site and copied the code from the default Form Layout into a new Layout, editing the appearance of the Button.

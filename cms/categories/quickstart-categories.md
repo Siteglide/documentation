@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Categories
+# Quickstart: Categories
 
 ## Step 1: Find the Parent Category
 

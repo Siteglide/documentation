@@ -5,7 +5,7 @@ description: >-
   sections of the docs.
 ---
 
-# 💻 Reference
+# Reference
 
 ## Standard Module Fields
 
@@ -25,18 +25,14 @@ These Fields are available to all standard modules:
 ### List Layouts
 
 ```liquid
-{% raw %}
 {% include 'module', id: '3', layout: 'default' %}
-{% endraw %}
 
 ```
 
 ### Detail Layouts
 
 ```liquid
-{% raw %}
 {% include 'module', id: '3', layout: 'default', type: 'detail', item_ids: insert_item_id %}
-{% endraw %}
 
 
 ```
@@ -75,9 +71,7 @@ If you nest any more Module or WebApp layouts inside this Module Layout, they wi
 To get the most recently "released" item, you can use the `sort_type` parameter to sort by `properties.release_date`. You can alternatively use `created_at` to sort by the Item you most recently added to the Admin.
 
 ```liquid
-{% raw %}
 {% include 'module', id: '3', layout: 'default', sort_type: 'properties.release_date', sort_order: 'desc', per_page: '1' %}
-{% endraw %}
 ```
 
 Then just output one post- to get the first Item. To do this, set `per_page` to `1`.

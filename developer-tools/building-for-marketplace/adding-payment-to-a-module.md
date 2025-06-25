@@ -1,4 +1,4 @@
-# ℹ️ Adding Payment to a Module
+# Adding Payment to a Module
 
 You can set your Module up to require payment before a user can install it.
 

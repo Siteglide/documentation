@@ -5,7 +5,7 @@ description: >-
   changes to HTML or CSS classes.
 ---
 
-# 🏗️ Theme Presets
+# Theme Presets
 
 ## Pre-Requisites
 

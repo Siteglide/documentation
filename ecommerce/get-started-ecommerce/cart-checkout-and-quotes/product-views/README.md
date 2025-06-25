@@ -1,2 +1,2 @@
-# 📂 Product Views
+# Product Views
 

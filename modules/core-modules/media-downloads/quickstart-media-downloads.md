@@ -1,4 +1,4 @@
-# 🚀 Quickstart
+# Quickstart: Media Downloads
 
 ## Step 1: Install the Media Downloads Module
 

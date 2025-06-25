@@ -1,4 +1,4 @@
-# 📋 Steps to Setting Up Live Updates API in a Module/WebApp Layout
+# Steps to Setting Up Live Updates API in a Module/WebApp Layout
 
 {% hint style="info" %}
 The quickest way to get started with the SiteBuilder Live Updates API is to install a SiteBuilder layout which already uses it. Look out for the teal 'Live-updates ready' tag on the layouts, install and modify at will.
@@ -9,13 +9,11 @@ The quickest way to get started with the SiteBuilder Live Updates API is to inst
 Firstly, make sure the SiteBuilder Module is installed on your site. Then, include the JavaScript via CDN in the Page. We recommend you use the Liquid in the example below; it helps to ensure that the JavaScript is only loaded once, even if used by multiple layouts, maintaining good performance.
 
 ```liquid
-{% raw %}
 {% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
   <script async src="{{'modules/module_86/js/v1-2/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
   {% assign live_update_JS_loaded = true %}
   {% export live_update_JS_loaded, namespace: sitebuilder %}
 {% endif %}
-{% endraw %}
 
 
 
@@ -30,27 +28,21 @@ Secondly, choose which section of code you'd like the API to be ready to live-up
 * This must be some Liquid code which can be rendered using a single Liquid
 
 ```liquid
-{% raw %}
 {% include %}
-{% endraw %}
 
 ```
 
 tag. E.g.
 
 ```liquid
-{% raw %}
 {% include 'module' %}
-{% endraw %}
 
 ```
 
 or
 
 ````liquid
-{% raw %}
 {% include 'webapp' %}
-{% endraw %}
 
 
 * The code must not rely on inheriting any variables from higher up in the Page because those variables will not be available on the API endpoint Page. If you need to pass in more variables, this must be done via URL Params and read via:
@@ -63,10 +55,8 @@ or
 At the top of this layout, in the wrapper file if it has one, you need to include the following Liquid. This generates a public\_key you need to use the API. See "Thinking about Security" for why we use this. If you're using a WebApp or Module tag and layout from Siteglide, these variables will be available automatically.
 
 ```liquid
-{% raw %}
 {% comment %}model will in this normal case be something like "module_3" or "webapp_1". Using _model will automatically get the current layout's model value without needing to specify manually - if you want to re-render the current layout!{% endcomment %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
-{% endraw %}
 
 
 ```
@@ -74,9 +64,7 @@ At the top of this layout, in the wrapper file if it has one, you need to includ
 However, if you're using a Liquid tag which has a value other than `module` or `webapp`, you will need to manually feed in the model\_type parameter instead of model. For example, if you're using the tag:
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/cart', layout: 'c1' -%}
-{% endraw %}
 
 
 ```
@@ -84,9 +72,7 @@ However, if you're using a Liquid tag which has a value other than `module` or `
 ...then your public key function should look like this:
 
 ```liquid
-{% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: 'c1', model_type: 'ecommerce/cart', collection: 'false' %}
-{% endraw %}
 
 
 ```
@@ -96,9 +82,7 @@ You can also use the Live Updates API with a `content_section` or `code_snippet`
 To use Live Updates with a `content_section` or `code_snippet`, you need to add a `model_type` as above, selecting the one you intend to use. Then you also need to add an `include_id` to the ID of the snippet/ section:
 
 ```liquid
-{% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", model_type: 'code_snippet', include_id: '1' %}
-{% endraw %}
 
 
 ```
@@ -123,14 +107,12 @@ The layout will now initialise once the JS has loaded. You can check it has init
 At this point in our guide, your code should look something like this:
 
 ```liquid
-{% raw %}
 {% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
   <script async src="{{'modules/module_86/js/v1-2/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
   {% assign live_update_JS_loaded = true %}
   {% export live_update_JS_loaded, namespace: sitebuilder %}
 {% endif %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
-{% endraw %}
 
 
 
@@ -170,14 +152,12 @@ Note ordinary HTML elements don't need any additional data-attributes. The API w
     <input name="keyword" placeholder="Search">
   </form>
   <form data-sg-live-update-controls="filters">
-{% raw %}
 {% for category in context.exports.categories.items %}
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
         <span>{{category[1].name}}</span>
       </label>
     {% endfor %}
-{% endraw %}
 
   </form>
 </section>
@@ -203,7 +183,6 @@ Let's add the important Siteglide tag \`
   </form>
   <form data-sg-live-update-controls="filters">
     
-{% raw %}
 {% for category in context.exports.categories.items %}
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
@@ -213,7 +192,6 @@ Let's add the important Siteglide tag \`
   </form>
   <div data-sg-live-update-component="results">
     {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
-{% endraw %}
   </div>
 </section>
 ```

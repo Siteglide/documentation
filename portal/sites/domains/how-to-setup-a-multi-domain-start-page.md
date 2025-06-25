@@ -1,4 +1,4 @@
-# 📋 How to setup a multi domain start page
+# How to setup a multi domain start page
 
 The following code example can be added to a Page Template and applied to the home/start page of a site to load a different start page for different domains added to the site.
 
@@ -7,7 +7,6 @@ This method does however remove some of the ease of editing for the client, as t
 One use case for this approach would be where a client has a small chain of businesses that each have their own domain to target the area closest to them. Each of the sites are very small and the website structure is reasonably similar, and so it makes sense for the client to be able to manage all of them from the same Admin.
 
 ```liquid
-{% raw %}
 {% assign domain = context.location.host -%}
 {% case domain %}
 {% when 'www.domainone.com' or 'domainone.com'  -%}
@@ -26,7 +25,6 @@ One use case for this approach would be where a client has a small chain of busi
   {% endcontent_for -%}
   {%- include 'content_section', id: '16', name: 'Other Domain Page' -%}
 {% endcase -%}
-{% endraw %}
 ```
 
 I'll now explain the code snippet above and how it works.
@@ -37,7 +35,7 @@ Next, we open a `case` to check the result of `domain` .
 
 For each of the alternate domains we would like to check for, we create a `when` within the `case` . We include two versions of the domain to catch the majority of users. One that includes the [www](how-to-setup-a-multi-domain-start-page.md). and another that does not.
 
-Inside each `when` we call in a content section that should contain all of the page content. We also define an SEO page title to match our page and wrap that in `siteglide_head_scripts` to automatically move it to the head on page load (Check out this document to find out more: [Siteglide Scripts](/cms/file-manager/fetching-assets-only-when-needed-and-avoiding-duplicates.md)).
+Inside each `when` we call in a content section that should contain all of the page content. We also define an SEO page title to match our page and wrap that in `siteglide_head_scripts` to automatically move it to the head on page load (Check out this document to find out more: [Siteglide Scripts](../../../cms/file-manager/fetching-assets-only-when-needed-and-avoiding-duplicates.md)).
 
 We then add an `else` at the end of the `case` to cover the default domain e.g. "if neither of these alternate domains are used, then do this" which acts somewhat like a catch all.
 

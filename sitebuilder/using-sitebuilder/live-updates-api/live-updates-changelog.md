@@ -1,4 +1,4 @@
-# 🗓️ Live Updates Changelog
+# Live Updates Changelog
 
 ### Version 1.5 - Released 17th May 2024 <a href="#version-15-released-17th-may-2024" id="version-15-released-17th-may-2024"></a>
 
@@ -55,6 +55,6 @@ This code is more reliable than previous patterns when your own script is runnin
 
 ### Version 1.1 - Released <a href="#version-11-released" id="version-11-released"></a>
 
-* New functionality added for modifyHistory, including a method and data-attribute for setting it. When turned on, any changes to live update form elements will push those same changes to the [history API](https://developer.mozilla.org/en-US/docs/Web/API/History\_API). This causes the URL in the browser's address bar to change without reloading the page. It is useful if you want the URL to your live-updates-powered page to be shareable.
+* New functionality added for modifyHistory, including a method and data-attribute for setting it. When turned on, any changes to live update form elements will push those same changes to the [history API](https://developer.mozilla.org/en-US/docs/Web/API/History_API). This causes the URL in the browser's address bar to change without reloading the page. It is useful if you want the URL to your live-updates-powered page to be shareable.
 * If any of the live-updates filters have an HTML value attribute (with a truthy value) on page load, a live update will run immediately as soon as the JavaScript is ready. This allows you to take a shareable link provided by the above `modifyHistory` feature, or a link from a non-live-updates layout, like a Blog Detail page, load that link and instantly have it apply those filters.
 * The combination of these two features is powerful, but we recommend only one live-updates layout has this feature turned on on each page, otherwise you can end up in a loop where one layout's filters update the filters of another.

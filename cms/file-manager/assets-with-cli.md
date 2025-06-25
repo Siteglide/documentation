@@ -1,4 +1,4 @@
-# 💻 Assets with CLI
+# Assets with CLI
 
 ### Deploying Assets
 
@@ -14,4 +14,4 @@ siteglide-cli deploy env -w
 siteglide-cli sync env
 ```
 
-Watches for changes in the assets folder and syncs changed files one by one. This is not always recommended for large files.&#x20;
+Watches for changes in the assets folder and syncs changed files one by one. This is not always recommended for large files.

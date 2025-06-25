@@ -1,15 +1,13 @@
-# 🔹 Orders Layouts
+# Orders Layouts
 
 ## Orders Detail Layout
 
 Within the Orders Detail Layout you will have access to the orders array variable. To display a list of items in the single order, you should add a Liquid loop like this:
 
 ```
-{% raw %}
 {% for order in orders %}
   <!-- {{order.id}} etc. -->
 {% endfor %}
-{% endraw %}
 ```
 
 Within the loop, you can use properties of the object within the loop iteration as detailed in the table:

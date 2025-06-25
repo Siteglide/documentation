@@ -2,7 +2,7 @@
 description: Manage sites in Siteglide Portal
 ---
 
-# ℹ️ Site Details
+# Site Details
 
 Click the 'Sites' button in the left hand menu in Portal to see your list of sites, then click the Name of the site you want to view the settings for:
 

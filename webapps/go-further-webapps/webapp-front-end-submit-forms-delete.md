@@ -5,7 +5,7 @@ createdAt: 2021-01-29T11:38:18.000Z
 updatedAt: 2023-04-11T10:11:39.000Z
 ---
 
-# 📋 Front End Delete
+# Front End Delete
 
 ## Introduction
 
@@ -24,9 +24,7 @@ You can use optionally use JavaScript to change the behaviour when the button is
 To include the delete button, add the following syntax inside a WebApp Layout of your choice
 
 ```
-{% raw %}
 {% include "webapp_delete", layout: "default" %}
-{% endraw %}
 
 
 ```
@@ -38,11 +36,9 @@ Nesting this inside a WebApp Layout allows it to easily pick up the ID of the cu
 We recommend wrapping the Layout in the following Liquid to make sure the button is only visible to those Users who have the minimum permission needed to successfully delete the current item:
 
 ```liquid
-{% raw %}
 {% if context.current_user.id and context.current_user.id == this.creator.id %} 
     {%- include "webapp_delete", layout: "default" -%}
 {% endif %}
-{% endraw %}
 
 
 ```
@@ -90,7 +86,6 @@ Here's an example of custom functions defined and then passed into the 3rd and 4
   x
 </button>
 
-{% raw %}
 {%- content_for 'siteglide_footer_scripts' -%}
   <script>
     function webapp_delete_success(id, name) {
@@ -105,7 +100,6 @@ Here's an example of custom functions defined and then passed into the 3rd and 4
     };
   </script>,,
 {%- endcontent_for -%}
-{% endraw %}
 
 
 ```
@@ -122,7 +116,6 @@ Additionally, you could add in custom behaviour before the main delete function 
   x
 </button>
 
-{% raw %}
 {%- content_for 'siteglide_footer_scripts' -%}
   <script>
     function confirm_delete(id, webappName, token) {
@@ -133,5 +126,4 @@ Additionally, you could add in custom behaviour before the main delete function 
     }
   </script>,,
 {%- endcontent_for -%}
-{% endraw %}
 ```

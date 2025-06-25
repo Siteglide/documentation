@@ -1,4 +1,4 @@
-# 💡 About Payment Gateways
+# About Payment Gateways
 
 After you've installed the eCommerce Module on a Site, setting up a Payment Gateway is the next step!
 
@@ -17,4 +17,3 @@ At the current time, some Payment Gateways allow more access to Siteglide featur
 PayPal is compatible with Basic Payment Forms and Cart + Checkout
 
 Authorize.net is only compatible with Basic Payment Forms
-

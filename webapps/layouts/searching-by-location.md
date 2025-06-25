@@ -1,4 +1,4 @@
-# 📋 Searching by Location
+# Searching by Location
 
 ### Installation
 
@@ -38,9 +38,7 @@ To display results from these parameters you will need the new `use_location_sea
 Example -
 
 ```liquid
-{% raw %}
 {%- include 'webapp', id: '1', use_location_search: 'true' -%}
-{% endraw %}
 
 ```
 
@@ -111,9 +109,7 @@ Add HTML and JavaScript
 Use a Layout of your choice.
 
 ```
-{% raw %}
 {%- include 'webapp', id: '1', use_location_search: 'true', layout: 'default' -%}
-{% endraw %}
 
 ```
 
@@ -126,7 +122,6 @@ Add HTML + Liquid
 The Liquid makes sure the map is only outputted after the Page has been refreshed by the JavaScript and the correct parameters are available in the URL for filtering the results.
 
 ```liquid
-{% raw %}
 {%- if context.params.distance and context.params.longlat -%}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
@@ -139,7 +134,6 @@ The Liquid makes sure the map is only outputted after the Page has been refreshe
     -%}
   </span>
 {%- endif -%}
-{% endraw %}
 
 ```
 
@@ -220,7 +214,6 @@ Layout 'json':
 	}
 </script>
 
-{% raw %}
 {%- if context.params.distance and context.params.longlat -%}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
@@ -241,5 +234,4 @@ Layout 'json':
 		});
 	</script>
 {%- endif -%}
-{% endraw %}
 ```

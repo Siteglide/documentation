@@ -1,4 +1,4 @@
-# 🌳 Blog & Author Module Folder Structure
+# File Structure
 
 See general module folder strucutre for folder structure in common with all modules:
 

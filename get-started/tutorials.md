@@ -1,4 +1,4 @@
-# 🚀 Quickstart Guides
+# Quickstart Guides
 
 We're constantly putting together Tutorials and Guides to help you get started with each area of Siteglide.
 

@@ -4,13 +4,13 @@ description: >-
   look at how we can include two separate fields into "s_name".
 ---
 
-# 📋 Steps to Using Separate Fields for First Name and Surname in a Form
+# Steps to Using Separate Fields for First Name and Surname in a Form
 
 Currently a form needs a value of "s\_name" to submit properly. Lets take a look at how we can include two separate fields into "s\_name".
 
 ## Introduction
 
-When a [Form is created](/cms/forms/quickstart-forms.md) you'll notice two standard field that are always required; Name and Email. These two fields must have a value when a user submits the Form or it will fail (as the required fields haven't been given). If two separate fields are required for both first name and last name there is a way of getting round this!
+When a [Form is created](../quickstart-forms.md) you'll notice two standard field that are always required; Name and Email. These two fields must have a value when a user submits the Form or it will fail (as the required fields haven't been given). If two separate fields are required for both first name and last name there is a way of getting round this!
 
 ## Step 1) Create Separate Name Fields in the Form in the Siteglide Admin
 
@@ -38,15 +38,17 @@ Copy the code inside this file. Create a new file in Code Editor and paste the c
 
 Now we'll need to create a custom layout. Right click the Form we're working on and select "Create File".
 
-Copy the code from the default layout into here (we'll be using this as a starting point).&#x20;
+Copy the code from the default layout into here (we'll be using this as a starting point).
 
 ## Step 3) Hide the System Field for the User's Full Name
 
 You'll notice that the full name field has a `type` of "text", this will need to be replaced with "hidden" (this field is just for the database- users don't need to see it!).
 
-&#x20;Remove the label element as it will still display otherwise. Here's what it should look like:
+Remove the label element as it will still display otherwise. Here's what it should look like:
 
-<pre class="language-liquid"><code class="lang-liquid">{% comment %}&#x3C;label for="s_name">&#x3C;/label>{% endcomment %}
+<pre class="language-liquid"><code class="lang-liquid">
+
+
 &#x3C;input
   class="form-control required"
   name="{{ form_builder.fields.properties.name.name }}"
@@ -63,7 +65,6 @@ Next we must add unique ids to our custom fields, we will use these to combine t
 Update each field to include id="lastName" and id="firstName" after the name value. These aren't normally required but will be used to refer to our fields in the following Java Script. Here's what the custom fields should look like:
 
 ```liquid
-{% raw %}
 <label for="form_field_2_4">First Name</label>
 <input
   class="form-control required"
@@ -78,7 +79,6 @@ Update each field to include id="lastName" and id="firstName" after the name val
   type="text"
   id="lastName"
 />
-{% endraw %}
 ```
 
 ### Step 5) Change the Form Submit Behaviour to Run a New Data Normalisation Function First

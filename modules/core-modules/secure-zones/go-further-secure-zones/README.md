@@ -1,4 +1,4 @@
-# 🧙‍♂️ Go Further
+# Go Further
 
 {% content-ref url="secure-zones-with-cli.md" %}
 [secure-zones-with-cli.md](secure-zones-with-cli.md)

@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Testimonials
+# Quickstart: Testimonials
 
 ## Step 1: Install the Testimonials Module
 
@@ -36,9 +36,6 @@ Your Testimonials will work out of the box but Siteglide is all about flexibilit
 [dynamic-layouts-in-sitebuilder.md](../../../sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
 
-{% content-ref url="/modules/core-modules/testimonials/testimonials-reference.md" %}
-[introduction.md](/modules/core-modules/testimonials/testimonials-reference.md)
+{% content-ref url="testimonials-reference.md" %}
+[testimonials-reference.md](testimonials-reference.md)
 {% endcontent-ref %}
-
-
-

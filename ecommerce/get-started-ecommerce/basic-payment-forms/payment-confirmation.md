@@ -5,27 +5,25 @@ createdAt: 2021-02-19T10:48:13.000Z
 updatedAt: 2023-04-06T15:42:43.000Z
 ---
 
-# 📋 Step-by-step Basic Payment Confirmations
+# Step-by-step Basic Payment Confirmations
 
 Use Emails to send confirmation messages to customers, including a detailed breakdown of their Basic Payment Submission
 
 ## Prerequisites
 
-* You have installed eCommerce Module v1.1.4 or later. Check out [Install or Manage Modules](/portal/sites/install-and-manage-modules) to find out how you can install the latest version.
-* You have set up a [Basic Payment Form](/eCommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md) using the Stripe Payment Gateway
+* You have installed eCommerce Module v1.1.4 or later. Check out [Install or Manage Modules](../../../portal/sites/install-and-manage-modules/) to find out how you can install the latest version.
+* You have set up a [Basic Payment Form](../../../eCommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md) using the Stripe Payment Gateway
 
 ## Introduction
 
-You can now add details of a customer's Basic Payment Form to Workflow and Autoresponder transactional emails. Give your Client and the customer peace of mind, as well as valuable records for their safekeeping. Within the email, you can also access any fields that were submitted along with the original Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](/cms/automations/dynamic-content-in-workflow-and-autoresponder-emails.md)
+You can now add details of a customer's Basic Payment Form to Workflow and Autoresponder transactional emails. Give your Client and the customer peace of mind, as well as valuable records for their safekeeping. Within the email, you can also access any fields that were submitted along with the original Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](../../../cms/automations/dynamic-content-in-workflow-and-autoresponder-emails.md)
 
 ## Step 1) Include the Payment Summary Feature
 
 To include the details of the customer's most recent Order, include the following Liquid tag:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/payment_details', layout: 'default' %}
-{% endraw %}
 
 
 ```

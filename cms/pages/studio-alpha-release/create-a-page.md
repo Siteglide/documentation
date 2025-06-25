@@ -1,4 +1,4 @@
-# 🎨 Create a Page
+# Create a Page
 
 Use our interactive guide:
 

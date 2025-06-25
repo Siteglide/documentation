@@ -5,7 +5,7 @@ createdAt: Wed Feb 17 2021 12:37:36 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Dec 27 2023 13:41:32 GMT+0000 (Coordinated Universal Time)
 ---
 
-# ℹ️ About GraphQL
+# About GraphQL
 
 Although it can feel like a big leap at first, using custom GraphQL gives you ultimate control over dynamic data. We'll guide you through.
 
@@ -42,9 +42,9 @@ GraphQL can be tricky to get started with, but most of our Developers report tha
 
 We'll provide a series of Tutorials, starting off simple and becoming progressively more challenging. As part of this, we'll aim to give you the skills you need to carry out further learning yourself- often this will mean learning to read the platformOS schema- finding the type of query you need, and experimenting with how to make it work.
 
-Every time we add a new GraphQL Tutorial, you'll be able to access increased support on that topic via the Forum. You can see an overview of the topics we've covered so far [here](/developer-tools/graphql/tutorials/README.md)
+Every time we add a new GraphQL Tutorial, you'll be able to access increased support on that topic via the Forum. You can see an overview of the topics we've covered so far [here](tutorials/)
 
-In the next Tutorial, we'll show you how to use the GraphQL sandbox to test out Queries. [Let's go](/developer-tools/graphql/tutorials/tutorial-1-your-first-query.md)
+In the next Tutorial, we'll show you how to use the GraphQL sandbox to test out Queries. [Let's go](tutorials/tutorial-1-your-first-query.md)
 
 ## I'm stuck. Can you help me build a Site with Custom GraphQL?
 
@@ -54,7 +54,7 @@ If you're stuck, here are some things you can try:
 
 * Help us improve our general documentation on GraphQL. We'll keep adding and improving on our articles. See the "did this page help you" buttons at the bottom of each developer docs page.
 * Ask the Community on [Discord](https://discord.gg/BsmP3au6Am). We have an ever-growing Community of developers from around the globe, join the discussion.
-* Siteglide's custom support partner, Sitegurus, can provide developers who are experts in using GraphQL with Siteglide. [Create a task with SiteGurus](https://www.sitegurus.io/dashboard?create\_task=true)
+* Siteglide's custom support partner, Sitegurus, can provide developers who are experts in using GraphQL with Siteglide. [Create a task with SiteGurus](https://www.sitegurus.io/dashboard?create_task=true)
 * Maybe this particular solution isn't suited to custom GraphQL, maybe it's better as an official feature? You can request features on the [Roadmap](https://roadmap.siteglide.com/).
 
 ## When should I use Custom GraphQL?

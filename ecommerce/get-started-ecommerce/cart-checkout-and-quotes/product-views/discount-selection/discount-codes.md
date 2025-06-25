@@ -50,9 +50,7 @@ For now, you can add the data-attribute `data-s-e-refresh-layout-discount-code` 
 
 ```liquid
 <div data-s-e-refresh-layout-discount-code>
-{% raw %}
 {% include 'ecommerce/discount_code', layout: "cart/default" %}
-{% endraw %}
 
 </div>
 
@@ -118,12 +116,10 @@ For steps 3 and onwards, you may find it easier to copy and edit the code from t
        class="form-control" 
        id="s_e_discount_code" 
        data-s-e-discount-code 
-       {% raw %}
-{% if discount_code != blank %} 
+       {% if discount_code != blank %} 
               value="{{discount_code}}" 
               readonly="true"
        {%- endif -%}
-{% endraw %}
 >
 ```
 
@@ -223,7 +219,6 @@ Note also that the value of `spend` will be different for Basic Payment Forms:
 You can optionally add a button to the Layout which will allow the customer to remove a Discount Code that has already been applied.
 
 ```liquid
-{% raw %}
 {%- if discount_code != blank -%}
   <button class="btn btn-danger" id="s_e_discount_remove" onclick="s_e_cart_discount_code_remove(
     {
@@ -233,7 +228,6 @@ You can optionally add a button to the Layout which will allow the customer to r
     Remove Code
   </button>
 {% endif %}
-{% endraw %}
 
 
 ```
@@ -289,7 +283,6 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
 #### On Basic Payment Layouts:
 
 ```liquid
-{% raw %}
 {%- if discount_code != blank -%}
   <p>Discount: 
     <span style="color: red;">
@@ -298,7 +291,6 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
     </span>
   </p>
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -316,7 +308,6 @@ _Before the Subscription Order is Created_\
 At this stage, we can use general details of the discount which is applied, but not yet redeemed, from the `this` object.
 
 ```liquid
-{% raw %}
 {%- if discount_code != blank -%}
   <p>Discount: 
   <span style="color: red;">
@@ -337,7 +328,6 @@ At this stage, we can use general details of the discount which is applied, but 
     {% endif %}
   </p>
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -349,7 +339,6 @@ _After the Subscription Order is Created and the Discount Redeemed_\
 At this stage, we can use details of the actual discount code stored against the Subscription Order. As this is time limited, we may also wish to give details of how much longer the Discount will be active for and the specific Subscription Order will provide these details.
 
 ```liquid
-{% raw %}
 {%- if discount_code != blank -%}
   <p>Discount redeemed: 
     <span style="color: red;">
@@ -376,7 +365,6 @@ At this stage, we can use details of the actual discount code stored against the
                  price_data: discount.total_remaining -%}
                  </p>
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -391,7 +379,6 @@ The following code can be used to display the minimum spend needed to keep using
 #### On Cart and Checkout Layouts:
 
 ```liquid
-{% raw %}
 {%- if discount_code != blank and discount_minimum -%}
 <p class="mt-4">
     This code will only be valid on Cart orders worth over: 
@@ -399,7 +386,6 @@ The following code can be used to display the minimum spend needed to keep using
     {%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter'
                  price_data: discount_minimum -%}</p>
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -412,7 +398,6 @@ The following code can be used to display the minimum spend needed to keep using
 The following code can be used to display the minimum spend needed to keep using the discount:
 
 ```liquid
-{% raw %}
 {%- if discount_code != blank and discount_minimum -%}
 <p class="mt-4">
     This code will only be valid on orders over: 
@@ -422,7 +407,6 @@ The following code can be used to display the minimum spend needed to keep using
                              price_data: discount_minimum -%}
                              </p>
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -435,7 +419,6 @@ The following code can be used to display the minimum spend needed to keep using
 It's probably only really necessary to display the minimum spend before the Subscription Order is created and the Discount redeemed. Once the discount is redeemed, the amount spent will be fixed.
 
 ```liquid
-{% raw %}
 {%- if discount_code != blank and discount_minimum -%}
   <p class="mt-4">
     This code will only be valid on orders over: 
@@ -444,7 +427,6 @@ It's probably only really necessary to display the minimum spend before the Subs
                  price_data: discount_minimum -%}
                  </p>
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -457,14 +439,12 @@ It's probably only really necessary to display the minimum spend before the Subs
 This code will display a message if the minimum spend is not set strictly enough and the resulting payment total is below that allowed by the Payment Gateway.
 
 ```liquid
-{% raw %}
 {%- if discount_saving_maximum_reached == true -%}
 <!-- Message here -->
 <p class="mt-4">
     Minimum transaction value reached. 
     To make the most of your discount, try adding another item to your Cart.</p>
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -600,12 +580,10 @@ We recommend for Subscriptions to add some logic checking whether a Subscription
 At this point it's not possible to apply or change the Discount Code, only display details of the Order that's active. The purpose of the Form at this point is actually to allow Users to edit their payment details only.
 
 ```liquid
-{% raw %}
 {% if subscription_discount_already_redeemed == true %}
 
 <!-- Insert code here - the Discount has already been redeemed against the Subscription Order-->
 {% endif %}
-{% endraw %}
 
 
 
@@ -618,8 +596,6 @@ You could add this logic around the whole Layout (as in the default Layout), or 
 You can also add the statement to check if the Discount will apply to the next invoice or if the Discounted period of months is over.
 
 ```liquid
-{% raw %}
 {% if rate_still_discounted == true %}
 {% endif %}
-{% endraw %}
 ```

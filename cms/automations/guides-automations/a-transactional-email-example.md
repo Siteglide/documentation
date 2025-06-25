@@ -1,4 +1,4 @@
-# ℹ️ A Transactional Email Example
+# A Transactional Email Example
 
 {% hint style="info" %}
 We strongly recommend that you [authorize Sendgrid](steps-to-authenticating-sendgrid-emails-on-live-sites.md) to send emails from your domain to avoid them going to spam filters, or being rejected from sending by your DMARC policy.

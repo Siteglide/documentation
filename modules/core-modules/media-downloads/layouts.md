@@ -1,4 +1,4 @@
-# ℹ️ Layouts
+# Layouts
 
 ## Outputting List Views on the Front-End
 

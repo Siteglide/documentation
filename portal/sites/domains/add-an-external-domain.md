@@ -1,4 +1,4 @@
-# 📋 Add an External Domain
+# Add an External Domain
 
 {% hint style="warning" %}
 We strongly recommend Fully Delegating your domain for best results or ensuring you use a domain control panel that allows CNAME records on the root/@ or ANAME records such as [Cloudflare](https://www.cloudflare.com/).

@@ -1,4 +1,4 @@
-# 🚀 Quickstart: WebApps
+# Quickstart: WebApps
 
 ## Step 1: Create a WebApp or Edit an Existing
 

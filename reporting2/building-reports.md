@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Reports
+# Quickstart: Reports
 
 The Reporting tool allows you to build dynamic reports related to CRM usage and Form Cases. You can choose which Fields to include and filter the results. Once a Report is Saved you can go back to this at any time and see the results with live data.
 

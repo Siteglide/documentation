@@ -2,7 +2,7 @@
 description: The main commands you'll need when using Siteglide CLI
 ---
 
-# 💻 Reference
+# Reference
 
 {% hint style="warning" %}
 You need CLI installed first, check out our Quickstart guide:
@@ -180,16 +180,16 @@ Flags:
 
 `-i`: A string to send to the scraper that if found in the URL it will ignore downloading that page. For example if your blog posts are links such as `site.com/post/post-name` and you wanted to ignore them, you could use the flag `-i /post/` This flag can be used multiple time such as `-i /blog -i /posts/`
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 ***

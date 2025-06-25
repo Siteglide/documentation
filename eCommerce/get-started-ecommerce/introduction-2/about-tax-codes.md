@@ -1,4 +1,4 @@
-# 💡 About Tax Codes
+# About Tax Codes
 
 ## Prerequisites
 

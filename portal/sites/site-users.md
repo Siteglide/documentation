@@ -1,4 +1,4 @@
-# ℹ️ Site Users
+# Site Users
 
 You can view who has access to the site on the Users tab as well as invite existing users to the site.
 

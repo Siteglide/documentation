@@ -1,4 +1,4 @@
-# 📋 Add a Fully Delegated Domain
+# Add a Fully Delegated Domain
 
 {% hint style="info" %}
 We strongly recommend Fully Delegating your domain to Siteglide (vs [External DNS](add-an-external-domain.md)) for best results and to avoid additional steps redirecting the non-www to www.

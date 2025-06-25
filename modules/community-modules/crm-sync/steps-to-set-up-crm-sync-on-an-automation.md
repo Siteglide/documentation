@@ -1,4 +1,4 @@
-# 📋 Steps to Set Up CRM Sync on an Automation
+# Steps to Set Up CRM Sync on an Automation
 
 The module is designed to require minimal code to set up- for many use cases, you only need to add a single line of code.
 
@@ -29,9 +29,7 @@ See the [forms](../../../cms/forms/ "mention") and [automations](../../../cms/au
 The module provides you with Liquid code which, when run, carries out a range of actions using the details of the Siteglide CRM user who submitted the form and triggered the automation.
 
 ```liquid
-{% raw %}
 {% include 'modules/module_132/v1/crm_sync', marketing_provider: 'sendgrid', action: 'add' %}
-{% endraw %}
 
 
 
@@ -60,9 +58,7 @@ Setting this parameter further modifies the behaviour of the previously discusse
 `lists` can be set to a comma-separated list of strings, where each string is an exact spelling to the name of a list in Sendgrid e.g.
 
 ```liquid
-{% raw %}
 {% include 'modules/module_132/v1/crm_sync', marketing_provider: 'sendgrid', action: 'add', lists: 'English Language Newsletter,Food and Recipes' %}
-{% endraw %}
 
 
 ```
@@ -84,7 +80,6 @@ The module automatically creates custom fields when you use the code to sync a c
 You can use the `reserved_fields` parameter to map Siteglide data into those reserved fields (optionally). To do this, first use the [parse\_json tag](https://documentation.platformos.com/api-reference/liquid/platformos-tags#parse-json) from platformOS or equivalent to create a liquid object, where the keys are exact matches for sendgrid reserved field names, and the values can be anything- hardcoded or dynamic Liquid data. Then pass the object in as the value of the parameter.
 
 ```liquid
-{% raw %}
 {% parse_json reserved_fields %}
   {
     "Address Line 1": "8 Tranquility Base",
@@ -92,7 +87,6 @@ You can use the `reserved_fields` parameter to map Siteglide data into those res
   }
 {% endparse_json %}
 {% include "modules/module_132/v1/crm_sync", marketing_provider: "sendgrid", action: 'add', reserved_fields: reserved_fields %}
-{% endraw %}
 
 
 
@@ -105,8 +99,6 @@ In most cases, adding the `email` parameter is unecessary as it will default to 
 However, if your use case requires running the code in a situation where this is not available, you can pass in the email address as a string instead:
 
 ```liquid
-{% raw %}
 {% include "modules/module_132/v1/crm_sync", marketing_provider: "sendgrid", action: 'add', email: 'example@example.com' %}
-{% endraw %}
 
 ```

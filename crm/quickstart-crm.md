@@ -1,4 +1,4 @@
-# 🚀 Quickstart: CRM
+# Quickstart: CRM
 
 This Quickstart is a guided tour of the CRM feature within Siteglide. There is no setup required, it works out of the box but can be customised.
 

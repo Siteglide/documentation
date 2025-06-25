@@ -1,4 +1,4 @@
-# 📂 Subscriptions
+# Subscriptions
 
 Our integration with Stripe Billing allows you to create Subscription Products and bill customers on a regular basis.
 

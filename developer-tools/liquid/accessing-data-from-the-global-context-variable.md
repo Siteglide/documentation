@@ -64,31 +64,25 @@ tag. [https://documentation.platformos.com/api-reference/liquid/platformos-tags#
 e.g. Let's say a User has decided to opt-in to a particular non-essential feature or cookie. You could remember this:
 
 ```liquid
-{% raw %}
 {% session agency_optional_features = 'true' %}
-{% endraw %}
 
 ```
 
 You can then use logic to only show these features to Users who have opted-in.
 
 ```liquid
-{% raw %}
 {% if context.session.agency_optional_features == 'true' %}
 <script>
   //My optional feature script
 </script>
 {% endif %}
-{% endraw %}
 
 ```
 
 \*\*\*Removing Session Fields \*\*\*To continue our previous example, if the User chooses to change their preferences and opt out, you can forget the setting by setting it to an empty String:
 
 ```liquid
-{% raw %}
 {% session optional_features = '' %}
-{% endraw %}
 ```
 
 _**Ending a Session**_- Advanced only You can use custom GraphQL to completely forget a visitor and end their session. Use at your own risk as we cannot support Secure Zones with Users who have had their Session ended in this way: [https://documentation.platformos.com/api-reference/graphql/deprecated/mutations/user-session-destroy](https://documentation.platformos.com/api-reference/graphql/deprecated/mutations/user-session-destroy)

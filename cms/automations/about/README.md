@@ -1,4 +1,4 @@
-# ℹ️ About
+# About
 
 ## What are Automations?
 

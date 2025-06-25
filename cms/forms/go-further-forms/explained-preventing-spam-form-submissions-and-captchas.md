@@ -1,8 +1,8 @@
-# ℹ️ Explained - Preventing Spam Form Submissions and Captchas
+# Explained - Preventing Spam Form Submissions and Captchas
 
 Siteglide offers Spam protection called hCaptcha on forms, which is already fully baked in to the platform for you.
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/bd16a63ca791723e24fbf264242c0623ee6dad191af3508c6d4418999c3c7076hcaptcha-frontend-1\_1902qi.png)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/bd16a63ca791723e24fbf264242c0623ee6dad191af3508c6d4418999c3c7076hcaptcha-frontend-1_1902qi.png)
 
 hCaptcha is the world's most widely used independent CAPTCHA service with a focus on performance, privacy and security.
 
@@ -40,7 +40,7 @@ hCaptcha is also specifically designed to protect user privacy and complies with
 
 Head over to your Site Admin today and Edit Form Structure on one of your existing forms to make the switch. Look for the renamed “Spam Protection” tab to select and save the new hCaptcha option.
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/42fe52de0bec0d548b4fa851386171ff5f0c9d01917f5c7fb510a8b5e60a18ddhcaptcha-form-1\_1btiwv3.png)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/42fe52de0bec0d548b4fa851386171ff5f0c9d01917f5c7fb510a8b5e60a18ddhcaptcha-form-1_1btiwv3.png)
 
 For those of you using custom Form layouts, once you have edited and applied hCaptcha to your form, checkout the Default layout to copy the latest CAPTCHA liquid tag across to your custom layout and replace the previous version.
 

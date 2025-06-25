@@ -7,7 +7,7 @@ createdAt: 2021-02-18T13:08:26.000Z
 updatedAt: 2023-04-11T07:38:27.000Z
 ---
 
-# 📋 Steps - Alternatives to Product Grouping
+# Steps - Alternatives to Product Grouping
 
 ## Prerequisites
 
@@ -49,9 +49,7 @@ Here's how I've structured my Categories, "Chocolate" and "Crisps" each represen
 Now let's look at how we can ensure only the Categories within "Product-group" are used when outputting our related Products. First I assign an object containing all the Categories on my Site (this gives us access to all the Categories fields, rather than just the ID):
 
 ```liquid
-{% raw %}
 {% assign categories = context.exports.categories.items %}
-{% endraw %}
 
 ```
 
@@ -60,18 +58,15 @@ Next loop over all of our Products categories, at each iteration we'll store the
 Note: "this" contains one of the Category IDs assigned to our Product, we then use that ID to find all of the Categories details in "`context.exports.categories.items`":
 
 ```liquid
-{% raw %}
 {% for category in this.properties.category_array %} 
   {% assign full_slug = categories[category].full_slug | split: '/' %}
 {% endfor %}
-{% endraw %}
 
 ```
 
 We've now created an array of all the individual "parameters" in our "full\_slug" field, next we'll loop over this and check none of the parameters equal "product-group"- if they do then we know that Category is being used for Product Grouping and store its ID. Add this code to the for loop above:
 
 ```liquid
-{% raw %}
 {% for category in this.properties.category_array %} 
   {% assign full_slug = categories[category].full_slug | split: '/' %}
   {% for p in param %}
@@ -80,7 +75,6 @@ We've now created an array of all the individual "parameters" in our "full\_slug
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% endraw %}
 
 ```
 
@@ -108,7 +102,6 @@ We'll demonstrate how you can use method 3) b).
 If you'd like to use a separate Layout to output your products, add this include to the Layout you're working in:
 
 ```liquid
-{% raw %}
 {% for category in this.properties.category_array %} 
   {% assign full_slug = categories[category].full_slug | split: '/' %}
   {% for p in param %}
@@ -117,7 +110,6 @@ If you'd like to use a separate Layout to output your products, add this include
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% endraw %}
 
 
 
@@ -168,13 +160,11 @@ The Collection will call all the specified items into `{{context.exports}}`, to 
 Now loop over the object, at each iteration we'll check that the ID doesn't equal the ID of the Product being displayed on the Detail Page (this will stop the Product on the Detail page being displayed as related). We'll use `{{this.id}}` to do this:
 
 ```liquid
-{% raw %}
 {% for item in items %}
   {% if item.id != this.id %}
     <!-- Add content relating to the Related Product here -->
   {% endif %}
 {% endfor %}
-{% endraw %}
 
 
 
@@ -194,14 +184,12 @@ For this demo, I've chosen to output my Related Products using `<select> & <opti
 <label for="options">Related Products</label>                          
 <select name="options" class="form-control" onChange="handleOption(this)">
   <option>---Select alternative Product---</option>  
-  {% raw %}
-{% for item in items %}
+  {% for item in items %}
     {% if item.id != this.id %}
       <option value="/{{item['module_slug']}}/{{item['slug']}}"> 
       {{item.name}}</option>
     {% endif %}
-  {% endfor %}
-{% endraw %}                          
+  {% endfor %}                          
 </select>
 
 ```
@@ -230,9 +218,7 @@ Make sure your Wrapper still includes the items inside the `<select>` element:
 <label for="options">Related Products</label> 
 <select name="options" class="form-control" onChange="handleOption(this)">
   <option>---Select alternative Product---</option>  
-  {% raw %}
-{%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products', item_layout: 'item' -%}
-{% endraw %}
+  {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products', item_layout: 'item' -%}
 </select>
 ```
 

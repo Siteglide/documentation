@@ -1,4 +1,4 @@
-# ℹ️ About Building Modules
+# About Building Modules
 
 Building Modules could be the perfect way to keep your workflow "DRY" (don't repeat yourself)! If you find a common requirement on more than one site, and no-one is currently offering a solution, or you think you can build a better one, building Modules might be for you.
 

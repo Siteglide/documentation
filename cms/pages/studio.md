@@ -1,4 +1,4 @@
-# ℹ️ Editor (Legacy Studio)
+# Editor (Legacy Studio)
 
 {% hint style="info" %}
 The Editor is currently called Studio but the Studio name will be reserved for the new page building experience: [studio-alpha-release](studio-alpha-release/ "mention")

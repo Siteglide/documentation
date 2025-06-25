@@ -5,20 +5,20 @@ createdAt: 2021-02-16T14:52:22.000Z
 updatedAt: 2023-04-11T10:03:19.000Z
 ---
 
-# 💻 Reference: Slider
+# Reference: Slider
 
 Add images and content to your Slides in Admin and display on a Site either using our custom Layouts or creating your own
 
 ### Prerequisites
 
 * You've Installed the Slider Module
-* You've [added Slides in the Admin](/modules/core-modules/slider/quickstart-slider.md)
+* You've [added Slides in the Admin](quickstart-slider.md)
 
 ### Introduction
 
 Our Slider Module allows you to add images/content to Slides within the Admin, which can then be outputted as List Views either using our pre-built layouts or creating your own! We've chosen to use GlideJS for our layouts, but you can use any plugin you prefer.
 
-Once you've installed the Slider Module on your Site, you'll be able to find Sliders in the left-hand menu under Modules/Slider. For a recap of how to install Modules on a Site, [see here](/portal/sites/install-and-manage-modules.md).
+Once you've installed the Slider Module on your Site, you'll be able to find Sliders in the left-hand menu under Modules/Slider. For a recap of how to install Modules on a Site, [see here](../../../portal/sites/install-and-manage-modules.md).
 
 ### Syntax
 
@@ -71,9 +71,7 @@ Once you've installed the Slider Module on your Site, you'll be able to find Sli
 
 ### Layouts
 
-You can find all our Slider Layouts on [Layout Libary](https://studio.siteglide.com/layouts), to copy these onto your Site first create a folder in Code Editor, learn more [here](/site-manager/code-editor.md). Make sure your new Slider Layout has a List View folder within it, should look like this:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/229068073/48df7e0feff380586d9f59ac/image.png) -->
+You can find all our Slider Layouts on [Layout Libary](https://studio.siteglide.com/layouts), to copy these onto your Site first create a folder in Code Editor, learn more [here](../../../site-manager/code-editor.md). Make sure your new Slider Layout has a List View folder within it, should look like this:
 
 Now copy the item/wrapper code into the List folder. Make sure to specify the Layout name when including the Module.
 
@@ -82,7 +80,6 @@ Now copy the item/wrapper code into the List folder. Make sure to specify the La
 If you're using the same Slider Layout more then once on a Page you'll need to add a "Unique Slider ID" to your include:
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '4'
     layout: 'default'
@@ -90,7 +87,6 @@ If you're using the same Slider Layout more then once on a Page you'll need to a
     show_pagination: 'false'
     uniq_slider_id: '333' 
 -%}
-{% endraw %}
 ```
 
 If this is added we'll run some extra logic on the layouts to ensure JS is mounted to the correct layout.

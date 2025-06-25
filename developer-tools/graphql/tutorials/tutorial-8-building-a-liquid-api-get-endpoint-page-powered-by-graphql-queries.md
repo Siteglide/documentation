@@ -125,9 +125,7 @@ query fetch_webapp_1_by_page($page: Int!, $per_page: Int!) {
 I'll use the following Liquid to run this query when the endpoint Page is accessed:
 
 ```liquid
-{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page" -%}
-{% endraw %}
 
 
 ```
@@ -149,10 +147,8 @@ I'll be storing the page I want to request from the endpoint in query parameters
 You can now use `context.params`\`to read the URL on the endpoint Page and dynamically access each query parameter. I'll store each in a variable before I feed these into the query, in case there is any type coercion to carry out first.
 
 ```liquid
-{% raw %}
 {%- assign page = context.params.page -%}
 {%- assign per_page = context.params.per_page -%}
-{% endraw %}
 
 ```
 
@@ -161,10 +157,8 @@ You can now use `context.params`\`to read the URL on the endpoint Page and dynam
 Accessing these values via the above method tends to set them as String values in the variable. For this example we'll need to change the type to integer- as that's what the query expects. You can refresh your knowledge on changing the type of variable in Liquid in [tutorial 6.](tutorial-6-variables.md)
 
 ```liquid
-{% raw %}
 {%- assign page = context.params.page | add: 0 -%}
 {%- assign per_page = context.params.per_page | add: 0 -%}
-{% endraw %}
 
 ```
 
@@ -202,13 +196,11 @@ If you decided in step 2 that you didn't want to change the Page format, you sho
   per_page: context.params.per_page
 -%}
 <div class="row">
-  {% raw %}
-{%- for item in fetch_webapp_1_by_page.records.results -%}
+  {%- for item in fetch_webapp_1_by_page.records.results -%}
     <div class="col">
       <h2>{{item.properties.name}}</h2>
     </div>
   {%- endfor -%}
-{% endraw %}
 </div>
 
 ```
@@ -240,11 +232,9 @@ We use `{%` rather than `{%-` in this example, because we want to preserve new l
   per_page: per_page
 -%}
 Name,ID,Description
-{% raw %}
 {% for item in fetch_webapp_1_by_page.records.results %}{{item.properties.name}},{{item.id}},
   {{item.properties.webapp_field_1_1}}
 {% endfor %}
-{% endraw %}
 
 ```
 
@@ -323,22 +313,18 @@ These tips are intended as inspiration and do not constitute complete examples. 
 * If the User has been logged in (to any Secure Zone), you can check this on the Endpoint Page Authorization policy.
 
 ```liquid
-{% raw %}
 {%- if context.current_user.id -%}
   true
 {%- endif -%}
-{% endraw %}
 
 ```
 
 * To check that the request comes from an authorized Page/ Site, you can check this with context:
 
 ```liquid
-{% raw %}
 {%- if context.headers.HTTP_REFERER contains "expected-URL" -%}
   true
 {%- endif -%}
-{% endraw %}
 
 
 ```
@@ -456,13 +442,11 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
   per_page: per_page
 -%}
 <div class="row"> 
-  {% raw %}
-{% for this in fetch_webapp_1_by_page.records.results %}
+  {% for this in fetch_webapp_1_by_page.records.results %}
     <div class="col-4">
       <h3>{{this.properties.name}}</h3>
     </div>
   {% endfor %}
-{% endraw %}
 </div>
 
 ```

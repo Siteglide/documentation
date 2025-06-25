@@ -1,4 +1,4 @@
-# 🔹 Live Updates Example - Enforcing Filters
+# Live Updates Example - Enforcing Filters
 
 ### Introduction and Use Cases <a href="#introduction-and-use-cases" id="introduction-and-use-cases"></a>
 
@@ -11,7 +11,6 @@ In this example, we set the filter as if we have a WebApp 1 with a custom field 
 #### Liquid in the wrapper.liquid file <a href="#liquid-in-the-wrapperliquid-file" id="liquid-in-the-wrapperliquid-file"></a>
 
 ```liquid
-{% raw %}
 {% comment %} Get public key as normal {% endcomment %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
 {% comment %} Generate unique ID for the layout, unless one has already been generated and sent in the params. The main purpose of doing this here is to help the JavaScript reliably reference the instance of the Live Update object created for this layout.{% endcomment %}
@@ -30,7 +29,6 @@ In this example, we set the filter as if we have a WebApp 1 with a custom field 
   {% if params.webapp_field_1_1 != "a,b" %}
     {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
   {% endif %}
-{% endraw %}
 </section>
 ```
 
@@ -39,11 +37,9 @@ Drawing your attention to the important bits: \
 Items are not displayed until the correct parameters are present in the URL. Users can't simply change the URL and access different content in this case!
 
 ```
-{% raw %}
 {% if params.webapp_field_1_1 != any_variable %}
   {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
 {% endif %}
-{% endraw %}
 ```
 
 Usually, with this setup, the server won't render the items on initial page load, only on re-render, since the param will not be available on initial page load usually.\

@@ -1,4 +1,4 @@
-# 🛳️ Module - Slider - Changelog
+# Module - Slider - Changelog
 
 ### 1.1.1 - 24th March 2023
 

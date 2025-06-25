@@ -1,17 +1,17 @@
 # 🔗 CRM Users
 
-{% swagger src="https://api.siteglide.co.uk/docs-spec.json" path="/users/crm" method="get" %}
-[https://api.siteglide.co.uk/docs-spec.json](https://api.siteglide.co.uk/docs-spec.json)
-{% endswagger %}
+{% openapi-operation spec="siteglide-site-api" path="/users/crm" method="get" %}
+[OpenAPI siteglide-site-api](https://api.siteglide.co.uk/docs-spec.json)
+{% endopenapi-operation %}
 
-{% swagger src="https://api.siteglide.co.uk/docs-spec.json" path="/users/crm/{id}" method="get" %}
-[https://api.siteglide.co.uk/docs-spec.json](https://api.siteglide.co.uk/docs-spec.json)
-{% endswagger %}
+{% openapi-operation spec="siteglide-site-api" path="/users/crm/{id}" method="get" %}
+[OpenAPI siteglide-site-api](https://api.siteglide.co.uk/docs-spec.json)
+{% endopenapi-operation %}
 
-{% swagger src="https://api.siteglide.co.uk/docs-spec.json" path="/users/crm/{id}" method="put" %}
-[https://api.siteglide.co.uk/docs-spec.json](https://api.siteglide.co.uk/docs-spec.json)
-{% endswagger %}
+{% openapi-operation spec="siteglide-site-api" path="/users/crm/{id}" method="put" %}
+[OpenAPI siteglide-site-api](https://api.siteglide.co.uk/docs-spec.json)
+{% endopenapi-operation %}
 
-{% swagger src="https://api.siteglide.co.uk/docs-spec.json" path="/users/crm/create" method="post" %}
-[https://api.siteglide.co.uk/docs-spec.json](https://api.siteglide.co.uk/docs-spec.json)
-{% endswagger %}
+{% openapi-operation spec="siteglide-site-api" path="/users/crm/create" method="post" %}
+[OpenAPI siteglide-site-api](https://api.siteglide.co.uk/docs-spec.json)
+{% endopenapi-operation %}

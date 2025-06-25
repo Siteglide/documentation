@@ -21,7 +21,6 @@ Page content will be outputted where the liquid tag `{{content_for_layout}}` is 
 Here is how a generic Page Template file should be structured:
 
 ```liquid
-{% raw %}
 {% include 'site/constants' -%}
 <!doctype html><html lang="en">
   <head>
@@ -41,7 +40,6 @@ Here is how a generic Page Template file should be structured:
     </main>
     {% include 'footer', template: "1" -%}
     {% include 'site/visualEditor' type: 'js'-%}
-{% endraw %}
 
 
   </body>

@@ -1,8 +1,6 @@
-# ℹ️ Filter by Category
+# Filter by Category
 
 You can dynamically output a navigation menu of Categories which have Events assigned to them. The User can then filter the Events.
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/203115638/62461125fd4b22a5eaec9122/image.png) -->
 
 ## Prerequisites
 
@@ -22,13 +20,12 @@ This Article will show:
 Include the following liquid to dynamically get a list of available Events Categories for the User to select:
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_system/get/get_categories'
     categories_layout: 'design_system/1/categories'
     categories_layout_type: 'list' 
 -%}
 
-{% endraw %}
+
 ```
 
 The parameters refer to Layouts which will be used to display the Category links.
@@ -41,7 +38,6 @@ The parameters refer to Layouts which will be used to display the Category links
 #### wrapper.liquid
 
 ```liquid
-{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Categories</h2>
@@ -53,13 +49,12 @@ The parameters refer to Layouts which will be used to display the Category links
   </div>
 </div>
 
-{% endraw %}
+
 ```
 
 #### item.liquid
 
 ```liquid
-{% raw %}
 <li>
        <a
               href="{{context.headers.PATH_INFO}}?category={{this.id}}" 
@@ -69,21 +64,17 @@ The parameters refer to Layouts which will be used to display the Category links
        </a>
 </li>
 
-{% endraw %}
+
 ```
 
 The link should be the slug of your Events List view followed by `?category={{this.id}}`. Siteglide will be able to read the Category id from the URL and populate the List View on refresh. In this example we use the context object to automatically get the slug of the current Events Page.
 
 ## User Feedback - Displaying the currently applied filter
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/203115813/0fcae6ac1683fbd1c91597f4/image.png) -->
-
 You may wish to give the User some feedback about the current filter/ search terms that are applied on the Events List. For Categories, you can use `{{context.exports}}` object to get the name of the category you are filtering by:
 
 ```liquid
-{% raw %}
 {% if context.params.category %}
   {{context.exports.categories.data[context.params.category].name}} Events
 {% endif %}
-{% endraw %}
 ```

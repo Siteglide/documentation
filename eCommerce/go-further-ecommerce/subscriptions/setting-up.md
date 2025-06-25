@@ -1,4 +1,4 @@
-# 📋 Subscriptions Payment Gateway Setup
+# Subscriptions Payment Gateway Setup
 
 ## Prerequisites
 

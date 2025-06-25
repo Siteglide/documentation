@@ -1,4 +1,4 @@
-# 💻 Reference
+# Reference
 
 ## Available Fields
 

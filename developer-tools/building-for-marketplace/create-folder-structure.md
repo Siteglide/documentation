@@ -1,4 +1,4 @@
-# ℹ️ Create Folder Structure
+# Create Folder Structure
 
 A Module can contain any code that will run on Siteglide, but that code does need to be split into the relevant folders (notifications, views, etc.) and folder structures. Below, we'll take a look at how to do just that along with all the various options available to you, depending on what you would like to build.
 
@@ -12,9 +12,9 @@ For example, with our Siteglide Theme Demo Module this would generate a name of 
 
 Create a new staging site within your agency to build your module on. Ideally you'll want to use a blank site, so pick the "Build a Custom Site" option on creation. Only you will see what your site is called, so you can call it anything you like.
 
-![](../../assets/f3N39NCDMxKmbG19AT-JK\_custom-module-create-staging-1.png)
+![](../../assets/f3N39NCDMxKmbG19AT-JK_custom-module-create-staging-1.png)
 
-Once you have successfully created your staging site, create a project folder on your machine to work within, [connect to your site via CLI](/developer-tools/cli/site-setup.md) and then [pull the site](/developer-tools/cli/reference.md#pull) down onto your local machine so that you are ready to begin building your module.
+Once you have successfully created your staging site, create a project folder on your machine to work within, [connect to your site via CLI](../cli/site-setup.md) and then [pull the site](../cli/reference.md#pull) down onto your local machine so that you are ready to begin building your module.
 
 ## Top Level Folders
 
@@ -66,7 +66,7 @@ Under each top level folder you have the option to create any relevant folders f
                     /layouts
 ```
 
-You can view and download this full folder structure from the example [directory-structure Git Repo](https://github.com/Siteglide/directory-structure/tree/master/marketplace\_builder). Alternatively, run the `init` command in CLI to automatically create the structure within the `marketplace_builder` folder and then move them into your module.
+You can view and download this full folder structure from the example [directory-structure Git Repo](https://github.com/Siteglide/directory-structure/tree/master/marketplace_builder). Alternatively, run the `init` command in CLI to automatically create the structure within the `marketplace_builder` folder and then move them into your module.
 
 [https://documentation.platformos.com/developer-guide/platformos-workflow/codebase](https://documentation.platformos.com/developer-guide/platformos-workflow/codebase)
 
@@ -94,7 +94,7 @@ install-process.json
 
 ### setup.json
 
-The setup.json file contains information about your module, including any tables (data) you want to create when installing your Module to a site. You can view an example of this file [here](https://github.com/Siteglide/Module\_Siteglide\_Example/blob/master/setup.json).
+The setup.json file contains information about your module, including any tables (data) you want to create when installing your Module to a site. You can view an example of this file [here](https://github.com/Siteglide/Module_Siteglide_Example/blob/master/setup.json).
 
 Files generated from this JSON file:
 
@@ -102,7 +102,7 @@ Files generated from this JSON file:
 * Form Configuration - `<module_name>.liquid` stored at `modules/<module_name>/public/form_configurations/modules/<module_name>.liquid`
 * Detail Page (if applicable) - `<module_name>.liquid` stored at `modules/<module_name>/public/views/pages/modules/<module_name>.liquid`
 
-You can find details on field types in [this document](/developer-tools/configuration/field-types.md)
+You can find details on field types in [this document](../configuration/field-types.md)
 
 ### ignore-on-update.json
 
@@ -110,7 +110,7 @@ This file should contain a list of files you don’t want to be overwritten on s
 
 Each array’s key should be the version they are created at. For example, if you want a file to be ignored when updating to any version above 1.0.0, set the key as `1.0.0`.
 
-You can see an example structure [here](https://github.com/Siteglide/Module\_Siteglide\_Example/blob/master/ignore-on-update.json)
+You can see an example structure [here](https://github.com/Siteglide/Module_Siteglide_Example/blob/master/ignore-on-update.json)
 
 In this example, an update above `1.0.1` will ignore all 6 files in the list.
 
@@ -118,4 +118,4 @@ In this example, an update above `1.0.1` will ignore all 6 files in the list.
 
 The install process file will run a Siteglide created process while the module is installed on the site. A list of all of the scripts that are relevant for each module type can be found here **::create and link::**
 
-In this example we will need a page to be set as the homepage of the site after installing the module. This is done using the `set_homepage` process. We will create a file with the version number of our module and `set_homepage` as our process as seen [here](https://github.com/Siteglide/Module\_Siteglide\_ThemeDemo/blob/master/install-process.json).
+In this example we will need a page to be set as the homepage of the site after installing the module. This is done using the `set_homepage` process. We will create a file with the version number of our module and `set_homepage` as our process as seen [here](https://github.com/Siteglide/Module_Siteglide_ThemeDemo/blob/master/install-process.json).

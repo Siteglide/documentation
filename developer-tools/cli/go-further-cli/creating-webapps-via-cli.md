@@ -198,7 +198,7 @@ Contents:
 }
 ```
 
-Please see the [Field Types](/developer-tools/configuration/field-types) document for all the relevant types.
+Please see the [Field Types](../../configuration/field-types/) document for all the relevant types.
 
 #### Schema File
 
@@ -253,7 +253,7 @@ properties:
 ---
 ```
 
-The above are all the default fields that are needed, the last field is an example of a standard text field. Please see the [Field Types](/developer-tools/configuration/field-types) document for all the relevant types.
+The above are all the default fields that are needed, the last field is an example of a standard text field. Please see the [Field Types](../../configuration/field-types/) document for all the relevant types.
 
 #### Form Configuration
 
@@ -375,10 +375,8 @@ configuration:
       validation: {}
 ---
 
-{% raw %}
 {%- capture form_layout -%}layouts/webapps/webapp_99/form/{{_layout}}{%- endcapture -%}
 {%- include form_layout -%}
-{% endraw %}
 ```
 
 After both the above files are synced you will then need to refresh Siteglide Admin and your WebApp will appear under WebApps in the sites left hand menu

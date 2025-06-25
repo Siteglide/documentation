@@ -1,4 +1,4 @@
-# 📋 User Roles
+# User Roles
 
 User Roles determine what users can see and do within Siteglide. Account owners have granular control over this and can set others as Admins or limit what they can do.
 

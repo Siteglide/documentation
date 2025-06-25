@@ -1,4 +1,4 @@
-# 📋 Steps to Testing Emails on a Staging Site
+# Steps to Testing Emails on a Staging Site
 
 ## Introduction
 
@@ -23,14 +23,14 @@ Enter the email addresses of anyone who would like to receive test emails for th
 example@siteglide.com,example@agency.com,example@client.com
 
 {% hint style="info" %}
-When you get to step 3, you'll realise that being added to this list can mean getting a lot of emails, so make sure you get permission before adding people to this list or they may be annoyed!&#x20;
+When you get to step 3, you'll realise that being added to this list can mean getting a lot of emails, so make sure you get permission before adding people to this list or they may be annoyed!
 {% endhint %}
 
 ## Step 3) Test an Email
 
-E.g. Test submitting a Form which has an Email Automation attached, even if your email address is **not** in the `to` field.&#x20;
+E.g. Test submitting a Form which has an Email Automation attached, even if your email address is **not** in the `to` field.
 
-You'll see that if you added your email in step 2, you'll receive **all** emails on the site, regardless of who they are addressed to. This makes it easy to test emails without running lots of email accounts for different user types.&#x20;
+You'll see that if you added your email in step 2, you'll receive **all** emails on the site, regardless of who they are addressed to. This makes it easy to test emails without running lots of email accounts for different user types.
 
 ## Step 4) Checking the To Address is Correct
 

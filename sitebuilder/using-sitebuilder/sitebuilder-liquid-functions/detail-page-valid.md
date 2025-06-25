@@ -1,11 +1,9 @@
-# ℹ️ Detail Page Valid
+# Detail Page Valid
 
 ### Example <a href="#example" id="example"></a>
 
 ```
-{% raw %}
 {%- function detail_page_valid = "modules/module_86/front_end/functions/v1/detail_page_valid", fc_data: fc_data, full_slug: this.full_slug -%}
-{% endraw %}
 ```
 
 ### Purpose <a href="#purpose" id="purpose"></a>

@@ -1,4 +1,4 @@
-# ℹ️ Email Automations and Email Templates with Siteglide CLI
+# Email Automations and Email Templates with Siteglide CLI
 
 We recommend for now creating Automations in the Siteglide Admin so that the triggers are correctly attached to the Form.
 
@@ -42,9 +42,7 @@ name: form_1_workflow
 reply_to: Siteglide Demo Site Template <no-reply@siteglide.com>
 subject: We can't wait to Deliver
 to: >
-  {% raw %}
-{% if form.properties.form_field_1_1 == "office_a" %}office_a@office.com{% else %}office_b@office.com{% endif %}
-{% endraw %}
+  {% if form.properties.form_field_1_1 == "office_a" %}office_a@office.com{% else %}office_b@office.com{% endif %}
 trigger_condition: 'true'
 ---
 

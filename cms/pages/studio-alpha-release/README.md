@@ -1,4 +1,4 @@
-# 🎨 Studio (Alpha Release)
+# Studio (Alpha Release)
 
 {% hint style="warning" %}
 While Studio is in Alpha we do not recommend using it on production/live websites

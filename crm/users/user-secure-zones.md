@@ -19,9 +19,7 @@ Outputting a User's Secure Zones can help them to keep track of services they're
 ## Syntax
 
 ```liquid
-{% raw %}
 {% include 'user_secure_zones', layout: 'default' %}
-{% endraw %}
 
 ```
 
@@ -44,11 +42,9 @@ You'll need to use a Liquid For Loop to loop over the records in this Layout.
 One of the benefits of this is that you can rename the variable under which your fields are kept. If you like you can store the variables under the namespace "this".
 
 ```liquid
-{% raw %}
 {% for this in secure_zones %}
   <p>Form name: {{this.name}}</p>
 {% endfor %}
-{% endraw %}
 
 
 
@@ -57,12 +53,10 @@ One of the benefits of this is that you can rename the variable under which your
 Or, if you want to output the `form_submissions` layout inside a `user_details` Layout for example, you can store the variables under a different namespace e.g. case and continue to use `this` to refer to the `user_details` (Liquid variables are always inherited by Layouts included within them).
 
 ```liquid
-{% raw %}
 {% for secure_zone in secure_zones %}
   <p>User Name: {{this.name}}</p>
   <p>Form name: {{secure_zone.name}}</p>
 {% endfor %}
-{% endraw %}
 ```
 
 ### Available Fields (within the loop)

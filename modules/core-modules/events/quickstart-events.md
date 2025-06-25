@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Events
+# Quickstart: Events
 
 {% hint style="info" %}
 If you use one of our Site Builder templates these steps will already be done for you and all you need to do is customise the Layouts etc. This is our recommended route: [quickstart-sitebuilder.md](../../../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md "mention")

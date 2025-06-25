@@ -5,7 +5,7 @@ createdAt: 2021-11-02T14:26:21.000Z
 updatedAt: 2024-01-29T12:23:57.692Z
 ---
 
-# 📋 Steps to Switching Payment Gateway
+# Steps to Switching Payment Gateway
 
 ## Step 1 - Create a Payment Form
 
@@ -22,18 +22,14 @@ In Code Editor or CLI, make a copy of the default form layout, ready to customis
 In any Page, output your form and select the custom layout with the layout parameter. E.g. if your form ID is `1`, your layout should be at `marketplace_builder/views/partials/layouts/forms/form_1/`my-custom-layout`.liquid`
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/checkout', form_id: '1', layout: 'my-custom-layout' -%}
-{% endraw %}
 
 ```
 
 For Basic Payment forms:
 
 ```liquid
-{% raw %}
 {% include 'form', id: '2', layout: 'my-custom-layout' %}
-{% endraw %}
 
 ```
 

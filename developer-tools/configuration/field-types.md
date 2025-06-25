@@ -1,4 +1,4 @@
-# ℹ️ Field Types
+# Field Types
 
 ## Field Types available
 

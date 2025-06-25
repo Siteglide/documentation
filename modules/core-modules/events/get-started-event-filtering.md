@@ -1,8 +1,6 @@
-# ℹ️ Getting Started with Event Filtering & Searching
+# Getting Started with Event Filtering & Searching
 
 The Events Module List View can be filtered by Category, Host, or by finding Events which are happening between given dates.
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/203092694/4319734f3d1f785dfcf1cf0e/image.png) -->
 
 ## Introduction
 
@@ -13,11 +11,9 @@ The Events Module includes the following optional features for helping Users nav
 * Browse by Month/Date - Finds Events which are happening during this month
 * Search Events which are happening between two Dates
 
-You may be familiar with many of these if you've used the [Blog Module Navigation](/modules/core-modules/blog-and-authors/blog-and-authors-reference.md#blog-navigation-and-filtering), however the main difference between them is how they handle dates; navigating the Blog Module by date would use the post's `Release Date`, whereas the Events Module will check to see if a given date falls between the `Event Start` and `Event End` dates.
+You may be familiar with many of these if you've used the [Blog Module Navigation](../blog-and-authors/blog-and-authors-reference.md#blog-navigation-and-filtering), however the main difference between them is how they handle dates; navigating the Blog Module by date would use the post's `Release Date`, whereas the Events Module will check to see if a given date falls between the `Event Start` and `Event End` dates.
 
 ## Using the Navigation Options to Filter the Map and Calendar Views
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/203094035/263a4b74debb30ba8b902ed5/image.png) -->
 
 You can use the Navigation Options on the Map and Calendar Layouts- these are List Layouts too!
 
@@ -34,7 +30,6 @@ If you want to provide a Calendar and an Events List together on the Page for ex
 Each Events Navigation Article will explain how you can use Liquid Logic to dynamically show the currently applied filter. Here, we'll show an example of some Logic that will check for any of the applied filters:
 
 ```liquid
-{% raw %}
 {% assign now = "now" | date: "%s" %}
 {% if context.params.range_type == "past" %}
   <h2>Past Events</h2>
@@ -61,7 +56,6 @@ Each Events Navigation Article will explain how you can use Liquid Logic to dyna
   <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">
     Past Events</a>
 {% endif %}
-{% endraw %}
 ```
 
 Of course, you can use this for inspiration and edit as you wish.

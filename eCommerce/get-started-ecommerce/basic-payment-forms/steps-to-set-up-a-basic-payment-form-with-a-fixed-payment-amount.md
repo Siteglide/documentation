@@ -1,4 +1,4 @@
-# 📋 Steps to Set up a Basic Payment Form (with a Fixed Payment Amount)
+# Steps to Set up a Basic Payment Form (with a Fixed Payment Amount)
 
 ## Step 1) Head to CMS / Forms
 
@@ -39,9 +39,7 @@ Back in CMS Forms, find the ID for your newly created Form:
 Use this ID in the Liquid tag when you insert the Form on the Page (or use Toolbox as a quick shortcut):
 
 ```
-{% raw %}
 {% include 'form', id: '11', layout: 'default' %}
-{% endraw %}
 
 
 ```

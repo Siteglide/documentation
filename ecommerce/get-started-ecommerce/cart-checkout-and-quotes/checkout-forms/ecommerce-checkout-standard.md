@@ -1,4 +1,4 @@
-# 🔹 Checkout Form Layouts
+# Checkout Form Layouts
 
 ## Checkout Form Layout
 
@@ -19,9 +19,7 @@ You should include this in the layout file for a checkout form at the position i
 _Outputting 1 payment gateway option_
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/checkout_standard' -%}
-{% endraw %}
 
 
 ```

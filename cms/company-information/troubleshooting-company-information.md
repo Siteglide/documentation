@@ -4,7 +4,7 @@ description: >-
   following on the page:
 ---
 
-# ❔ Troubleshooting
+# Troubleshooting
 
 {% content-ref url="../../site-manager/code-snippets-includes/constants.md" %}
 [constants.md](../../site-manager/code-snippets-includes/constants.md)
@@ -13,5 +13,5 @@ description: >-
 Or for automations:
 
 {% content-ref url="../../site-manager/code-snippets-includes/constants_json.md" %}
-[constants\_json.md](../../site-manager/code-snippets-includes/constants\_json.md)
+[constants\_json.md](../../site-manager/code-snippets-includes/constants_json.md)
 {% endcontent-ref %}

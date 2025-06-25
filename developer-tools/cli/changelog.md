@@ -1,4 +1,4 @@
-# 🛳️ CLI Changelog
+# CLI Changelog
 
 ### 1.10.1 - 19th February 2025
 

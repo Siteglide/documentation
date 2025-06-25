@@ -1,4 +1,4 @@
-# ℹ️ WebApp Detail Layouts
+# WebApp Detail Layouts
 
 When enabled, WebApps have automatically generated Detail Pages, which use your chosen Detail Layout to display each WebApp Item's content. Users can make new WebApp items and the page will automatically be created for them.
 

@@ -1,4 +1,4 @@
-# 🚀 Quickstart: FAQ
+# Quickstart: FAQ
 
 ## Step 1: Install the FAQ Module
 
@@ -36,6 +36,6 @@ Your FAQ Module will work out of the box but Siteglide is all about flexibility 
 [dynamic-layouts-in-sitebuilder.md](../../../sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
 
-{% content-ref url="/modules/core-modules/faq/faqs-reference.md" %}
-[reference.md](/modules/core-modules/faq/faqs-reference.md)
+{% content-ref url="faqs-reference.md" %}
+[faqs-reference.md](faqs-reference.md)
 {% endcontent-ref %}

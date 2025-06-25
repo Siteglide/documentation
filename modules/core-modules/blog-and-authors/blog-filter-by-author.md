@@ -1,4 +1,4 @@
-# 🔹 Blog Filter by Author
+# Blog Filter by Author
 
 Combining the Blog and Author Modules allows you to filter the Blog posts by a specific Author's posts.
 
@@ -53,9 +53,7 @@ The `author_field` will be `module_field_3_4` if you are using Siteglide's Autho
   <div class="col-12">
     <h2>Authors</h2>
     <ul>
-      {% raw %}
-{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
-{% endraw %}
+      {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
     </ul>
   </div>
 </div>
@@ -67,11 +65,9 @@ The `author_field` will be `module_field_3_4` if you are using Siteglide's Autho
 
 ```liquid
 <a class="authorAnchorSidebar" href="{{context.location.pathname}}?module_field_3_4={{this.id}}&author_name={{this.name | url_encode}}">
-{% raw %}
 {% if this['Image'] -%}
     <img src="{% if this['Image'] contains 'http' -%}{{this['Image']}}{% else -%}{{this['Image'] | asset_url}}{% endif -%}" alt="{{this['Image Alt']}}">
   {% endif -%}
-{% endraw %}
   <li>{{this['name']}}</li>
 </a>
 
@@ -93,9 +89,7 @@ To make it easier to give feedback to the User, you can optionally include the A
 On the List view, you can then include the following liquid to read the URL and decode the Author name you are currently filtering by:
 
 ```liquid
-{% raw %}
 {% elsif context.params.module_field_3_4 %}
   Posts by {{context.params.author_name | url_decode}}
 {% endif %}
-{% endraw %}
 ```

@@ -2,7 +2,7 @@
 description: 'We''ve split the eCommerce Module into the following sections:'
 ---
 
-# 💡 About the eCommerce Module
+# About the eCommerce Module
 
 ## Payment Gateways - Start Here
 

@@ -1,4 +1,4 @@
-# 📋 Steps to Programmatically Redirecting after a Form Submission
+# Steps to Programmatically Redirecting after a Form Submission
 
 On Forms you can set the default redirect in the Form Builder view in Siteglide.
 
@@ -21,13 +21,11 @@ This example will redirect the user to `/home` no matter what the redirect says 
 #### Liquid
 
 ```liquid
-{% raw %}
 <select id="choose_office">
  <option selected value="1">London Office (Default)</option>
  <option value="2">New York Office</option>
 </select>
 <input id="s_redirect" value="/confirm-office-1">
-{% endraw %}
 ```
 
 #### JavaScript
@@ -44,4 +42,4 @@ select.addEventListener('change', function(e) {
      redirect.value = '/confirm-office-2';
   }
 });
-````
+```

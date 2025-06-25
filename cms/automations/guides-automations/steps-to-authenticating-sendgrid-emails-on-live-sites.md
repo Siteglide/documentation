@@ -1,4 +1,4 @@
-# 📋 Steps to Authenticating Sendgrid Emails on Live Sites
+# Steps to Authenticating Sendgrid Emails on Live Sites
 
 ## Why do I need to do this on Live Sites?
 

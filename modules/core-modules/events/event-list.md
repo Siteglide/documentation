@@ -1,4 +1,4 @@
-# ℹ️ Standard List View
+# Standard List View
 
 We'll explain how to output a List View of Events and link you to the docs on advanced Filtering and Navigation
 
@@ -7,10 +7,10 @@ We'll explain how to output a List View of Events and link you to the docs on ad
 The Events Module comes with a wide range of options for your List View. You can output Events as:
 
 * A standard List
-* [A Map](/modules/core-modules/events/event-list-map.md)
-* [A Calendar](/modules/core-modules/events/event-list-calendar.md)
+* [A Map](event-list-map.md)
+* [A Calendar](event-list-calendar.md)
 
-You can also use our [Navigation options](/modules/core-modules/events/get-started-event-filtering.md) with any of these views.
+You can also use our [Navigation options](get-started-event-filtering.md) with any of these views.
 
 ## Outputting a List View
 
@@ -29,7 +29,6 @@ Basic List views will also work in workflow and auto-responder emails, but be aw
 Use the following Liquid Syntax to output an Events List view:
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'design_system/1/list'
@@ -37,15 +36,14 @@ Use the following Liquid Syntax to output an Events List view:
     show_pagination: 'false'
     sub_model: 'true' 
 -%}
-{% endraw %}
+
 ```
 
-Additionally, the events list can also be sorted by core event module fields using the `sort_type` parameter and passing a module field such as event start date (`properties.module_field_12_2`), end date (`properties.module_field_12_3`), or event host (`properties.module_field_12_3`). 
+Additionally, the events list can also be sorted by core event module fields using the `sort_type` parameter and passing a module field such as event start date (`properties.module_field_12_2`), end date (`properties.module_field_12_3`), or event host (`properties.module_field_12_3`).
 
 The following Liquid Syntax can be used to output an Events List view sorted by event start dates in descending order:
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'design_system/1/list'
@@ -55,7 +53,6 @@ The following Liquid Syntax can be used to output an Events List view sorted by 
     show_pagination: 'false'
     sub_model: 'true' 
 -%}
-{% endraw %}
 ```
 
-More information on module fields can be found [here](/developer-tools/building-for-marketplace/modules-reference.md).
+More information on module fields can be found [here](../../../developer-tools/building-for-marketplace/modules-reference.md).

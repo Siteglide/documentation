@@ -1,4 +1,4 @@
-# ℹ️ Filter by Event Dates
+# Filter by Event Dates
 
 This option allows you to provide the User with links to months when Events are happening - or let them Search between any two dates.
 
@@ -43,9 +43,7 @@ If you just want to filter the List so it either shows Events that have already 
 ### Filter by Past Events
 
 ```liquid
-{% raw %}
 {% assign now = "now" | date: "%s" %}
-{% endraw %}
 
 
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=future&range_gt={{now}}">Future Events</a>
@@ -56,9 +54,7 @@ If you just want to filter the List so it either shows Events that have already 
 ### Filter by Future Events
 
 ```liquid
-{% raw %}
 {% assign now = "now" | date: "%s" %}
-{% endraw %}
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 
 
@@ -67,7 +63,6 @@ If you just want to filter the List so it either shows Events that have already 
 ### Using Liquid Logic to "Toggle" between Past and Future Events
 
 ```liquid
-{% raw %}
 {% assign now = "now" | date: "%s" %}
 {% if context.params.range_type == "past" %}
   <h2>Past Events</h2>
@@ -79,7 +74,6 @@ If you just want to filter the List so it either shows Events that have already 
   <h2>All Events</h2>
   <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 {% endif %}
-{% endraw %}
 
 
 
@@ -148,15 +142,13 @@ The following examples will take you through the different options:
 ```liquid
 <h2>Archive</h2>
 <ul>
-  {% raw %}
-{% for month in events_archive_months %}
+  {% for month in events_archive_months %}
     <li>
       <a href="{{context.headers.PATH_INFO}}?range_gt={{month.start}}&range_lte={{month.end}}&range_type=month&range_field=events">
         {{month.start | date: "%b-%y" }}
       </a>
     </li>
   {% endfor %}
-{% endraw %}
 </ul>
 
 ```
@@ -175,7 +167,6 @@ This Layout does not just organise the Months available under the relevant Year 
 <h2>Archive by Years</h2>
 <ul>
   
-{% raw %}
 {% for year in events_archive_years %}
     <li>{{year.start | date: "%Y"}}</li>
     <ul>
@@ -189,7 +180,6 @@ This Layout does not just organise the Months available under the relevant Year 
       {% endfor %}
     </ul>
   {% endfor %}
-{% endraw %}
 
 
 </ul>
@@ -199,7 +189,7 @@ This Layout does not just organise the Months available under the relevant Year 
 
 This example uses the same links as the previous one. However, it also organises the links into the years in which they belong by first looping over the years in the events\_archive\_years and then using the group\_by liquid filter and another loop to output the month links grouped under the current iteration's year. Learn more about this Liquid at the pOS docs:
 
-* [group\_by filter](https://documentation.platformos.com/api-reference/liquid/platformos-filters#group\_by)
+* [group\_by filter](https://documentation.platformos.com/api-reference/liquid/platformos-filters#group_by)
 * [for loop](https://documentation.platformos.com/api-reference/liquid/loops)
 
 ### Search Events between two dates
@@ -214,7 +204,6 @@ It also adds a Form for directly manipulating the URL parameters to find the exa
     <h2>Archive by Years</h2>
     <ul>
       
-{% raw %}
 {% assign events_archive_years = events_archive_years | sort: "start" %}
       {% for year in events_archive_years %}
         <li>{{year.start | date: "%Y"}}</li>
@@ -263,7 +252,6 @@ It also adds a Form for directly manipulating the URL parameters to find the exa
 {% comment %}
 Add your custom error message here- it can be renamed by changing its name in the argument for the s_events_date_search function and in the definition below.
 {% endcomment %}
-{% endraw %}
 
 
 <script>
@@ -288,12 +276,10 @@ Any Layouts included with the above Liquid will get access to the `events_archiv
 _**events\_archive\_years**_
 
 ```liquid
-{% raw %}
 {% for year in events_archive_years %}
   {{year.start}} <!-- Outputs Epoch time at start of Year -->
   {{year.end}} <!-- Outputs Epoch time at end of Year -->
 {% endfor %}
-{% endraw %}
 
 
 
@@ -303,12 +289,10 @@ _**events\_archive\_years**_
 _**events\_archive\_months**_
 
 ```liquid
-{% raw %}
 {% for year in events_archive_years %}
   {{year.start}} <!-- Outputs Epoch time at start of Year -->
   {{year.end}} <!-- Outputs Epoch time at end of Year -->
 {% endfor %}
-{% endraw %}
 
 
 
@@ -330,7 +314,7 @@ The pOS documentation website has some useful tips on how to use liquid to conve
 
 * [localize](https://documentation.platformos.com/api-reference/liquid/platformos-filters#localize-aliases-l)
 * [date](https://documentation.platformos.com/api-reference/liquid/platformos-filters#localize-aliases-l)
-* [add\_to\_time](https://documentation.platformos.com/api-reference/liquid/platformos-filters#add\_to\_time)
+* [add\_to\_time](https://documentation.platformos.com/api-reference/liquid/platformos-filters#add_to_time)
 
 ## Feedback for the User - Displaying the currently applied filter
 
@@ -338,7 +322,6 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
 
 ```liquid
 
-{% raw %}
 {% if context.params.range_type == "between" %}
 
   Events between {{context.params.range_gt | date: "%d-%b-%y"}}
@@ -348,7 +331,6 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
   {{context.params.range_lte | date: "%d-%b-%y"}}
 
 {% endif %}
-{% endraw %}
 
 
 
@@ -358,14 +340,12 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
 Whereas, you could use another `range_type` to indicate that different feedback should be given to the User. e.g. the parameter `month` in this example changes the sentence structure from "Events between" to "Events in" to communicate the different kind of filtering that is now taking place.
 
 ```liquid
-{% raw %}
 {% if context.params.range_type == "month" %}
 
   Events in {{context.params.range_gt | date: "%b-%y"}}
   {{context.params.range_gte | date: "%b-%y"}}
 
 {% endif %}
-{% endraw %}
 ```
 
 Note- in both of these examples- the `gte` and `gt` dates are both outputted- this is because only one is expected to be available. The Layout is designed to accept either

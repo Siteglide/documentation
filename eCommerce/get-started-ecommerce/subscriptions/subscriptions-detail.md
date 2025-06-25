@@ -57,7 +57,6 @@ Subscription Layouts can be found at the path: `layouts/modules/module_14/subscr
 We provide an example of some logic you can use to explain to logged in Users what the Form will do:
 
 ```liquid
-{% raw %}
 {% if context.params.slug == "subscription-action-required" %} 
     
     {% comment %} Content to display when customer is responding to an email notification which asked them to update or authorise payment details. {% endcomment %} 
@@ -75,7 +74,6 @@ We provide an example of some logic you can use to explain to logged in Users wh
     {% comment %} Content to display when the User is not logged in or has not yet signed up to this subscription. {% endcomment %} 
 				
 {%- endif -%}
-{% endraw %}
 
 
 
@@ -99,18 +97,14 @@ If you've already created your Form, you can skip this step.
 Once you've created a Form and made a note of its ID, you'll be able to add it to your Detail Layout.
 
 ```liquid
-{% raw %}
 {% comment %} INSERT YOUR PAYMENT FORM HERE {% endcomment %}
-{% endraw %}
 
 ```
 
 This is just a suggestion, you can actually include your Form anywhere you like in the Layout. Use the following Liquid:
 
 ```liquid
-{% raw %}
 {% include 'form', id: '1', layout: 'my_form_layout' %}
-{% endraw %}
 
 ```
 
@@ -161,12 +155,10 @@ _Subscription Fields_
 To determine this, you can use Liquid Logic to hide an entire block of code in which you use these fields:
 
 ```liquid
-{% raw %}
 {% if subscription_order != blank %}
   {% comment %}Content here can safely include subscription_order fields- 
   or will be hidden if none is available.{% endcomment %}
 {% endif %}
-{% endraw %}
 
 
 
@@ -201,13 +193,11 @@ For these Users (if they are logged in) there will be two sets of fields availab
 You can use logic to display a different price to Users in this situation.
 
 ```liquid
-{% raw %}
 {% if subscription_order['Plan Chargeable Price'] != blank %}
   <p>{{subscription_order['Plan Chargeable Price']}}</p>
 {% else %}
   <p>{{this.price.price_charge}}</p>
 {% endif %}
-{% endraw %}
 
 
 
@@ -226,13 +216,11 @@ Or alternatively, you can use the default filter:
 _Tip: Working with the interval_ As you can see above, there are multiple fields involved in storing the interval of charges, which you can use to display the interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:
 
 ```liquid
-{% raw %}
 {% if this['Interval Count'] == "1" %}
   per {{this['Interval'] | pluralize: 1}}
 {% else %}
   (every {{this['Interval Count']}} {{this['Interval']}})
 {% endif %}
-{% endraw %}
 ```
 
 If the Interval Count is 1, it will use formatting like "per day".

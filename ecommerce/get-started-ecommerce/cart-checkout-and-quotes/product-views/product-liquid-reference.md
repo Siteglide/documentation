@@ -5,7 +5,7 @@ createdAt: 2021-02-18T15:09:17.000Z
 updatedAt: 2023-04-06T15:09:36.000Z
 ---
 
-# 🔹 Product Layouts
+# Product Layouts
 
 While building Product and Attribute Layouts, a large range of dynamic data is available- here is a full reference guide.
 
@@ -36,7 +36,7 @@ Any Custom Field Sets that have been associated with the product will be stored 
 
 You can output the above liquid in the item.liquid file to see all of Custom Field Sets associated with the Product. Each of these will have the key "cfs\_1", "cfs\_2" etc. For example, a developer has created just one Custom Field Set to store information about the Guarantee on the Product. The field can be accessed via: `{{this.cfs_data.cfs_1.Guarantee}}`
 
-See more information about Custom Field Sets [here](/crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md).
+See more information about Custom Field Sets [here](../../../../crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md).
 
 ## The Price Object
 
@@ -89,11 +89,12 @@ As explained in the Attributes Layout Doc, we recommend you loop over the object
 
 ```liquid
 <select name="attr1" class="form-control" data-attribute-control="{{product_attribute_id}}" onchange="s_e_update_price()">
-  {% raw %}
+  
 {% for option in product_attribute_options %}
     <option value="{{option.id}}" data-attribute-price-control="{{option.price_raw}}">{{option.name}} this.price.currency_symbol}}{{option.price}})</option>
   {% endfor %}
-{% endraw %}
+
+
 </select>
 
 

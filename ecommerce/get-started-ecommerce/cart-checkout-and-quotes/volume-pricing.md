@@ -5,7 +5,7 @@ createdAt: 2021-02-19T16:08:21.000Z
 updatedAt: 2023-03-03T08:10:04.000Z
 ---
 
-# 🔹 Volume Pricing
+# Volume Pricing
 
 Offer your customers better prices when they purchase in bulk. This feature lets you define as many levels of Volume Pricing as you like.
 
@@ -47,7 +47,6 @@ When looping over an object like `this['Volume Pricing']`, `.first` allows you t
 First though, we use logic in the first line to check if the pricing has been enabled:
 
 ```liquid
-{% raw %}
 {% if this.['Volume Pricing Enabled'] == true %}
   <h3>Volume Pricing Options Available</h3>
   <ul>
@@ -59,7 +58,6 @@ First though, we use logic in the first line to check if the pricing has been en
     {% endfor %}
   </ul>
 {% endif %}
-{% endraw %}
 
 
 
@@ -83,7 +81,6 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
 ```liquid
 <td style="padding: 5px 5px 5px 15px; font-weight: 200;" align="right">
   
-{% raw %}
 {% if product.volume_pricing_threshold_reached != blank %}
     <span style="color: red; text-decoration: line-through;">
       {{ product.currency_symbol }}{{product.volume_pricing_original_price}}</span>
@@ -91,7 +88,6 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
   {% else %}
     {{ product.currency_symbol }}{{ product.price }}
   {% endif %}
-{% endraw %}
 </td>
 ```
 

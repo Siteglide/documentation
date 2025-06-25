@@ -1,9 +1,9 @@
-# 🌳 Cart and Checkout Folder Structure
+# Cart and Checkout Folder Structure
 
 Some layouts have a wrapper and an item file, while other layouts have a single Liquid file.
 
 {% hint style="info" %}
-Checkout and Quote Forms use ordinary Form Layouts, despite using a different Liquid tag to output them. \
+Checkout and Quote Forms use ordinary Form Layouts, despite using a different Liquid tag to output them.\
 \
 The marketplace\_builder/views/partials/layouts/modules/module\_14/checkout directory doesn't store a Checkout layout, instead it stores an "empty" file which will be displayed instead of Checkout if the Cart is empty.
 {% endhint %}

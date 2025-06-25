@@ -1,2 +1,2 @@
-# ❔ Help & FAQs
+# Support & FAQs
 

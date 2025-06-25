@@ -1,4 +1,4 @@
-# 🔹 Live Updates Markup Example
+# Live Updates Markup Example
 
 ### Pre-Requisites <a href="#prerequisites" id="prerequisites"></a>
 
@@ -19,7 +19,6 @@ Having said that, if you want to modify any other layout to start fetching live 
 The following markup example would work well in the `wrapper.liquid` file of a webapp or module layout. The `layout` and `_model` variables will then be inherited from the tag used to output the layout in the page.
 
 ```liquid
-{% raw %}
 {% comment %}Generate the public key as above and pass it to the main element of the HTML code as a data-attribite. Another data-attribute, data-sg-live-update-section, may optionally be used to supply a unique ID to the HTML section which will be referenced in the initialised Object.{% endcomment %}
 {% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
   <script async src="{{'modules/module_86/js/v1-6/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
@@ -75,7 +74,6 @@ The following markup example would work well in the `wrapper.liquid` file of a w
   {% comment %} Our pre-built pagination solution when combined with a SiteBuilder pagination_layout which supports live-updates {% endcomment %}
   {% include "modules/module_86/front_end/includes/v1/pagination", live_updates: 'true', lock_per_page: 'false' %}
   {% comment %} A form example to allow users to change number of results per page {% endcomment %}
-{% endraw %}
   <form class="flex flex-wrap space-x-2 space-y-2 items-center" data-sg-live-update-controls="per_page">
     <label for="rows" class="text-sm font-normal text-gray-500 dark:text-gray-400">
       Rows per page

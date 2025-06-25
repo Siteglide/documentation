@@ -2,7 +2,7 @@
 description: Connect to a site via CLI
 ---
 
-# 📋 Site Setup
+# Site Setup
 
 {% hint style="warning" %}
 You need CLI installed first, check out our Quickstart guide:

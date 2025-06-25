@@ -1,4 +1,4 @@
-# ℹ️ About
+# About
 
 Categories are an excellent method for sorting and grouping content on your Site in an intuitive, hierarchical way.
 

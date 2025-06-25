@@ -1,4 +1,4 @@
-# ℹ️ Map List View
+# Map List View
 
 The Map Layout is a List Layout which demonstrates how you can use the Google Maps API to visualise Events from the Siteglide database.
 
@@ -55,9 +55,7 @@ You'll notice in the `wrapper.liquid` file that the ordinary Liquid which fetche
     //--- this allows them to be used by Google Maps. Changing the format in the item.liquid 
     //--- file may cause errors.
     var locations = [
-        {% raw %}
-{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
-{% endraw %}
+        {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
     ];
 </script>
 
@@ -76,10 +74,8 @@ The `item.liquid` file should be left in the format of a JSON object, but you ma
     event_start: "{{this.properties.module_field_12_2 | date: "%d/%m/%Y %H:%M T%z"}}",	
     event_end: "{{this.properties.module_field_12_3 | date: "%d/%m/%Y %H:%M T%z"}}",	
     valid: "
-{% raw %}
 {% if this.properties.module_field_12_7 == blank %}invalid{% else %}valid{% endif %}"
 }{% unless forloop.last %},{% endunless %}
-{% endraw %}
 ```
 
 Here, we also use Liquid Logic to check for Events with no location data set and exclude them from the List.

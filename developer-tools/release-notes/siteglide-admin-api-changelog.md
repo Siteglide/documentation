@@ -1,4 +1,4 @@
-# 🛳️ Siteglide Admin/API - Changelog
+# Siteglide Admin/API - Changelog
 
 ### 8th October 2024
 

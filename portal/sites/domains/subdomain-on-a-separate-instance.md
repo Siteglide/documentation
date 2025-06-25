@@ -1,4 +1,4 @@
-# 💻 Subdomain on a separate instance
+# Subdomain on a separate instance
 
 {% hint style="info" %}
 This example is only applicable where your top level domain is fully delegated to Siteglide. If using External DNS Step 2 would not be done in Siteglide but instead wherever your DNS is managed.

@@ -289,7 +289,6 @@ The results in JSON may look like the below (we've minimised Blog properties whi
 As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot Notation](../../liquid/accessing-data-from-liquid-objects.md) or [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md)) to access the results, until you get to an array. Since we only asked for a single author, we can use dot notation inside the blog record to access the author. We still need to loop over the blog results as always:
 
 ```liquid
-{% raw %}
 {% graphql blogs_with_authors = "blogsWithAuthors" %}
 {% for blog in blogs_with_authors.records.results %}
   <h2>{{blog.properties.module_field_3_1}}</h2>
@@ -298,7 +297,6 @@ As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot 
     <img src="{{blog.author.image | asset_url}}">
   </div>
 {% endfor %}
-{% endraw %}
 
 ```
 
@@ -437,7 +435,6 @@ query AuthorsAndTheirArticles { #renamed
 ### Step 7) Liquid example
 
 ```liquid
-{% raw %}
 {% graphql authors_and_their_articles = "AuthorsAndTheirArticles" %}
 {% for author in authors_and_their_articles.records.results %}
   <h2>{{author.properties.name}}</h2>
@@ -452,7 +449,6 @@ query AuthorsAndTheirArticles { #renamed
     </ul>
   </div>
 {% endfor %}
-{% endraw %}
 ```
 
 ## Further Learning

@@ -5,7 +5,7 @@ createdAt: 2021-02-18T16:28:25.000Z
 updatedAt: 2023-04-06T15:17:02.000Z
 ---
 
-# 🔹 Attribute Layout - Presenting the Choice to the Customer
+# Attribute Layout - Presenting the Choice to the Customer
 
 Product Attribute Layouts allow you to customise the way that you present users with a choice of which variation of a Product they want.
 
@@ -89,7 +89,6 @@ If your Products have multiple Attributes, or you want to write code which can d
 `detail/item.liquid` -- (looping over all Attributes linked to this Product)
 
 ```liquid
-{% raw %}
 {% for attribute in this.product_attributes %}
   {% if attribute.properties.enabled == true %}
     {% include 'ecommerce/product_attributes'
@@ -98,7 +97,6 @@ If your Products have multiple Attributes, or you want to write code which can d
     -%} 
   {% endif %}
 {% endfor %}
-{% endraw %}
 
 
 
@@ -117,11 +115,9 @@ The following liquid outputs an array of the options that have been created for 
 You can loop over this array with the following liquid code, (where the example has the variable "option", you could choose any variable name):
 
 ```liquid
-{% raw %}
 {% for option in product_attribute_options -%}
   {{option.name}} ({{this.price.currency_symbol}}{{option.price}})
 {% endfor %}
-{% endraw %}
 
 
 
@@ -134,13 +130,11 @@ To get the full benefits of Attribute functionality, including the user's choice
 ```liquid
 <select name="attr1" class="form-control" data-attribute-control="{{product_attribute_id}}" onchange="s_e_update_price()">
   
-{% raw %}
 {% for option in product_attribute_options %}
     <option value="{{option.id}}" data-attribute-price-control="{{option.price_raw}}">
       {{option.name}} {{this.price.currency_symbol}}{{option.price}})
     </option>
   {% endfor %}
-{% endraw %}
 </select>
 ```
 

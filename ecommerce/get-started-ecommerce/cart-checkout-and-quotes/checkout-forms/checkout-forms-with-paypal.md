@@ -1,2 +1,2 @@
-# 🔹 Checkout Forms with PayPal
+# Checkout Forms with PayPal
 

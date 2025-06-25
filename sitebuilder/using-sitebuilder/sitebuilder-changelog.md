@@ -1,4 +1,4 @@
-# 🗓️ SiteBuilder Changelog
+# SiteBuilder Changelog
 
 ## About SiteBuilder updates and backwards compatibility <a href="#about-sitebuilder-updates-and-backwards-compatibility" id="about-sitebuilder-updates-and-backwards-compatibility"></a>
 
@@ -79,9 +79,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 * Tailwind build method can now be overridden on the Page Template level, either by setting when you create a Page Template, or by using the `template_build_method` parameter (can be set to either "cli" or "preview"):
 
 ```liquid
-{% raw %}
 {% include 'modules/module_86/tailwind/head', template_build_method: 'cli', template_build_me optional_path_to_cli_css: '' %}
-{% endraw %}
 
 
 ```
@@ -209,9 +207,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
     ```liquid
 
-    {% raw %}
     {% if context.exports.company_information.properties.google_analytics_id != blank and context.exports.sitebuilder.cookie_preferences_js == 'all' %}
-    {% endraw %}
 
     ```
 
@@ -219,9 +215,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
     ```liquid
 
-    {% raw %}
     {% if context.exports.company_information.properties.google_analytics_id != blank and context.cookies['sg-cookie-policy-settings'] == 'all' %}
-    {% endraw %}
 
     ```
 * Live Updates

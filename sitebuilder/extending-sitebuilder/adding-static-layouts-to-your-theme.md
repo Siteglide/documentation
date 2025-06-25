@@ -1,6 +1,6 @@
-# ℹ️ Adding Static Layouts to your Theme
+# Adding Static Layouts to your Theme
 
-This documentation is aimed at those following the [theme-creator](/sitebuilder/extending-sitebuilder/creating-sitebuilder-themes.md) route. It's not currently supported to include static layouts within the module-creator route.
+This documentation is aimed at those following the [theme-creator](creating-sitebuilder-themes.md) route. It's not currently supported to include static layouts within the module-creator route.
 
 Static layouts are HTML layouts which can be included in a theme. They won't directly interface with the database in the same way as a dynamic layout and are likely to have their content edited by the module-user, either in the code, or in the Siteglide Admin's Studio tab.
 
@@ -48,7 +48,6 @@ At the present time, static content should be added inside each file as HTML onl
 The `static_config.liquid` file should be added inside the theme folder in order to give SiteBuilder the metadata it needs to find your layouts and display them in either the Studio tab UI or the PageBuilder UI.
 
 ```liquid
-{% raw %}
 {
   "name": "Studio", 
 {% comment %}String. Required. The name of your theme{% endcomment %}
@@ -80,5 +79,4 @@ The `static_config.liquid` file should be added inside the theme folder in order
     }
   ]
 }
-{% endraw %}
 ```

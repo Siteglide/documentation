@@ -1,4 +1,4 @@
-# ℹ️ Front-end Browser Support
+# Front-end Browser Support
 
 **June 25, 2024**
 

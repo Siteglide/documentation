@@ -9,13 +9,11 @@ Whether a page is the homepage or not is determined by the is\_homepage variable
 Say I wanted to run some code on every Page that isn't the homepage, I'd write something like this:
 
 ```liquid
-{% raw %}
 {% if context.page.metadata.is_homepage == false %}
    output content.
 {% else %}
    output homepage content.
 {% endif %}
-{% endraw %}
 
 
 
@@ -28,13 +26,11 @@ Now lets look at the Liquid keyword "blank". This refers to having a value of ei
 If I now check "is\_homepage" like so:
 
 ```liquid
-{% raw %}
 {% if context.page.metadata.is_homepage == blank %}
   {% comment %}output content.{% endcomment %}
 {% else %}
   {% comment %}output homepage content.{% endcomment %}
 {% endif %}
-{% endraw %}
 ```
 
 This will now work!

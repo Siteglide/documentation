@@ -2,7 +2,7 @@
 description: Get started with SiteBuilder in a few simple steps
 ---
 
-# 🚀 Quickstart: SiteBuilder
+# Quickstart: SiteBuilder
 
 ## Step 1: Create a Site or Install the Module
 

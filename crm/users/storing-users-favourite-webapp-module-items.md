@@ -29,22 +29,18 @@ The User Favourites Toggle Layout will only work within an item.liquid file (for
 Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout:
 
 ```liquid
-{% raw %}
 {% include 'user_favourites_toggle', layout: 'default' -%}
-{% endraw %}
 
 ```
 
 `is_favourite` - you can use this within `user_favourites_toggle` layouts to determine if the Module/ Webapp item is already added to the Users favourites like so:
 
 ```liquid
-{% raw %}
 {% if is_favourite != true  %}
   <!-- output add to favourites button -->
 {% else %}
   <!--  output remove from favourites button -->
 {% endif %}
-{% endraw %}
 
 
 ```
@@ -139,9 +135,7 @@ Add to favourites
 You may want to hide the add/ remove buttons from the User if they aren't logged into a Secure Zone you could do so by wrapping your user\_favourites Layout within this IF statement:
 
 ```liquid
-{% raw %}
 {% if context.current_user %} {% endif %}
-{% endraw %}
 
 ```
 
@@ -152,9 +146,7 @@ Now let's look at how we can output all of the User's Favourite items. The favou
 You can include the user\_details Layout like so:
 
 ```liquid
-{% raw %}
 {% include 'user_details', layout: 'my_layout' -%}
-{% endraw %}
 
 ```
 
@@ -168,25 +160,19 @@ Next within the "user\_details" Layout, you can use the following Liquid variabl
 #### Outputting Webapp favourite items
 
 ```liquid
-{% raw %}
 {%- include 'webapp', id: '1', layout: 'my_layout', item_ids: favourite_items_string -%}
-{% endraw %}
 
 ```
 
 #### Outputting favourite Products
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/products', layout: 'default', item_ids: favourite_items_string -%}
-{% endraw %}
 
 ```
 
 #### Outputting favourite Blog Posts (Modules)
 
 ```liquid
-{% raw %}
 {%- include 'module', id: '3', layout: 'my_layout', item_ids: favourite_items_string -%}
-{% endraw %}
 ```

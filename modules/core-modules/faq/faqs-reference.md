@@ -1,9 +1,8 @@
-# 💻 Reference
+# Reference
 
 ### Syntax
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '10'
     layout: 'design_system/2'
@@ -11,7 +10,6 @@
     sort_type: 'created_at'
     sort_order: 'desc' 
 -%}
-{% endraw %}
 ```
 
 ### Parameters

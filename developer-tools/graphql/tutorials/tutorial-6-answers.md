@@ -79,9 +79,7 @@ As we showed you in the tips, Liquid can read this parameter at the following do
 Or you can store this in a variable, which we'll need to do here:
 
 ```liquid
-{% raw %}
 {% assign current_page = context.params.page %}
-{% endraw %}
 
 ```
 
@@ -92,27 +90,21 @@ By the way, the keys in `context.params` are dynamically generated for any query
 a) First, let's set a default value, just in case a User arrives at the Page without setting the Parameter:
 
 ```liquid
-{% raw %}
 {% assign current_page = context.params.page | default: 1 %}
-{% endraw %}
 
 ```
 
 b) The query is expecting an integer, so let's apply an Integer filter that will change the type to an `Int` without changing the value:
 
 ```liquid
-{% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
-{% endraw %}
 
 ```
 
 c) Let's add the `graphql` tag with the variable parameter.
 
 ```liquid
-{% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
-{% endraw %}
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -124,9 +116,7 @@ page: current_page
 We can output the results using the variable name we defined in the `graphql` tag.
 
 ```liquid
-{% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
-{% endraw %}
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -178,7 +168,6 @@ The next steps give you ideas for how to take this further. They are not part of
 These JSON results don't look great. Remember, you can use Liquid to pass the results into a Layout- if you can find that Layout's relative path in Code Editor.
 
 ```liquid
-{% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 {% graphql my_result = "gallery_by_page",
 page: current_page
@@ -187,7 +176,6 @@ page: current_page
 {% for this in result_array %}
   {% include 'layouts/webapps/webapp_1/list/my_layout_name', this: this %}
 {% endfor %}
-{% endraw %}
 
 ```
 
@@ -218,11 +206,9 @@ You can then use this to manipulate the HTML pagination controls:
 
 ```liquid
 <ul>
-  {% raw %}
-{% for page in (1..my_result.records.total_pages) %}
+  {% for page in (1..my_result.records.total_pages) %}
     <li><a href="{{context.headers.PATH_NAME}}?page={{page}}">1</a></li>
   {% endfor %}
-{% endraw %}
 </ul>
 ```
 

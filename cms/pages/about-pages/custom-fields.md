@@ -1,4 +1,4 @@
-# ℹ️ Custom Fields in Pages
+# Custom Fields in Pages
 
 You can add custom field data to your Pages under the 'Custom Fields' tab.
 
@@ -8,4 +8,4 @@ Once fields have been added under 'Structure' and the 'Save Structure' button ha
 
 You can enter your custom field data, and then click 'Save Changes' in the bottom bar on your screen.
 
-Your field data will then be available in your page code using `{{page.metadata.custom_fields.my_field_name.value}}`, where 'my_field_name' is the ID of your field.
+Your field data will then be available in your page code using `{{page.metadata.custom_fields.my_field_name.value}}`, where 'my\_field\_name' is the ID of your field.

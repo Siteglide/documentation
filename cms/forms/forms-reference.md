@@ -2,14 +2,13 @@
 description: Forms
 ---
 
-# 💻 Reference
+# Reference
 
 Including a Form
 
 ```liquid
-{% raw %}
 {% include 'form', id: '1', layout: 'default' %}
-{% endraw %}
+
 ```
 
 * The id refers to the specific form you wish to output.
@@ -34,13 +33,12 @@ Learn more including how to pass HTML ID and class attributes:
 ### Submitting a Form
 
 ```liquid
-{% raw %}
 <button type="button" onClick="s_form_submit_v2(this,'form_1', function(errors) {
   //On Error
 },function(redirect) {
   //On Success
 })">Submit</button>
-{% endraw %}
+
 ```
 
 Parameters:
@@ -123,7 +121,6 @@ If you're not sure where to find these, see:
 A text input should have the `data-cfs` attribute inside the `<input>` element.
 
 ```liquid
-{% raw %}
 <input
   class="form-control"
   name="{{ form_builder.fields.properties.form_field_13_1.name }}"
@@ -131,7 +128,7 @@ A text input should have the `data-cfs` attribute inside the `<input>` element.
   type="text"
 />
 
-{% endraw %}
+
 ```
 
 #### Textarea
@@ -139,7 +136,6 @@ A text input should have the `data-cfs` attribute inside the `<input>` element.
 The same applies for textarea inputs.
 
 ```liquid
-{% raw %}
 <textarea
   class="form-control"
   name="{{ form_builder.fields.properties.form_field_13_6.name }}"
@@ -149,7 +145,7 @@ The same applies for textarea inputs.
 >
 </textarea>
 
-{% endraw %}
+
 ```
 
 #### Checkbox
@@ -157,7 +153,6 @@ The same applies for textarea inputs.
 A Checkbox group should have the `data-cfs` attribute on the container for the entire group. `<input>` elements should be the grandchildren of this group.
 
 ```liquid
-{% raw %}
 <div class="checkbox-container" data-cfs="6-1-input_checkbox">
   <div class="checkbox">
     <input
@@ -179,7 +174,7 @@ A Checkbox group should have the `data-cfs` attribute on the container for the e
   </div>
 </div>
 
-{% endraw %}
+
 ```
 
 #### Radio
@@ -187,7 +182,6 @@ A Checkbox group should have the `data-cfs` attribute on the container for the e
 The same applies to a `radio` field.
 
 ```liquid
-{% raw %}
 <div class="radio-container" data-cfs="5-3-input_radio">
   <div class="radio">
     <input
@@ -209,7 +203,7 @@ The same applies to a `radio` field.
   </div>
 </div>
 
-{% endraw %}
+
 ```
 
 #### Dropdown
@@ -217,7 +211,6 @@ The same applies to a `radio` field.
 The `data-cfs` attribute should go on the `<select>` element itself, not on `<option>`s.
 
 ```liquid
-{% raw %}
 <select 
   class=""
   name="{{ form_builder.fields.properties.form_field_14_5.name }}"
@@ -227,7 +220,7 @@ The `data-cfs` attribute should go on the `<select>` element itself, not on `<op
   <option value="Dropdown 2">Dropdown 2</option>
 </select>
 
-{% endraw %}
+
 ```
 
 #### File
@@ -235,7 +228,6 @@ The `data-cfs` attribute should go on the `<select>` element itself, not on `<op
 The `data-cfs` attribute is on the hidden field, not on the element with `type="file"`.
 
 ```liquid
-{% raw %}
 <label for="form_field_14_6">File</label>
 <input
     class="form-control"
@@ -248,5 +240,4 @@ The `data-cfs` attribute is on the hidden field, not on the element with `type="
     id="form_field_14_6_file"
     type="file"
 >
-{% endraw %}
 ```

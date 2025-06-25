@@ -1,4 +1,4 @@
-# 📋 Create WebApp Items
+# Create WebApp Items
 
 Once we’ve created our WebApp, it’s time to start creating items. This enables us to add services, recipes, store locations, images for our gallery and so much more to our site.
 
@@ -40,7 +40,7 @@ These fields include:
 * **OG Image -** Choose an Open Graph image for this item
 * **OG Description -** Write a relevant Open Graph description for this item
 * **OG Type** - Choose a type - article, book, profile, or website
-* **Twitter Card Type** - Choose a type - app, player, summary, or summary_large_image - This is required for sharing this item on Twitter. For more information on Twitter Card Types, see [here](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
+* **Twitter Card Type** - Choose a type - app, player, summary, or summary\_large\_image - This is required for sharing this item on Twitter. For more information on Twitter Card Types, see [here](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 
 <figure><img src="../../.gitbook/assets/Siteglide-WebApps-Item-SEO.png" alt=""><figcaption></figcaption></figure>
 
@@ -64,7 +64,7 @@ You can choose to add an item to any parent or child category.
 
 **No categories showing?** Use ‘Manage Categories’: where you can create, edit and remove any.
 
-**Find out more:** [Create a Category](/cms/categories/quickstart-categories.md)
+**Find out more:** [Create a Category](../../cms/categories/quickstart-categories.md)
 
 <figure><img src="../../.gitbook/assets/Siteglide-WebApps-Categories.png" alt=""><figcaption></figcaption></figure>
 

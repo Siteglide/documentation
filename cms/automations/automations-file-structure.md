@@ -1,4 +1,4 @@
-# 🌳 Automations File Structure
+# File Structure
 
 Below shows a simplified version of the Folder Structure. It will grow the more automations you add.
 
@@ -8,7 +8,7 @@ Individual Email and API call actions can be modified in the notifications folde
 
 The JSON files which control triggers and which actions to run are stored in the tables folder. Again it's easier to modify these in the Siteglide Admin.
 
-"FIC" stands for "Form Create" - it is a shorthand for the trigger which can be expected to run the code in the file.&#x20;
+"FIC" stands for "Form Create" - it is a shorthand for the trigger which can be expected to run the code in the file.
 
 ```bash
 └───marketplace_builder

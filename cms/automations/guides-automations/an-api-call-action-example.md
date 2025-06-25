@@ -1,4 +1,4 @@
-# ℹ️ An API Call Action Example
+# An API Call Action Example
 
 Once you've read how our [introduction to Automations](../), you're ready to start creating your own. Below is an example of an API call in Automations.
 

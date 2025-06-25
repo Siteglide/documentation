@@ -1,4 +1,4 @@
-# 🚀 Quickstart: Menu Builder
+# Quickstart: Menu Builder
 
 ## Step 1: Create a Menu or Edit and Existing:
 

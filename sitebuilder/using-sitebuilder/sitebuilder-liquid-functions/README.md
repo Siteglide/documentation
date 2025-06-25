@@ -1,4 +1,4 @@
-# ℹ️ SiteBuilder Liquid Functions
+# SiteBuilder Liquid Functions
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 

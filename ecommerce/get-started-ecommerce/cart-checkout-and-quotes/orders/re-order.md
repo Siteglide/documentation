@@ -29,9 +29,7 @@ A message can also be displayed to the User to detail any Products from that pre
 The following Liquid will output the reorder button:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/reorder_button', layout: 'default', order_id: this.id %}
-{% endraw %}
 
 ```
 
@@ -45,7 +43,6 @@ The button can be added in any Liquid Layout, but you'll need to have access to 
 In the User Orders Layout, the exact Liquid for the ID will depend on the variable you've set in the loop. In the following example, the variable assigned to each iteration of the loop is this. so the Order ID is available inside the loop as this.id.
 
 ```liquid
-{% raw %}
 {% for this in orders %}
 
   {% include 'ecommerce/reorder_button'
@@ -54,18 +51,15 @@ In the User Orders Layout, the exact Liquid for the ID will depend on the variab
   %}
 
 {% endfor %}
-{% endraw %}
 
 ```
 
 The button will only work if the User is logged in, so you may wish to add the following logic to an Order Details Layout to make sure the User is logged in before displaying:
 
 ```liquid
-{% raw %}
 {% if context.current_user.id %}
 <!-- Code only runs if User is logged in -->
 {% endif %}
-{% endraw %}
 
 ```
 
@@ -148,7 +142,6 @@ The above Liquid tags are accessing the User's session. This means they are temp
 This example will, if an Order was successfully reordered -display a message to Users confirming the Order ID which was reordered. If any Products were not available, these are displayed in a table. Finally, the session is cleared, so the User only sees this once.
 
 ```liquid
-{% raw %}
 {% if context.session.reorder_added_to_cart != blank %} 
   <div class="alert alert-warning">
 
@@ -188,5 +181,4 @@ This example will, if an Order was successfully reordered -display a message to 
   </div>
 
 {% endif %}
-{% endraw %}
 ```

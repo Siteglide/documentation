@@ -5,7 +5,7 @@ createdAt: 2021-02-18T15:01:22.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# 🔹 Add to Cart Button
+# Add to Cart Button
 
 Customise the "Add to Cart" button to keep customers on the Page or redirect them straight to the Checkout Flow with a "Buy Now" button.
 
@@ -35,9 +35,7 @@ This will allow you to:
 You can add a Layout to the Cart Add Button by adding a `component_layout` parameter to the Liquid:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/cart_add', component_layout: 'custom_layout' -%}
-{% endraw %}
 
 ```
 
@@ -61,13 +59,11 @@ Looking at the default layout, you can see that it has some key characteristics 
 You can use a Liquid If Statement to check if the Product is in stock.
 
 ```liquid
-{% raw %}
 {% if this.inventory.id == blank or this.inventory.quantity != '0' -%}
   <!-- Product is in stock - or no inventory limit is set.-->
 {% else -%}
   <!-- Product is out of stock. -->
 {% endif -%}
-{% endraw %}
 ```
 
 ### Running the JavaScript Function

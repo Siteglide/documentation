@@ -1,4 +1,4 @@
-# ℹ️ Social Sharing JS
+# Social Sharing JS
 
 The Sitegurus social sharing is a light wrapper around an open source JavaScript Plugin called Vanilla Sharing. It was added in order to save time and easily allow the functions to be implemented using data-attributes.
 
@@ -11,13 +11,12 @@ We use `context.exports` to make sure the script is only loaded once on the page
 ### Script Code <a href="#script-code" id="script-code"></a>
 
 ```liquid
-{% raw %}
 {% if context.exports.module_86.sitegurus_social_share_api != true %}
   <script async id="sitegurus_social_share_api" src="{{'modules/module_86/js/sitegurus_social_share_api.js' | asset_url}}" charset="utf-8"></script>
   {% assign sitegurus_social_share_api = true %}
   {% export sitegurus_social_share_api, namespace: "module_86" %}
 {% endif %}
-{% endraw %}
+
 ```
 
 ### Usage <a href="#usage" id="usage"></a>
@@ -33,7 +32,5 @@ The `data-s-g-option-url` is normally a required option and if you leave it blan
 Full Twitter example:
 
 ```liquid
-{% raw %}
 <button data-s-g-social-feature="tw" data-s-g-option-url="https://sitegurus.io" data-s-g-option-hashtags="test,testing,ilovetesting">Tweet about Sitegurus!</button>
-{% endraw %}
 ```
