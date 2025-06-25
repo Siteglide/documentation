@@ -13,7 +13,7 @@ We cannot document every way in which you can build this kind of Page, but we wi
 ## Glossary
 
 * An API - (Application Program Interface) is a form of communication between two services on the internet. Communication takes place between 2 or more endpoints.
-* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](../../public-api/), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
+* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](../../site-api/), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
 * A method defines the role of the API + Endpoint e.g. a GET method is for "getting" or "fetching" data.
 * JSON (JavaScript Object Notation) is a common file format for exchanging data which is efficient and human-readable. We'll use it in some of our examples. (It's also the default format in which GraphQL results are outputted on the Page.)
 

@@ -40,6 +40,6 @@ We're constantly putting together Tutorials and Guides to help you get started w
 
 ## Use Our API to Integrate with Other Tools
 
-{% content-ref url="../developer-tools/public-api/" %}
-[public-api](../developer-tools/public-api/)
+{% content-ref url="../developer-tools/site-api/" %}
+[site-api](../developer-tools/site-api/)
 {% endcontent-ref %}
