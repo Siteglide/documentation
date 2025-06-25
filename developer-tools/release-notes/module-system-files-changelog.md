@@ -1,5 +1,11 @@
 # Module - System Files - Changelog
 
+### 2.8.6.0 - 25th June 2025
+
+* Siteglide Site API endpoints added to System Files, whereas they used to run through the same server as Portal API. This brings increased control over your endpoints, and better system stability - [Docs](https://docs.siteglide.com/en/developer-tools/site-api)
+
+***
+
 ### 2.8.5.1 - 9th June 2025
 
 * Fixed an issue where site search wasn't respecting the option to hide secure WebApp/Module items
