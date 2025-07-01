@@ -10,7 +10,7 @@ If you have a domain that is managed in GoDaddy or another registrar and would l
 
 If your site is on one of our new OCI (Oracle+Cloudflare) stacks the UI will look slightly different, you will be able to add both CNAMEs at the same time. The records are as follows (replace www.yourdomain.com with the actual domain ensuring www is included unless you're adding a subdomain):
 
-<table><thead><tr><th width="204.2734375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.yourdomain.com]</td><td>CNAME</td><td>[www.yourdomain.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>www</td><td>CNAME</td><td>_fallback.uk-siteglide.com[www.yourdomain.com]</td></tr><tr><td>root/@</td><td>CNAME</td><td>_fallback.uk-siteglide.com[www.yourdomain.com]</td></tr></tbody></table>
+<table><thead><tr><th width="204.2734375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.yourdomain.com]</td><td>CNAME</td><td>[www.yourdomain.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>www</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>root/@</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 If you cannot put a CNAME on the root we recommend switching either to our fully delegated option or using Cloudflare to manage your DNS who offer flattened CNAMEs on the root.
 
