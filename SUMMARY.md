@@ -409,6 +409,7 @@
     * [About Payment Gateways](ecommerce/get-started-ecommerce/payment-gateways/about-payment-gateways.md)
     * [Steps to Switching Payment Gateway](ecommerce/get-started-ecommerce/payment-gateways/switching-gateway.md)
     * [Test Cards](ecommerce/get-started-ecommerce/payment-gateways/test-cards.md)
+    * [Testing Payments on Live Sites using test cards -without stopping customers paying](ecommerce/get-started-ecommerce/payment-gateways/testing-payments-on-live-sites-using-test-cards-without-stopping-customers-paying.md)
   * [Currency and Tax](ecommerce/get-started-ecommerce/introduction-2/README.md)
     * [About Tax Codes](eCommerce/get-started-ecommerce/introduction-2/about-tax-codes.md)
     * [Currency Changer](ecommerce/get-started-ecommerce/introduction-2/currency-changer.md)
