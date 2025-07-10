@@ -1,5 +1,11 @@
 # Module - System Files - Changelog
 
+### 2.8.6.2 - 10th July 2025
+
+* Site API - Fixed an issue that on CRM User Update endpoint that stopped Zapier handling Secure Zones
+
+***
+
 ### 2.8.6.1 - 3rd July 2025
 
 * Further to the recent Siteglide Site API release, this adds support for Zapier's Instant Zaps in Automations
