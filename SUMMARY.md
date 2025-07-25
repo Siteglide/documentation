@@ -157,6 +157,7 @@
     * [Steps to Use Live Updates Methods](sitebuilder/using-sitebuilder/live-updates-api/steps-to-use-live-updates-methods.md)
     * [Steps to Initialise Live Updates with JS](sitebuilder/using-sitebuilder/live-updates-api/steps-to-initialise-live-updates-with-js.md)
     * [Live Updates Changelog](sitebuilder/using-sitebuilder/live-updates-api/live-updates-changelog.md)
+    * [Live Updates Troubleshooting](sitebuilder/using-sitebuilder/live-updates-api/live-updates-troubleshooting.md)
   * [SiteBuilder JavaScript](sitebuilder/using-sitebuilder/sitebuilder-javascript/README.md)
     * [Forms JS](sitebuilder/using-sitebuilder/sitebuilder-javascript/forms-js.md)
     * [Social Sharing JS](sitebuilder/using-sitebuilder/sitebuilder-javascript/social-sharing-js.md)
