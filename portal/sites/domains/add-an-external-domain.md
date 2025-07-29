@@ -64,7 +64,7 @@ Simply add the following records in your DNS control panel:
 
 <table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
-### Want to add a Subdomain?
+### Subdomain Setup
 
 #### Step 1: Add the subdomain
 
