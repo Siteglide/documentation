@@ -10,27 +10,69 @@ If you have a domain that is managed in GoDaddy or another registrar and would l
 
 If your site is on one of our new OCI (Oracle+Cloudflare) stacks the UI will look slightly different, you will be able to add both CNAMEs at the same time.
 
-### Does your DNS provider support a "flattened" CNAME (sometimes called ANAME, CNAME flattening, or ALIAS) on the root/apex?
+### Standard Setup: Enable WWW Redirect (e.g. https://www.example.com)
+
+Most websites use www and redirect non-www traffic to www.
+
+#### Step 1: Add the domain
+
+Simply select External, type in the root domain (without www) and then select _'Use as default domain'_ and _'Enable WWW redirect'_:
+
+<figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domain-External-Add.png" alt=""><figcaption></figcaption></figure>
+
+#### Step 2: Add the records
+
+Simply add the following records in your DNS control panel:
 
 {% hint style="info" %}
 Some DNS providers add 'example.com' in the name field automatically, please check if you need to add this or omit it from the examples below.
 {% endhint %}
 
-1. If **YES**  you can configure the domain to run on the root (not www), do NOT select 'Enable WWW redirect':
+<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www].example.com</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>example.com (blank/@)</td><td>A</td><td>See step 3 below</td></tr></tbody></table>
 
-<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[yourdomain.com]</td><td>CNAME</td><td>[yourdomain.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
-
-2. If **NO** you must use www and you will need to use an external service such as redirect.pizza to handle the root redirection to www (see [#step-5-forward-the-root-to-the-www-with-ssl](add-an-external-domain.md#step-5-forward-the-root-to-the-www-with-ssl "mention") below):
-
-<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www].example.com</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>example.com (blank/@)</td><td>A</td><td>132.145.42.224 (or redirect.pizza if https is required)</td></tr></tbody></table>
+#### Step 3: Redirect the root to www
 
 {% hint style="warning" %}
 If your DNS provider doesn't support CNAME flattening we recommend switching either to our fully delegated option or using Cloudflare to manage your DNS (they offer CNAME flattening).
 {% endhint %}
 
+Does your DNS provider support a "flattened" CNAME (sometimes called ANAME, CNAME flattening, or ALIAS) on the root/apex?
+
+1. If **YES** you can add the following records:
+
+<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+
+2. If **NO** you must redirect traffic to www and you will need to use an external service such as redirect.pizza to handle the root redirection to www:
+
+<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>example.com (blank/@)</td><td>A</td><td><a data-mention href="add-an-external-domain.md#forward-the-root-to-the-www-with-ssl">#forward-the-root-to-the-www-with-ssl</a></td></tr></tbody></table>
+
+### Alternative Setup: Redirect all traffic to the root (e.g. https://example.com)
+
+{% hint style="danger" %}
+This is not possible via External DNS if your DNS provider doesn't support CNAME flattening. We recommend switching either to our fully delegated option or using Cloudflare to manage your DNS (they offer CNAME flattening).
+{% endhint %}
+
+#### Step 1: Add the domain
+
+Simply select External, type in the root domain (without www) and then select _'Use as default domain'_ and not NOT select _'Enable WWW redirect'_:
+
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+#### Step 2: Add the records
+
+Simply add the following records in your DNS control panel:
+
+<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+
 ### Want to add a Subdomain?
 
-If you're simply adding a subdomain (not your main domain) this works the same way but you simply type in the subdomain and ensure you do not select Enable WWW redirect:
+#### Step 1: Add the subdomain
+
+Simply type in the subdomain and ensure you do not select Enable WWW redirect:
+
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+**Step 2: Add the records**
 
 <table><thead><tr><th width="240.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[subdomain.example.com]</td><td>CNAME</td><td>[subdomain.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[subdomain].example.com</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
@@ -92,7 +134,7 @@ The site will now be live via WWW (https://www.domain.com) but not via the root 
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domain-External-Live.png" alt=""><figcaption></figcaption></figure>
 
-### Step 6: Forward the Root/@ to the www (with SSL)
+## Forward the Root/@ to the www (with SSL)
 
 Most DNS Control Panels cannot correctly redirect the root traffic to the WWW over SSL so we recommend using an external service called Redirect.Pizza.
 

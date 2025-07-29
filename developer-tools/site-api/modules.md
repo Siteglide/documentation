@@ -1,4 +1,4 @@
-# 🔗 Modules
+# Modules
 
 {% openapi-operation spec="siteglide-site-api" path="/modules/{module}/items" method="get" %}
 [OpenAPI siteglide-site-api](https://api.siteglide.co.uk/docs-spec.json)

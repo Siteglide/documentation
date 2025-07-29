@@ -1,4 +1,4 @@
-# 🔗 eCommerce
+# eCommerce
 
 ## Orders
 

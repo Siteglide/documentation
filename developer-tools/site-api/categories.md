@@ -1,4 +1,4 @@
-# 🔗 Categories
+# Categories
 
 {% openapi-operation spec="siteglide-site-api" path="/categories" method="get" %}
 [OpenAPI siteglide-site-api](https://api.siteglide.co.uk/docs-spec.json)
