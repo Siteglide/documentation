@@ -6,31 +6,53 @@ We strongly recommend Fully Delegating your domain for best results or ensuring 
 
 If you have a domain that is managed in GoDaddy or another registrar and would like to point it to a Siteglide website you can use our External Domain feature. This means that you can continue to manage your DNS through GoDaddy/other registrar.
 
-## <mark style="background-color:orange;">Note: If using OCI (Oracle+Cloudflare)</mark>
+## If your site is hosted on our OCI servers (Oracle+Cloudflare)
 
-If your site is on one of our new OCI (Oracle+Cloudflare) stacks the UI will look slightly different, you will be able to add both CNAMEs at the same time. The records are as follows (replace www.yourdomain.com with the actual domain ensuring www is included unless you're adding a subdomain):
+If your site is on one of our new OCI (Oracle+Cloudflare) stacks the UI will look slightly different, you will be able to add both CNAMEs at the same time.
 
-<table><thead><tr><th width="204.2734375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.yourdomain.com]</td><td>CNAME</td><td>[www.yourdomain.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>www</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>root/@</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+### Does your DNS provider support a "flattened" CNAME (sometimes called ANAME, CNAME flattening, or ALIAS) on the root/apex?
 
-If you cannot put a CNAME on the root we recommend switching either to our fully delegated option or using Cloudflare to manage your DNS who offer flattened CNAMEs on the root.
+{% hint style="info" %}
+Some DNS providers add 'example.com' in the name field automatically, please check if you need to add this or omit it from the examples below.
+{% endhint %}
+
+1. If **YES**  you can configure the domain to run on the root (not www), do NOT select 'Enable WWW redirect':
+
+<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[yourdomain.com]</td><td>CNAME</td><td>[yourdomain.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+
+2. If **NO** you must use www and you will need to use an external service such as redirect.pizza to handle the root redirection to www (see [#step-5-forward-the-root-to-the-www-with-ssl](add-an-external-domain.md#step-5-forward-the-root-to-the-www-with-ssl "mention") below):
+
+<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www].example.com</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>example.com (blank/@)</td><td>A</td><td>132.145.42.224 (or redirect.pizza if https is required)</td></tr></tbody></table>
+
+{% hint style="warning" %}
+If your DNS provider doesn't support CNAME flattening we recommend switching either to our fully delegated option or using Cloudflare to manage your DNS (they offer CNAME flattening).
+{% endhint %}
+
+### Want to add a Subdomain?
+
+If you're simply adding a subdomain (not your main domain) this works the same way but you simply type in the subdomain and ensure you do not select Enable WWW redirect:
+
+<table><thead><tr><th width="240.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[subdomain.example.com]</td><td>CNAME</td><td>[subdomain.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[subdomain].example.com</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 ***
 
+## If your site is hosted on our AWS servers
+
 If using AWS please follow the steps below, contact us if you're unsure which stack you are on.
 
-## Step 1: Add a Domain
+### Step 1: Add a Domain
 
 Navigate to the Domains tab on the Site and click Add Domain:
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Site-Domains-None.png" alt=""><figcaption></figcaption></figure>
 
-## Step 2: Choose External
+### Step 2: Choose External
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Site-Domains-Add-External.png" alt=""><figcaption></figcaption></figure>
 
 
 
-## Step 3: Enter Domain Details
+### Step 3: Enter Domain Details
 
 Type in the root domain without www and you'll likely want to set it as the Default Domain and Enable WWW Redirect. Then click Add Domain:
 
@@ -40,7 +62,7 @@ Type in the root domain without www and you'll likely want to set it as the Defa
 **Important Note:** _Your domain can take up to a few minutes to be fully added to the system. Please check back and refresh the page shortly._
 {% endhint %}
 
-## Step 4: Add SSL Verification CNAME
+### Step 4: Add SSL Verification CNAME
 
 Once your domain has finished creating in the system, it's status will change to "Ownership Verification Pending" which means it is now ready.
 
@@ -48,7 +70,7 @@ Once your domain has finished creating in the system, it's status will change to
 
 Add the generated CNAME record to in your DNS control panel to verify ownership, generate an SSL certificate and automatically apply it to your site during the next step.
 
-### GoDaddy example:
+#### GoDaddy example:
 
 ![](https://d258lu9myqkejp.cloudfront.net/attachment_images/fc70b36dfbcfe3696b886456b64583f8b636d658356a1fc1bc8c65040f4c4e7135e9327e-5fa5-4d74-b88d-fc9d49_12o0sfv.jpeg)
 
@@ -58,7 +80,7 @@ Once you have saved the record in your registrar, allow some time for propagatio
 **Important Note:** _The CNAME verification record must NOT be deleted at any point otherwise the SSL certificate will not renew._
 {% endhint %}
 
-## Step 5: Add WWW CNAME Record
+### Step 5: Add WWW CNAME Record
 
 Once the verification CNAME record has propagated the WWW CNAME Record needs to be added in your DNS Control Panel (GoDaddy example):
 
@@ -70,7 +92,7 @@ The site will now be live via WWW (https://www.domain.com) but not via the root 
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domain-External-Live.png" alt=""><figcaption></figcaption></figure>
 
-## Step 5: Forward the Root/@ to the www (with SSL)
+### Step 6: Forward the Root/@ to the www (with SSL)
 
 Most DNS Control Panels cannot correctly redirect the root traffic to the WWW over SSL so we recommend using an external service called Redirect.Pizza.
 
