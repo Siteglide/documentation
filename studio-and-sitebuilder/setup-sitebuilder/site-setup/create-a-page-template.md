@@ -6,7 +6,7 @@ description: Page Templates help you standardise how multiple pages look/work
 
 A Page Template is an essential component, any of our Marketplace Templates will come with at least one already but you can create them here:
 
-<figure><img src="../../.gitbook/assets/SiteBuilder-Page-Templates.jpg" alt=""><figcaption><p>One template already exists (Main) but you can create more if needed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SiteBuilder-Page-Templates.jpg" alt=""><figcaption><p>One template already exists (Main) but you can create more if needed</p></figcaption></figure>
 
 SiteBuilder simply leverages the Page Templates functionality in Siteglide but builds it for you with useful options to save you time.
 
@@ -44,4 +44,4 @@ When creating your Page Template, you can select a Tailwind build method of eith
 
 When editing your Page Template later, you can modify the `template_build_method` parameter and set it to either `'cli'`, `'preview'` or empty string `''`.
 
-You can learn more about [which build method to use here](about-sitebuilder/tailwind-css-themes-choosing-a-build-method.md), or continue to[ set up our recommended CLI method](set-up-tailwind-css.md)!
+You can learn more about [which build method to use here](../styling/tailwind-css-themes-choosing-a-build-method.md), or continue to[ set up our recommended CLI method](set-up-tailwind-css.md)!

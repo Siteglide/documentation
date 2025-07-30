@@ -5,7 +5,7 @@ description: Page and Page Templates
 # Reference
 
 {% hint style="info" %}
-**Not a Developer?** We recommend using [studio.md](studio.md "mention"), our no-code editor.
+**Not a Developer?** We recommend using [studio-1.md](studio-1.md "mention"), our no-code editor.
 {% endhint %}
 
 ## Liquid for Page Templates only

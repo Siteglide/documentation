@@ -362,7 +362,7 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 **Add HTML and JavaScript**
 
 {% hint style="warning" %}
-**Consider using Live Updates** The SiteBuilder Live Updates API, released since this doc was first written might be a quicker alternative here. You can put your GraphQL code in a Code Snippet and follow the docs to [Live Update a Code Snippet](../../../sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md).
+**Consider using Live Updates** The SiteBuilder Live Updates API, released since this doc was first written might be a quicker alternative here. You can put your GraphQL code in a Code Snippet and follow the docs to [Live Update a Code Snippet](../../../studio-and-sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md).
 {% endhint %}
 
 * An event listener targets the Form and watches for a click event
@@ -478,7 +478,7 @@ Your Liquid endpoint Page will be acting as an extra Layer between your request 
 
 ## Related Articles
 
-* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [Live Updates](../../../sitebuilder/using-sitebuilder/live-updates-api/)
+* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [Live Updates](../../../studio-and-sitebuilder/using-sitebuilder/live-updates-api/)
 * The [Siteglide Support Policy](../../../get-started/support-and-faqs/siteglide-support-policy.md) explains how you can get support with planning projects and writing custom code.
 * MDN have comprehensive documentation on the XML HTTP Request and how to use it in your Front End JavaScript Code: [https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) You can also use the modern [https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) as an alternative.
 * Those developers who prefer to use jQuery when writing JavaScript can read more about Ajax Requests here: [https://api.jquery.com/jquery.ajax/](https://api.jquery.com/jquery.ajax/)

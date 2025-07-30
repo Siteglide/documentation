@@ -52,7 +52,7 @@ More information on Automations:
 
 You have total control over how the form looks by editing the Layouts. If you use SiteBuilder these layouts can dynamically update when you edit the form fields:
 
-{% content-ref url="../../sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts.md" %}
-[static-and-dynamic-form-layouts.md](../../sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts.md)
+{% content-ref url="../../studio-and-sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts.md" %}
+[static-and-dynamic-form-layouts.md](../../studio-and-sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts.md)
 {% endcontent-ref %}
 

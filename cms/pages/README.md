@@ -6,10 +6,14 @@
 [quickstart-pages.md](quickstart-pages.md)
 {% endcontent-ref %}
 
-## Looking for our no-code Editor, Studio?
+## Looking for our no-code editing?
 
-{% content-ref url="studio.md" %}
-[studio.md](studio.md)
+{% content-ref url="studio-1.md" %}
+[studio-1.md](studio-1.md)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Want to get under the hood via CLI?

@@ -128,4 +128,4 @@ Earlier we stored a reference to the Live Update instance in a variable called `
 </script>
 ```
 
-You can find the full reference for this method and others in the [API Reference](sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md). Other methods can be run on the instance in the same way.
+You can find the full reference for this method and others in the [API Reference](../../../sitebuilder/using-sitebuilder/live-updates-api/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md). Other methods can be run on the instance in the same way.

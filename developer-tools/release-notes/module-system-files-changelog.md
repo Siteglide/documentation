@@ -597,7 +597,7 @@ You will need to update all WebApp items to this new format. Simply re-search fo
 
 ### 2.4.2.2 - 6th March 2020
 
-* **Custom Pagination layouts** - You can now define the layout for pagination. [Find more information, and usage docs here](../../sitebuilder/using-sitebuilder/sitebuilder-liquid-includes/pagination.md)
+* **Custom Pagination layouts** - You can now define the layout for pagination. [Find more information, and usage docs here](../../studio-and-sitebuilder/using-sitebuilder/sitebuilder-liquid-includes/pagination.md)
 * **Datasource performance updates** - We've greatly improved performance of Datasource output. [Find more information, and usage docs here](../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/related-products.md)
 
 ***

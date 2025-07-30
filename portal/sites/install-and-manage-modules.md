@@ -22,6 +22,6 @@ When ready just click install to install it to that site.
 
 ## Next Steps:
 
-{% content-ref url="../../sitebuilder/setup-sitebuilder/installing-layouts.md" %}
-[installing-layouts.md](../../sitebuilder/setup-sitebuilder/installing-layouts.md)
+{% content-ref url="../../studio-and-sitebuilder/setup-sitebuilder/layouts/installing-layouts.md" %}
+[installing-layouts.md](../../studio-and-sitebuilder/setup-sitebuilder/layouts/installing-layouts.md)
 {% endcontent-ref %}

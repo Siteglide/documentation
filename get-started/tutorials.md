@@ -4,8 +4,8 @@ We're constantly putting together Tutorials and Guides to help you get started w
 
 ## Build Better AND Faster with SiteBuilder
 
-{% content-ref url="../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md" %}
-[quickstart-sitebuilder.md](../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
+{% content-ref url="../studio-and-sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](../studio-and-sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
 {% endcontent-ref %}
 
 ## Want to build from scratch?

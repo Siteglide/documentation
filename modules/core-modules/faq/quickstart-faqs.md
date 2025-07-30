@@ -32,8 +32,8 @@ You then need to output the FAQs on the site. You'll likely want to create a Pag
 
 Your FAQ Module will work out of the box but Siteglide is all about flexibility and recognising each project is different. You have total control to customise the Layouts and how the FAQ Module works. We recommend looking at the SiteBuilder FAQ Layouts as a starting point as there might be existing Layouts that can save you a lot of time.
 
-{% content-ref url="../../../sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
-[dynamic-layouts-in-sitebuilder.md](../../../sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
+{% content-ref url="../../../studio-and-sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
+[dynamic-layouts-in-sitebuilder.md](../../../studio-and-sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
 
 {% content-ref url="faqs-reference.md" %}

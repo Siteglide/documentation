@@ -1,4 +1,4 @@
-# Studio (Alpha Release)
+# Studio (Beta)
 
 {% hint style="warning" %}
 While Studio is in Alpha we do not recommend using it on production/live websites
@@ -6,7 +6,7 @@ While Studio is in Alpha we do not recommend using it on production/live website
 
 This new version of Studio is a revolutionary new way to build and edit pages based on our concept of 'Edit Content Not Code'.&#x20;
 
-Popular links to help you get the most from Studio (Alpha):
+Popular links to help you get the most from Studio (Beta):
 
 {% content-ref url="setup.md" %}
 [setup.md](setup.md)

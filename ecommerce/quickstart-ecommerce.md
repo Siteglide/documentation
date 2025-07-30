@@ -6,8 +6,8 @@ This Quickstart guide covers the basics of setting up an eCommerce store using S
 
 We strongly recommend starting from the template if you're not familiar with Siteglide or the eCommerce module in particular:
 
-{% content-ref url="../sitebuilder/setup-sitebuilder/create-site-from-template.md" %}
-[create-site-from-template.md](../sitebuilder/setup-sitebuilder/create-site-from-template.md)
+{% content-ref url="../studio-and-sitebuilder/setup-sitebuilder/site-setup/create-site-from-template.md" %}
+[create-site-from-template.md](../studio-and-sitebuilder/setup-sitebuilder/site-setup/create-site-from-template.md)
 {% endcontent-ref %}
 
 Most of these steps will be already done for you if you use the Template, you can simply customise each section to suit your store.

@@ -24,6 +24,6 @@ You can essentially use any TailwindCSS Layouts or code blocks. A few ideas of h
 
 Use Siteglide's prebuilt Modules (Blog, Events etc) or build your own with WebApps. SiteBuilder helps you quickly install layouts that will handle the dynamic code for you.
 
-{% content-ref url="../installing-layouts.md" %}
-[installing-layouts.md](../installing-layouts.md)
+{% content-ref url="installing-layouts.md" %}
+[installing-layouts.md](installing-layouts.md)
 {% endcontent-ref %}

@@ -28,8 +28,8 @@ Useful links once CLI is installed:
 [site-setup.md](site-setup.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md" %}
-[set-up-tailwind-css.md](../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md)
+{% content-ref url="../../studio-and-sitebuilder/setup-sitebuilder/site-setup/set-up-tailwind-css.md" %}
+[set-up-tailwind-css.md](../../studio-and-sitebuilder/setup-sitebuilder/site-setup/set-up-tailwind-css.md)
 {% endcontent-ref %}
 
 {% content-ref url="troubleshooting.md" %}

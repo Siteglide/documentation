@@ -15,7 +15,7 @@ Siteglide Forms are easy to build and extremely powerful.
 {% endcontent-ref %}
 
 {% hint style="info" %}
-SiteBuilder has a dynamic Form Layouts feature meaning you don't need to edit the Layouts when you make changes to the Form: [static-and-dynamic-form-layouts.md](../../sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts.md "mention")
+SiteBuilder has a dynamic Form Layouts feature meaning you don't need to edit the Layouts when you make changes to the Form: [static-and-dynamic-form-layouts.md](../../studio-and-sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts.md "mention")
 {% endhint %}
 
 ## Looking for Something Bespoke?

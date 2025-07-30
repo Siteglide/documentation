@@ -30,16 +30,16 @@ In the end, it depends on your preference and the way your clients wish to use y
 
 If you use the Siteglide-CLI already to take advantage of modern code editing tools, you'll be right at home with our recommended method: Tailwind CLI.
 
-{% content-ref url="../set-up-tailwind-css.md" %}
-[set-up-tailwind-css.md](../set-up-tailwind-css.md)
+{% content-ref url="../site-setup/set-up-tailwind-css.md" %}
+[set-up-tailwind-css.md](../site-setup/set-up-tailwind-css.md)
 {% endcontent-ref %}
 
-{% content-ref url="../editing-tailwind-css.md" %}
-[editing-tailwind-css.md](../editing-tailwind-css.md)
+{% content-ref url="editing-tailwind-css.md" %}
+[editing-tailwind-css.md](editing-tailwind-css.md)
 {% endcontent-ref %}
 
 If you, or your client, wish to build and preview your Pages in the Siteglide Admin without frequent use of the Siteglide CLI, Preview Mode may be for you. We still recommend using the Tailwind CLI now and again to set up your brand variables and to set them consistently across all of your pages at once, but this does not need to be done every time you make a change in Admin, allowing for a potentially smoother experience for clients and development.
 
-{% content-ref url="../styling/tailwind-css-preview-mode.md" %}
-[tailwind-css-preview-mode.md](../styling/tailwind-css-preview-mode.md)
+{% content-ref url="tailwind-css-preview-mode.md" %}
+[tailwind-css-preview-mode.md](tailwind-css-preview-mode.md)
 {% endcontent-ref %}

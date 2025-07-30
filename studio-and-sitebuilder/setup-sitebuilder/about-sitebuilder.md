@@ -37,16 +37,16 @@ When you choose one of our Layouts, all you have to do is give it a name and we'
 
 ## Page Templates
 
-{% content-ref url="create-a-page-template.md" %}
-[create-a-page-template.md](create-a-page-template.md)
+{% content-ref url="site-setup/create-a-page-template.md" %}
+[create-a-page-template.md](site-setup/create-a-page-template.md)
 {% endcontent-ref %}
 
 ## Pages <a href="#how-does-it-work" id="how-does-it-work"></a>
 
 ## Layouts
 
-{% content-ref url="about-sitebuilder/static-layouts.md" %}
-[static-layouts.md](about-sitebuilder/static-layouts.md)
+{% content-ref url="layouts/static-layouts.md" %}
+[static-layouts.md](layouts/static-layouts.md)
 {% endcontent-ref %}
 
 {% content-ref url="layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}

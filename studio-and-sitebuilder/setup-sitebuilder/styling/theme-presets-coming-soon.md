@@ -12,7 +12,7 @@ description: >-
 * You have [set up the Siteglide CLI](../site-setup/) ready for use on a Site
 * You understand Siteglide-CLI [Pull](https://docs.siteglide.com/en/developer-tools/cli/reference#pull) and [Sync ](https://docs.siteglide.com/en/developer-tools/cli/reference#sync)commands&#x20;
 * You have [created a Flowbite\* Page Template](https://docs.siteglide.com/en/sitebuilder/setup-sitebuilder/site-setup/create-a-page-template) from the SiteBuilder Module (or are using a Site Template where this has been done already)
-* You have set up your project [ready to use Tailwind CSS via CLI](../set-up-tailwind-css.md) with the SiteBuilder module's recommended file structure [example-tailwind-project-setup.md](example-tailwind-project-setup.md "mention")
+* You have set up your project [ready to use Tailwind CSS via CLI](../site-setup/set-up-tailwind-css.md) with the SiteBuilder module's recommended file structure [example-tailwind-project-setup.md](example-tailwind-project-setup.md "mention")
 
 ## About Presets
 

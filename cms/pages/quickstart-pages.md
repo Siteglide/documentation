@@ -3,7 +3,7 @@
 ## Step 1: Create a Page
 
 {% hint style="info" %}
-You can also create pages via [cli](../../developer-tools/cli/ "mention") and with [pagebuilder.md](../../sitebuilder/setup-sitebuilder/pagebuilder.md "mention") (part of SiteBuilder)
+You can also create pages via[Broken link](broken-reference "mention") and [cli](../../developer-tools/cli/ "mention")
 {% endhint %}
 
 To create a blank page go to CMS > Pages and click Create Page:
@@ -23,7 +23,7 @@ You likely need to assign a Page Template, if none appear in the dropdown you'll
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Our SiteBuilder Templates come with Page Templates and are the easiest way to get started with Siteglide: [quickstart-sitebuilder.md](../../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md "mention")
+Our Marketplace Templates come with Page Templates and are the easiest way to get started with Siteglide
 {% endhint %}
 
 There are various other settings including SEO meta data, Open Graph and assigning the page to a Secure Zone:
@@ -36,21 +36,27 @@ Before adding content we recommend saving the page so that the Template is corre
 
 ## Step 3: Add Content
 
-You have 3 ways to add content and build out pages:
+You have 4 ways to add content and build out pages:
 
-1. **Studio:** Our visual no-code editor allows you to edit content and, depending on the setup, insert new Layouts (e.g if SiteBuilder is installed):
+**Visual Editor:** Our no-code editor for editing standard pages:
 
-{% content-ref url="studio.md" %}
-[studio.md](studio.md)
+{% content-ref url="studio-1.md" %}
+[studio-1.md](studio-1.md)
 {% endcontent-ref %}
 
-1. **Code View:** The 'code' tab allows you to write code from within Siteglide and also includes the powerful Toolbox area on the right hand side to insert content. Find out more:
+**Studio:** Our revolutionary tool that makes site building and editing a breeze:
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+**Code View:** The 'code' tab allows you to write code from within Siteglide and also includes the powerful Toolbox area on the right hand side to insert content. Find out more:
 
 {% content-ref url="code-view-and-toolbox.md" %}
 [code-view-and-toolbox.md](code-view-and-toolbox.md)
 {% endcontent-ref %}
 
-1. **CLI:** If you're building sites and have some coding experience we strongly recommend using our CLI for code related work:
+**CLI:** If you're building sites and have some coding experience we strongly recommend using our CLI for code related work:
 
 {% content-ref url="../../developer-tools/cli/" %}
 [cli](../../developer-tools/cli/)

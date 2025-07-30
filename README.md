@@ -8,9 +8,9 @@ Siteglide allows agencies to take control over code and data via API, CLI or UI.
 
 ## Where do I start?
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>New Users</strong></td><td><a href="sitebuilder/setup-sitebuilder/create-site-from-template.md">create-site-from-template.md</a></td><td><a href=".gitbook/assets/Create-a-Site (3).png">Create-a-Site (3).png</a></td></tr><tr><td><strong>Existing Users</strong></td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart (1).png">Quickstart (1).png</a></td></tr><tr><td><strong>Developers</strong></td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>New Users</strong></td><td><a href="studio-and-sitebuilder/setup-sitebuilder/site-setup/create-site-from-template.md">create-site-from-template.md</a></td><td><a href=".gitbook/assets/Create-a-Site (3).png">Create-a-Site (3).png</a></td></tr><tr><td><strong>Existing Users</strong></td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart (1).png">Quickstart (1).png</a></td></tr><tr><td><strong>Developers</strong></td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
 
-If you're new to Siteglide we recommend starting from a pre-built Template that leverages our SiteBuilder tool: [create-site-from-template.md](sitebuilder/setup-sitebuilder/create-site-from-template.md "mention").
+If you're new to Siteglide we recommend starting from a pre-built Template that leverages our SiteBuilder tool: [create-site-from-template.md](studio-and-sitebuilder/setup-sitebuilder/site-setup/create-site-from-template.md "mention").
 
 If you're looking for help with a site and not sure where to look you can check out our [tutorials.md](get-started/tutorials.md "mention").
 

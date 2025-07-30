@@ -59,5 +59,5 @@ Check out our Reference article for a full list of useful Commands:
 {% endcontent-ref %}
 
 {% hint style="info" %}
-If you're using Flowbite/Tailwind please ensure you have Tailwind setup to compile CSS: [set-up-tailwind-css.md](../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md "mention")
+If you're using Flowbite/Tailwind please ensure you have Tailwind setup to compile CSS: [set-up-tailwind-css.md](../../studio-and-sitebuilder/setup-sitebuilder/site-setup/set-up-tailwind-css.md "mention")
 {% endhint %}

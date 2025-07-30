@@ -1,7 +1,7 @@
 # Quickstart: Blog & Authors
 
 {% hint style="info" %}
-If you use one of our Site Builder templates these steps will already be done for you and all you need to do is customise the Blog. This is our recommended route: [quickstart-sitebuilder.md](../../../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md "mention")
+If you use one of our Site Builder templates these steps will already be done for you and all you need to do is customise the Blog. This is our recommended route: [quickstart-sitebuilder.md](../../../studio-and-sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md "mention")
 {% endhint %}
 
 ## Step 1: Install the Modules
@@ -40,6 +40,6 @@ You then output it on the page using Toolbox (or via CLI):
 
 Your Blog will work out of the box but Siteglide is all about flexibility and recognising each project is different. You have total control to customise the Layouts and how the Blog works. We recommend looking at the SiteBuilder Blog Layouts as a starting point as there might be existing Layouts that can save you a lot of time.
 
-{% content-ref url="../../../sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
-[dynamic-layouts-in-sitebuilder.md](../../../sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
+{% content-ref url="../../../studio-and-sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
+[dynamic-layouts-in-sitebuilder.md](../../../studio-and-sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
