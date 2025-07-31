@@ -121,9 +121,9 @@
 
 ## Studio & SiteBuilder
 
-* [Studio Introduction](studio-and-sitebuilder/studio-alpha-release/README.md)
-  * [Install Studio](studio-and-sitebuilder/studio-alpha-release/setup.md)
-  * [Create a Page](studio-and-sitebuilder/studio-alpha-release/create-a-page.md)
+* [Studio Introduction](studio-and-sitebuilder/studio-introduction/README.md)
+  * [Install Studio](studio-and-sitebuilder/studio-introduction/setup.md)
+  * [Create a Page](studio-and-sitebuilder/studio-introduction/create-a-page.md)
 * [SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/README.md)
   * [Design to Code](studio-and-sitebuilder/setup-sitebuilder/design-to-code.md)
   * [Quickstart: SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)

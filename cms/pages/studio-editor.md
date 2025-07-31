@@ -4,10 +4,10 @@ If you see the 'Studio' tab instead of 'Visual Editor' this means the Page is bu
 
 Find out more about Studio:
 
-{% content-ref url="../../studio-and-sitebuilder/studio-alpha-release/" %}
-[studio-alpha-release](../../studio-and-sitebuilder/studio-alpha-release/)
+{% content-ref url="../../studio-and-sitebuilder/studio-introduction/" %}
+[studio-introduction](../../studio-and-sitebuilder/studio-introduction/)
 {% endcontent-ref %}
 
-{% content-ref url="../../studio-and-sitebuilder/studio-alpha-release/setup.md" %}
-[setup.md](../../studio-and-sitebuilder/studio-alpha-release/setup.md)
+{% content-ref url="../../studio-and-sitebuilder/studio-introduction/setup.md" %}
+[setup.md](../../studio-and-sitebuilder/studio-introduction/setup.md)
 {% endcontent-ref %}
