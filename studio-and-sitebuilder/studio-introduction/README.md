@@ -5,7 +5,7 @@ description: The revolutionary way to build websites
 # Studio Introduction
 
 {% hint style="warning" %}
-While Studio is in final public Beta we do not recommend using it on production/live websites (start from a Staging site)
+While Studio is in Beta we do not recommend using it on production/live websites
 {% endhint %}
 
 This new version of Studio is a revolutionary new way to build and edit pages based on our concept of 'Edit Content Not Code'.&#x20;

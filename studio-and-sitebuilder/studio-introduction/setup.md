@@ -1,4 +1,4 @@
-# Setup
+# Install Studio
 
 There are 2 ways to get started with Studio
 
@@ -6,7 +6,7 @@ There are 2 ways to get started with Studio
 2. Install the Studio Module to another site (advanced)
 
 {% hint style="warning" %}
-While Studio is in final public Beta we do not recommend using it on production/live websites (start from a Staging site)
+While Studio is in Beta we do not recommend using it on production/live websites
 {% endhint %}
 
 ## Option 1: Copy our Demo Site
