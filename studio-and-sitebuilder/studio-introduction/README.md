@@ -16,4 +16,6 @@ Popular links to help you get the most from Studio:
 [setup.md](setup.md)
 {% endcontent-ref %}
 
+{% hint style="info" %}
 Additional guides and documentation coming soon (as at 31st July 2025).
+{% endhint %}
