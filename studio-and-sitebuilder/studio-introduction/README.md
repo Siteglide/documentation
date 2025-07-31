@@ -2,7 +2,7 @@
 description: The revolutionary way to build websites
 ---
 
-# Studio
+# Studio Introduction
 
 {% hint style="warning" %}
 While Studio is in final public Beta we do not recommend using it on production/live websites (start from a Staging site)
@@ -16,6 +16,4 @@ Popular links to help you get the most from Studio:
 [setup.md](setup.md)
 {% endcontent-ref %}
 
-{% content-ref url="create-a-page.md" %}
-[create-a-page.md](create-a-page.md)
-{% endcontent-ref %}
+Additional guides and documentation coming soon (as at 31st July 2025).
