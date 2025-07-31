@@ -121,8 +121,8 @@
 
 ## Studio & SiteBuilder
 
-* [Studio](studio-and-sitebuilder/studio-alpha-release/README.md)
-  * [Setup](studio-and-sitebuilder/studio-alpha-release/setup.md)
+* [Studio Introduction](studio-and-sitebuilder/studio-alpha-release/README.md)
+  * [Install Studio](studio-and-sitebuilder/studio-alpha-release/setup.md)
   * [Create a Page](studio-and-sitebuilder/studio-alpha-release/create-a-page.md)
 * [SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/README.md)
   * [Design to Code](studio-and-sitebuilder/setup-sitebuilder/design-to-code.md)
@@ -187,8 +187,8 @@
 * [Dashboard](cms/dashboard.md)
 * [Pages](cms/pages/README.md)
   * [Quickstart: Pages](cms/pages/quickstart-pages.md)
-  * [Studio](cms/pages/studio.md)
-  * [Visual Editor](cms/pages/studio-1.md)
+  * [Studio Editor](cms/pages/studio-editor.md)
+  * [Visual Editor](cms/pages/studio.md)
   * [Code View & Toolbox](cms/pages/code-view-and-toolbox.md)
   * [About Pages](cms/pages/about-pages/README.md)
     * [Page Settings](cms/pages/about-pages/page-settings.md)

@@ -40,8 +40,8 @@ You have 4 ways to add content and build out pages:
 
 **Visual Editor:** Our no-code editor for editing standard pages:
 
-{% content-ref url="studio-1.md" %}
-[studio-1.md](studio-1.md)
+{% content-ref url="studio.md" %}
+[studio.md](studio.md)
 {% endcontent-ref %}
 
 **Studio:** Our revolutionary tool that makes site building and editing a breeze:

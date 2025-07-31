@@ -1,9 +1,15 @@
-# Studio
+# Visual Editor
 
-If you see the 'Studio' tab instead of 'Visual Editor' this means the Page is built using our powerful yet super simple Studio experience.
+The Editor tab is a no-code experience to edit page content.
 
-Find out more about Studio:
+You can easily edit existing content by clicking text and using the Rich Text Editor tools as well as the 'Style' tab on the right hand side. The Structure tab on the left helps you move sections around if needed:
 
-{% content-ref url="../../studio-and-sitebuilder/studio-alpha-release/" %}
-[studio-alpha-release](../../studio-and-sitebuilder/studio-alpha-release/)
-{% endcontent-ref %}
+<figure><img src="../../.gitbook/assets/Siteglide-CMS-Pages-Studio-RTE.png" alt=""><figcaption></figcaption></figure>
+
+If you double click an image it will open the File Manager modal where you can upload new images or browser already uploaded images to insert:
+
+<figure><img src="../../.gitbook/assets/Siteglide-CMS-Pages-Studio-File-Manager-Modal.png" alt=""><figcaption></figcaption></figure>
+
+You might also want to add new sections and content to your page, if you click the blue plus icon (:heavy\_plus\_sign:) on the right hand side you will be able to insert basic components and if you have SiteBuilder installed you will see the full list of Static Layouts available:
+
+<figure><img src="../../.gitbook/assets/Siteglide-CMS-Pages-Studio-Insert-Layout.png" alt=""><figcaption></figcaption></figure>

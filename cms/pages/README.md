@@ -8,8 +8,8 @@
 
 ## Looking for our no-code editing?
 
-{% content-ref url="studio-1.md" %}
-[studio-1.md](studio-1.md)
+{% content-ref url="studio.md" %}
+[studio.md](studio.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
