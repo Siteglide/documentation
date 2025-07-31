@@ -23,4 +23,4 @@ While Studio is in Beta we do not recommend using it on production/live websites
 
 Follow our interactive guide:
 
-{% embed url="https://demo.arcade.software/fTOzSJloZozZ5dMnb5QD?embed=&embed_desktop=inline&embed_mobile=tab&show_copy_link=true&squared=true" %}
+{% embed url="https://app.arcade.software/share/Tf6Hqdw0SwpRTcdjjgPK" %}
