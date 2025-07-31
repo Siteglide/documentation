@@ -121,7 +121,7 @@
 
 ## Studio & SiteBuilder
 
-* [Studio (Beta)](studio-and-sitebuilder/studio-alpha-release/README.md)
+* [Studio](studio-and-sitebuilder/studio-alpha-release/README.md)
   * [Setup](studio-and-sitebuilder/studio-alpha-release/setup.md)
   * [Create a Page](studio-and-sitebuilder/studio-alpha-release/create-a-page.md)
 * [SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/README.md)
