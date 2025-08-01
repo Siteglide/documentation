@@ -1,6 +1,6 @@
 # Module - Menu - Changelog
 
-### 1.1.4 - 11th June 2025
+### 1.1.5 - 11th June 2025
 
 * Fix a type warning in GraphQL logs
 
