@@ -10,7 +10,8 @@ When placed onto a page or a template, this liquid displays the WebApp items usi
     layout: 'default'
     per_page: '20'
     sort_type: 'properties.name'
-    sort_order: 'asc' 
+    sort_order: 'asc',
+    type: 'list' 
 -%}
 ```
 
@@ -30,6 +31,7 @@ When placed onto a page or a template, this liquid displays the WebApp items usi
 | sort\_order           | defines the order in which the type is sorted                                                                                                                                                                                                                                                               |
 | collection            | default is `'false'` - If you set it as `collection: 'true'` then any layout is suppressed.                                                                                                                                                                                                                 |
 | use\_wrapper          | default is `'false'` - If you set it as `use_wrapper: 'true'` then your layout will be `layouts/webapps/My WebApp (webapp_1)/[layout name]/list/wrapper` and the wrapper file needs to contains Liquid to output the items: `{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}` |
+| type                  | default is `list` in most contexts, but when an include tag is nested inside a detail view, it is important to reset this back to 'list'                                                                                                                                                                    |
 
 ## Sorting by Custom Fields
 
