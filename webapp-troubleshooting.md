@@ -26,3 +26,13 @@ An example of a Liquid tag with invalid parameters is this one, can you spot the
 
 Answer: `item_ids` is a valid parameter name, but not a valid parameter value for  the parameter `sort_type`. To \*sort\* by the item's id, the correct value would be `sort_type: "id"` , since id is a core field shared by all webapps and modules. Other core fields include "created\_at", "updated\_at", "external\_id". Most other fields e.g. `expiry_date` , `name` or custom fields are Siteglide fields and should be prefixed by `properties` e.g. `sort_type: "properties.name"` .
 
+### Nesting a List inside a Detail
+
+When you include a webapp or module list, you don't normally need to specify the `type` parameter. This changes when you're nesting that list inside a detail view. That's because the inner include tag "inherits" the value from the detail layout, causing it to attempt to load a detail view itself. \
+\
+So you need to then specify that the type is list:
+
+```liquid
+{% include 'webapp', id: '1', layout: 'default', type: 'list' %}
+```
+
