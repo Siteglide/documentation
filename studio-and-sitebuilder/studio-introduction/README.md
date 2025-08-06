@@ -23,3 +23,7 @@ Popular links to help you get the most from Studio:
 {% content-ref url="studio-themes.md" %}
 [studio-themes.md](studio-themes.md)
 {% endcontent-ref %}
+
+Walkthrough video (soon to be replaced by individual tutorial videos):
+
+{% embed url="https://screen.studio/share/vsOKdg6o" %}
