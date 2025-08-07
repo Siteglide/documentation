@@ -12,11 +12,11 @@ First click the blue '+ Section' button:
 
 Then click the New Section button:
 
-<figure><img src="../../.gitbook/assets/Studio-Insert-Section.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Studio-Insert-Section (1).png" alt=""><figcaption></figcaption></figure>
 
 Give it a name and category:
 
-<figure><img src="../../.gitbook/assets/Studio-Create-New-Section.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Studio-Create-New-Section (1).png" alt=""><figcaption></figcaption></figure>
 
 Tell the chatbot what you would like it to create:
 
