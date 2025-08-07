@@ -2,6 +2,10 @@
 
 One of the most powerful features of Studio is being able to take a static content section and make it dynamic by bringing in data from Siteglide Modules or WebApps and controlling the output.
 
+Watch the video tutorial or follow the steps below.
+
+{% embed url="https://youtu.be/FQyKwFdJcZw" %}
+
 As an example you might have a few FAQs you've manually added as a static list:
 
 <figure><img src="../../.gitbook/assets/Studio-List-Static.png" alt=""><figcaption></figcaption></figure>
@@ -28,5 +32,9 @@ You can then adjust the settings:
 2. Sort Type: Decide which field to sort by
 3. Sort Order: Ascending or Descending
 4. Field Mapping: Pick which field from the Module/Database maps to which field in the Section layout
+
+For this example you would change the Answer field mapping to use the Answer field from the Module:
+
+<figure><img src="../../.gitbook/assets/Studio-Mapping3.png" alt=""><figcaption></figcaption></figure>
 
 You'll see the results in realtime in the left-hand preview. Click save when ready and there you have it, a static layout pulling in dynamic content, no coding required!
