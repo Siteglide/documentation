@@ -16,6 +16,18 @@ Popular links to help you get the most from Studio:
 [setup.md](setup.md)
 {% endcontent-ref %}
 
+{% content-ref url="studio-page-editor.md" %}
+[studio-page-editor.md](studio-page-editor.md)
+{% endcontent-ref %}
+
+{% content-ref url="dynamic-content-in-studio.md" %}
+[dynamic-content-in-studio.md](dynamic-content-in-studio.md)
+{% endcontent-ref %}
+
+{% content-ref url="studio-ai-section-builder.md" %}
+[studio-ai-section-builder.md](studio-ai-section-builder.md)
+{% endcontent-ref %}
+
 {% content-ref url="studio-user-roles.md" %}
 [studio-user-roles.md](studio-user-roles.md)
 {% endcontent-ref %}

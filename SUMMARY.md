@@ -123,11 +123,11 @@
 
 * [Studio Introduction](studio-and-sitebuilder/studio-introduction/README.md)
   * [Install Studio](studio-and-sitebuilder/studio-introduction/setup.md)
-  * [Studio User Roles](studio-and-sitebuilder/studio-introduction/studio-user-roles.md)
-  * [Studio Themes](studio-and-sitebuilder/studio-introduction/studio-themes.md)
   * [Studio Page Editor](studio-and-sitebuilder/studio-introduction/studio-page-editor.md)
   * [Dynamic Content in Studio](studio-and-sitebuilder/studio-introduction/dynamic-content-in-studio.md)
   * [Studio AI Section Builder](studio-and-sitebuilder/studio-introduction/studio-ai-section-builder.md)
+  * [Studio User Roles](studio-and-sitebuilder/studio-introduction/studio-user-roles.md)
+  * [Studio Themes](studio-and-sitebuilder/studio-introduction/studio-themes.md)
 * [SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/README.md)
   * [Design to Code](studio-and-sitebuilder/setup-sitebuilder/design-to-code.md)
   * [Quickstart: SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
