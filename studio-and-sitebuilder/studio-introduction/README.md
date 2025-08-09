@@ -8,7 +8,9 @@ description: The revolutionary way to build websites
 While Studio is in Beta we do not recommend using it on production/live websites
 {% endhint %}
 
-This new version of Studio is a revolutionary new way to build and edit pages based on our concept of 'Edit Content Not Code'.&#x20;
+This new version of Studio is a revolutionary new way to build and edit pages based on our concept of 'Edit Content Not Code'. We recommend watching the short Walkthrough video first:
+
+{% embed url="https://youtu.be/fnbtakmdI2c" %}
 
 Popular links to help you get the most from Studio:
 
