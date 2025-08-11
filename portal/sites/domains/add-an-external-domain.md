@@ -28,7 +28,7 @@ Simply add the following records in your DNS control panel:
 Some DNS providers add 'example.com' in the name field automatically, please check if you need to add this or omit it from the examples below.
 {% endhint %}
 
-<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www].example.com</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>example.com (blank/@)</td><td>A</td><td>See step 3 below</td></tr></tbody></table>
+<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>[example.com] (blank/@)</td><td>A</td><td>See step 3 below</td></tr></tbody></table>
 
 #### Step 3: Redirect the root to www
 
@@ -40,11 +40,11 @@ Does your DNS provider support a "flattened" CNAME (sometimes called ANAME, CNAM
 
 1. If **YES** you can add the following records:
 
-<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[example.com] (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 2. If **NO** you must redirect traffic to www and you will need to use an external service such as redirect.pizza to handle the root redirection to www:
 
-<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>example.com (blank/@)</td><td>A</td><td><a data-mention href="add-an-external-domain.md#forward-the-root-to-the-www-with-ssl">#forward-the-root-to-the-www-with-ssl</a></td></tr></tbody></table>
+<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>[example.com] (blank/@)</td><td>A</td><td><a data-mention href="add-an-external-domain.md#forward-the-root-to-the-www-with-ssl">#forward-the-root-to-the-www-with-ssl</a></td></tr></tbody></table>
 
 ### Alternative Setup: Redirect all traffic to the root (e.g. https://example.com)
 
