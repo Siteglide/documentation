@@ -40,7 +40,7 @@ Does your DNS provider support a "flattened" CNAME (sometimes called ANAME, CNAM
 
 1. If **YES** you can add the following records:
 
-<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 2. If **NO** you must redirect traffic to www and you will need to use an external service such as redirect.pizza to handle the root redirection to www:
 
