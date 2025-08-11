@@ -1,5 +1,12 @@
 # Module - System Files - Changelog
 
+### 2.8.6.3 - 11th August 2025
+
+* Zapier - Fix for form submission trigger not sending consistent data
+* eCommerce - Support for [v1.15.4](https://docs.siteglide.com/en/developer-tools/release-notes/module-ecommerce-changelog#id-1.15.4-11th-august-2025)
+
+***
+
 ### 2.8.6.2 - 10th July 2025
 
 * Site API - Fixed an issue that on CRM User Update endpoint that stopped Zapier handling Secure Zones
