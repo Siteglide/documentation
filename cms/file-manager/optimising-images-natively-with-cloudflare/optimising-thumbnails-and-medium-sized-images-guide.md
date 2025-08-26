@@ -1,0 +1,3 @@
+# Optimising thumbnails and medium-sized images - Guide
+
+Coming Soon...
