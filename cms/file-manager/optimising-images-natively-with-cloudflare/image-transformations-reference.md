@@ -128,7 +128,9 @@ Default: `''` (empty)
 
 Leaving this blank will output a basic HTML `img` tag with a single `src`  image - which will be given the default Cloudinary transforms from `img_url`.\
 \
-You can set this to any layout you create in the `marketplace_builder/views/partials/layouts/img/` folder, or use one of our default layouts documented below.
+You can set this to any layout you create , or use one of our default layouts documented below.
+
+You can reference a layout by its path relative to (but not including) the `layouts/img` folder.
 
 </details>
 
@@ -141,6 +143,18 @@ As with any Liquid include tag, you can explicitly pass in any custom parameters
 Some of our default layouts are set up to expect a custom Liquid parameter of `width`, but have defaults in case this is not passed. This has not been made an official parameter in order to make the layouts themselves as flexible as possible, however some user-interfaces in future may treat it as such for convenience.
 
 </details>
+
+### Custom Layouts
+
+Layouts should include best practice HTML and almost always&#x20;
+
+```liquid
+{% include 'img_url` %}
+```
+
+&#x20;tags to provide different alternative versions of the same image within that HTML.
+
+Layouts should be a single Liquid file, with a name of your choice, inside the in the `marketplace_builder/views/partials/layouts/img/` folder.
 
 ### Out of the box - Default Layouts
 
