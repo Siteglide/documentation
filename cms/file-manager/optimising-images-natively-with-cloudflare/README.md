@@ -5,7 +5,7 @@ description: >-
   on the page taken care of with minimal code.
 ---
 
-# Optimising Images Natively with Cloudflare
+# Optimising Images Natively with Cloudflare - Coming soon
 
 ## Prerequisites
 
