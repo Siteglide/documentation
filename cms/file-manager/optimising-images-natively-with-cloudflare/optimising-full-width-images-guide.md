@@ -1,3 +1,0 @@
-# Optimising Full-Width Images - Guide
-
-Coming Soon...

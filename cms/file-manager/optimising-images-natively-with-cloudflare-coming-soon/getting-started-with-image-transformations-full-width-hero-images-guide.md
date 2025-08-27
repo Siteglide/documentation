@@ -4,7 +4,7 @@ description: >-
   some automatic optimisation for image size and format.
 ---
 
-# Getting Started with Image Transformations - Guide
+# Getting Started with Image Transformations - Full Width "Hero" Images Guide
 
 ## TLDR Summary
 
@@ -167,6 +167,6 @@ Now our HTML is closer to what we had originally, maintaining accessibility and 
 
 Wondering how to adapt this for thumbnails? keep reading:&#x20;
 
-{% content-ref url="optimising-thumbnails-and-medium-sized-images-guide.md" %}
-[optimising-thumbnails-and-medium-sized-images-guide.md](optimising-thumbnails-and-medium-sized-images-guide.md)
+{% content-ref url="../optimising-images-natively-with-cloudflare/optimising-thumbnails-and-medium-sized-images-guide.md" %}
+[optimising-thumbnails-and-medium-sized-images-guide.md](../optimising-images-natively-with-cloudflare/optimising-thumbnails-and-medium-sized-images-guide.md)
 {% endcontent-ref %}
