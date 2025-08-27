@@ -4,6 +4,8 @@
 
 ### Thumbnail and Medium-Sized Background Images
 
+Note the width here is the size of the image that will be requested for 1dppx screens.
+
 ```liquid
 {% include 'img', width: 1000, path: 'images/high-quality-image.jpg', layout: 'default/sm_bg' %}
 ```
