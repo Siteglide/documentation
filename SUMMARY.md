@@ -219,7 +219,7 @@
     * [Getting Started with Image Transformations - Full Width "Hero" Images Guide](cms/file-manager/optimising-images-natively-with-cloudflare/getting-started-with-image-transformations-guide.md)
     * [Image Transformations Reference](cms/file-manager/optimising-images-natively-with-cloudflare/image-transformations-reference.md)
     * [Cloudflare Transformation Options](https://developers.cloudflare.com/images/transform-images/transform-via-url)
-    * [Optimising thumbnails and medium-sized images - Guide](cms/file-manager/optimising-images-natively-with-cloudflare/optimising-thumbnails-and-medium-sized-images-guide.md)
+    * [Optimising Thumbnails and Medium-Sized Images - Guide](cms/file-manager/optimising-images-natively-with-cloudflare/optimising-thumbnails-and-medium-sized-images-guide.md)
     * [Optimising Background Images - Guide](cms/file-manager/optimising-images-natively-with-cloudflare/optimising-background-images-guide.md)
 * [Forms](cms/forms/README.md)
   * [Quickstart: Forms](cms/forms/quickstart-forms.md)
