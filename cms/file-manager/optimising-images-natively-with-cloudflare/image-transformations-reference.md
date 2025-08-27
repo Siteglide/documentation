@@ -158,7 +158,7 @@ Layouts should be a single Liquid file, with a name of your choice, inside the i
 
 ### Out of the box - Default Layouts
 
-The default layouts have been built with inspiration from this page from Cloudinary. For those new to the `srcset` and `image-set` options in HTML and CSS respectively, it's only possible for the browser to choose which responsive image to use based on a single criteria- either whole screen width or the pixel density or definition of the screen. Depending on the size of image, different layouts will get better results (and you are of course encouraged to improve on what is provided here).&#x20;
+The default layouts have been built with inspiration from this page from Cloudinary. For those new to the `srcset` and `image-set` options in HTML and CSS respectively, it's only possible for the browser to choose which responsive image to use based on a single criteria- either whole screen width or the pixel density (dppx) of the screen. Depending on the size of image, different layouts will get better results (and you are of course encouraged to improve on what is provided here).&#x20;
 
 #### default/lg
 
@@ -188,7 +188,7 @@ Recommended use (note the custom parameter expects an integer for the max-width,
 
 `sm` stands for small.&#x20;
 
-Intended for small images and thumbnails where there is a lot of room to shrink the image and seriously boost page speed, but at the same time you want to preserve quality on high-definition displays.
+Intended for small images and thumbnails where there is a lot of room to shrink the image and seriously boost page speed, but at the same time you want to preserve quality on high-definition e.g. 2dppx displays.
 
 The different versions passed to the browser depend on the screen's pixel per inch property, rather than on the width of the entire screen. This is because the image is likely to be a lot smaller than the screen width, so basing the size on the screen width will most likely be wasteful, whereas without taking into account the screen's definition there is a risk of blurry thumbnails that are not providing enough real pixels to fill out the space on the page.&#x20;
 
@@ -204,7 +204,7 @@ This layout is a little different as it does not include an HTML `img` tag, rath
 
 It is not as sophisticated as some of the other examples and may not suit all background images because at the present time of writing, `image-set` only supports choosing a version based on the screen definition, not based on the entire screen width, see: [https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set). Nevertheless, we wanted to provide an example for this common use case. You may wish to adapt this based on the kind of background images your site uses.&#x20;
 
-Like `default/sm` this layout expects a width custom parameter and optimises based on pixel density of the screen:
+Like `default/sm` this layout expects a width custom parameter and optimises based on dots per pixel (ddpx) of the screen:
 
 ```
 {% include 'img', attributes: '', width: 1000, path: 'images/high-quality-image.jpg', layout: 'default/lg' %}
