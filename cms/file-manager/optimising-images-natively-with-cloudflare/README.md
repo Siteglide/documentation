@@ -9,7 +9,9 @@ description: >-
 
 ## Prerequisites
 
+{% hint style="info" %}
 You can use any of the code described within this document even if you don't meet the pre-requisites. In this case, we will fall-back to a supported alternative, and your image should still display, though un-optimised. This can be useful if you intend to set up image optimisation before copying your site to a new stack.
+{% endhint %}
 
 * You need to have a website on one of our new Oracle and Cloudflare-powered Production stacks before you can take full advantage of this feature. At the time of writing, this option is only available on servers based in London. Please let us know if you'd like access to Oregon or Sydney sooner and we'll be sure to keep you updated.
 * Currently this method of image optimisation will only support images stored in Siteglide's file manager. If an absolute path to an image is passed to a tag, we will fall back to returning the URL un-optimised.
@@ -37,8 +39,8 @@ The advantages of our new Cloudflare offering are:
 
 ## Quick Links:
 
-{% content-ref url="getting-started-with-image-transformations-full-width-hero-images-guide.md" %}
-[getting-started-with-image-transformations-full-width-hero-images-guide.md](getting-started-with-image-transformations-full-width-hero-images-guide.md)
+{% content-ref url="getting-started-with-image-transformations-guide.md" %}
+[getting-started-with-image-transformations-guide.md](getting-started-with-image-transformations-guide.md)
 {% endcontent-ref %}
 
 {% content-ref url="image-transformations-reference.md" %}

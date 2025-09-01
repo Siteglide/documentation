@@ -216,7 +216,7 @@
   * [Assets File Structure](cms/file-manager/file-structure.md)
   * [Tags for Assets](cms/file-manager/assets-reference.md)
   * [Optimising Images Natively with Cloudflare](cms/file-manager/optimising-images-natively-with-cloudflare/README.md)
-    * [Getting Started with Image Transformations - Full Width "Hero" Images Guide](cms/file-manager/optimising-images-natively-with-cloudflare/getting-started-with-image-transformations-full-width-hero-images-guide.md)
+    * [Getting Started with Image Transformations - Full Width "Hero" Images Guide](cms/file-manager/optimising-images-natively-with-cloudflare/getting-started-with-image-transformations-guide.md)
     * [Image Transformations Reference](cms/file-manager/optimising-images-natively-with-cloudflare/image-transformations-reference.md)
     * [Cloudflare Transformation Options](https://developers.cloudflare.com/images/transform-images/transform-via-url)
     * [Optimising Thumbnails and Medium-Sized Images - Guide](cms/file-manager/optimising-images-natively-with-cloudflare/optimising-thumbnails-and-medium-sized-images-guide.md)
