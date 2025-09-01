@@ -34,3 +34,21 @@ The advantages of our new Cloudflare offering are:
 
 * Cost / Convenience - since this is built into our Oracle / Cloudflare stacks, there is no need to create a 3rd party account or pay for usage upgrades regarding this.&#x20;
 * We have built Liquid tags to allow for best-practice HTML to be inserted as seamlessly as possible into your pages, with sensible defaults which can be overridden easily with well-documented Cloudflare transformations. This means you can optimise images as easily as you once added `| asset_url`&#x20;
+
+## Quick Links:
+
+{% content-ref url="getting-started-with-image-transformations-guide.md" %}
+[getting-started-with-image-transformations-guide.md](getting-started-with-image-transformations-guide.md)
+{% endcontent-ref %}
+
+{% content-ref url="image-transformations-reference.md" %}
+[image-transformations-reference.md](image-transformations-reference.md)
+{% endcontent-ref %}
+
+{% content-ref url="optimising-thumbnails-and-medium-sized-images-guide.md" %}
+[optimising-thumbnails-and-medium-sized-images-guide.md](optimising-thumbnails-and-medium-sized-images-guide.md)
+{% endcontent-ref %}
+
+{% content-ref url="optimising-background-images-guide.md" %}
+[optimising-background-images-guide.md](optimising-background-images-guide.md)
+{% endcontent-ref %}
