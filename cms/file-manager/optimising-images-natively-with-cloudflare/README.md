@@ -5,7 +5,7 @@ description: >-
   on the page taken care of with minimal code.
 ---
 
-# Optimising Images Natively with Cloudflare - Coming soon
+# Optimising Images Natively with Cloudflare
 
 ## Prerequisites
 
@@ -37,8 +37,8 @@ The advantages of our new Cloudflare offering are:
 
 ## Quick Links:
 
-{% content-ref url="getting-started-with-image-transformations-guide.md" %}
-[getting-started-with-image-transformations-guide.md](getting-started-with-image-transformations-guide.md)
+{% content-ref url="getting-started-with-image-transformations-full-width-hero-images-guide.md" %}
+[getting-started-with-image-transformations-full-width-hero-images-guide.md](getting-started-with-image-transformations-full-width-hero-images-guide.md)
 {% endcontent-ref %}
 
 {% content-ref url="image-transformations-reference.md" %}
