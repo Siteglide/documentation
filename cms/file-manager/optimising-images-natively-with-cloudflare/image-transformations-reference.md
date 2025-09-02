@@ -168,7 +168,7 @@ The `srcset` will pass multiple sizes of the image to the browser and the browse
 \
 Recommended use:
 
-```
+```liquid
 {% include 'img', path: 'images/high-quality-image.jpg', layout: 'default/lg' %}
 ```
 
@@ -180,7 +180,7 @@ The `srcset` will pass multiple sizes of the image to the browser and the browse
 
 Recommended use (note the custom parameter expects an integer for the max-width, and the parameter is named just `width`):
 
-```
+```liquid
 {% include 'img', width: 800, path: 'images/high-quality-image.jpg', layout: 'default/lg' %}
 ```
 
@@ -194,7 +194,7 @@ The different versions passed to the browser depend on the screen's pixel per in
 
 Recommended use (note the custom parameter expects an integer for the width, though if you accidentally provide a String, it will attempt to convert it):
 
-```
+```liquid
 {% include 'img', width: 40, path: 'images/high-quality-image.jpg', layout: 'default/lg' %}
 ```
 
@@ -206,7 +206,7 @@ It is not as sophisticated as some of the other examples and may not suit all ba
 
 Like `default/sm` this layout expects a width custom parameter and optimises based on dots per pixel (ddpx) of the screen:
 
-```
+```liquid
 {% include 'img', attributes: '', width: 1000, path: 'images/high-quality-image.jpg', layout: 'default/lg' %}
 ```
 
