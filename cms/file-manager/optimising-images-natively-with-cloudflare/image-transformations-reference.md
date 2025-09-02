@@ -63,13 +63,13 @@ This feature allows you to use layouts which contain best-practice HTML like \`s
 
 Basic example:
 
-```
+```liquid
 {% include 'img', path: 'images/high-quality-image.jpg' %}
 ```
 
 Example using all available parameters:&#x20;
 
-```
+```liquid
 {% include 'img', path: 'images/high-quality-image.jpg', attributes: 'loading="lazy" data-custom-value="custom"', classes: 'custom-css-class custom-css-class-2', layout: 'default/base', any_custom_liquid_variable: 'custom_value'  %}
 ```
 
@@ -149,7 +149,7 @@ Some of our default layouts are set up to expect a custom Liquid parameter of `w
 Layouts should include best practice HTML and almost always&#x20;
 
 ```liquid
-{% include 'img_url` %}
+{% include 'img_url' %}
 ```
 
 &#x20;tags to provide different alternative versions of the same image within that HTML.
@@ -158,7 +158,7 @@ Layouts should be a single Liquid file, with a name of your choice, inside the i
 
 ### Out of the box - Default Layouts
 
-The default layouts have been built with inspiration from this page from Cloudinary. For those new to the `srcset` and `image-set` options in HTML and CSS respectively, it's only possible for the browser to choose which responsive image to use based on a single criteria- either whole screen width or the pixel density (dppx) of the screen. Depending on the size of image, different layouts will get better results (and you are of course encouraged to improve on what is provided here).&#x20;
+The default layouts have been built with inspiration from this page from Cloudflare: [https://developers.cloudflare.com/images/transform-images/make-responsive-images/](https://developers.cloudflare.com/images/transform-images/make-responsive-images/). For those new to the `srcset` and `image-set` options in HTML and CSS respectively, it's only possible for the browser to choose which responsive image to use based on a single criteria- either whole screen width or the pixel density (dppx) of the screen. Depending on the size of image, different layouts will get better results (and you are of course encouraged to improve on what is provided here).&#x20;
 
 #### default/lg
 
