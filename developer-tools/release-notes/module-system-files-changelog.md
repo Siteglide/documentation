@@ -1,5 +1,11 @@
 # Module - System Files - Changelog
 
+## 2.8.7.0 - 2nd September 2025
+
+* Added native Image Optimisation with Cloudflare - [Roadmap](https://feedback.siteglide.com/p/siteglide-native-image-optimisation-with-cloudflare) - [Docs](https://docs.siteglide.com/en/cms/file-manager/optimising-images-natively-with-cloudflare/getting-started-with-image-transformations-full-width-hero-images-guide)
+
+***
+
 ### 2.8.6.3 - 11th August 2025
 
 * Zapier - Fix for form submission trigger not sending consistent data
