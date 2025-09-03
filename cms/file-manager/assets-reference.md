@@ -26,6 +26,10 @@
 
 `https://cdn.staging.oregon.platform-os.com/instances/xxxxxx/assets/images/SG-Logo-White.svg?updated=1733383736255`
 
+{% hint style="info" %}
+If you're on one of our new Cloudflare Oracle Stacks, (Currently only London is available) we strongly recommend using the new image transformations feature instead: [#about](optimising-images-natively-with-cloudflare/#about "mention")
+{% endhint %}
+
 #### WebApp Asset Field:
 
 After uploading an image to a WebApp file/image field using the Siteglide Admin's file manager, or using a front-end form, the actual value stored in the database will be something like the format: `images/hero/hero01.jpg` which will point to a file at the location: `marketplace_builder/assets/images/hero/hero01.jpg`.

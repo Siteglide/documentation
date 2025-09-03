@@ -1,4 +1,8 @@
-# Steps to Optimise Images on the Fly with Cloudinary
+# Optimising Images on the Fly with Cloudinary
+
+{% hint style="info" %}
+If you're on one of our new Cloudflare + Oracle stacks, we recommend using the new image transformations feature instead, as no 3rd-party account or payment is needed: [#about](optimising-images-natively-with-cloudflare/#about "mention")
+{% endhint %}
 
 ## Introduction
 
