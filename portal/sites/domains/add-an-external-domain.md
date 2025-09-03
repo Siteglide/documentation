@@ -143,7 +143,7 @@ Just follow these steps to redirect your **non-www** to the **www** variant. The
 1. Create a [redirect.pizza](https://redirect.pizza/register) account.
 2. Add your source. This should be the domain without www. For instance, enter **example.com** as your source.
 3. Set the destination to the variant with www. Example: **www.example.com**
-4. In most cases, you will want the setting for "Path forwarding" and "Query string forwarding" set to "Yes". Without it, all non-www pages will redirect to your www homepage.
+4. In most cases, you will want the setting for "Path forwarding" and "Query string forwarding" set to "Yes". If set to "No", all non-www pages will redirect to your www homepage.
 5. Press "Create redirect"
 6. The required DNS change pops up. Go to your domain registrar to make this DNS change for the **A** record. This record may already exists '@'. Press 'edit' to edit it to the required DNS setting for redirect.pizza. For more info, see [What are these DNS changes?](https://redirect.pizza/support/what-are-these-dns-changes)
 7. The DNS change is made! It may take up to 24 hours before the DNS is fully propagated.
