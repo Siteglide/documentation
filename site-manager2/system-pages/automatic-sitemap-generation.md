@@ -6,7 +6,7 @@ You can output a list of pages using the following include:
 {% include 'sitemap', layout: 'xml', types: 'pages' -%}
 ```
 
-* layout - xml or html - These are set layouts for each type. html will output in
+* layout - `xml` or `html` - These are set layouts for each type. html will output in
 * types - Choose what types of content you want to show, by submitting a comma separated list from these options: `pages,webapps,modules,products,categories`
 
 The sitemap will only show items that are enabled, have a detail view, have a slug and are within their released/expired timeframe.\
