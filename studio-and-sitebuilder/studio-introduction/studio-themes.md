@@ -4,7 +4,7 @@ Studio Themes determine the look and feel of a website. Themes group together al
 
 You can create and manage Themes in Studio, simply navigate to CMS > Studio Themes.
 
-The 'Styling' tab is where you manage global styles such as Colours and Fonts.
+The 'Styling' area is where you manage global styles such as Colours and Fonts.
 
 The Head and Scripts tabs allow you to add HTML to the head and closing body areas of all Pages and Templates that use that Theme.
 
