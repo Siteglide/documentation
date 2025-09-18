@@ -1,5 +1,11 @@
 # Module - eCommerce - Changelog
 
+### 1.15.5 - 18th September 2025
+
+* Further fix for Klarna redirects in Stripe Payment Gateway
+
+***
+
 ### 1.15.4 - 11th August 2025
 
 * Improve performance and reliability of Klarna/Revolut redirects in Stripe Payment Gateway
