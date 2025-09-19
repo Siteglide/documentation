@@ -6,7 +6,7 @@ If you're wanting to create Themes you can reuse across sites or even offer/sell
 If you wish to let people start from a pre-installed Site Template you still need to also add this to the Siteglide Marketplace as normal: [site-template-modules-and-how-to-make-your-own.md](../../../developer-tools/building-for-marketplace/site-template-modules-and-how-to-make-your-own.md "mention")
 {% endhint %}
 
-Navigate to 'Studio Theme Publisher' in Portal (you will likely not see any Themes, just the Create New Theme button):
+Navigate to 'Studio Theme Publisher' in Portal (you will likely not see any Themes):
 
 <figure><img src="../../../.gitbook/assets/Studio-Theme-Publisher.png" alt=""><figcaption></figcaption></figure>
 
@@ -16,6 +16,8 @@ Click 'Create New Theme' and fill in the details:
 
 <figure><img src="../../../.gitbook/assets/Studio-Theme-Publisher-Details.png" alt=""><figcaption></figcaption></figure>
 
-The Site is where the actual Theme has been created, any changes you make to the Theme site will be reflected on sites where the Theme has been installed.
 
-It's important to se the correct Default Page Template and the name of the Theme set in the Theme Site in CMS > Studio Themes.
+
+Select the Site where you've created the Theme and Sections, these will then be available on other sites that have this Theme installed.
+
+It's important to set the correct Default Page Template and the name of the Theme must match the Theme name in the source Site (shown in CMS > Studio Themes).
