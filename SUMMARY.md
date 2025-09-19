@@ -121,13 +121,18 @@
 
 ## Studio & SiteBuilder
 
-* [Studio Introduction](studio-and-sitebuilder/studio-introduction/README.md)
-  * [Install Studio](studio-and-sitebuilder/studio-introduction/setup.md)
+* [Studio](studio-and-sitebuilder/studio-introduction/README.md)
+  * [Copy a Site Template](studio-and-sitebuilder/studio-introduction/setup.md)
+  * [Install Studio Module](studio-and-sitebuilder/studio-introduction/install-studio-module.md)
   * [Studio Page Editor](studio-and-sitebuilder/studio-introduction/studio-page-editor.md)
   * [Dynamic Content in Studio](studio-and-sitebuilder/studio-introduction/dynamic-content-in-studio.md)
   * [Studio AI Section Builder](studio-and-sitebuilder/studio-introduction/studio-ai-section-builder.md)
   * [Studio User Roles](studio-and-sitebuilder/studio-introduction/studio-user-roles.md)
-  * [Studio Themes](studio-and-sitebuilder/studio-introduction/studio-themes.md)
+  * [Studio Themes](studio-and-sitebuilder/studio-introduction/studio-themes/README.md)
+    * [Install a Studio Theme](studio-and-sitebuilder/studio-introduction/studio-themes/install-a-studio-theme.md)
+    * [Theme Styling](studio-and-sitebuilder/studio-introduction/studio-themes/theme-styling.md)
+    * [Theme Sections](studio-and-sitebuilder/studio-introduction/studio-themes/theme-sections.md)
+    * [Studio Theme Publisher](studio-and-sitebuilder/studio-introduction/studio-themes/studio-theme-publisher.md)
 * [SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/README.md)
   * [Design to Code](studio-and-sitebuilder/setup-sitebuilder/design-to-code.md)
   * [Quickstart: SiteBuilder](studio-and-sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
