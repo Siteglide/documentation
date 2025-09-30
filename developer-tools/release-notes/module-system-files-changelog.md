@@ -1,5 +1,11 @@
 # Module - System Files - Changelog
 
+## 2.8.8.0 - 30th September 2025
+
+* Added support for Category Custom Fields - [Roadmap](https://feedback.siteglide.com/p/categories-custom-fields)
+
+***
+
 ## 2.8.7.0 - 2nd September 2025
 
 * Added native Image Optimisation with Cloudflare - [Roadmap](https://feedback.siteglide.com/p/siteglide-native-image-optimisation-with-cloudflare) - [Docs](https://docs.siteglide.com/en/cms/file-manager/optimising-images-natively-with-cloudflare/getting-started-with-image-transformations-full-width-hero-images-guide)
