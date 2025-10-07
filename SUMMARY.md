@@ -299,6 +299,8 @@
     * [Blog Filter by Author](modules/core-modules/blog-and-authors/blog-filter-by-author.md)
     * [File Structure](modules/core-modules/blog-and-authors/blog-module-folder-structure.md)
     * [Reference](modules/core-modules/blog-and-authors/blog-and-authors-reference.md)
+    * [Authors List](modules/core-modules/blog-and-authors/authors-list.md)
+    * [Authors Detail](modules/core-modules/blog-and-authors/authors-detail.md)
   * [Events](modules/core-modules/events/README.md)
     * [Quickstart: Events](modules/core-modules/events/quickstart-events.md)
     * [Standard List View](modules/core-modules/events/event-list.md)

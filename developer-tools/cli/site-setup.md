@@ -32,7 +32,7 @@ If you do not already have a text editor installed, you can browse for one or in
 
 You can then open your project folder in the Text Editor:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3) Open the Integrated Terminal
 
@@ -40,11 +40,11 @@ You can then open your project folder in the Text Editor:
 If your IDE or Text Editor does not have an integrated terminal, you can open any terminal and change directory to your project folder.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The terminal will appear in its own panel, by default below the code. In VSCode this will automatically change directory to your project folder (if not, do this manually)!
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you need to run multiple commands at once, you will need two terminals. In VSCode you can "split" the terminal window if you want to run multiple commands at once and keep an eye on all of them.
