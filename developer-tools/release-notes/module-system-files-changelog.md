@@ -1,8 +1,14 @@
 # Module - System Files - Changelog
 
+## 2.8.9.0 - 9th October 2025
+
+* Added support for Custom Fields on Company Information - [Roadmap](https://feedback.siteglide.com/p/company-information-custom-fields)
+
+***
+
 ## 2.8.8.0 - 30th September 2025
 
-* Added support for Category Custom Fields - [Roadmap](https://feedback.siteglide.com/p/categories-custom-fields)
+* Added support for Custom Fields on Categories - [Roadmap](https://feedback.siteglide.com/p/categories-custom-fields)
 
 ***
 
