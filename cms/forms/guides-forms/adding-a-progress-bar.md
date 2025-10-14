@@ -28,8 +28,8 @@ You can use CSS which selects these data-attributes to change the User Experienc
 
 The following example displays a progress bar which increments with each submission step that is completed. It uses CSS transitions to create a smooth movement between each discrete step:
 
-{% tabs %}
-{% tab title="CSS" %}
+*CSS*
+
 ```css
 #progressBar {
 	width: 100px;
@@ -83,14 +83,11 @@ The following example displays a progress bar which increments with each submiss
 	width: 100%;
 }
 ```
-{% endtab %}
+*HTML*
 
-{% tab title="HTML" %}
 ```html
 <!-- This should be added inside the <form> element -->
 <div id="progressBar">
 	<div id="progressContent"></div>
 </div>
 ```
-{% endtab %}
-{% endtabs %}

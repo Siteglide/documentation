@@ -39,14 +39,14 @@ In this example, a spinner icon has been added to the Form Layout.
 
 The CSS demonstrates how Front-End CSS is used to achieve a different effect:
 
-{% tabs %}
-{% tab title="HTML" %}
+*HTML*
+
 ```html
 <i class="fas fa-spinner fa-5x"></i>
 ```
-{% endtab %}
 
-{% tab title="CSS" %}
+*CSS*
+
 ```css
 .fa-spinner {
   display: none;
@@ -63,5 +63,3 @@ form.form_submitting .fa-spinner {
   to {transform: rotate(359deg);}
 }
 ```
-{% endtab %}
-{% endtabs %}

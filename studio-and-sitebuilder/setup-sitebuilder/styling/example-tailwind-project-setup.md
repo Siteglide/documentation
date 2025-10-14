@@ -7,6 +7,8 @@ description: >-
 
 # Example Tailwind Project Setup
 
+Note, Siteglide Studio uses the Tailwind Play CDN out of the box, meaning learning these setup steps is no longer required, however, for best practice it is worth following these on production.
+
 ## About
 
 We ship a folder named open\_me\_to\_setup\_tailwind\_first\_time to distribute our recommended template for setting up Tailwind on a new site, however, to avoid causing conflict issues, we don't update this in the Site itself when you update the module. Instead, we will add examples of our recommended configuration here.
@@ -23,8 +25,8 @@ If you already use npm on your project, do not copy the package and package-lock
 
 ## Example Setup
 
-{% tabs %}
-{% tab title="marketplace_builder/assets/css/modules/module_86/src/tailwind.config.js" %}
+*marketplace_builder/assets/css/modules/module_86/src/tailwind.config.js*
+
 ````javascript
 /** @type {import('tailwindcss').Config} */
 
@@ -60,9 +62,7 @@ module.exports = {
 }
 
 ````
-{% endtab %}
-
-{% tab title="marketplace_builder/assets/css/modules/module_86/src/tailwind.css" %}
+*marketplace_builder/assets/css/modules/module_86/src/tailwind.css*
 ```css
 @tailwind base;
 @tailwind components;
@@ -84,9 +84,8 @@ module.exports = {
   /* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
 }
 ```
-{% endtab %}
 
-{% tab title="package.json" %}
+*package.json*
 ```json
 {
   "name": "SiteBuilder Tailwind Template for Siteglide",
@@ -105,9 +104,8 @@ module.exports = {
   }
 }
 ```
-{% endtab %}
 
-{% tab title="package-lock.json" %}
+*package-lock.json*
 ```json
 {
   "name": "SiteBuilder Tailwind Template for Siteglide",
@@ -1908,6 +1906,3 @@ module.exports = {
 }
 
 ```
-{% endtab %}
-{% endtabs %}
-
