@@ -27,7 +27,7 @@ For setting up Discount Codes, including how to make only certain Products and C
 
 ## Step 1 - Including the Layout inside the Cart, Checkout, Basic Payment Form or Subscription Form Layout
 
-The screenshot below shows how the Discount Code Layout can be nested inside the Cart. However, step 1 also applies in all kinds of Layout.
+The Discount Code Layout can be nested inside a Cart. However, step 1 also applies in all kinds of Form Layout.
 
 ### 1a - Add your Layout
 
@@ -41,6 +41,10 @@ The following Liquid will add the Layout:
 ```
 
 The only parameter you'll need will be `layout` which refers to the file name of the Layout. We'll look at where to create the Layout files in Step 2.
+
+{% hint style="warning" %}
+The code must be placed directly inside a form layout or a cart layout. This is important so that it can inherit variables it depends on to understand the customers' spend and the type of discount it needs to use. For subscription forms, the discount code layout must go inside a subscription form layout which is itself inside a subscription product layout.
+{% endhint %}
 
 ### 1b - Optional - Adding Support for Refreshing Layout instead of whole Page
 
