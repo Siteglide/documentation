@@ -20,15 +20,15 @@ Simply select External, type in the root domain (without www) and then select _'
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domain-External-Add.png" alt=""><figcaption></figcaption></figure>
 
-#### Step 2: Add the records
+#### Step 2: Add the www records
 
-Simply add the following records in your DNS control panel:
+Simply add the following records in your DNS control panel to setup the www version:
 
 {% hint style="info" %}
 Some DNS providers add 'example.com' in the name field automatically, please check if you need to add this or omit it from the examples below.
 {% endhint %}
 
-<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr><tr><td>[example.com] (blank/@)</td><td>A</td><td>See step 3 below</td></tr></tbody></table>
+<table><thead><tr><th width="240.1953125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 #### Step 3: Redirect the root to www
 
@@ -36,7 +36,7 @@ Some DNS providers add 'example.com' in the name field automatically, please che
 If your DNS provider doesn't support CNAME flattening we recommend switching either to our fully delegated option or using Cloudflare to manage your DNS (they offer CNAME flattening).
 {% endhint %}
 
-Does your DNS provider support a "flattened" CNAME (sometimes called ANAME, CNAME flattening, or ALIAS) on the root/apex?
+Does your DNS provider support a "flattened" CNAME (sometimes called ANAME or CNAME flattening) on the root/apex?
 
 1. If **YES** you can add the following records:
 
