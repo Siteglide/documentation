@@ -53,8 +53,7 @@ platformOS uses a single cookie to identify a visitor- whether signed in or not.
 The easiest way to add session fields is to use the
 
 ```liquid
-
-<div data-gb-custom-block data-tag="session"></div>
+{% session new_field_name = new_value %}
 ```
 
 tag. [https://documentation.platformos.com/api-reference/liquid/platformos-tags#session](https://documentation.platformos.com/api-reference/liquid/platformos-tags#session)
