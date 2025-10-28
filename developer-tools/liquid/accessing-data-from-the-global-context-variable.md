@@ -132,7 +132,13 @@ This Object is often useful when you use it alongside `params`.
 
 ### page (object)
 
-This contains metadata for the Page.
+This contains metadata for the Page. This will contain any custom fields added to the page as well as SEO and social media metadata.\
+\
+SEO and social media metadata is automatically added to pages' \<head> but accessing them here could be useful if you are building a JSON schema for a page.
+
+```liquid
+{{ context.page.metadata }}
+```
 
 ### layout (object)
 
