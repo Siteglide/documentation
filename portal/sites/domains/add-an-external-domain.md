@@ -62,7 +62,7 @@ Simply select External, type in the root domain (without www) and then select _'
 
 Simply add the following records in your DNS control panel:
 
-<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>example.com (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="239.56640625">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[example.com]</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[example.com] (blank/@)</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 ### Subdomain Setup
 
@@ -74,7 +74,7 @@ Simply type in the subdomain and ensure you do not select Enable WWW redirect:
 
 **Step 2: Add the records**
 
-<table><thead><tr><th width="240.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[subdomain.example.com]</td><td>CNAME</td><td>[subdomain.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[subdomain].example.com</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="240.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[subdomain.example.com]</td><td>CNAME</td><td>[subdomain.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[subdomain.example.com]</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 ***
 
