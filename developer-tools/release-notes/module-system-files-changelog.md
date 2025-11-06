@@ -1,5 +1,11 @@
 # Module - System Files - Changelog
 
+## 2.8.9.1 - 6th November 2025
+
+* Minor patch for native Image Optimisation to fix an issue when using it on shared AWS stack
+
+***
+
 ## 2.8.9.0 - 9th October 2025
 
 * Added support for Custom Fields on Company Information - [Roadmap](https://feedback.siteglide.com/p/company-information-custom-fields)
