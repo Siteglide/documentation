@@ -60,9 +60,9 @@ a) Go to Settings/Sender Authentication/Domain Authentication, and click Get Sta
 
 ![](https://cdn.getgist.com/attachment_images/9e74916ad417d94a6add0374c084e4e7b9d1af6fe0b09c5ad77ba8c9fe0a26f4Sendgrid%20Authenticate%20Domain%20Screenshot%20.png)
 
-b) If asked who is your DNS provider, please select "other".\
+b) If asked who is your DNS provider, please select "other" if you have fully delegated domains on Siteglide (if you're not sure, see [fully-delegated-vs-external-dns.md](../../../portal/sites/domains/fully-delegated-vs-external-dns.md "mention"))\
 \
-c) Enter the domain you want to authenticate (e.g. siteglide.info) and click the Next button.
+c) Enter **your** domain you want to authenticate to send emails **from** on your behalf. E.g. if you want your site to send emails from help@example.com, you need to add the domain as "example.com". If you want your site to send emails from no-reply@website.com, you need to add "website.com". Then, click the Next button. This does not need to include any subdomains like "www." since most email addresses do not include this e.g. help@www.example.com is not standard. Remember, when writing your Siteglide automations, you need to make sure in future to use email addresses in the "from" property which match this domain exactly. You can run this process multiple times to authenticate multiple domains.
 
 ![](https://cdn.getgist.com/attachment_images/152b1371ddfa2ec03c7d6a4967a33a035146e8dc81c4b875492a80c38eed926eFrom%20Domain%20Set%20Up.png)
 
@@ -74,9 +74,13 @@ In Advanced settings, there is an option to turn on "link branding". We strongly
 
 SendGrid has now created a list of records to add to your DNS including the 2 DKIM records using selectors s1 and s2 respectively.
 
-If you chose the Automatic setup option and your hosting partner is GoDaddy. SendGrid will automatically make the DNS changes for you.
+If you chose the Automatic setup option, you have an externally managed domain and your domain registrar is GoDaddy. SendGrid will automatically make the DNS changes for you. For all others, you will need to copy and paste the records into your domain registrar's portal, or into the domains tab in Siteglide if you have a fully-delegated domain.\
+\
+If copying records into Siteglide (for fully-delegated), you do not need to include the part of the record key which contains your domain, this is considered already included. E.g. from the screenshot, you would only copy key: "url483", not "url483.siteglide.info" For the values, they should still contain ".sendgrid.info" where appropriate.
 
 ![](https://cdn.getgist.com/attachment_images/1cce43d4da32a3965054cbe3e01342e95aa3cde24862c5dd199eee6c0404b1a9Install%20DNS%20Records.png)
+
+This screenshot may look different if you select a different domain registrar from the options.
 
 #### DMARC
 
