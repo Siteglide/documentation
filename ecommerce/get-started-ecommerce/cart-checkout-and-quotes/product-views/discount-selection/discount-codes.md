@@ -22,7 +22,7 @@ Once a customer uses the button in the Layout to successfully add a Discount Cod
 When a customer completes a Payment Form, the Server-side checks will apply the code and reduce the amount they are charged. This means your Site will be secure and safe against malicious users choosing their own discounts.
 
 {% hint style="success" %}
-For setting up Discount Codes, including how to make only certain Products and Categories of Products eligible for a discount, see here:  [Discount Codes](../../managing-products/discounts.md)
+For setting up Discount Codes, including how to make only certain Products and Categories of Products eligible for a discount, see here: [Discount Codes](../../managing-products/discounts.md)
 {% endhint %}
 
 ## Step 1 - Including the Layout inside the Cart, Checkout, Basic Payment Form or Subscription Form Layout
@@ -129,10 +129,30 @@ For steps 3 and onwards, you may find it easier to copy and edit the code from t
 
 _HTML Attributes Explained:_
 
-| **Code**                                                                                                                                                                      | **Purpose**                                                                                                                                                                                               | **Required** |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| data-s-e-discount-code                                                                                                                                                        | Attribute should be added to input field                                                                                                                                                                  | Yes          |
-| <p>value="{%- if discount_code != blank -%}{{discount_code}}{%- endif -%}"<br><br>or<br><br>{% if discount_code != blank %}value="{{discount_code}}" readonly{% endif -%}</p> | <p>If a code is already successfully added, it will be autofilled.<br><br>or<br><br>Any successful code is autofilled and the current field value is readonly until removed in step b) | One of these</p> |              |
+| **Code**               | **Purpose**                              | **Required** |
+| ---------------------- | ---------------------------------------- | ------------ |
+| data-s-e-discount-code | Attribute should be added to input field | Yes          |
+| value="                |                                          |              |
+
+\{{discount\_code\}}"\
+\
+or\
+\
+
+
+{% if discount_code != blank %}
+value="\{{discount\_code\}}" readonly
+{% endif %}
+
+|
+
+If a code is already successfully added, it will be autofilled.\
+\
+or\
+\
+Any successful code is autofilled and the current field value is readonly until removed in step b) | One of these
+
+\| |
 
 ### 3b - Add an "Apply" button
 
@@ -212,11 +232,11 @@ Note also that the value of `spend` will be different for Basic Payment Forms:
 * Cart and Checkout Forms can use the Liquid value: `'{{context.exports.cart_base_price.data | json}}'`
 * Subscriptions store the spend in `{{spend}}`
 
-| **Option**                                                                                                                                                                  | **Required / Default**                                                                                                                                                                                                              | **Notes**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>spend:<br>- <code>document.querySelector('#s\_e\_amount').value</code><br>- <code>{{context.exports.cart_base_price.data | json}}</code><br>- <code>{{spend}}</code></p> | Required - no default                                                                                                                                                                                                               | <p>Basic Payment Forms use spend: <code>document.querySelector('#s_e_amount').value</code><br>- as this can be dynamically changed by JavaScript, there is no Liquid value for it.<br><br>Cart and Checkout Forms can use the Liquid value:<br><br>spend: <code>{{context.exports.cart_base_price.data | json}}</code></p>                                                                                                                                                                                                                |
-| <p>reload:<br>- true<br>- false</p>                                                                                                                                         | default: true                                                                                                                                                                                                                       | <p>Setting true will refresh the entire Page.<br><br>Setting false will refresh the Discount Code Layout only.<br><br>We'd strongly recommend that for Layouts on Forms that you set reload: false as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form.<br><br>If you select <code>false</code>, you must add the data-attribute <code>data-s-e-refresh-layout-discount-code</code> to the element which wraps around the Layout<br>see Step 1) b)</p> |
-| <p>error_cb:<br>- custom JavaScript function name (don't call the function yet!)<br>- success_cb: mySuccessFunction</p>                                                     | <p>default:<br><br>- Depending on the reload option, will reload the Page or Layout<br>- If reload is false and the Payment Type is Checkout, will update the total Price by running the <code>s_e_cart_update_prices()</code>;</p> | For arguments and how to customise your own function, head to step 7.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Option**                                                                                                                           | **Required / Default**                                                                                                                                                                                                              | **Notes**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>spend:<br>- <code>document.querySelector('#s_e_amount').value</code><br>- <code>{{context.exports.cart_base_price.data</code></p> | <p>json}}<br>- <code>{{spend}}</code></p>                                                                                                                                                                                           | Required - no default                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| <p>reload:<br>- true<br>- false</p>                                                                                                  | default: true                                                                                                                                                                                                                       | <p>Setting true will refresh the entire Page.<br><br>Setting false will refresh the Discount Code Layout only.<br><br>We'd strongly recommend that for Layouts on Forms that you set reload: false as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form.<br><br>If you select <code>false</code>, you must add the data-attribute <code>data-s-e-refresh-layout-discount-code</code> to the element which wraps around the Layout<br>see Step 1) b)</p> |
+| <p>error_cb:<br>- custom JavaScript function name (don't call the function yet!)<br>- success_cb: mySuccessFunction</p>              | <p>default:<br><br>- Depending on the reload option, will reload the Page or Layout<br>- If reload is false and the Payment Type is Checkout, will update the total Price by running the <code>s_e_cart_update_prices()</code>;</p> | For arguments and how to customise your own function, head to step 7.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ## Step 4 - Add HTML and Liquid to allow a Customer to Remove a Discount Code
 
@@ -244,7 +264,7 @@ The JavaScript function will make the button functional.
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p>reload:<br>- true<br>- false</p> | default: true                                                                                             | <p>Setting true will refresh the entire Page.<br><br>Setting false will refresh the Discount Code Layout only.<br><br>We'd strongly recommend that for Layouts on Forms that you set reload: false as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form.<br><br>If you select <code>false</code>, you must add the data-attribute <code>data-s-e-refresh-layout-discount-code</code> to the element which wraps around the Layout<br>see Step 1) b)</p> |
 | success\_cb:                        | <p>Default:<br><br>Depending on how you set the refresh setting, will refresh the Page or the Layout.</p> | For arguments and how to customise your own function, head to step 8.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| disable\_alerts:                    | Default: false                                                                                            | <p>To disable the default JS alert when the code is redeemed, pass in true here. This setting was kept for backwards compatibility. <br><br>If you are also using a success callback function, the alert fires before the callback function, so this setting is still necessary. </p>                                                                                                                                                                                                                                                     |
+| disable\_alerts:                    | Default: false                                                                                            | <p>To disable the default JS alert when the code is redeemed, pass in true here. This setting was kept for backwards compatibility.<br><br>If you are also using a success callback function, the alert fires before the callback function, so this setting is still necessary.</p>                                                                                                                                                                                                                                                       |
 
 _Why is this helpful?_ Although we check Discount Codes are valid when they are added, there are cases where the code is no longer valid by the time the customer reaches the Checkout, for example:
 
@@ -269,14 +289,16 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
 
 #### On Cart and Checkout Layouts:
 
-<pre class="language-liquid"><code class="lang-liquid">{% if discount_code != blank -%}
+<pre class="language-liquid"><code class="lang-liquid">
+
+
 <strong>    &#x3C;p>Discount: 
 </strong>        &#x3C;span style="color: red;">
             -{{context.exports.cart_currency.data}}
             {%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter' price_data: discount_amount -%}
         &#x3C;/span>
     &#x3C;/p>
-{% endif %}
+
 
 
 
@@ -464,7 +486,10 @@ Read more about the [Discount Maximum requirement](../../../../../eCommerce/get-
 * `discount_minimum` is a variable which contains the minimum spend needed for this Discount Code to be valid.
 * `discount_amount` is a variable which stores the calculated saving on the current Cart value.
 * `{{context.exports.cart_currency.data}}` will output the currency symbol on Cart and Checkout Layouts
-* `{% include 'ecommerce/basic_payment_currency', format: 'symbol' %}` will output the currency symbol on Basic Payment Layouts
+* `{% include 'ecommerce/basic_payment_currency', format: 'symbol' %}`
+
+will output the currency symbol on Basic Payment Layouts
+
 * \`\{%- include 'modules/siteglide\_ecommerce/ecommerce/price\_formatter', price\_data: discount\_minimum -%\}
 
 `You can use this Liquid tag to format any Liquid price variable with the correct decimalisation. To use, set the`price\_data\` parameter to the variable you wish to format.

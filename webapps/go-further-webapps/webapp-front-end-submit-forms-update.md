@@ -62,7 +62,7 @@ You can now access the following fields inside a WebApp Layout:
 #### Viewing the Edit Form and Permissions
 
 {% hint style="info" %}
-### Important
+#### Important
 
 Even if you include the Liquid Tag, the Form will only display for visitors who are logged in and are registered as that WebApp's creator.
 {% endhint %}

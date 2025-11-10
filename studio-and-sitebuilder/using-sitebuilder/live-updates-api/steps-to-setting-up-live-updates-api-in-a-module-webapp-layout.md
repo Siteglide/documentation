@@ -47,7 +47,9 @@ or
 
 * The code must not rely on inheriting any variables from higher up in the Page because those variables will not be available on the API endpoint Page. If you need to pass in more variables, this must be done via URL Params and read via:
 
-```liquid
+```
+
+liquid
 {{context.params}}
 
 ````
@@ -55,25 +57,26 @@ or
 At the top of this layout, in the wrapper file if it has one, you need to include the following Liquid. This generates a public\_key you need to use the API. See "Thinking about Security" for why we use this. If you're using a WebApp or Module tag and layout from Siteglide, these variables will be available automatically.
 
 ```liquid
-{% comment %}model will in this normal case be something like "module_3" or "webapp_1". Using _model will automatically get the current layout's model value without needing to specify manually - if you want to re-render the current layout!{% endcomment %}
-{% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
 
+<div data-gb-custom-block data-tag="comment">model will in this normal case be something like "module_3" or "webapp_1". Using _model will automatically get the current layout's model value without needing to specify manually - if you want to re-render the current layout!</div>
+
+<div data-gb-custom-block data-tag="function" data-0='false' data-1='false' data-2='false' data-3='false' data-4='false' data-5='false' data-public_key='modules/module_86/front_end/functions/v1/live_update_params_encode'></div>
 
 ```
 
 However, if you're using a Liquid tag which has a value other than `module` or `webapp`, you will need to manually feed in the model\_type parameter instead of model. For example, if you're using the tag:
 
 ```liquid
-{%- include 'ecommerce/cart', layout: 'c1' -%}
 
+<div data-gb-custom-block data-tag="-" data-0='ecommerce/cart' data-1=', layout: ' data-2='c1' data-3='c1'></div>
 
 ```
 
 ...then your public key function should look like this:
 
 ```liquid
-{% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: 'c1', model_type: 'ecommerce/cart', collection: 'false' %}
 
+<div data-gb-custom-block data-tag="function" data-0='c1' data-1='c1' data-2='c1' data-3='ecommerce/cart' data-4=', collection: ' data-5='false' data-6='false' data-public_key='modules/module_86/front_end/functions/v1/live_update_params_encode'></div>
 
 ```
 
@@ -82,8 +85,8 @@ You can also use the Live Updates API with a `content_section` or `code_snippet`
 To use Live Updates with a `content_section` or `code_snippet`, you need to add a `model_type` as above, selecting the one you intend to use. Then you also need to add an `include_id` to the ID of the snippet/ section:
 
 ```liquid
-{% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", model_type: 'code_snippet', include_id: '1' %}
 
+<div data-gb-custom-block data-tag="function" data-0='code_snippet' data-1=', include_id: ' data-2='1' data-3='1' data-4='1' data-5='1' data-public_key='modules/module_86/front_end/functions/v1/live_update_params_encode'></div>
 
 ```
 
@@ -107,15 +110,21 @@ The layout will now initialise once the JS has loaded. You can check it has init
 At this point in our guide, your code should look something like this:
 
 ```liquid
-{% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
+
+<div data-gb-custom-block data-tag="if" data-expression='context.exports.sitebuilder.live_update_JS_loaded == blank'>
+
   <script async src="{{'modules/module_86/js/v1-2/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
-  {% assign live_update_JS_loaded = true %}
-  {% export live_update_JS_loaded, namespace: sitebuilder %}
-{% endif %}
-{% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
+  
 
+<div data-gb-custom-block data-tag="assign" data-gitbook-props='{"live_update_JS_loaded":true}'></div>
 
+  
 
+<div data-gb-custom-block data-tag="export"></div>
+
+</div>
+
+<div data-gb-custom-block data-tag="function" data-0='false' data-1='false' data-2='false' data-3='false' data-4='false' data-5='false' data-public_key='modules/module_86/front_end/functions/v1/live_update_params_encode'></div>
 
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <!-- rest of layout markup goes here -->
@@ -152,12 +161,15 @@ Note ordinary HTML elements don't need any additional data-attributes. The API w
     <input name="keyword" placeholder="Search">
   </form>
   <form data-sg-live-update-controls="filters">
-{% for category in context.exports.categories.items %}
+
+<div data-gb-custom-block data-tag="for"></div>
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
         <span>{{category[1].name}}</span>
       </label>
     {% endfor %}
+
+
 
   </form>
 </section>
@@ -183,7 +195,8 @@ Let's add the important Siteglide tag \`
   </form>
   <form data-sg-live-update-controls="filters">
     
-{% for category in context.exports.categories.items %}
+
+<div data-gb-custom-block data-tag="for"></div>
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
         <span>{{category[1].name}}</span>
@@ -191,8 +204,7 @@ Let's add the important Siteglide tag \`
     {% endfor %}
   </form>
   <div data-sg-live-update-component="results">
-    {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
-  </div>
+    {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}  </div>
 </section>
 ```
 

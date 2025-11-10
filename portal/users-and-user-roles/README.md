@@ -6,7 +6,7 @@ description: Manage Users in Siteglide
 
 The Users page in Siteglide Portal shows you all the Users in your company:
 
-<figure><img src="../../.gitbook/assets/Siteglide-Users.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Users (1).jpg" alt=""><figcaption></figcaption></figure>
 
 It's important to understand User Roles and how to control what other users can see and do:
 

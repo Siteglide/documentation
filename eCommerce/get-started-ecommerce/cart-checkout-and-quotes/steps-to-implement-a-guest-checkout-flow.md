@@ -46,7 +46,7 @@ Users will need to see your products in order to access their Product Detail Pag
 
 To set a Detail Layout, start at eCommerce / Products and click the "View Table" button:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Select the Detail Page Template and Layout:
 

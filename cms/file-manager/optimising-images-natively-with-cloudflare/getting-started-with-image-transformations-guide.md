@@ -32,7 +32,7 @@ And it appears in the list like so:
 
 The file is large: 3.68mb at 5184px x 3456px. So it will look great but is in need of some re-sizing for almost any use-case. The jpg file type is very common, but it's not the most efficient way to store an image for the web nowadays- usually webp and other next-gen formats can store the same image in a smaller number of megabytes - and are still baseline supported on all major browsers.
 
-However, we don't want to do any manual re-sizing and converting, we can just use this single image and optimise it on the front-end.&#x20;
+However, we don't want to do any manual re-sizing and converting, we can just use this single image and optimise it on the front-end.
 
 2. Create (or Edit) a Page
 
@@ -75,7 +75,7 @@ Switch to code view to modify the code directly.
 
 #### What is the situation before we make any changes?
 
-The code currently uses the `| asset_url` filter to convert a relative link to the image from the section fields to an absolute link to the full size image on the CDN.&#x20;
+The code currently uses the `| asset_url` filter to convert a relative link to the image from the section fields to an absolute link to the full size image on the CDN.
 
 The code:
 
@@ -90,7 +90,7 @@ The code:
 </section>
 ```
 
-The value of `this.image` is the relative path to our image: `images/meercats.jpg`&#x20;
+The value of `this.image` is the relative path to our image: `images/meercats.jpg`
 
 <figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
@@ -104,11 +104,11 @@ The exact URL will depend on your site.
 
 #### Let's change this to get a different version of the image automatically depending on the size of the screen:
 
-Replace:&#x20;
+Replace:
 
 `<img src="{{ this.image | asset_url }}" alt="{{ this.image_alt }}" class="object-cover object-center w-full h-full">`
 
-&#x20;with:
+with:
 
 ```
 {% include 'img', path: this.image, layout: 'default/lg' %}
@@ -132,17 +132,17 @@ With one line of Liquid code, we now give the browser multiple possible links to
 
 <figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-Furthermore, the format is automatically converted to webp. The result of both those changes is that the 3.68mb file we uploaded to file manager only required 853kb to load.&#x20;
+Furthermore, the format is automatically converted to webp. The result of both those changes is that the 3.68mb file we uploaded to file manager only required 853kb to load.
 
 After a version of an image has been requested once, Cloudflare will cache this image version, meaning future identical requests will be faster and the transformation won't need to be calculated again.
 
-What about mobile? Simulating an iPhone 12 Pro in Chrome, the image is loaded at a smaller size and with a different format (the original format - at some sizes, old formats may still beat modern formats and Cloudflare works this out for you).&#x20;
+What about mobile? Simulating an iPhone 12 Pro in Chrome, the image is loaded at a smaller size and with a different format (the original format - at some sizes, old formats may still beat modern formats and Cloudflare works this out for you).
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now it's only 264kb!
 
-6. Adding some options.&#x20;
+6. Adding some options.
 
 Since we replaced custom HTML with a default `img` layout in the example above, we should feed in a few extra parameters so we can re-add classes and image alt text.
 
@@ -165,7 +165,7 @@ Now our HTML is closer to what we had originally, maintaining accessibility and 
 
 ## Next
 
-Wondering how to adapt this for thumbnails? keep reading:&#x20;
+Wondering how to adapt this for thumbnails? keep reading:
 
 {% content-ref url="optimising-thumbnails-and-medium-sized-images-guide.md" %}
 [optimising-thumbnails-and-medium-sized-images-guide.md](optimising-thumbnails-and-medium-sized-images-guide.md)

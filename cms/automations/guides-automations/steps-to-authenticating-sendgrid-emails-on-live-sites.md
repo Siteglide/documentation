@@ -33,7 +33,7 @@ See the [list of DNS providers](https://docs.sendgrid.com/ui/account-and-setting
 
 **Automated security is different from automatic setup**. Automated security allows SendGrid to handle the signing of your DKIM and the authentication of your SPF with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your DNS records. Find a detailed explanation of how this works on the [Sendgrid Documentation](https://docs.sendgrid.com/ui/account-and-settings/how-to-set-up-domain-authentication#twilio-sendgrids-dns-records).\
 \
-&#xNAN;_&#x41;utomated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn automated security off and use MX and TXT records._
+\&#xNAN;_Automated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn automated security off and use MX and TXT records._
 
 If you turn off automated security, you are responsible for managing and updating the MX and TXT records yourself.
 
@@ -56,9 +56,13 @@ Info Required:
 
 Log in to the [SendGrid dashboard](https://app.sendgrid.com/login) using your credentials.
 
-Go to Settings/Sender Authentication/Domain Authentication, and click Get Started.
+a) Go to Settings/Sender Authentication/Domain Authentication, and click Get Started.
 
-![](https://cdn.getgist.com/attachment_images/9e74916ad417d94a6add0374c084e4e7b9d1af6fe0b09c5ad77ba8c9fe0a26f4Sendgrid%20Authenticate%20Domain%20Screenshot%20.png)Enter the domain you want to authenticate (e.g. siteglide.info) and click the Next button.
+![](https://cdn.getgist.com/attachment_images/9e74916ad417d94a6add0374c084e4e7b9d1af6fe0b09c5ad77ba8c9fe0a26f4Sendgrid%20Authenticate%20Domain%20Screenshot%20.png)
+
+b) If asked who is your DNS provider, please select "other".\
+\
+c) Enter the domain you want to authenticate (e.g. siteglide.info) and click the Next button.
 
 ![](https://cdn.getgist.com/attachment_images/152b1371ddfa2ec03c7d6a4967a33a035146e8dc81c4b875492a80c38eed926eFrom%20Domain%20Set%20Up.png)
 

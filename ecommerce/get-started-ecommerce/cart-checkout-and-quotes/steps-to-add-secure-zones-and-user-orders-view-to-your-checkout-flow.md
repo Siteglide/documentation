@@ -48,7 +48,7 @@ Find Forms in the Siteglide Admin’s left-hand side menu under CMS / Forms. Sel
 
 Next, click the "View Form" button to edit:
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the "Redirect URL" field add your Orders [Page slug](steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md#step-2-create-a-my-orders-page-in-a-secure-zone), preceded by a forward slash. E.g. /my-orders
 
