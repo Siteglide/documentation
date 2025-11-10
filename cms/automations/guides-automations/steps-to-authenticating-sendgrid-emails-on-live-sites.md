@@ -78,7 +78,7 @@ If you chose the Automatic setup option, you have an externally managed domain a
 \
 If copying records into Siteglide (for fully-delegated), you do not need to include the part of the record key which contains your domain, this is considered already included. E.g. from the screenshot, you would only copy key: "url483", not "url483.siteglide.info" For the values, they should still contain ".sendgrid.info" where appropriate.
 
-![](https://cdn.getgist.com/attachment_images/1cce43d4da32a3965054cbe3e01342e95aa3cde24862c5dd199eee6c0404b1a9Install%20DNS%20Records.png)
+<figure><img src="../../../.gitbook/assets/https___cdn.getgist.com_attachment_images_1cce43d4da32a3965054cbe3e01342e95aa3cde24862c5dd199eee6c0404b1a9Install20Records.webp" alt=""><figcaption></figcaption></figure>
 
 This screenshot may look different if you select a different domain registrar from the options.
 
