@@ -1,5 +1,11 @@
 # Module - System Files - Changelog
 
+## 2.8.9.2 - 12th November 2025
+
+* Minor patch for native Image Optimisation to ensure they fall back to the raw image if there's a transformation error
+
+***
+
 ## 2.8.9.1 - 6th November 2025
 
 * Minor patch for native Image Optimisation to fix an issue when using it on shared AWS stack
