@@ -2,6 +2,8 @@
 
 ## Creating a New Theme for SiteBuilder <a href="#creating-a-new-theme-for-sitebuilder" id="creating-a-new-theme-for-sitebuilder"></a>
 
+*** Warning *** This is now deprecated. Suggest building a new Siteglide Studio Theme instead.
+
 A theme module in Siteglide is generally a module which does not add database functionality to the Siteglide Admin or the front-end, but does add files which are helpful for styling the front-end of a website. With the help of this documentation, you can go a step further by hooking into SiteBuilder functionality:
 
 1. Page Templates
@@ -223,7 +225,7 @@ Tips:
 
 _HTML_
 
-```html
+```liquid
 <script defer src="..."></script>
 ```
 

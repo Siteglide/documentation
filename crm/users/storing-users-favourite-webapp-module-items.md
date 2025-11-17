@@ -29,7 +29,7 @@ The User Favourites Toggle Layout will only work within an item.liquid file (for
 Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout:
 
 ```liquid
-{% include 'user_favourites_toggle', layout: 'default' -%}
+{% include 'user_favourites_toggle', layout: 'default' -%}
 
 ```
 
@@ -135,7 +135,7 @@ Add to favourites
 You may want to hide the add/ remove buttons from the User if they aren't logged into a Secure Zone you could do so by wrapping your user\_favourites Layout within this IF statement:
 
 ```liquid
-{% if context.current_user %} {% endif %}
+{% if context.current_user %} {% endif %}
 
 ```
 

@@ -60,9 +60,7 @@ Two different options are provided in this example:
 
 Add HTML and JavaScript
 
-:::codeblocktabs
-
-```html
+```liquid
 <div class="container text-center">
   <h1 class="mb-3 h2 sg-h2">Search for Stores within your area</h1>
   <div class="row">
@@ -102,14 +100,12 @@ Add HTML and JavaScript
 </script>
 ```
 
-:::
-
 ### 2 - Output the results on the Page in a simple list
 
 Use a Layout of your choice.
 
 ```
-{%- include 'webapp', id: '1', use_location_search: 'true', layout: 'default' -%}
+{%- include 'webapp', id: '1', use_location_search: 'true', layout: 'default' -%}
 
 ```
 

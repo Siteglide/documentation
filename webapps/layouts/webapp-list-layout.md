@@ -4,7 +4,7 @@
 
 When placed onto a page or a template, this liquid displays the WebApp items using the defined list Layout.
 
-```html
+```liquid
 {%- include 'webapp'
     id: '3'
     layout: 'default'

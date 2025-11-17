@@ -4,7 +4,7 @@
 
 Like with other Modules, you will use a Liquid Tag to output a list of Module Items on a Page, Page Template, Email or Partial Liquid File of your choice.
 
-```html
+```liquid
 {%- include 'module'
     id: '17'
     layout: 'default'
@@ -45,7 +45,7 @@ You'll need to create a `list` folder in your layout folder and fill it with the
 
 Your `wrapper.liquid` file should contain the following Liquid which determines where the list of Items will go:
 
-```html
+```liquid
 {%- include 'modules/siteglide_media_downloads/get/get_items'
     item_layout: 'item' 
 -%}

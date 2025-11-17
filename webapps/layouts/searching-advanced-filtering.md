@@ -32,7 +32,7 @@ Once you've checked that Article and found the ID of the Custom Field you need, 
 
 ### Step 2 - Add the use\_adv\_search parameter to WebApp include tag
 
-```html
+```liquid
 {%- include 'webapp'
     id: '1'
     layout: 'my_layout'

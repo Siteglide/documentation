@@ -32,7 +32,7 @@ Toolbox has support for WebApp input forms, and the following options will be gi
 
 Some fields are required for the form to be able to set up the WebApp items correctly. These fields are for 'enabled', 'expiry\_date', 'release\_date', 'upload\_dir', and 'slug'. They stay the same each form, and don't have a WebApp specific ID attached to them.
 
-```html
+```liquid
 <input class="form-control" 
        name="{{ form_builder.fields.properties.enabled.name }}" 
        value="{{_enabled}}" 

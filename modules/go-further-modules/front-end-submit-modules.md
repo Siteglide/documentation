@@ -47,7 +47,7 @@ Toolbox has support for Module input forms, and the following options will be gi
 
 Some fields are required for the form to be able to set up the Module items correctly. These fields are for 'enabled', 'expiry\_date', 'release\_date', 'upload\_dir', and 'slug'. They stay the same each form, and don't have a Module specific ID attached to them.
 
-```html
+```liquid
 <input class="form-control" 
        name="{{ form_builder.fields.properties.enabled.name }}" 
        value="{{_enabled}}" 
@@ -90,7 +90,7 @@ All forms should be wrapped in a Liquid form tag:
 
 This example can be used for a Module Submit form that is displayed within a the layout of another WebApp or Module.
 
-```html
+```liquid
 <input class="form-control" 
        name="{{ form_builder.fields.properties.category_array.name }}" 
        value="{{this.category_array[0]}}" 
@@ -104,7 +104,7 @@ This example can be used for a Module Submit form that is displayed within a the
 
 This example can be used on pages other than WebApp and Module layouts.
 
-```html
+```liquid
 <input class="form-control" 
        name="{{ form_builder.fields.properties.category_array.name }}" 
        value="123456" 
@@ -118,7 +118,7 @@ Location Field (optional)
 
 You can submit a Location value for a Module item as shown in the following example:
 
-```html
+```liquid
 <input class="form-control" 
        name="{{ form_builder.fields.properties.location.name }}" 
        value='{"type": "Point","coordinates": [-0.10045,51.49495]}' 

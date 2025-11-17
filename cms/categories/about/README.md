@@ -18,8 +18,6 @@ Each Category can optionally have an automatic system detail Page enabled for it
 
 Would have the following URL for the Hats detail page:
 
-```html
-/shop/clothing/unisex/hats
-```
+`/shop/clothing/unisex/hats`
 
 You can optionally apply a Category Detail Layout to all of these enabled detail Pages.

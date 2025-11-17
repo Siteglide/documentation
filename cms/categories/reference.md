@@ -112,7 +112,7 @@ Category Detail Pages give you additional features including Breadcrumbs, Parent
 Output breadcrumb of Categories to the current Category page using the defined layout:
 
 ```liquid
-{%- include 'category_breadcrumbs', layout: 'breadcrumb' -%}
+{%- include 'category_breadcrumbs', layout: 'breadcrumb' -%}
 
 ```
 
@@ -121,7 +121,7 @@ Output breadcrumb of Categories to the current Category page using the defined l
 Output parent Categories using the defined layout:
 
 ```liquid
-{%- include 'category_parent', layout: 'parent' -%
+{%- include 'category_parent', layout: 'parent' -%
 
 ```
 
@@ -130,7 +130,7 @@ Output parent Categories using the defined layout:
 Output child Categories using the defined layout:
 
 ```liquid
-{%- include 'category_children', layout: 'children' -%}
+{%- include 'category_children', layout: 'children' -%}
 
 
 ```
@@ -140,7 +140,7 @@ Output child Categories using the defined layout:
 Output all items categorised to the current Category Page using the defined layout:
 
 ```liquid
-{%- include 'category_items', layout: 'items' -%}
+{%- include 'category_items', layout: 'items' -%}
 
 
 ```

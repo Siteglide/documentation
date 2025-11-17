@@ -10,7 +10,7 @@ You should include this on a basic payment form.
 
 ### How to use?
 
-```html
+```liquid
 {%- include 'ecommerce/basic_payment'
   amount: '500'
   currency: 'usd'
