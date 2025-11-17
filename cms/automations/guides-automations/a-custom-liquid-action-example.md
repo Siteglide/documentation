@@ -13,5 +13,5 @@ This example will log data if the WebApp item's name contains 'Hello'.
 Learn more about the Log liquid tag here: [https://documentation.platformos.com/api-reference/liquid/platformos-tags#log](https://documentation.platformos.com/api-reference/liquid/platformos-tags#log) - one caveat, to read logs you won't usually be able to use pos-cli with a Siteglide site, use siteglide-cli instead:
 
 {% content-ref url="../../../developer-tools/cli/reference.md" %}
-[reference.md](../../../developer-tools/cli/reference.md)
+[CLI Reference](developer-tools/cli/reference.md)
 {% endcontent-ref %}
