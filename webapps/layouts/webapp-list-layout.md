@@ -41,16 +41,15 @@ Learn more about Custom Field IDs here: [Understanding Custom Field Names and ID
 
 ## Default Fields
 
-| **Field Name** | **Liquid Tag**                 | **Description**                                     |
-| -------------- | ------------------------------ | --------------------------------------------------- |
-| Item Name      | \{{ this\['name'] \}}          | name of the FAQ                                     |
-| Slug           | \{{ this\['full\_slug'] \}}    | url of the current item, relative to the layout     |
-| Weighting      | \{{ this\['weighting'] \}}     | weight of item, used for sorting                    |
-| Release Date   | \{{ this\['release\_date'] \}} | release date of the item                            |
-| Expiry Date    | \{{ this\['expiry\_date'] \}}  | expiry date of the item                             |
-| Enabled        | \{{ this\['enabled'] \}}       | enable/disable the item                             |
-| Create Date    | \{{this.create\_date\}}        | Date item was created through Admin or GraphQL      |
-| Last Edit Date | \{{this.last\_edit\_date\}}    | Date item was last updated through Admin or GraphQL |
+| **Field Name** | **Liquid Tag**                 | **Description**                                 |
+| -------------- | ------------------------------ | ----------------------------------------------- |
+| Item Name      | `{{ this\['name'] }}`          | name of the FAQ                                 |
+| Slug           | `{{ this\['full\_slug'] }}`    | url of the current item, relative to the layout |
+| Weighting      | `{{ this\['weighting'] }}`     | weight of item, used for sorting                |
+| Release Date   | `{{ this\['release\_date'] }}` | release date of the item                        |
+| Expiry Date    | `{{ this\['expiry\_date'] }}`  | expiry date of the item                         |
+| Enabled        | `{{ this\['enabled'] }}`       | enable/disable the item                         |
+
 
 ## Folder Structure
 
