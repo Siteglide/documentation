@@ -159,7 +159,7 @@ In this example, we have a Custom Field Set "Checkout Address" with a "Profile P
 
 See [https://docs.siteglide.com/en/crm/users/user-details#accessing-custom-crm-fields](user-details.md#accessing-custom-crm-fields) to see how to access data from CRM custom fields within the User Details Layout.
 
-As the `value` attribute in HTML determines the pre-filled value of a field, we can use Liquid to add it. In most cases, there is an \<input> element which can be given a value, eg. in the "Favourite Colour" field:
+As the `value` attribute in HTML determines the pre-filled value of a field, we can use Liquid to add it. In most cases, there is an `&lt;input&gt;` element which can be given a value, eg. in the "Favourite Colour" field:
 
 ```liquid
 <input 
@@ -172,7 +172,7 @@ As the `value` attribute in HTML determines the pre-filled value of a field, we 
 
 ```
 
-Values can also be added to \<select> elements:
+Values can also be added to `&lt;select&gt;` elements:
 
 ```liquid
 <div class="row mt-4 select">

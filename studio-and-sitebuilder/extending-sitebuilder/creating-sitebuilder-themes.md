@@ -30,7 +30,7 @@ First in the Siteglide Portal, go to the marketplace tab and select "add new".
 
 Secondly, fill out the name, type and description. For type, select "theme".
 
-Thirdly, make a note of your "vanity ID". We'll refer to this as \<module\_vanity\_id> where it needs to be substituted in the examples.
+Thirdly, make a note of your "vanity ID". We'll refer to this as `&lt;module\_vanity\_id&gt;` where it needs to be substituted in the examples.
 
 ### Step 2 - Registering the Module with SiteBuilder <a href="#step-2-registering-the-module-with-sitebuilder" id="step-2-registering-the-module-with-sitebuilder"></a>
 
@@ -46,13 +46,13 @@ metadata:
 
 ```
 
-The placeholder \<module\_vanity\_id> should be replaced by the vanity ID that Siteglide gave you earlier.
+The placeholder `&lt;module\_vanity\_id&gt;` should be replaced by the vanity ID that Siteglide gave you earlier.
 
 ### Step 3 - File Structure and Security <a href="#step-3-file-structure-and-security" id="step-3-file-structure-and-security"></a>
 
 While most of your module files will sit in the private folder, Liquid allows developers to access private files if they know their filepaths.
 
-To give an optional extra level of protection to your intellectual property, you can register your module with Sitegurus in return for a secret key. We'll give you this secret key and associate it with your module vanity ID so that SiteBuilder can find your files, but your users can't. When you're given your secret key, the /sitebuilder/ folder will be replaced in your file structure with /sitebuilder\_\<secret\_key>/
+To give an optional extra level of protection to your intellectual property, you can register your module with Sitegurus in return for a secret key. We'll give you this secret key and associate it with your module vanity ID so that SiteBuilder can find your files, but your users can't. When you're given your secret key, the /sitebuilder/ folder will be replaced in your file structure with /sitebuilder\_`&lt;secret\_key&gt;`/
 
 Do bear in mind that this system isn't perfect and we cannot guarantee that Liquid errors will not expose this key. We recommend careful testing to avoid errors with each new version.
 

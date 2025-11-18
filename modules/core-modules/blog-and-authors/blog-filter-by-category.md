@@ -41,7 +41,7 @@ Include the following liquid to dynamically get a list of available Blog Categor
 
 ```
 
-The parameters refers to layout which will be used to display the Category links. \<code>categories\_layout\</code>should be the root layout folder where your blog layout is contained.
+The parameters refers to layout which will be used to display the Category links. `categories\_layout` should be the root layout folder where your blog layout is contained.
 
 The `category_layout_type` is the sub-folder where the wrapper and item files are stored for filtering the blog list by category. The `category_layout_type` exists because some blog layouts may have a different partial layout for Categories within a Blog preview, footer or sidebar.
 
@@ -76,7 +76,7 @@ The link should be the slug of your Blog List view followed by `?category={{this
 
 ## User Feedback
 
-You may wish to give the User some feedback about the current filter/ search terms that are applied on the Blog list page. For Categories, you can use \<code>context.exports\</code> object to get the name of the category you are filtering by:
+You may wish to give the User some feedback about the current filter/ search terms that are applied on the Blog list page. For Categories, you can use `context.exports` object to get the name of the category you are filtering by:
 
 ```liquid
 {% if context.params.category %}

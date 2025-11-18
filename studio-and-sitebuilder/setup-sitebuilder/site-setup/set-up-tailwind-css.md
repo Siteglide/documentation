@@ -142,7 +142,7 @@ Use this command to build your Tailwind's CSS (we'll look at this in more detail
 npm run tailwind
 ```
 
-In the other terminal window, use this command to sync changes to the Site with Siteglide-CLI (replace \<env> with your environment name from step 2):
+In the other terminal window, use this command to sync changes to the Site with Siteglide-CLI (replace `&lt;env&gt;` with your environment name from step 2):
 
 ```
 siteglide-cli sync <env>

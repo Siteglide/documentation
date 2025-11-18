@@ -50,7 +50,7 @@ Within this module folder you will find the following layout folders:
 
 #### Example - wrapper.liquid
 
-The wrapper file is used to wrap the menu item output and should contain the liquid for outputting the menu items. You can wrap your menu with any content you'd like, such as a plain \<ul> tag, or a section wrapper with a title.
+The wrapper file is used to wrap the menu item output and should contain the liquid for outputting the menu items. You can wrap your menu with any content you'd like, such as a plain `&lt;ul&gt;` tag, or a section wrapper with a title.
 
 ```liquid
 <ul>

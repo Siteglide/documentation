@@ -14,7 +14,7 @@ PayPal creates its own secure Submit Buttons for the payment Form. This means yo
 
 ## Step 2) Adding Custom Error Functions without the Submit Button
 
-As custom error functions are normally passed in as an argument on the submit button's onclick listener, we've had to provide an alternative means to attach this: a global JavaScript variable.. You can set this in a \<script> tag inside your Form Layout like so:
+As custom error functions are normally passed in as an argument on the submit button's onclick listener, we've had to provide an alternative means to attach this: a global JavaScript variable.. You can set this in a `&lt;script&gt;` tag inside your Form Layout like so:
 
 ```xml
 <script>

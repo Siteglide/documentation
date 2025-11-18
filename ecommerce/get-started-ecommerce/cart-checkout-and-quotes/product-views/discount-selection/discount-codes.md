@@ -112,7 +112,7 @@ For steps 3 and onwards, you may find it easier to copy and edit the code from t
 
 ## Step 3 - Add HTML and Liquid to allow a Customer to enter a Discount Code
 
-### 3a - Add an \<input> element and \<label>
+### 3a - Add an `&lt;input&gt;` element and `&lt;label&gt;`
 
 ```liquid
 <label class="mb-3" for="s_e_discount_code">Discount Code</label>

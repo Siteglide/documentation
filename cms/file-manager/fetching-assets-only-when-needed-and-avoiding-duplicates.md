@@ -91,7 +91,7 @@ Another way of avoiding duplicate entries of assets in your code, only pulling t
 {% endif %}
 ```
 
-The if statement checks if the \<script> has already been outputted; the next line outputs the \<script>, if not.
+The if statement checks if the `&lt;script&gt;` has already been outputted; the next line outputs the `&lt;script&gt;`, if not.
 
 The next two lines store a new variable in exports to make sure the same code will know not to output the same again.
 

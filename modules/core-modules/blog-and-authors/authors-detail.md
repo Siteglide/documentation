@@ -4,7 +4,7 @@
 
 1. Make sure the Authors module is installed. You may also want to install the Blog module.
 2. Create an Authors detail layout, or install one from the SiteBuilder module. An Authors detail layout should:
-   1. Be stored in the code editor folder: layouts/modules/module\_6/\<layout\_name>/detail/
+   1. Be stored in the code editor folder: layouts/modules/module\_6/`&lt;layout\_name&gt;`/detail/
    2. Contain at least a wrapper.liquid and an item.liquid file.
    3. The wrapper file should contain the code below where the dynamic single item.liquid file for the specific author should be outputted: `{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}`
    4. The item file should contain the fields needed to display information about a specific author. You can check available data by outputting the `this` object as JSON using `{{this}}` .

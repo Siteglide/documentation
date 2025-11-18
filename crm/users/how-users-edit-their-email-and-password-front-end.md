@@ -97,7 +97,7 @@ The Form Default Layout already includes this Field- however it is hidden from U
 
 _Things to Check_
 
-* Make sure any \<label> tags clearly show which field should be used for current password and which should be used for the new password.
+* Make sure any `&lt;label&gt;` tags clearly show which field should be used for current password and which should be used for the new password.
 * Make sure the current password field is only included once in the Form Layout
 
 ## Step 7 - Optional - Add a confirmation field for additional validation

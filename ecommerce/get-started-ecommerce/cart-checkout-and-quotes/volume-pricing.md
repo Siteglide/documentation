@@ -76,7 +76,7 @@ Inside the Order Confirmation Email, you'll have access to the following relevan
 | `{{product.currency_symbol}}`                  | £           |                                                                                                                                                                                                        |
 | `{{product.price}}`                            | 19.00       | This formatted price shows the actual price of the order row. This will either be the default price, or a volume price if available.                                                                   |
 
-The following example shows how the Volume Pricing can be shown inside a \<td> element in an Order Confirmation Email.
+The following example shows how the Volume Pricing can be shown inside a `&lt;td&gt;` element in an Order Confirmation Email.
 
 ```liquid
 <td style="padding: 5px 5px 5px 15px; font-weight: 200;" align="right">

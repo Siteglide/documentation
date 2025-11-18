@@ -135,7 +135,7 @@ The Liquid makes sure the map is only outputted after the Page has been refreshe
 
 Add JavaScript
 
-The following function is triggered by the script from step 1, only after it has finished loading- this occurs because the function's name is referenced in the URL parameter fetching the Script. The code must be placed above the \<script> tag from step 1.
+The following function is triggered by the script from step 1, only after it has finished loading- this occurs because the function's name is referenced in the URL parameter fetching the Script. The code must be placed above the `&lt;script&gt;` tag from step 1.
 
 ```javascript
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" />

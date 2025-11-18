@@ -36,7 +36,7 @@ For example, if I'm on the "About" Page of my site, the URL will be: `/about`, b
 
 If I want to send the User to Page 11, you'll need to add a page query parameter on the URL so that it looks like this: `/about?page=11`
 
-You can do this with HTML, using the \<a> tag: `<a href="/about?page=11">11</a>`
+You can do this with HTML, using the `&lt;a&gt;` tag: `<a href="/about?page=11">11</a>`
 
 Or, you can use JavaScript to achieve the same effect.
 

@@ -2,7 +2,7 @@
 
 A Module can contain any code that will run on Siteglide, but that code does need to be split into the relevant folders (notifications, views, etc.) and folder structures. Below, we'll take a look at how to do just that along with all the various options available to you, depending on what you would like to build.
 
-## \<module\_name>
+## `&lt;module\_name&gt;`
 
 The Module name is written in the following format: `module_<vanity_id>` . Replace vanity\_id with the Vanity ID generated in your Module listing in Portal.
 

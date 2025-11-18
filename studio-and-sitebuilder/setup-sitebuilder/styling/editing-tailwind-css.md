@@ -92,7 +92,7 @@ See here to understand how to add custom classes which combine existing Tailwind
 {% hint style="info" %}
 See the folder structure above to find this file. You should not need to create it or edit it manually. The npm run tailwind command will compile it automatically from the src files.\
 \
-It should be linked in your Page Template, but by default a SiteBuilder Page Template will do this via a `tailwind/head` Liquid include. You could optionally replace this with a \<link> tag instead.
+It should be linked in your Page Template, but by default a SiteBuilder Page Template will do this via a `tailwind/head` Liquid include. You could optionally replace this with a `&lt;link&gt;` tag instead.
 {% endhint %}
 
 When you make changes to any of the following while `npm run tailwind` is running in your terminal:

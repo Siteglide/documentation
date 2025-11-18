@@ -96,7 +96,7 @@ Here is an example of a tree-view. It's the JSON data with extra whitespace and 
 
 <!-- ![](https://downloads.intercomcdn.com/i/o/170900129/70897663e71f69098f379221/image.png) -->
 
-From this view you can make the same observations we made when using the \<pre> tag, but it is easier because each level of the tree is indented and all keys are coloured light blue:
+From this view you can make the same observations we made when using the `&lt;pre&gt;` tag, but it is easier because each level of the tree is indented and all keys are coloured light blue:
 
 * The first and last character is a curly bracket- this represents the this object we are accessing.
 * The key id has no properties, it has a value of `98656` which is stored as a String. this.id will be enough to access it.
