@@ -46,7 +46,8 @@ You'll notice that the full name field has a `type` of "text", this will need to
 
 Remove the label element as it will still display otherwise. Here's what it should look like:
 
-<pre class="language-liquid"><code class="lang-liquid">
+```liquid
+
 
 
 &#x3C;input
@@ -56,7 +57,8 @@ Remove the label element as it will still display otherwise. Here's what it shou
   type="<a data-footnote-ref href="#user-content-fn-1">hidden</a>"
 />
 
-</code></pre>
+
+```
 
 ### Step 4) Add Unique HTML IDs
 

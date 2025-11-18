@@ -16,11 +16,15 @@ The Blog uses standard module fields as well as it's own core fields:
 [modules-reference.md](../../../developer-tools/building-for-marketplace/modules-reference.md)
 {% endcontent-ref %}
 
-<table data-header-hidden><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name</strong></td><td><strong>Liquid Tag</strong></td><td><strong>Description</strong></td></tr><tr><td>Title</td><td>{{ this['Title'] }}</td><td>title of the Blog Post</td></tr><tr><td>Subtitle</td><td>{{ this['Subtitle'] }}</td><td>subtitle of the Blog Post</td></tr><tr><td>Description</td><td>{{ this['Description'] }}</td><td>list description of the Blog Post</td></tr><tr><td>Author - Syntax type 1 (Requires Authors Module)</td><td><pre class="language-liquid"><code class="lang-liquid">
+<table data-header-hidden><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name</strong></td><td><strong>Liquid Tag</strong></td><td><strong>Description</strong></td></tr><tr><td>Title</td><td>{{ this['Title'] }}</td><td>title of the Blog Post</td></tr><tr><td>Subtitle</td><td>{{ this['Subtitle'] }}</td><td>subtitle of the Blog Post</td></tr><tr><td>Description</td><td>{{ this['Description'] }}</td><td>list description of the Blog Post</td></tr><tr><td>Author - Syntax type 1 (Requires Authors Module)</td><td>```liquid
 
-</code></pre></td><td>data source of author. Parameters: author_layout: path to the folder containing author layouts. author_layout_type: name of author layout folder (containing wrapper and item files). author_id: Unique ID of the author for this item- can be dynamically passed in with `this['Author']`.</td></tr><tr><td>Author - Syntax type 2 (Requires Authors Module) - The benefit of this syntax is that it should be more consistent with how other Modules are outputted on the Page</td><td><pre class="language-liquid"><code class="lang-liquid">
 
-</code></pre></td><td>data source of author. Parameters: layout path to the folder containing author layouts within the blog module. type- name of the layout folder containing wrapper and item Liquid layout files. datasource - should be set to true to indicate that this module is a sub-module placed inside another module Layout. item_ids - indicates the unique ids of the Author items you want to display- can be dynamically passed in with `this['Author']`</td></tr><tr><td>Main Image</td><td>{{ this['Main Image'] }}</td><td>main image of the Blog Post</td></tr><tr><td>Main Image Alt</td><td>{{ this['Main Image Alt'] }}</td><td>main image alt tag of the Blog Post</td></tr><tr><td>List Image</td><td>{{ this['List Image'] }}</td><td>list image of the Blog Post</td></tr><tr><td>List Image Alt</td><td>{{ this['List Image Alt'] }}</td><td>list image alt tag of the Blog Post</td></tr><tr><td>Content</td><td>{{ this['Content'] }}</td><td>main content of the Blog Post</td></tr><tr><td>Category Array</td><td>{{ this.category_array }}</td><td>outputs comma-separated list of IDs for Categories this item belongs to.</td></tr></tbody></table>
+
+```</td><td>data source of author. Parameters: author_layout: path to the folder containing author layouts. author_layout_type: name of author layout folder (containing wrapper and item files). author_id: Unique ID of the author for this item- can be dynamically passed in with `this['Author']`.</td></tr><tr><td>Author - Syntax type 2 (Requires Authors Module) - The benefit of this syntax is that it should be more consistent with how other Modules are outputted on the Page</td><td>```liquid
+
+
+
+```</td><td>data source of author. Parameters: layout path to the folder containing author layouts within the blog module. type- name of the layout folder containing wrapper and item Liquid layout files. datasource - should be set to true to indicate that this module is a sub-module placed inside another module Layout. item_ids - indicates the unique ids of the Author items you want to display- can be dynamically passed in with `this['Author']`</td></tr><tr><td>Main Image</td><td>{{ this['Main Image'] }}</td><td>main image of the Blog Post</td></tr><tr><td>Main Image Alt</td><td>{{ this['Main Image Alt'] }}</td><td>main image alt tag of the Blog Post</td></tr><tr><td>List Image</td><td>{{ this['List Image'] }}</td><td>list image of the Blog Post</td></tr><tr><td>List Image Alt</td><td>{{ this['List Image Alt'] }}</td><td>list image alt tag of the Blog Post</td></tr><tr><td>Content</td><td>{{ this['Content'] }}</td><td>main content of the Blog Post</td></tr><tr><td>Category Array</td><td>{{ this.category_array }}</td><td>outputs comma-separated list of IDs for Categories this item belongs to.</td></tr></tbody></table>
 
 ### Blog Navigation & Filtering
 
@@ -41,11 +45,12 @@ As always, to use filtering on an included module layout, add the `use_adv_searc
 
 Include the Archive Layout (included in the default layout, or make your own) to list all available years or months containing blog posts.
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'modules/siteglide_blog/get/get_blog_archive'
-</strong>    archive_layout: "default/archive"
+```liquid
+{%- include 'modules/siteglide_blog/get/get_blog_archive'
+    archive_layout: "default/archive"
     archive_layout_type: "sidebar_years_and_date_search" 
 -%}
-</code></pre>
+```
 
 Inside an archive layout, you have access to the following variables which can be looped over to find the months in which at least one blog post was published: `blog_archive_years` and `months_by_year`
 

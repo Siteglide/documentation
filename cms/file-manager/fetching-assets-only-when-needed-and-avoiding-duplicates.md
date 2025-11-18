@@ -27,8 +27,9 @@ This allows you to include a JS file only when it becomes relevant to a particul
 
 In addition to adding scripts here, you also need to make sure that the selected Page Template contains the following code:
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{% include 'modules/siteglide_system/siteglide_head' -%}
-</strong></code></pre>
+```liquid
+{% include 'modules/siteglide_system/siteglide_head' -%}
+```
 
 #### Footer Scripts
 
@@ -41,8 +42,9 @@ In addition to adding scripts here, you also need to make sure that the selected
 
 In addition to adding scripts here, you also need to make sure that the selected Page Template contains the following code:
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{% include 'modules/siteglide_system/siteglide_foot' -%}
-</strong></code></pre>
+```liquid
+{% include 'modules/siteglide_system/siteglide_foot' -%}
+```
 
 #### Troubleshooting
 

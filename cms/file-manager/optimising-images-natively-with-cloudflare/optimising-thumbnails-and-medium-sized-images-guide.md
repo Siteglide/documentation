@@ -6,8 +6,9 @@
 
 For thumbnails, we recommend the following Liquid:
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{% include 'img', path: this.image, layout: 'default/sm', width: 40 %}
-</strong></code></pre>
+```liquid
+{% include 'img', path: this.image, layout: 'default/sm', width: 40 %}
+```
 
 You can set the width to the size you want the thumbnails to be displayed. The browser will download an image of this size, unless the user has a high resolution screen, in which case it will download a larger version of the image to keep the quality high.
 

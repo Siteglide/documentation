@@ -10,13 +10,14 @@ You can also allow the User to search for Blog Posts by keyword. This requires a
 
 Although all other Blog Navigation options require you to set the `use_adv_search: 'true'` Liquid parameter, keyword search requires the `use_search: 'true'` parameter.
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'module'
-</strong>    id: '3'
+```liquid
+{%- include 'module'
+    id: '3'
     layout: 'design_system/1'
     per_page: 20
     use_search: 'true' 
 -%}
-</code></pre>
+```
 
 #### HTML and JavaScript Syntax
 

@@ -69,14 +69,15 @@ You can add the following data-attributes:
 
 e.g.
 
-<pre class="language-liquid"><code class="lang-liquid">&#x3C;p class="text-uppercase">
-<strong>    &#x3C;strong>TOTAL PRICE:&#x3C;/strong> 
-</strong><strong>    &#x3C;span data-s-e-live-cart-currency>&#x3C;/span>
-</strong>    &#x3C;span data-s-e-live-cart-total>
+```liquid
+<p class="text-uppercase">
+    <strong>TOTAL PRICE:</strong> 
+    <span data-s-e-live-cart-currency></span>
+    <span data-s-e-live-cart-total>
         {% include 'ecommerce/price_total', format_type: 'formatted' -%}
-    &#x3C;/span>
-&#x3C;/p>
-</code></pre>
+    </span>
+</p>
+```
 
 ### Related Layout Development Docs
 
@@ -289,22 +290,14 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
 
 #### On Cart and Checkout Layouts:
 
-<pre class="language-liquid"><code class="lang-liquid">
-
-
-<strong>    &#x3C;p>Discount: 
-</strong>        &#x3C;span style="color: red;">
+```liquid
+    <p>Discount: 
+        <span style="color: red;">
             -{{context.exports.cart_currency.data}}
             {%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter' price_data: discount_amount -%}
-        &#x3C;/span>
-    &#x3C;/p>
-
-
-
-
-
-
-</code></pre>
+        </span>
+    </p>
+```
 
 #### On Basic Payment Layouts:
 

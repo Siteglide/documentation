@@ -91,11 +91,11 @@ The wrapper contains the code for the main part of the section you are building.
 
 In the wrapper.liquid file, it is important to include the liquid file which loops over the Product items:
 
-<pre class="language-liquid"><code class="lang-liquid">{%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
+```liquid
+{%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
     item_layout: 'item' 
-<strong>-%}
-</strong>
-</code></pre>
+-%}
+```
 
 The item\_layout parameter should be the name of a liquid file in the same folder as the current file. Usually this will be "item", but you could have an alternative Layout.
 

@@ -210,11 +210,6 @@ _String to \[String]_
 ```liquid
 {% assign original_string = "123,456" %}
 {% assign new_array = original_string | split: "," %}
-
-
-
-
-
 ```
 
 _String to Boolean_
@@ -226,11 +221,6 @@ _String to Boolean_
 {% elsif original_string  == "false" %}
   {% assign new_boolean == false %}
 {% endif %}
-
-
-
-
-
 ```
 
 _Boolean to String_
@@ -238,12 +228,6 @@ _Boolean to String_
 ```liquid
 {% assign original_boolean = true %}
 {% assign new_string = original_boolean | downcase %}
-
-
-
-
-
-
 ```
 
 _Int to String_
@@ -251,7 +235,6 @@ _Int to String_
 ```liquid
 {% assign original_int = 123 %}
 {% assign new_string = original_int | downcase %}
-
 ```
 
 _Float to String_
@@ -259,7 +242,6 @@ _Float to String_
 ```liquid
 {% assign original_float = 123 %}
 {% assign new_string = original_float | downcase %}
-
 ```
 
 _Literal JSON object to HASH object_ (Needed for advanced variables only- like passing an array of properties objects into a filter). You can also use the parse\_json tag to create any of the above types; if you can write the variable in a type that's supported by JSON, the tag will convert that to a variable in the hash format that can be passed into Graph as a variable value.
@@ -271,11 +253,6 @@ _Literal JSON object to HASH object_ (Needed for advanced variables only- like p
     { "name": "properties.webapp_field_1_2", exists: true }
   ]
 {% endparse_json %}
-
-
-
-
-
 ```
 
 ## Passing in Variables using the Sandbox (Testing)

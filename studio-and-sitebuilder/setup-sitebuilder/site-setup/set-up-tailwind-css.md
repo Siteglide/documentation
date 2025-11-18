@@ -80,7 +80,8 @@ Find the files in the folder:
 
 And **copy and paste** these two files `package.json` and `package-lock.json` into the root project folder (next to- but not inside - marketplace\_builder).
 
-<pre><code>│   package-lock.json
+```bash
+│   package-lock.json
 │   package.json
 └───marketplace_builder
     └───assets
@@ -91,15 +92,15 @@ And **copy and paste** these two files `package.json` and `package-lock.json` in
                     └───open_me_to_set_up_tailwind_1st_time
                         ├───copy_and_paste_my_files_into_the_root_project_folder
                         │   package-lock.json
-<strong>                        │   package.json
-</strong>                        └───copy_and_paste_my_files_into_the_src_folder
+                        │   package.json
+                        └───copy_and_paste_my_files_into_the_src_folder
                             tailwind.config.js
                             tailwind.css
-</code></pre>
-
+```
 Next, move the `tailwind.config.js` and `tailwind.css` files from the `copy_and_paste_my_files_into_the_src_folder` folder to the `marketplace_builder/assets/modules/module_86/src folder`:
 
-<pre><code>│   package-lock.json
+```bash
+│   package-lock.json
 │   package.json
 └───marketplace_builder
     └───assets
@@ -112,11 +113,11 @@ Next, move the `tailwind.config.js` and `tailwind.css` files from the `copy_and_
                     └───open_me_to_set_up_tailwind_1st_time
                         ├───copy_and_paste_my_files_into_the_root_project_folder
                         │   package-lock.json
-<strong>                        │   package.json
-</strong>                        └───copy_and_paste_my_files_into_the_src_folder
+                        │   package.json
+                        └───copy_and_paste_my_files_into_the_src_folder
                             tailwind.config.js
                             tailwind.css
-</code></pre>
+```
 
 ## Step 6) Use NPM to Automatically Install Dependencies
 

@@ -86,9 +86,6 @@ Next, we need to output a Product List, nested within our existing Product Detai
 
 ```liquid
 <h2>Related Products</h2>
-
-
-
 {%- include 'ecommerce/products'
     layout: 'default'
     per_page: '3'
@@ -98,8 +95,6 @@ Next, we need to output a Product List, nested within our existing Product Detai
     datasource: 'true'
     item_ids: related_products_str
 -%} 
-
-
 ```
 
 _**Item Ids Parameter**_
