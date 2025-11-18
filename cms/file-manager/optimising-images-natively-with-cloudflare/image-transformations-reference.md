@@ -41,7 +41,7 @@ This is the same format as you may have been familiar using before an `| asset_u
 
 <details>
 
-<summary>options - optional - String (comma-separated key-value pairs with <code>=</code> signs)</summary>
+<summary>options - optional - String (comma-separated key-value pairs with `=` signs)</summary>
 
 These refer directly to Cloudflare's [Image Transformation options](https://developers.cloudflare.com/images/transform-images/transform-via-url/#options) and they will appear in the final URL generated in the tag. As Cloudflare add more parameters in future, you can safely use them here. \
 \
