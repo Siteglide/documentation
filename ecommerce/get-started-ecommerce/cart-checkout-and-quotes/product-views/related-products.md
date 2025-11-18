@@ -118,7 +118,7 @@ _**Per Page Parameter**_
 
 `per_page: '3'` In the example, the per\_page has been set to 3. In some cases, you may wish to limit the number of "related" results in this way, so they don't distract from the main subject of the Page. It is completely optional.
 
-_**Layout Parameter**_\
+_**Layout Parameter**_
 \
 Select the name of a Product List Layout you'll use to style how the dynamic Related Products List will look (see Step 7).
 

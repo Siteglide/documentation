@@ -48,7 +48,15 @@ A class of `.input-error` gets added to fields if they fail to validate, which y
 
 You can write your own custom validation by changing:
 
-`<button onClick="s_form_submit_v2(this,'form_12');">` to be: `<button onClick="s_form_submit_v2(this,'form_12',error);">`
+```html
+<button onClick="s_form_submit_v2(this,'form_12');">
+```
+
+to be: 
+
+```html
+<button onClick="s_form_submit_v2(this,'form_12',error);">
+```
 
 where `error` is the name of your function. e.g.
 
@@ -81,7 +89,7 @@ The example below demonstrates the following:
 * Does not use alert messages
 * Allows you to change the field validation message on a field by field basis in the HTML
 
-_**Step 1) Add HTML before closing tag**_\
+_**Step 1) Add HTML before closing tag**_
 `<div id="errorSummary" class="alert alert-danger d-none"></div>`
 
 _**Step 2) Add custom error messages to fields in HTML**_ In our custom code for this example, let's invent a data-attribute `data-custom-msg` to store custom error messages against the field we want to display them for:

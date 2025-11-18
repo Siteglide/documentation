@@ -129,7 +129,7 @@ _**Available Parameters**_
 | 4th        | inventory     | An Integer for the inventory available for this Product.                                                                                                                                            | 4                                                             |
 | 5th        | name          | The name of the Product in this row.                                                                                                                                                                | "T-Shirt"                                                     |
 
-_**Default Behaviour**_\
+_**Default Behaviour**_
 For all items:
 
 * The "max" attribute of the quantity `<input>` will be adjusted to match the available inventory.
@@ -173,7 +173,7 @@ _**Default Behaviour**_
 
 This can be useful so that as soon as the User arrives at the Cart they can be updated on whether items are in stock. In this example, we don't want to refresh the Page on success because the User has just arrived on the Cart Page and will need time to review:
 
-_**Example**_\
+_**Example**_
 To be added to the wrapper.liquid file:
 
 ```javascript
@@ -189,7 +189,7 @@ To be added to the wrapper.liquid file:
 
 This is useful if you want the Inventory checked immediately after the User changes the desired quantity. In the example we want to time this function straight after the [updated quantity is saved to the Cart](updating-quantity-in-cart.md). Instead of running the function directly then, we'll set the `check_inventory_after` option against the `s_e_cart_update_quantity` function.
 
-_**Example**_\
+_**Example**_
 To be added to the item.liquid file:
 
 ```javascript
@@ -211,7 +211,7 @@ check_inventory_after: true });
 
 This is useful if the Customer has clicked the "Checkout" button and you wish to run a final Inventory check first. Here we make use of the `checkout_url` option and the default Success function:
 
-_**Example**_\
+_**Example**_
 To be added to the wrapper.liquid file:
 
 ```javascript
