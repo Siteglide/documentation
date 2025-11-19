@@ -2,8 +2,8 @@
 
 ## Is your website project folder inside a Cloud Virtual Drive?
 
-There are known issues with using the Siteglide CLI on a directory inside a Google Drive or Microsoft One Drive or equivalent. While this may be solved with complex settings changes, we are not able to guide you through this and recommend instead that you store your project directories in a standard hard drive e.g. C.\
-\
+There are known issues with using the Siteglide CLI on a directory inside a Google Drive or Microsoft One Drive or equivalent. While this may be solved with complex settings changes, we are not able to guide you through this and recommend instead that you store your project directories in a standard hard drive e.g. C.
+
 For backups we recommend [https://www.sitegurus.io/protect](https://www.sitegurus.io/protect) or for more advanced version control [https://github.com/](https://github.com/).
 
 ## Not Sure if You've Set Up Siteglide CLI Already?

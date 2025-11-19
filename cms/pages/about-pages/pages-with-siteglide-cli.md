@@ -82,8 +82,8 @@ searchable: true
 
 ### Constants
 
-Constants makes certain variables available in the Page and passes others up to the Page Template e.g. SEO. It should sit at the very top of most pages.\
-\
+Constants makes certain variables available in the Page and passes others up to the Page Template e.g. SEO. It should sit at the very top of most pages.
+
 If you are confident a Page doesn't need it e.g. an API Endpoint, you can skip it to improve performance.
 
 ```liquid

@@ -16,8 +16,8 @@ Invalid Liquid tag parameters can cause a GraphQL error behind the scenes. While
 {{this}}
 ```
 
-If nothing appears, you might have this problem. \
-\
+If nothing appears, you might have this problem. 
+
 An example of a Liquid tag with invalid parameters is this one, can you spot the issue?
 
 ```
@@ -28,8 +28,8 @@ Answer: `item_ids` is a valid parameter name, but not a valid parameter value fo
 
 ### Nesting a List inside a Detail
 
-When you include a webapp or module list, you don't normally need to specify the `type` parameter. This changes when you're nesting that list inside a detail view. That's because the inner include tag "inherits" the value from the detail layout, causing it to attempt to load a detail view itself. \
-\
+When you include a webapp or module list, you don't normally need to specify the `type` parameter. This changes when you're nesting that list inside a detail view. That's because the inner include tag "inherits" the value from the detail layout, causing it to attempt to load a detail view itself. 
+
 So you need to then specify that the type is list:
 
 ```liquid

@@ -87,10 +87,10 @@ The cart layout will iterate in a loop, outputting the item.liquid file for each
 {% hint style="info" %}
 **`cart_id`**
 
-Each line in the cart has a `cart_id` accessible at `{{this.cart_data.cart_id}}.`\
-\
-When modifying the cart with JS, this `cart_id` will be needed.\
-\
+Each line in the cart has a `cart_id` accessible at `{{this.cart_data.cart_id}}.`
+
+When modifying the cart with JS, this `cart_id` will be needed.
+
 Multiple lines in the cart may refer to the same product if a different combination of attributes is selected.
 {% endhint %}
 

@@ -18,10 +18,10 @@ You can however use other Liquid Includes / Partials like Content Sections and C
 Note- this won't work with WebApps and Modules, see section below!
 {% endhint %}
 
-Outputting all available submission data as JSON tree for testing purposes:\
-\
-`{{form}}`\
-\
+Outputting all available submission data as JSON tree for testing purposes:
+
+`{{form}}`
+
 Output the User's core fields:
 
 ```liquid
@@ -46,8 +46,8 @@ These code suggestions are intended for when you add an automation for WebApp or
 
 ### On Item Create
 
-Outputting all available module/webapp data as JSON tree for testing purposes:\
-\
+Outputting all available module/webapp data as JSON tree for testing purposes:
+
 `{{data}}`
 
 Output a core field:

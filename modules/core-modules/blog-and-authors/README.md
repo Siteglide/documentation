@@ -2,8 +2,8 @@
 
 ## About the Blog & Authors Module
 
-The Blog Module makes it easy for your client to post regular updates to their site whether that be an informal blog, a company press release or a more journalistic set of articles.\
-\
+The Blog Module makes it easy for your client to post regular updates to their site whether that be an informal blog, a company press release or a more journalistic set of articles.
+
 The Siteglide Blog has special features for:
 
 * Archive + Date Range Filter

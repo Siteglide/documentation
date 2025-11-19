@@ -6,8 +6,8 @@ See general module folder strucutre for folder structure in common with all modu
 [modules-folder-structure-introduction.md](../../../developer-tools/building-for-marketplace/modules-folder-structure-introduction.md)
 {% endcontent-ref %}
 
-\
-\
+
+
 Blog module layouts may contain optional extra files for components like author lists, categories etc.
 
 Replace "custom\_example" with the name of your own custom layout. You can add as many of these as you like to the module\_3 folder.

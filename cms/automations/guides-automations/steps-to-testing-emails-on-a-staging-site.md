@@ -18,8 +18,8 @@ Click the "Configuration" tab:
 
 ## Step 2) Fill in the Test Email Field
 
-Enter the email addresses of anyone who would like to receive test emails for this site. It doesn't matter if they are Siteglide users or not: e.g.\
-\
+Enter the email addresses of anyone who would like to receive test emails for this site. It doesn't matter if they are Siteglide users or not: e.g.
+
 example@siteglide.com,example@agency.com,example@client.com
 
 {% hint style="info" %}

@@ -99,8 +99,8 @@ If you select WebApps as a Type, you then get a further configuration option to 
 
 #### Results Parameters - Priority Fields
 
-As explained above, this allows you to prioritise results based on the field containing the keyword. \
-\
+As explained above, this allows you to prioritise results based on the field containing the keyword. 
+
 For example, with the default setting: `name,meta_title,meta_desc`
 
 The keyword "inn" will return the result:\
@@ -108,28 +108,28 @@ The keyword "inn" will return the result:\
 
 Note this currently only affects Webapp and Module results. Page results will not be affected and will rest at the top of the search results still.
 
-Some system fields are shared between all webapps and modules, while other fields e.g. custom fields are specific to specific tables. If you want to search two webapps, it's okay to put multiple description fields into the priority parameter e.g. 'webapp\_field\_1\_2,webapp\_field\_2\_2' to cover multiple description fields for example. \
-\
-Finally, one thing the short description of this feature doesn't mention is that the default setting contains a "magic" bit of logic which attempts to priortise fields containing the characters "desc" after meta\_description and before other un-prioritised fields.\
-\
+Some system fields are shared between all webapps and modules, while other fields e.g. custom fields are specific to specific tables. If you want to search two webapps, it's okay to put multiple description fields into the priority parameter e.g. 'webapp\_field\_1\_2,webapp\_field\_2\_2' to cover multiple description fields for example. 
+
+Finally, one thing the short description of this feature doesn't mention is that the default setting contains a "magic" bit of logic which attempts to priortise fields containing the characters "desc" after meta\_description and before other un-prioritised fields.
+
 All fields not mentioned in this parameter have the same weighting.&#x20;
 
-**Results Parameters - Search  Algorithm**\
-\
-The search algorithm can change how webapp and module results are calculated and whether they are deemed to be "relevant" to the search. We recommend experimenting with the parameter values to see what suits your site best. For now, there is no behaviour change for standard pages.\
-\
+**Results Parameters - Search  Algorithm**
+
+The search algorithm can change how webapp and module results are calculated and whether they are deemed to be "relevant" to the search. We recommend experimenting with the parameter values to see what suits your site best. For now, there is no behaviour change for standard pages.
+
 Parameter behaviour (other than legacy) may change in the future as more technology becomes available, but we'll always aim to keep within the spirit and aims of the algorithm chosen- e.g. strict first will always be strict first, then more relaxed, even if this is done in an improved manner in future.
 
 **Legacy**
 
 The `legacy` value for the `search_algorithm` parameter matches results which "contain" every single one of the provided keywords (space separated) within one of the words in the field searched. While simple and making sure to return all possible results, this can lead to irrelevant results appearing high in the results without apparent justification.
 
-Another way describing the behaviour is "contains" & "AND". \
-\
+Another way describing the behaviour is "contains" & "AND". 
+
 **Strict First**
 
-The `strict_first`value for the `search_algorithm` parameter is designed to get fewer, better quality results than the `legacy` option.\
-\
+The `strict_first`value for the `search_algorithm` parameter is designed to get fewer, better quality results than the `legacy` option.
+
 To do this, it runs searches from 1-4 times with different settings and then picks the results which come back on the strictest settings. This can mean it runs slightly slower, but only in cases where there are not many relevant matches, which is what a user will normally expect.
 
 1. The first time we search for results where all keywords match exactly with results in one of the fields. ("exact" & "and") If results are available, the algorithm stops and returns those results, if not it moves on to the second search:

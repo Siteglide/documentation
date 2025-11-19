@@ -20,10 +20,10 @@ Discount codes can be created with a code which can be shared with selected user
 
 ## Restricting a Discount Code to Specific Products or Categories
 
-Sometimes you will want to give different discounts to different products or catalogues of products. This can work in Siteglide without any additional code. \
-\
-By default, every discount code applies to all eCommerce Checkout products. But if any products or categories are specified, the discount code will only apply to specified products and categories. \
-\
+Sometimes you will want to give different discounts to different products or catalogues of products. This can work in Siteglide without any additional code. 
+
+By default, every discount code applies to all eCommerce Checkout products. But if any products or categories are specified, the discount code will only apply to specified products and categories. 
+
 At that point:
 
 * The customer will need to spend enough on eligible products to meet the discount code's minimum spend.
@@ -33,6 +33,6 @@ In the "Standard Fields" tab, you can use the dropdown field labelled "Products 
 
 <figure><img src="../../../../.gitbook/assets/Capture3.PNG" alt=""><figcaption></figcaption></figure>
 
-In the "Categories" tab, you can select single or multiple categories to make all products which share the category (see [product-categories.md](../../../../eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/product-categories.md "mention")) eligible for the discount.\
-\
+In the "Categories" tab, you can select single or multiple categories to make all products which share the category (see [product-categories.md](../../../../eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/product-categories.md "mention")) eligible for the discount.
+
 ![](<../../../../.gitbook/assets/image (17).png>)

@@ -93,8 +93,8 @@ Create a new Page for your Cart and use liquid to include the Cart.
 \`
 
 {% hint style="info" %}
-Note- the Cart does not need to be on it’s own page, but this is the easiest place to start.\
-\
+Note- the Cart does not need to be on it’s own page, but this is the easiest place to start.
+
 If you are using SiteBuilder, or have already added your own CSS for the Cart, we recommend setting`remove_default_css: 'false'`
 {% endhint %}
 

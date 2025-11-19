@@ -15,8 +15,8 @@
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-For a basic fixed-amount set up, set the minimum payment value to exactly what you want users filling in the Form to Pay.\
-\
+For a basic fixed-amount set up, set the minimum payment value to exactly what you want users filling in the Form to Pay.
+
 For charitable donations and invoice payments, set the minimum payment to something minimal like $5 which avoids you making a loss on payment gateway fees for tiny transactions. Then look to [steps-to-allow-user-to-decide-amount-they-will-pay.md](../../../ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-allow-user-to-decide-amount-they-will-pay.md "mention")
 {% endhint %}
 

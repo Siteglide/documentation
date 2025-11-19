@@ -32,8 +32,8 @@ In this example, we set the filter as if we have a WebApp 1 with a custom field 
 </section>
 ```
 
-Drawing your attention to the important bits: \
-\
+Drawing your attention to the important bits: 
+
 Items are not displayed until the correct parameters are present in the URL. Users can't simply change the URL and access different content in this case!
 
 ```
@@ -42,8 +42,8 @@ Items are not displayed until the correct parameters are present in the URL. Use
 {% endif %}
 ```
 
-Usually, with this setup, the server won't render the items on initial page load, only on re-render, since the param will not be available on initial page load usually.\
-\
+Usually, with this setup, the server won't render the items on initial page load, only on re-render, since the param will not be available on initial page load usually.
+
 In version >= 1.6, an initial re-render will happen immediately if there are controls with initial values the layout using the filter param as soon as possible . The second hidden field allows either a OR b to match- which allows for more flexibility.&#x20;
 
 ```

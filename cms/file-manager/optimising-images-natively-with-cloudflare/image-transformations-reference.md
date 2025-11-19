@@ -26,15 +26,15 @@ Parameters explained:&#x20;
 
 <summary>path - required - String</summary>
 
-The path to your image. This should be a relative path to your image in File Manager, relative to the assets folder (File Manager's root). It should include the original file extension e.g. .jpg\
-\
-It should not start with:\
-\- A leading forward slash `/`\
-\- `/assets`\
-\- `marketplace_builder`
+The path to your image. This should be a relative path to your image in File Manager, relative to the assets folder (File Manager's root). It should include the original file extension e.g. .jpg
 
-If you have a path to an image in a Liquid variable, for example if using data from a WebApp, you can set the value of path directly to this variable without using quotes.\
-\
+It should not start with:
+- A leading forward slash `/`
+- `/assets`
+- `marketplace_builder`
+
+If you have a path to an image in a Liquid variable, for example if using data from a WebApp, you can set the value of path directly to this variable without using quotes.
+
 This is the same format as you may have been familiar using before an `| asset_url` Liquid filter.&#x20;
 
 </details>
@@ -43,8 +43,8 @@ This is the same format as you may have been familiar using before an `| asset_u
 
 <summary>options - optional - String (comma-separated key-value pairs with `=` signs)</summary>
 
-These refer directly to Cloudflare's [Image Transformation options](https://developers.cloudflare.com/images/transform-images/transform-via-url/#options) and they will appear in the final URL generated in the tag. As Cloudflare add more parameters in future, you can safely use them here. \
-\
+These refer directly to Cloudflare's [Image Transformation options](https://developers.cloudflare.com/images/transform-images/transform-via-url/#options) and they will appear in the final URL generated in the tag. As Cloudflare add more parameters in future, you can safely use them here. 
+
 For each option you want to include, assign each value to its key using an `=` sign. Separate each option with a comma.&#x20;
 
 To save time, you can choose to leave options blank, see basic example. Our default options will then be passed: \`
@@ -81,17 +81,17 @@ Parameters explained:
 
 <summary>path - required - String</summary>
 
-(This is the same type of parameter as is used in the `img_url` include tag. In most cases the `img` include tag will directly pass this value to all of the `img_url` tags inside its layout.)\
-\
-The path to your image. This should be a relative path to your image in File Manager, relative to the assets folder (File Manager's root). It should include the original file extension e.g. .jpg\
-\
-It should not start with:\
-\- A leading forward slash `/`\
-\- `/assets`\
-\- `marketplace_builder`
+(This is the same type of parameter as is used in the `img_url` include tag. In most cases the `img` include tag will directly pass this value to all of the `img_url` tags inside its layout.)
 
-If you have a path to an image in a Liquid variable, for example if using data from a WebApp, you can set the value of path directly to this variable without using quotes.\
-\
+The path to your image. This should be a relative path to your image in File Manager, relative to the assets folder (File Manager's root). It should include the original file extension e.g. .jpg
+
+It should not start with:
+- A leading forward slash `/`
+- `/assets`
+- `marketplace_builder`
+
+If you have a path to an image in a Liquid variable, for example if using data from a WebApp, you can set the value of path directly to this variable without using quotes.
+
 This is the same format as you may have been familiar using before an `| asset_url` Liquid filter.&#x20;
 
 </details>
@@ -100,14 +100,14 @@ This is the same format as you may have been familiar using before an `| asset_u
 
 <summary>attributes - optional - String</summary>
 
-Default: `` 'loading="lazy"` ``\
-\
+Default: `` 'loading="lazy"` ``
+
 This allows you to pass in any HTML attributes into the layout. Most layouts will use an `<img>` HTML tag and will output these attributes into that tag, but check the layout file itself.
 
-For images above the fold, it is recommended (though not essential) that `loading="lazy"` is not set on an img tag. You can set the `attributes` parameter to an empty String `''` if you think the image is likely to appear above the fold.\
-\
-This allows you to add in features like [https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority) which can be added as attributes to the img tag.\
-\
+For images above the fold, it is recommended (though not essential) that `loading="lazy"` is not set on an img tag. You can set the `attributes` parameter to an empty String `''` if you think the image is likely to appear above the fold.
+
+This allows you to add in features like [https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority) which can be added as attributes to the img tag.
+
 It also allows you to add important accessibility features like the `alt`  or `title`  attributes.
 
 </details>
@@ -126,8 +126,8 @@ Default: `''` (empty)
 
 <summary>layout - optional but recommended - String</summary>
 
-Leaving this blank will output a basic HTML `img` tag with a single `src`  image - which will be given the default Cloudinary transforms from `img_url`.\
-\
+Leaving this blank will output a basic HTML `img` tag with a single `src`  image - which will be given the default Cloudinary transforms from `img_url`.
+
 You can set this to any layout you create , or use one of our default layouts documented below.
 
 You can reference a layout by its path relative to (but not including) the `layouts/img` folder.
@@ -164,8 +164,8 @@ The default layouts have been built with inspiration from this page from Cloudfl
 
 `lg` stands for large. This layout is designed with images in mind which are intended to be full-screen-width on any device - think hero images (unless they are background images).&#x20;
 
-The `srcset` will pass multiple sizes of the image to the browser and the browser will pick the best one depending on the width of the entire screen.\
-\
+The `srcset` will pass multiple sizes of the image to the browser and the browser will pick the best one depending on the width of the entire screen.
+
 Recommended use:
 
 ```liquid

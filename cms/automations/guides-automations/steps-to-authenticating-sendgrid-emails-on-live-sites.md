@@ -23,16 +23,16 @@ This option allows SendGrid to authenticate and configure the DNS changes for yo
 
 See the [list of DNS providers](https://docs.sendgrid.com/ui/account-and-settings/how-to-set-up-domain-authentication#dns-providers-supported-by-twilio-sendgrids-automated-setup) that are supported by SendGrid's automated setup.
 
-**Manual Setup**\
-\
+**Manual Setup**
+
 **If Sendgrid cannot automatically finish the setup, you will be taken to the Manual Setup tab where you will be provided with records to add to your DNS manually. If you cannot modify your domain's DNS records, you can email the records to a colleague using the Send To A Coworker tab. The email includes a direct link to the records**
 
 **Both automatic and manual setup begin the same way** with the "Setup steps required for both automatic and manual setup" that follow.
 
 **Automatic Security**
 
-**Automated security is different from automatic setup**. Automated security allows SendGrid to handle the signing of your DKIM and the authentication of your SPF with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your DNS records. Find a detailed explanation of how this works on the [Sendgrid Documentation](https://docs.sendgrid.com/ui/account-and-settings/how-to-set-up-domain-authentication#twilio-sendgrids-dns-records).\
-\
+**Automated security is different from automatic setup**. Automated security allows SendGrid to handle the signing of your DKIM and the authentication of your SPF with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your DNS records. Find a detailed explanation of how this works on the [Sendgrid Documentation](https://docs.sendgrid.com/ui/account-and-settings/how-to-set-up-domain-authentication#twilio-sendgrids-dns-records).
+
 \&#xNAN;_Automated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn automated security off and use MX and TXT records._
 
 If you turn off automated security, you are responsible for managing and updating the MX and TXT records yourself.
@@ -60,8 +60,8 @@ a) Go to Settings/Sender Authentication/Domain Authentication, and click Get Sta
 
 ![](https://cdn.getgist.com/attachment_images/9e74916ad417d94a6add0374c084e4e7b9d1af6fe0b09c5ad77ba8c9fe0a26f4Sendgrid%20Authenticate%20Domain%20Screenshot%20.png)
 
-b) If asked who is your DNS provider, please select "other" if you have fully delegated domains on Siteglide (if you're not sure, see [fully-delegated-vs-external-dns.md](../../../portal/sites/domains/fully-delegated-vs-external-dns.md "mention"))\
-\
+b) If asked who is your DNS provider, please select "other" if you have fully delegated domains on Siteglide (if you're not sure, see [fully-delegated-vs-external-dns.md](../../../portal/sites/domains/fully-delegated-vs-external-dns.md "mention"))
+
 c) Enter **your** domain you want to authenticate to send emails **from** on your behalf. E.g. if you want your site to send emails from help@example.com, you need to add the domain as "example.com". If you want your site to send emails from no-reply@website.com, you need to add "website.com". Then, click the Next button. This does not need to include any subdomains like "www." since most email addresses do not include this e.g. help@www.example.com is not standard. Remember, when writing your Siteglide automations, you need to make sure in future to use email addresses in the "from" property which match this domain exactly. You can run this process multiple times to authenticate multiple domains.
 
 ![](https://cdn.getgist.com/attachment_images/152b1371ddfa2ec03c7d6a4967a33a035146e8dc81c4b875492a80c38eed926eFrom%20Domain%20Set%20Up.png)
@@ -74,8 +74,8 @@ In Advanced settings, there is an option to turn on "link branding". We strongly
 
 SendGrid has now created a list of records to add to your DNS including the 2 DKIM records using selectors s1 and s2 respectively.
 
-If you chose the Automatic setup option, you have an externally managed domain and your domain registrar is GoDaddy. SendGrid will automatically make the DNS changes for you. For all others, you will need to copy and paste the records into your domain registrar's portal, or into the domains tab in Siteglide if you have a fully-delegated domain.\
-\
+If you chose the Automatic setup option, you have an externally managed domain and your domain registrar is GoDaddy. SendGrid will automatically make the DNS changes for you. For all others, you will need to copy and paste the records into your domain registrar's portal, or into the domains tab in Siteglide if you have a fully-delegated domain.
+
 If copying records into Siteglide (for fully-delegated), you do not need to include the part of the record key which contains your domain, this is considered already included. E.g. from the screenshot, you would only copy key: "url483", not "url483.siteglide.info" For the values, they should still contain ".sendgrid.info" where appropriate.
 
 <figure><img src="../../../.gitbook/assets/https___cdn.getgist.com_attachment_images_1cce43d4da32a3965054cbe3e01342e95aa3cde24862c5dd199eee6c0404b1a9Install20Records.webp" alt=""><figcaption></figcaption></figure>

@@ -16,8 +16,8 @@ description: >-
 
 ## About Presets
 
-Theme Presets are a Way to change a Theme's CSS variables, like colour and font, giving your site an distinctive new look without needing to make changes to HTML or CSS classes. They should be compatible with all our existing Flowbite layouts\*.\
-\
+Theme Presets are a Way to change a Theme's CSS variables, like colour and font, giving your site an distinctive new look without needing to make changes to HTML or CSS classes. They should be compatible with all our existing Flowbite layouts\*.
+
 They are useful for:
 
 * Create new sites using the SiteBuilder layouts, and give them a distinctive look from step one.
@@ -42,8 +42,8 @@ The easiest way to get started with a Theme Preset will be to install a site fro
 * [https://admin.siteglide.com/#/portal/community/marketplace?module\_id=951980](https://admin.siteglide.com/#/portal/community/marketplace?module_id=951980)
 * [https://admin.siteglide.com/#/portal/community/marketplace?module\_id=951981](https://admin.siteglide.com/#/portal/community/marketplace?module_id=951981)
 
-Existing layouts will already have the preset applied. \
-\
+Existing layouts will already have the preset applied. 
+
 Newly added layouts may usually have the majority of classes applied, though to get your site looking perfect, we recommend you rebuild Tailwind reguarly.&#x20;
 
 Before going live, we also recommend you remove the "safelist" in the configuration file, for much better client-side performance.&#x20;
@@ -118,8 +118,8 @@ require('tailwindcss/../../modules/module_86/public/assets/css/presets/sitebuild
 
 &#x20;This allows a Preset creator to make changes without affecting your live sites, since your site can continue to safely use an older version without maintenance and updates.&#x20;
 
-We don't anticipate that it will be common practice to update a version of a Preset on a live site, but it is an option that's open to you.\
-\
+We don't anticipate that it will be common practice to update a version of a Preset on a live site, but it is an option that's open to you.
+
 If you're starting a project from the beginning, it will probably make sense to use the latest version unless you are avoiding specific known issues in the newest version.\
 
 

@@ -135,25 +135,21 @@ _HTML Attributes Explained:_
 | data-s-e-discount-code | Attribute should be added to input field | Yes          |
 | value="                |                                          |              |
 
-\{{discount\_code\}}"\
-\
-or\
-\
+`{{discount\_code\}}`
 
+or
 
-{% if discount_code != blank %}
-value="\{{discount\_code\}}" readonly
-{% endif %}
+`{% if discount_code != blank %}value="\{{discount\_code\}}" readonly{% endif %}`
 
 |
 
-If a code is already successfully added, it will be autofilled.\
-\
-or\
+If a code is already successfully added, it will be autofilled.
+
+or
 \
 Any successful code is autofilled and the current field value is readonly until removed in step b) | One of these
 
-\| |
+| |
 
 ### 3b - Add an "Apply" button
 

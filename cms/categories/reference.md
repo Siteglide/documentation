@@ -12,14 +12,14 @@ This object stores every category in key-value pairs where the key is the ID of 
 
 ## Accessing a specific Category via ID
 
-As the Categories data Object is a key map, you can access any specific category by accessing the object and then passing in the Category's ID in square brackets:\
-\
+As the Categories data Object is a key map, you can access any specific category by accessing the object and then passing in the Category's ID in square brackets:
+
 `{{context.exports.categories.data['1234']}}`
 
 ## Accessing a Category's Fields
 
-Once you've accessed the value of that Category via it's ID, you can access that Category's Fields using dot notation. For example, here we'll access its name:\
-\
+Once you've accessed the value of that Category via it's ID, you can access that Category's Fields using dot notation. For example, here we'll access its name:
+
 `{{context.exports.categories.data['1234']}}.name}}`
 
 Other available fields are:

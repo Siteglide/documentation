@@ -1,7 +1,7 @@
 # About Pages
 
-Pages are the backbone of any website.\
-\
+Pages are the backbone of any website.
+
 Pages in Siteglide are Liquid files in the codebase and rendered to HTML before the server delivers that Page to the browser. Liquid files can also include HTML. This allows the server to deliver some content dynamically, or some HTML statically.
 
 When some content is very similar on multiple Pages, we recommend using [Page Templates](../page-templates/) to reduce repetitive code, save time and make maintenance easier.

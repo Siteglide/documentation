@@ -72,8 +72,8 @@ Learn more about the
 
 There are many more options available. Read more here:
 
-[https://cloudinary.com/documentation/image\_transformations](https://cloudinary.com/documentation/image_transformations)\
-\
+[https://cloudinary.com/documentation/image\_transformations](https://cloudinary.com/documentation/image_transformations)
+
 In these examples, you may need to replace 'upload' with 'fetch' in the URL to support remote images from the Siteglide file manager.
 
 Also check out using client hints on some browsers to further fine-tune image requests:

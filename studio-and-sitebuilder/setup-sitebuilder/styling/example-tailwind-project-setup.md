@@ -19,8 +19,8 @@ We recommend you update the open\_me\_to\_setup\_tailwind\_first\_time folder at
 
 ## Troubleshooting and Customising
 
-Note, for this configuration to work, you may need to run `npm i` to install node module dependencies and  `siteglide-cli pull` to fetch dependencies like presets. \
-\
+Note, for this configuration to work, you may need to run `npm i` to install node module dependencies and  `siteglide-cli pull` to fetch dependencies like presets. 
+
 If you already use npm on your project, do not copy the package and package-lock files and instead install the dev dependencies and scripts used in `package.json` manually.&#x20;
 
 ## Example Setup

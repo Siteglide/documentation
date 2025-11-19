@@ -90,8 +90,8 @@ See here to understand how to add custom classes which combine existing Tailwind
 ### The `tailwind.min.css` Final CSS File
 
 {% hint style="info" %}
-See the folder structure above to find this file. You should not need to create it or edit it manually. The npm run tailwind command will compile it automatically from the src files.\
-\
+See the folder structure above to find this file. You should not need to create it or edit it manually. The npm run tailwind command will compile it automatically from the src files.
+
 It should be linked in your Page Template, but by default a SiteBuilder Page Template will do this via a `tailwind/head` Liquid include. You could optionally replace this with a `&lt;link&gt;` tag instead.
 {% endhint %}
 
@@ -102,6 +102,6 @@ When you make changes to any of the following while `npm run tailwind` is runnin
 * Your `tailwind.config.js` file
 * Your `tailwind.css` file
 
-A new version of the `tailwind.min.css` file will be generated. Use the Siteglide CLI to sync or deploy this to your Site to see your changes applied: [reference.md](../../../developer-tools/cli/reference.md "mention")\
-\
+A new version of the `tailwind.min.css` file will be generated. Use the Siteglide CLI to sync or deploy this to your Site to see your changes applied: [reference.md](../../../developer-tools/cli/reference.md "mention")
+
 Tailwind uses tree-shaking so that any classes which aren't used by the files referenced above will be removed from the final CSS file to make it as fast as possible. It will also be minified.

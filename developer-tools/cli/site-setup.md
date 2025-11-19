@@ -18,8 +18,8 @@ Once you've installed the CLI you should be ready to learn how to set up a new p
 
 Your project folder will contain all of your Site's files.
 
-Use Finder on Mac, or Windows Explorer to create this new empty folder, and give it a similar name to your site so you can find it again.\
-\
+Use Finder on Mac, or Windows Explorer to create this new empty folder, and give it a similar name to your site so you can find it again.
+
 We recommend creating this folder inside a sensible organisation structure, for example you may have a single folder which contains all of your project folders, or you might organise by customer.
 
 ## Step 2) Open Your Project Folder in a Text Editor
@@ -71,8 +71,8 @@ Paste the command into your integrated terminal.
 When prompted, enter the Siteglide Password associated with the email address in the command.
 
 {% hint style="info" %}
-This won't work unless you follow step 5 first!\
-\
+This won't work unless you follow step 5 first!
+
 If you forget your password, you can reset your password on the Siteglide Portal first.
 {% endhint %}
 
@@ -84,8 +84,8 @@ You will need to remember the name of your environment in order to use any other
 
 ## Step 7) Run an Initial Pull of the Site to Pull Down the Existing Code Base
 
-You're now set up with Siteglide-CLI for this Site!\
-\
+You're now set up with Siteglide-CLI for this Site!
+
 The obvious first move would be to pull the existing Site's files down to the Site, using the following command in the terminal:
 
 ```

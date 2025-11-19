@@ -63,8 +63,8 @@ If you know you wish to support more classes using your brand variables in futur
 
 ### Clients working in Studio
 
-If you are building a site where you want clients to be able to build out Pages themselves using the Studio tab, you could consider creating a Page Template for them with Preview Mode enabled.\
-\
+If you are building a site where you want clients to be able to build out Pages themselves using the Studio tab, you could consider creating a Page Template for them with Preview Mode enabled.
+
 This allows clients to drag in blocks from SiteBuilder and to use them out of the box.
 
 However, you can support them by running a CLI Tailwind build as well, either:
