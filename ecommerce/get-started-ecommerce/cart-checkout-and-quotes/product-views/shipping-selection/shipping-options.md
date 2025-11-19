@@ -47,12 +47,14 @@ You won't need to do anything else to implement this feature. Any options select
 
 Include your Custom Layout alongside my\_layout:
 
-* `layouts`
-  * `modules`
-    * `module_14 (eCommerce)`
-      * `shipping_option`
-        * `siteglide_example.liquid`
-        * `my_layout.liquid`
+```bash
+└─`layouts`
+  └─`modules`
+    └─`module_14 (eCommerce)`
+      └─`shipping_option`
+        ├── `siteglide_example.liquid`
+        └── `my_layout.liquid`
+```
 
 Here's an example:
 
