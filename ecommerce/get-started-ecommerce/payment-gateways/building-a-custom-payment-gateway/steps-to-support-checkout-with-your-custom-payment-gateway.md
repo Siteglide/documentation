@@ -3,7 +3,7 @@
 ## Pre-Requisites
 
 {% content-ref url="./" %}
-[.](./)
+[Building a Custom Payment Gateway](./)
 {% endcontent-ref %}
 
 {% content-ref url="../../../../eCommerce/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md" %}
