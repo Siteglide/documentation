@@ -26,7 +26,7 @@ This will be an essential part of the URLs.
 
 To build a URL, you will need to start with the beginning of the Cloudinary URL, which will direct the browser to their API endpoint, replacing 'demo' with your cloud name from step 2:
 
-`https://res.cloudinary.com/demo/image/fetch/`\\
+`https://res.cloudinary.com/demo/image/fetch/`
 
 Next add your optional transformations to resize the image by a number of pixels width or height:
 

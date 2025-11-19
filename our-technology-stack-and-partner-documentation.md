@@ -24,8 +24,8 @@ There are a few main ways to work with your Siteglide Site:
 ## Which Coding Languages are used in Siteglide?
 
 {% hint style="info" %}
-Wait I'm not a developer?\
-\
+Wait I'm not a developer?
+
 Don't worry, Siteglide has low-code tools like Studio, Toolbox and SiteBuilder to help Designers and Agents get stuck in as well!
 {% endhint %}
 
@@ -43,8 +43,8 @@ In the course of this Documentation, you will probably come across the following
 
 [Siteglide](https://siteglide.com/) works very closely with our partners at [platformOS](https://www.platformos.com/) to provide you with all the benefits of a modern cloud-based infrastructure like AWS, while at the same time making your life easier so you can focus on delivering the best for your clients.
 
-platformOS are behind a lot of the code used on Siteglide sites, developing everything from new Liquid filters on top of Liquid's open-source starting point and a fully functional GraphQL schema you can plug into for making database queries and mutating to modify data.\
-\
+platformOS are behind a lot of the code used on Siteglide sites, developing everything from new Liquid filters on top of Liquid's open-source starting point and a fully functional GraphQL schema you can plug into for making database queries and mutating to modify data.
+
 We also work with a range of other open-source and 3rd party technologies to bring you our full suite of features.
 
 In our documentation we will often direct you to the [pOS documentation](https://documentation.platformos.com/) and those of other 3rd parties to help you dig deeper into what it is possible to build. platformOS have won awards for their innovative documentation and we will try not to re-invent the wheel when we cover the same topics as them, but instead hope to present topics like GraphQL with a more beginner-friendly slant.

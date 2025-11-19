@@ -39,5 +39,3 @@
 ### 1.0.5 - 28th October 2020
 
 * Support for Siteglide Studio
-
-\\

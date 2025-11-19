@@ -92,8 +92,6 @@ Although a DMARC record is provided by Sendgrid, it's not required to verify you
 
 Once you add the DNS records to your domain, return to the SendGrid App UI and click Verify to finalise the setup.
 
-Go to Settings/Sender Authentication/Select the Domain and then select Verify. \\
+Go to Settings/Sender Authentication/Select the Domain and then select Verify.
 
 <figure><img src="https://cdn.getgist.com/attachment_images/c062e35811e98ce7649c1246bf39c6f4f19343b0ac56d8be097dcc681bff91a8Screenshot%202024-01-24%20at%2013.49.23.png" alt=""><figcaption></figcaption></figure>
-
-\\

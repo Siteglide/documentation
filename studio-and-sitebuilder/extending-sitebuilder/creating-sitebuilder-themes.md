@@ -196,7 +196,7 @@ metadata:
 4. Below this add the body of the file. e.g. the actual CSS/SCSS code.
 5. When a user selects this option while building a template, all the files will be created on their site- but not all will have HTML `<link>` tags added to the template. - Remember to add the `link_in_template: true` property in the theme\_config for each option where this is needed- e.g. for `.min.css` files but not for `.scss` files.
 
-If you don't need the CSS preferences feature, leave the "css\_preference\_options" property as an empty object `{}` in the theme\_config.\\
+If you don't need the CSS preferences feature, leave the "css\_preference\_options" property as an empty object `{}` in the theme\_config.
 
 ### Step 6 - JavaScript <a href="#step-6-javascript" id="step-6-javascript"></a>
 

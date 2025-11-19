@@ -133,7 +133,7 @@ You may be given some warnings and information by npm at this stage. For the sak
 
 ## Step 7) Run Commands to Build your tailwind.min.css File and Sync it
 
-Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:\\
+Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

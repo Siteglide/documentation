@@ -617,5 +617,3 @@ You should also make sure that your Secure Zones Module is up to date.
 ### 0.9.2 - 26th November 2019
 
 * Quotes
-
-\\
