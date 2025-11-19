@@ -67,9 +67,7 @@ Now we have an object called "months" storing all the translated Months, simply 
 
 ### Search the Months
 
-Now we've translated the Months we'll need to check which one needs to be outputted. Firstly assign a variable with the Month you'd like to translate, I'd like to do so with my items "release\_date":\`
-
-\`
+Now we've translated the Months we'll need to check which one needs to be outputted. Firstly assign a variable with the Month you'd like to translate. I'd like to do so with my item's `release_date`:
 
 We use the "date" filter here to format the "raw" date integer to a humanized date. This follows Ruby's STRF format, read [here](https://apidock.com/ruby/DateTime/strftime) for more info on formatting dates.
 
