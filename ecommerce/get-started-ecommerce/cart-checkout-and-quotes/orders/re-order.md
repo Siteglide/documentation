@@ -126,14 +126,45 @@ Successfully added Products are automatically added to the User's Cart. When the
 
 The following Liquid tags can be used to either confirm the Order ID which has been added to the Cart, or present a detailed breakdown of the Products which were not successfully added; this is an alternative to showing this information in the Custom Success Function.
 
-| **Liquid Tag**                                                                                                                                                                              | **Purpose**                                                                                                                                                                                                     | **Example Output**                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| \{{context.session.reorder\_added\_to\_cart\}}                                                                                                                                              | The ID of the ( at least partially ) successfully added Order. This can be used in Logic to decide whether to display feedback at all- as if it equals blank, there will be no recent reorder.                  | "345"                                                                                      |
-| \{{context.session.reorder\_unavailable\_products\}}                                                                                                                                        | An Object containing details on unsuccessful Products- if there were any. This contains the same information returned to the Custom JavaScript Callback Functions.                                              | {"173":{"product\_id":"173","name":"Classical Summer Album","expiry\_date":"2145916800"\}} |
-| <p>{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[0]}}<br><br>{% endfor %}</p>                                                                                | <p>By looping over the unavailable Products and accessing the [0] index, you can access their key:<br><br>- the Product ID.</p>                                                                                 | "123"                                                                                      |
-| <p>{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[1].name}}<br>{{this[1].expiry_date}}<br>{{this[1].expiry_date | date: "%d/%m/%Y" }}<br><br>{% endfor %}</p> | <p>By looping over the unavailable Products and accessing the [1] index, you can access their fields:<br><br>- the Name<br>- the expiry date of the Product<br>- the expiry date of the Product (formatted)</p> | <p>- "Classical Summer"<br>- "2145916800"<br>- "01/11/2020"</p>                            |
-| \{% session reorder\_unavailable\_products = null %\}                                                                                                                                       | <p>Clear the reorder_unavailable_products data from the session<br><br>This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed.</p>                   |                                                                                            |
-| \{% session reorder\_added\_to\_cart = null %\}                                                                                                                                             | <p>Clear the reorder_added_to_cart data from the session.<br><br>This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed.</p>                         |                                                                                            |
+| **Liquid Tag**                                       | **Purpose**                                                                                                                                                                                    | **Example Output**                                                                         |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| \{{context.session.reorder\_added\_to\_cart\}}       | The ID of the ( at least partially ) successfully added Order. This can be used in Logic to decide whether to display feedback at all- as if it equals blank, there will be no recent reorder. | "345"                                                                                      |
+| \{{context.session.reorder\_unavailable\_products\}} | An Object containing details on unsuccessful Products- if there were any. This contains the same information returned to the Custom JavaScript Callback Functions.                             | {"173":{"product\_id":"173","name":"Classical Summer Album","expiry\_date":"2145916800"\}} |
+|                                                      |                                                                                                                                                                                                |                                                                                            |
+
+|
+
+By looping over the unavailable Products and accessing the \[0] index, you can access their key:\
+\
+\- the Product ID.
+
+\| "123" | ||
+
+By looping over the unavailable Products and accessing the \[1] index, you can access their fields:\
+\
+\- the Name\
+\- the expiry date of the Product\
+\- the expiry date of the Product (formatted)
+
+|
+
+\- "Classical Summer"\
+\- "2145916800"\
+\- "01/11/2020"
+
+\| | \\\{% session reorder\\\_unavailable\\\_products = null %\\} |
+
+Clear the reorder\_unavailable\_products data from the session\
+\
+This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed.
+
+\| | | \\\{% session reorder\\\_added\\\_to\\\_cart = null %\\} |
+
+Clear the reorder\_added\_to\_cart data from the session.\
+\
+This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed.
+
+\| |
 
 The above Liquid tags are accessing the User's session. This means they are temporary messages for that User. Each time an order is reordered the old message will be replaced.
 

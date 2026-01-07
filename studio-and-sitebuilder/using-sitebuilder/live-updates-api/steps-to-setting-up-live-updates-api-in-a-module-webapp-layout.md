@@ -204,8 +204,7 @@ Let's add the important Siteglide tag \`
     {% endfor %}
   </form>
   <div data-sg-live-update-component="results">
-    {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}  </div>
-</section>
+    {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}  </div></section>
 ```
 
 Now the results will update when we the user types in the search box, but their entries so far will not be lost as the form is not inside the component.

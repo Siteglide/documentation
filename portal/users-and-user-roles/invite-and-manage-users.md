@@ -2,8 +2,6 @@
 
 This is where you manage Account users, they would get access to all sites in your Portal
 
-
-
 ## Invite Portal Users
 
 To invite users to your Account you can only do this from the Users tab on your Account (your company name in the left menu):
@@ -18,7 +16,7 @@ If you click a user you can see what Sites they have access to and their User Ro
 
 <figure><img src="../../.gitbook/assets/Siteglide-Users-Sites.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Siteglide-Users-Role.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Users-Role (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Find out more on Users and User Roles:
 
