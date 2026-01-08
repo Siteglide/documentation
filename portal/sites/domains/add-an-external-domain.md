@@ -10,8 +10,8 @@ If you have a domain that is managed in GoDaddy or another registrar and would l
 This guide is for our Oracle/Cloudflare OCI servers. If your site is on our old AWS stacks please use the link below:
 {% endhint %}
 
-{% content-ref url="legacy-aws-domains.md" %}
-[legacy-aws-domains.md](legacy-aws-domains.md)
+{% content-ref url="legacy-aws-external-domains.md" %}
+[legacy-aws-external-domains.md](legacy-aws-external-domains.md)
 {% endcontent-ref %}
 
 ### Standard Setup: Enable WWW Redirect (e.g. https://www.example.com)
