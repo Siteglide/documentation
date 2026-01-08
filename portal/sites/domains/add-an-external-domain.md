@@ -68,7 +68,7 @@ This is not possible via External DNS if your DNS provider doesn't support CNAME
 
 #### Step 1: Add the domain
 
-Simply select External, type in the root domain (without www) and then select _'Use as default domain'_ and not NOT select _'Enable WWW redirect'_:
+Simply select External, type in the root domain (without www) and then select _'Use as default domain'_ and NOT select _'Enable WWW redirect'_:
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
@@ -78,37 +78,41 @@ Simply add the following records in your DNS control panel:
 
 **UK OCI server:**
 
-<table><thead><tr><th width="190.34375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="190.34375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge</td><td>CNAME</td><td>[example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>blank/@</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 **US OCI server:**
 
-<table><thead><tr><th width="190.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].946274feaef29fbf.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.us-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="190.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge</td><td>CNAME</td><td>[example.com].946274feaef29fbf.dcv.cloudflare.com</td></tr><tr><td>blank/@</td><td>CNAME</td><td>_fallback.us-siteglide.com</td></tr></tbody></table>
 
 **AU OCI server:**
 
-<table><thead><tr><th width="189.5703125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].e94b5430d374b59e.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.au-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="189.5703125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge</td><td>CNAME</td><td>[example.com].e94b5430d374b59e.dcv.cloudflare.com</td></tr><tr><td>blank/@</td><td>CNAME</td><td>_fallback.au-siteglide.com</td></tr></tbody></table>
 
 ### Subdomain Setup
 
 #### Step 1: Add the subdomain
 
-Simply type in the subdomain and ensure you do not select Enable WWW redirect:
+Simply type in the subdomain and ensure you do NOT select Enable WWW redirect:
 
 <figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Add the records**
 
+{% hint style="info" %}
+Replace \[subdomain] with the value you want the subdomain to be, e.g: 'blog' (this would create: blog.example.com). In this example replace \[subdomain.example.com] with: 'blog.example.com'.
+{% endhint %}
+
 **UK OCI server:**
 
-<table><thead><tr><th width="190.34375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="190.34375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[subdomain]</td><td>CNAME</td><td>[subdomain.example.com].fb56597de0699182.dcv.cloudflare.com</td></tr><tr><td>[subdomain]</td><td>CNAME</td><td>_fallback.uk-siteglide.com</td></tr></tbody></table>
 
 **US OCI server:**
 
-<table><thead><tr><th width="190.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].946274feaef29fbf.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.us-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="190.3984375">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[subdomain]</td><td>CNAME</td><td>[subdomain].946274feaef29fbf.dcv.cloudflare.com</td></tr><tr><td>[subdomain]</td><td>CNAME</td><td>_fallback.us-siteglide.com</td></tr></tbody></table>
 
 **AU OCI server:**
 
-<table><thead><tr><th width="189.5703125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[www.example.com]</td><td>CNAME</td><td>[www.example.com].e94b5430d374b59e.dcv.cloudflare.com</td></tr><tr><td>[www.example.com]</td><td>CNAME</td><td>_fallback.au-siteglide.com</td></tr></tbody></table>
+<table><thead><tr><th width="189.5703125">Name</th><th width="90.59765625">Type</th><th>Value</th></tr></thead><tbody><tr><td>_acme-challenge.[subdomain]</td><td>CNAME</td><td>[subdomain].e94b5430d374b59e.dcv.cloudflare.com</td></tr><tr><td>[subdomain]</td><td>CNAME</td><td>_fallback.au-siteglide.com</td></tr></tbody></table>
 
 ***
 
